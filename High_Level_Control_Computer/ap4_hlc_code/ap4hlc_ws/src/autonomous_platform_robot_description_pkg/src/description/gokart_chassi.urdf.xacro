@@ -1,0 +1,334 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://ros.org/wiki/xacro">
+
+ <!-- Heavily based on https://navigation.ros.org/setup_guides/urdf/setup_urdf.html -->
+  
+   <!-- Define robot constants -->
+  <xacro:property name="base_width" value="0.4"/>
+  <xacro:property name="base_length" value="1.02"/>
+  <xacro:property name="base_height" value="0.05"/>
+
+  <!-- backwheel params -->
+  <xacro:property name="backwheel_radius" value="0.125"/>
+  <xacro:property name="backwheel_width" value="0.069"/>
+  <xacro:property name="backwheel_ygap" value="0.01"/>
+  <xacro:property name="backwheel_zoff" value="-0.02"/>
+  <xacro:property name="backwheel_xoff" value="${-(base_length)/2 + (backwheel_radius)}"/>
+  
+  <!-- frontwheel params -->
+  <xacro:property name="frontwheel_radius" value="0.105"/>
+  <xacro:property name="frontwheel_width" value="0.080"/>
+  <xacro:property name="frontwheel_ygapp" value="0.1"/>
+  <xacro:property name="frontwheel_zoff" value="0.080"/>
+  <xacro:property name="frontwheel_xoff" value="${ (base_length)/2 }"/>
+  
+  <!-- Frontwheel steering geometry params -->
+  <xacro:property name="steering_body_extension_length" value="0.075"/>
+  <xacro:property name="steering_body_extension_radius" value="0.015"/>
+  <xacro:property name="steering_body_extension_zoff" value="0"/>
+  <xacro:property name="steering_swiwel_length" value="0.05"/>
+  <xacro:property name="steering_swiwel_radius" value="0.025"/>
+  <xacro:property name="steering_swiwel_extension_length" value="0.03"/>
+  <xacro:property name="steering_swiwel_extension_radius" value="0.015"/>
+  
+  <xacro:property name="steering_turn_max_limit" value="${pi/5}"/>
+  <xacro:property name="steering_turn_min_limit" value="${-pi/5}"/>
+  
+  <!-- Gokart front wing parameters - As of now simplified to a slab -->
+  <xacro:property name="gokart_frontwing_width" value="0.8"/>
+  <xacro:property name="gokart_frontwing_length" value="0.125"/>
+  <xacro:property name="gokart_frontwing_height" value="0.025"/>
+  <xacro:property name="gokart_frontwing_body_xoff" value="0.16"/>
+  
+  <!-- Inertial parameters for chassi dynamics, very simplified -->
+  <!-- TODO make the dynamics more accurate and real life accurate, see this as placeholders-->
+  <xacro:property name="backwheel_weight" value="4.0"/>
+  <xacro:property name="frontwheel_weight" value="1.5"/>
+  <xacro:property name="chassi_body_weight" value="50.0"/>
+  <xacro:property name="frontwing_weight" value="50.0"/>
+  <xacro:property name="front_steering_link_weight" value="0.25"/>
+
+  <!-- Inertial macros -->
+  <xacro:include filename="$(find autonomous_platform_robot_description_pkg)/src/description/inertia_macros.xacro"/> 
+  
+
+
+  <!-- Robot Base -->
+  <link name="base_link">
+    <visual>
+      <geometry>
+        <box size="${base_length} ${base_width} ${base_height}"/>
+      </geometry>
+      <material name="Cyan">
+        <color rgba="0 1.0 1.0 1.0"/>
+      </material>
+    </visual>
+
+    <collision>
+      <geometry>
+        <box size="${base_length} ${base_width} ${base_height}"/>
+      </geometry>
+    </collision>
+
+    <xacro:inertial_box mass="${chassi_body_weight}" x="${base_length}" y="${base_width}" z="${base_height}">
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+    </xacro:inertial_box>
+
+    <gazebo reference="base_link">
+      <material name="Cyan">
+        <color rgba="0 1.0 1.0 1.0"/>
+      </material>
+    </gazebo>
+  </link>
+  
+    <!-- Robot Footprint -->
+  <link name="base_footprint"/>
+
+  <joint name="base_joint" type="fixed">
+    <parent link="base_link"/>
+    <child link="base_footprint"/>
+    <origin xyz="0.0 0.0 ${-(backwheel_radius+backwheel_zoff)}" rpy="0 0 0"/>
+  </joint>
+  
+    <!-- macro backwheels -->
+  <xacro:macro name="wheel" params="prefix x_reflect y_reflect">
+    <link name="backwheel_${prefix}_link">
+      <visual>
+        <origin xyz="0 0 0" rpy="${pi/2} 0 0"/>
+        <geometry>
+            <cylinder radius="${backwheel_radius}" length="${backwheel_width}"/>
+        </geometry>
+        <material name="Gray">
+          <color rgba="0.5 0.5 0.5 1.0"/>
+        </material>
+      </visual>
+
+      <collision>
+      <origin xyz="0 0 0" rpy="${pi/2} 0 0"/>
+        <geometry>
+            <cylinder radius="${backwheel_radius}" length="${backwheel_width}"/>
+        </geometry>
+      </collision>
+
+      <xacro:inertial_cylinder mass="${backwheel_weight}" length="${backwheel_width}" radius="${backwheel_radius}" >
+        <origin xyz="0 0 0" rpy="${pi/2} 0 0"/>
+      </xacro:inertial_cylinder>
+    </link>
+
+    <joint name="${prefix}_joint" type="continuous">
+      <parent link="base_link"/>
+      <child link="backwheel_${prefix}_link"/>
+      <origin xyz="${x_reflect*backwheel_xoff} ${y_reflect*(base_width/2)+y_reflect*backwheel_ygap + y_reflect*backwheel_width/2} ${-backwheel_zoff}" rpy="0 0 0"/>
+      <axis xyz="0 1 0"/>
+      <limit effort="0.1" velocity="20"/>
+    </joint>
+
+    <gazebo reference="backwheel_${prefix}_link">
+      <material> Gazebo/DarkGrey </material>
+    </gazebo>
+
+  </xacro:macro>
+
+  <!-- Create back wheels -->
+  <xacro:wheel prefix="drive_wheel_left" x_reflect="1" y_reflect="1" />
+  <xacro:wheel prefix="drive_wheel_right" x_reflect="1" y_reflect="-1" />
+  
+  
+  <!-- macro front steering geometry and front wheels i.e define everything once and mirror left and right geometry-->
+  <xacro:macro name="front_steering" params="prefix x_reflect y_reflect">
+  <!-- links -->
+  
+  <!-- Link describing how steering geomtry is mounted to the gokart chassis-->
+    <link name="body_extension_${prefix}_link">
+      <visual>
+        <origin xyz="0 0 0" rpy="${pi/2} 0 0"/>
+        <geometry>
+            <cylinder radius="${steering_body_extension_radius}" length="${steering_body_extension_length}"/>
+        </geometry>
+        <material name="Gray">
+          <color rgba="0.6 0.6 0.6 1.0"/>
+        </material>
+      </visual>
+
+      <collision>
+        <origin xyz="0 0 0" rpy="${pi/2} 0 0"/>
+        <geometry>
+            <cylinder radius="${steering_body_extension_radius}" length="${steering_body_extension_length}"/>
+        </geometry>
+      </collision>
+
+      <xacro:inertial_cylinder mass="${front_steering_link_weight}" length="${steering_body_extension_length}" radius="${steering_body_extension_radius}" >
+        <origin xyz="0 0 0" rpy="${pi/2} 0 0"/>
+      </xacro:inertial_cylinder>
+
+      <gazebo reference="body_extension_${prefix}_link">
+        <material> Gazebo/Yellow </material>
+      </gazebo>
+
+    </link>
+    
+    <!-- Link describing the steering swiwel geometry-->
+    <link name="steering_swiwel_${prefix}_link">
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+            <cylinder radius="${steering_swiwel_radius}" length="${steering_swiwel_length}"/>
+        </geometry>
+        <material name="Gray">
+          <color rgba="0.6 0.6 0.6 1.0"/>
+        </material>
+      </visual>
+
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+            <cylinder radius="${steering_swiwel_radius}" length="${steering_swiwel_length}"/>
+        </geometry>
+      </collision>
+
+      <xacro:inertial_cylinder mass="${front_steering_link_weight}" length="${steering_swiwel_radius}" radius="${steering_swiwel_length}" >
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+      </xacro:inertial_cylinder>
+
+      <gazebo reference="steering_swiwel_${prefix}_link">
+        <material> Gazebo/Orange </material>
+      </gazebo>
+    </link>
+    
+    <!-- link describing how the wheel is mounted a fixed distance from the swiwel geometry i.e rotating point-->
+    <link name="swiwel_extension_${prefix}_link">
+      <visual>
+        <origin xyz="0 0 0" rpy="${pi/2} 0 0"/>
+        <geometry>
+            <cylinder radius="${steering_swiwel_extension_radius}" length="${steering_swiwel_extension_length}"/>
+        </geometry>
+        <material name="Gray">
+          <color rgba="0.6 0.6 0.6 1.0"/>
+        </material>
+      </visual>
+
+      <collision>
+      <origin xyz="0 0 0" rpy="${pi/2} 0 0"/>
+        <geometry>
+            <cylinder radius="${steering_swiwel_extension_radius}" length="${steering_swiwel_extension_length}"/>
+        </geometry>
+      </collision>
+
+      <xacro:inertial_cylinder mass="${front_steering_link_weight}" length="${steering_swiwel_extension_length}" radius="${steering_swiwel_extension_radius}" >
+        <origin xyz="0 0 0" rpy="${pi/2} 0 0"/>
+      </xacro:inertial_cylinder>
+
+      <gazebo reference="swiwel_extension_${prefix}_link">
+        <material> Gazebo/ZincYellow </material>
+      </gazebo>
+    </link>
+    
+    <!-- link describing the front wheel -->
+    <link name="frontwheel_${prefix}_link">
+      <visual>
+        <origin xyz="0 0 0" rpy="${pi/2} 0 0"/>
+        <geometry>
+            <cylinder radius="${frontwheel_radius}" length="${frontwheel_width}"/>
+        </geometry>
+        <material name="Gray">
+          <color rgba="0.5 0.5 0.5 1.0"/>
+        </material>
+      </visual>
+
+      <collision>
+        <origin xyz="0 0 0" rpy="${pi/2} 0 0"/>
+        <geometry>
+            <cylinder radius="${frontwheel_radius}" length="${frontwheel_width}"/>
+        </geometry>
+      </collision>
+
+      <xacro:inertial_cylinder mass="${frontwheel_weight}" length="${frontwheel_width}" radius="${frontwheel_radius}" >
+        <origin xyz="0 0 0" rpy="${pi/2} 0 0"/>
+      </xacro:inertial_cylinder>
+
+      <gazebo reference="frontwheel_${prefix}_link">
+        <material> Gazebo/Grey </material>
+      </gazebo>     
+    </link>
+    
+    
+   <!-- joints -->
+   
+   <!-- joint describing how the steering gemetry is mounted fixed onto the gokart frame -->
+    <joint name="$body_extension_${prefix}_joint" type="fixed">
+      <parent link="base_link"/>
+      <child link="body_extension_${prefix}_link"/>
+      <origin xyz="${x_reflect*frontwheel_xoff} ${y_reflect*(base_width/2)+y_reflect*(steering_body_extension_length)/2} ${steering_body_extension_zoff}" rpy="0 0 0"/>
+      <axis xyz="0 1 0"/>
+    </joint>
+    
+    <!-- joint describing how the steering geometry can swiwel i.e turn the wheel -->
+    <joint name="steering_swiwel_${prefix}_joint" type="revolute">
+      <parent link="body_extension_${prefix}_link"/>
+      <child link="steering_swiwel_${prefix}_link"/>
+      <axis xyz="0 0 1" />
+      <limit effort="1" lower="${x_reflect*steering_turn_min_limit}" upper="${x_reflect*steering_turn_max_limit}" velocity="1" />
+      <origin xyz="0 ${y_reflect*( steering_body_extension_length )/2 + y_reflect*steering_swiwel_radius} 0" rpy="0 0 0"/>
+    </joint>
+    
+    <!-- Joint descring how the swiwel extension link is mounted to the swiwel link, fixed -->
+<joint name="swiwel_extension_${prefix}_joint" type="fixed">
+      <parent link="steering_swiwel_${prefix}_link" />
+      <child link="swiwel_extension_${prefix}_link"/>
+      <origin xyz="0 ${y_reflect*(steering_swiwel_extension_length)/2 + y_reflect*steering_swiwel_radius} 0" rpy="0 0 0"/>
+      <axis xyz="0 1 0"/>
+    </joint>
+    
+    <!-- joint describing how the front wheel is connected to the swiwel extension link and -->
+<joint name="frontwheel_${prefix}_joint" type="continuous">
+      <parent link="swiwel_extension_${prefix}_link" />
+      <child link="frontwheel_${prefix}_link"/>
+      <origin xyz="0 ${y_reflect*(steering_swiwel_extension_length)/2 + y_reflect*frontwheel_width/2} 0" rpy="0 0 0"/>
+      <axis xyz="0 1 0"/>
+      <limit effort="0.1" velocity="5"/>
+    </joint>
+   
+   
+  </xacro:macro>
+  
+  <!-- Create front steering geometry and wheels -->
+  <xacro:front_steering prefix="right" x_reflect="1" y_reflect="1" />
+  <xacro:front_steering prefix="left" x_reflect="1" y_reflect="-1" />
+  
+ <!-- Create frontwing link on which one would like to mount future sensors -->
+ <link name="gokart_frontwing_link">
+      <visual>
+        <origin xyz="${gokart_frontwing_length/2} 0 0" rpy="0 0 0"/>
+        <geometry>
+             <box size="${gokart_frontwing_length} ${gokart_frontwing_width} ${gokart_frontwing_height}"/>
+        </geometry>
+        <material name="White1">
+          <color rgba="0 1.0 0.5 1.0"/>
+        </material>
+      </visual>
+
+      <collision>
+        <origin xyz="${gokart_frontwing_length/2} 0 0" rpy="0 0 0"/>
+        <geometry>
+             <box size="${gokart_frontwing_length} ${gokart_frontwing_width} ${gokart_frontwing_height}"/>
+        </geometry>
+      </collision>
+
+      <xacro:inertial_box mass="${frontwing_weight}" x="${gokart_frontwing_length}" y="${gokart_frontwing_width}" z="${gokart_frontwing_height}">
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+    </xacro:inertial_box>
+
+      <gazebo reference="gokart_frontwing_link">
+        <material> Gazebo/Green </material>
+      </gazebo> 
+    </link>
+ 
+ <!-- Create frontwing joint, mount the frontwing to the gokart body with a fixed joint -->
+<joint name="frontwing_joint" type="fixed">
+      <parent link="base_link"/>
+      <child link="gokart_frontwing_link"/>
+      <origin xyz="${base_length/2+gokart_frontwing_body_xoff} 0 ${-gokart_frontwing_height}" rpy="0 0 0"/>
+      <axis xyz="1 0 0"/>
+    </joint>
+
+</robot>

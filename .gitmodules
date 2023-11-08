@@ -1,0 +1,3 @@
+[submodule "CAN_Nodes_Microcontroller_Code/CAN_LIBRARY_DATABASE/dbc_to_c"]
+	path = CAN_Nodes_Microcontroller_Code/CAN_LIBRARY_DATABASE/dbc_to_c
+	url = https://github.com/howerj/dbcc.git

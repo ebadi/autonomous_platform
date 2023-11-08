@@ -1,0 +1,49 @@
+site_name: Autonomous Platform Generation 4
+site_description: This is the repository for Autonomous Platform at Infotiv Technology Development. AP4 was created by Fredrik Juthe and Erik Magnusson as part of a master thesis at Chalmers University of technology spring 2023 under supervision of Hamid Ebadi. The master thesis designed the system E/E architecture and implemented a base on which future functionality could be added to. A published version of the thesis with the title of "Design of a modular centralized E/E and software architecture for a small-scale automotive platform"
+site_author: Hamid Ebadi @ Infotiv
+
+site_url: https://infotiv-research.github.io/autonomous_platform/
+repo_name: infotiv-research/autonomous_platform
+repo_url: https://github.com/infotiv-research/autonomous_platform
+
+nav:
+  - High Level overview:
+    - Autonomous Platform Generation 4: README.md
+    - Changelog: CHANGELOG.md
+    - Hardware Design: HARDWARE_DESIGN.md
+    - Software Design: SOFTWARE_DESIGN.md
+    - How to Extend: HOW_TO_EXTEND.md
+  - CAN Nodes and Microcontroller:
+    - CAN Nodes : CAN_Nodes_Microcontroller_Code/README.md
+    - Propulsion Steering: CAN_Nodes_Microcontroller_Code/Propulsion_Steering.md
+    - Speed Sensor: CAN_Nodes_Microcontroller_Code/Speed_Sensor.md
+    - How to Extend: CAN_Nodes_Microcontroller_Code/HOW_TO_EXTEND.md
+    - CAN library : CAN_Nodes_Microcontroller_Code/CAN_LIBRARY_DATABASE/README.md
+  - Hardware Interface Low Level Computer:
+    - Hardware Interface Low Level Computer : Hardware_Interface_Low_Level_Computer/README.md
+    - How to Extend: Hardware_Interface_Low_Level_Computer/HOW_TO_EXTEND.md
+    - Setting up RaspberryPi : Hardware_Interface_Low_Level_Computer/SETUP_OF_RASPBERRY_PI.md
+  - High Level Control Computer:
+    - High Level Control Computer: High_Level_Control_Computer/README.md
+    - How to Extend: High_Level_Control_Computer/HOW_TO_EXTEND.md
+  - Power Unit:
+    - Power Unit: Power_Unit/README.md
+  - Issues and Future work: 
+    - Issues and Future work : ISSUES_AND_FUTURE_WORK.md
+  - CAD designs:
+    - Images: CAD/README.md
+  - Test & Debugging:
+    - Basics: TEST_DEBUGGING.md
+    - Hardware_Interface_Low_Level_Computer: Hardware_Interface_Low_Level_Computer/TEST_DEBUGGING.md 
+    - High_Level_Control_Computer: High_Level_Control_Computer/TEST_DEBUGGING.md
+
+theme: 
+  name: readthedocs
+  locale: en
+  highlightjs: true
+  hljs_languages:
+    - bash
+    - c
+plugins:
+  - search:
+      lang: en
