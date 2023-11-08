@@ -2,762 +2,762 @@
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/02148e31d9dbbaa5fbdddd3ae7bb7c40a1dd6f82.png"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/02148e31d9dbbaa5fbdddd3ae7bb7c40a1dd6f82.png"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/031babf2838b6531dd11acd05a9c15209885189d.png"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/031babf2838b6531dd11acd05a9c15209885189d.png"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/0404eea12ccf944ed136f42bd80ea20ff1d9e48c.jpg"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/0404eea12ccf944ed136f42bd80ea20ff1d9e48c.jpg"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/042b064b6a874630abd8acc483e977b976a067d9.jpg"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/042b064b6a874630abd8acc483e977b976a067d9.jpg"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/05e63b89f8326e73a0efb2328f313c3228f5521d.png"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/05e63b89f8326e73a0efb2328f313c3228f5521d.png"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/06a45bed59d6132836a70774c24d81803563ce37.png"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/06a45bed59d6132836a70774c24d81803563ce37.png"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/07d0c08b7b43f72acdd4934db12c32831c3be3ae.jpg"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/07d0c08b7b43f72acdd4934db12c32831c3be3ae.jpg"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/0ae93e114186b6c76556a2441065a2a98c5bb651.png"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/0ae93e114186b6c76556a2441065a2a98c5bb651.png"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/0d101e0aa7e373d952518f846abe9e961d73d2a5.png"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/0d101e0aa7e373d952518f846abe9e961d73d2a5.png"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/10564d15f5d0a291cd88f5cc99c59b4b579ab02f.jpg"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/10564d15f5d0a291cd88f5cc99c59b4b579ab02f.jpg"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/1056c9b17589506e3c5b57c2ab861fc5180cd56f.jpg"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/1056c9b17589506e3c5b57c2ab861fc5180cd56f.jpg"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/1075d9952e52dd6058d3bd607783206f2ca5652b.png"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/1075d9952e52dd6058d3bd607783206f2ca5652b.png"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/12c60a958ddf498625c75f76f0d0fd016a09a181.png"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/12c60a958ddf498625c75f76f0d0fd016a09a181.png"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/168f1d5adf0679e9412ae78de31094134144b2af.jpg"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/168f1d5adf0679e9412ae78de31094134144b2af.jpg"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/18a301f62e302e160cf5753f779439c1f0439085.png"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/18a301f62e302e160cf5753f779439c1f0439085.png"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/1ac01fd2ff7db848d2b199d190c48bc5e2e71d27.png"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/1ac01fd2ff7db848d2b199d190c48bc5e2e71d27.png"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/1c54b5de06807dd6f7861922104553446db5e9e6.png"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/1c54b5de06807dd6f7861922104553446db5e9e6.png"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/21d3b9d459b8b6234ccdbea7be41ca36f777411c.jpg"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/21d3b9d459b8b6234ccdbea7be41ca36f777411c.jpg"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/21e72ce28c0205551f14b5cb28972bae9af0035a.png"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/21e72ce28c0205551f14b5cb28972bae9af0035a.png"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/23c4314b53b24f29c5ca678a8578560164cc2604.jpg"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/23c4314b53b24f29c5ca678a8578560164cc2604.jpg"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/243167e351888d0de120f4141301c79776218f96.png"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/243167e351888d0de120f4141301c79776218f96.png"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/2455e7ea4797a961b610f505eb4376690a7c6b03.png"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/2455e7ea4797a961b610f505eb4376690a7c6b03.png"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/258151363191375d31c5ce533a1c752b72014351.jpg"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/258151363191375d31c5ce533a1c752b72014351.jpg"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/284306e25e7ed038bf93c8f2e3c56f6a56540ab1.png"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/284306e25e7ed038bf93c8f2e3c56f6a56540ab1.png"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/293be0db82fca46c2506a17d47e4aa7ce838e711.png"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/293be0db82fca46c2506a17d47e4aa7ce838e711.png"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/2a19e6ffc3abd84c79d9e437c6d2dcb4bce2968e.png"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/2a19e6ffc3abd84c79d9e437c6d2dcb4bce2968e.png"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/2a6de2fea2416bad304a64f2f7d76fc013379353.png"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/2a6de2fea2416bad304a64f2f7d76fc013379353.png"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/2ecb693c74037752e02c6fe85593f0ad46d5e269.png"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/2ecb693c74037752e02c6fe85593f0ad46d5e269.png"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/2f8b2193a7f6390ee33e49312b7d5292e4e347dc.jpg"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/2f8b2193a7f6390ee33e49312b7d5292e4e347dc.jpg"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/305cd8960f089a1f96062523cb8334b4ae542abd.png"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/305cd8960f089a1f96062523cb8334b4ae542abd.png"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/3409e7c2a9e024a65cee0b8ac44394ad48202d83.png"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/3409e7c2a9e024a65cee0b8ac44394ad48202d83.png"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/3729f4ad8876d6776b902e2ef92ed91ab25d90aa.png"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/3729f4ad8876d6776b902e2ef92ed91ab25d90aa.png"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/37e68c662ef27a0517b907835b41e744d51869f2.png"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/37e68c662ef27a0517b907835b41e744d51869f2.png"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/3a54b6c87d1df83dfb3058f6bda3bd5d96ed01e1.png"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/3a54b6c87d1df83dfb3058f6bda3bd5d96ed01e1.png"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/3afb545920dea62399e51913384bceb9ba6ccd33.png"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/3afb545920dea62399e51913384bceb9ba6ccd33.png"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/3cf8a629f1307a5a17f377c4c9d6b739a4b798e8.png"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/3cf8a629f1307a5a17f377c4c9d6b739a4b798e8.png"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/401eb10a91bc2efc9c1eb4c4018c600b4f8a029a.png"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/401eb10a91bc2efc9c1eb4c4018c600b4f8a029a.png"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/417db494baf6a78d07dc4a5a9469a47af099bce5.png"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/417db494baf6a78d07dc4a5a9469a47af099bce5.png"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/41da9e1fd22682e21fcad2983bf0d9afbab01022.png"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/41da9e1fd22682e21fcad2983bf0d9afbab01022.png"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/441467e673aa33f70e8a4626dba4b45ace0f4f0d.png"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/441467e673aa33f70e8a4626dba4b45ace0f4f0d.png"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/44d21bba220eba66a203be7c9a6150fac6f0a9f2.png"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/44d21bba220eba66a203be7c9a6150fac6f0a9f2.png"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/44d70ffd9540ce9f440ccb5bfa78fc6effafc3dd.png"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/44d70ffd9540ce9f440ccb5bfa78fc6effafc3dd.png"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/45b9535cc006dc26abea3971b164d30b6d15d291.png"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/45b9535cc006dc26abea3971b164d30b6d15d291.png"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/46b610c3b35397c9a0f285c9b936819264a0fc0b.png"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/46b610c3b35397c9a0f285c9b936819264a0fc0b.png"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/47f8ba6bcab9741464df98f1e70599b89a087fa4.png"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/47f8ba6bcab9741464df98f1e70599b89a087fa4.png"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/48ef51d7368a9b3dff98595559ef7877f8ad3eef.jpg"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/48ef51d7368a9b3dff98595559ef7877f8ad3eef.jpg"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/493b52f139702f6d5a5451a7607d2a33bb03fa42.png"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/493b52f139702f6d5a5451a7607d2a33bb03fa42.png"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/4a2f765a1201cb17ffeebe404ccb68eec24f99e3.jpg"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/4a2f765a1201cb17ffeebe404ccb68eec24f99e3.jpg"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/4bb9090df6e0078dff6662c9922b008e688d8ea6.png"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/4bb9090df6e0078dff6662c9922b008e688d8ea6.png"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/4c64b73d1b589aa7b0763f8cb4b489174f990b7e.jpg"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/4c64b73d1b589aa7b0763f8cb4b489174f990b7e.jpg"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/4e16a1126f17da74efff450591702db266bcd75d.png"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/4e16a1126f17da74efff450591702db266bcd75d.png"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/50d61729eaabcf8d3e3a82e490dbdfb2fc12af38.png"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/50d61729eaabcf8d3e3a82e490dbdfb2fc12af38.png"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/543e1dabb62f6f81525a40d2be68e9150e0ccf80.jpg"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/543e1dabb62f6f81525a40d2be68e9150e0ccf80.jpg"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/563fc33b7ce7cfea14b8fc3592842561db37a0b7.png"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/563fc33b7ce7cfea14b8fc3592842561db37a0b7.png"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/57786ec6f2ac90d7456af608d8d80db8a229cf35.png"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/57786ec6f2ac90d7456af608d8d80db8a229cf35.png"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/61a29ac40e985b60ed1088a4db80453b1b169418.png"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/61a29ac40e985b60ed1088a4db80453b1b169418.png"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/6544655e96f392c2bd0296abfedc8dc082ec1b32.png"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/6544655e96f392c2bd0296abfedc8dc082ec1b32.png"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/66cd82af5b5afe2583181dfa9db8f5943d66221b.png"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/66cd82af5b5afe2583181dfa9db8f5943d66221b.png"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/69e6c16dfeba8a89e1cae067b572c9110326b1e6.png"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/69e6c16dfeba8a89e1cae067b572c9110326b1e6.png"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/6b1da92ef934ee8e3eb48daac72545158760dd91.jpg"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/6b1da92ef934ee8e3eb48daac72545158760dd91.jpg"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/6b5776fd6af66ef3a87e9e4d6515a55ba1522356.jpg"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/6b5776fd6af66ef3a87e9e4d6515a55ba1522356.jpg"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/6baf9889d974b9d25043d3d09507b21d6e6b7b57.png"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/6baf9889d974b9d25043d3d09507b21d6e6b7b57.png"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/70d4414dc4e4592b78e6942c3966ab7eba2ad2ff.png"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/70d4414dc4e4592b78e6942c3966ab7eba2ad2ff.png"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/71e1754c3edc0984453f46b20bd4439085a4d6a9.png"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/71e1754c3edc0984453f46b20bd4439085a4d6a9.png"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/7243b6470af567637a58e1319c0f92fd426e0c2e.png"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/7243b6470af567637a58e1319c0f92fd426e0c2e.png"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/734185836da7e8718dc1afbfcc0c83817cf9246c.png"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/734185836da7e8718dc1afbfcc0c83817cf9246c.png"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/73458aead3439a55aebee7d6a11cd71ea39bb4d3.png"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/73458aead3439a55aebee7d6a11cd71ea39bb4d3.png"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/738a8602a621dd60c981be6a5dfc8972e8e00ff1.png"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/738a8602a621dd60c981be6a5dfc8972e8e00ff1.png"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/77663a4d498b47ed36d1454a4a19c2064f48c470.jpg"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/77663a4d498b47ed36d1454a4a19c2064f48c470.jpg"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/79d43e1e4f58738502559aed0b1227e8ee5e8a33.png"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/79d43e1e4f58738502559aed0b1227e8ee5e8a33.png"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/7d77e227b68547728ba8a7c8fc3b0919a221cee8.png"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/7d77e227b68547728ba8a7c8fc3b0919a221cee8.png"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/7e955733cfd8f0c7eb05e3981d3757dc1955c647.png"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/7e955733cfd8f0c7eb05e3981d3757dc1955c647.png"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/7f61f3132cb1bf4a2979e6bccb51cec353302dac.png"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/7f61f3132cb1bf4a2979e6bccb51cec353302dac.png"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/8171b57deb7671b4d656bcb9484897ec1d5b9a5e.png"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/8171b57deb7671b4d656bcb9484897ec1d5b9a5e.png"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/87be0637fe1d5eae51424d63848156f363f29bad.png"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/87be0637fe1d5eae51424d63848156f363f29bad.png"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/8882847326557a4c346aeceaaddb30b8ba67a41a.png"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/8882847326557a4c346aeceaaddb30b8ba67a41a.png"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/88df3dc282dcabdbb3e8d780aa7a1d2ff1b3c3db.png"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/88df3dc282dcabdbb3e8d780aa7a1d2ff1b3c3db.png"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/89499e4d5d52a6a7620663497004bc523068507e.png"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/89499e4d5d52a6a7620663497004bc523068507e.png"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/8963d0892fb1f754c77a4110dca9364f4b4eb717.png"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/8963d0892fb1f754c77a4110dca9364f4b4eb717.png"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/8b57cc46d9d384dd441d6f829d6ee369260c1f03.png"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/8b57cc46d9d384dd441d6f829d6ee369260c1f03.png"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/8d2b21b9a14ffb0b3d6bd023ce41b599a04ee114.png"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/8d2b21b9a14ffb0b3d6bd023ce41b599a04ee114.png"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/8e8de17d873cd863cdb1e4bc071d7a8793aa6858.png"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/8e8de17d873cd863cdb1e4bc071d7a8793aa6858.png"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/8e930af17854134db61d6b0df58cec370df99c71.jpg"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/8e930af17854134db61d6b0df58cec370df99c71.jpg"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/8f9780f02ebc6c8fbb8e2d4b1ce4b66540f60cee.jpg"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/8f9780f02ebc6c8fbb8e2d4b1ce4b66540f60cee.jpg"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/8fa4796ba80af74edba648804f142eaa86faa9eb.png"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/8fa4796ba80af74edba648804f142eaa86faa9eb.png"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/91b0498b8a2a56f36c6c3a57acd21b3045f381c5.png"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/91b0498b8a2a56f36c6c3a57acd21b3045f381c5.png"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/93d015910c564705b6953e463d5f95761dcdedc1.png"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/93d015910c564705b6953e463d5f95761dcdedc1.png"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/94b3d211586f56a0fdddd6e1153094b6139f4a91.png"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/94b3d211586f56a0fdddd6e1153094b6139f4a91.png"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/95730e6152fd2b21d682abc33626d493c12ae50d.png"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/95730e6152fd2b21d682abc33626d493c12ae50d.png"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/97148e7581cc7c8bc7bbc1b6f29db3057a36c301.jpg"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/97148e7581cc7c8bc7bbc1b6f29db3057a36c301.jpg"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/983182d98bf3330266f5059e4772268231a8a467.png"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/983182d98bf3330266f5059e4772268231a8a467.png"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/98d9814f2e29507e6a209eb7d5a5db13d347db1f.jpg"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/98d9814f2e29507e6a209eb7d5a5db13d347db1f.jpg"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/9a35156940c4c750589421daff78f4c363f192b1.png"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/9a35156940c4c750589421daff78f4c363f192b1.png"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/9e0a29fa0b1ef3c6a715b5e3498a173fb0f2e6d7.png"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/9e0a29fa0b1ef3c6a715b5e3498a173fb0f2e6d7.png"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/9e494d88048ab5521cfb65e7688041a0d8f0c108.png"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/9e494d88048ab5521cfb65e7688041a0d8f0c108.png"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/9e902bd161694cb7ba5b2233ab6c91f5894ab09f.png"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/9e902bd161694cb7ba5b2233ab6c91f5894ab09f.png"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/a0cee9eeb85a5c9e4d4cf0abd2d982b50d623ed3.jpg"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/a0cee9eeb85a5c9e4d4cf0abd2d982b50d623ed3.jpg"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/a1004805ff64293ac206b20f3abfb92970d717ab.png"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/a1004805ff64293ac206b20f3abfb92970d717ab.png"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/a24dbe4fad7e04e7b3ded622d2a57f358e1cbfed.png"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/a24dbe4fad7e04e7b3ded622d2a57f358e1cbfed.png"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/a47d9bfaad6d1b696081ca06782d5f91105cfbef.png"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/a47d9bfaad6d1b696081ca06782d5f91105cfbef.png"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/a62ad31d80d768cf4ed17aeb88d818dce0ffb02c.png"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/a62ad31d80d768cf4ed17aeb88d818dce0ffb02c.png"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/a8e837c962b173287f0772660d200da830e9814f.png"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/a8e837c962b173287f0772660d200da830e9814f.png"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/a96c236c0e0c3ad05a9a3ccd43d78a5044c6cd60.png"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/a96c236c0e0c3ad05a9a3ccd43d78a5044c6cd60.png"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/adac2dd199a13a986e280a26369b8ff056d53999.jpg"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/adac2dd199a13a986e280a26369b8ff056d53999.jpg"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/add66f08236a1b31f4527a42450de646bad7a4fd.jpg"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/add66f08236a1b31f4527a42450de646bad7a4fd.jpg"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/af002e8c1ed8ba9769adc4e21d6211734d4ed823.png"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/af002e8c1ed8ba9769adc4e21d6211734d4ed823.png"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/af0f7c73ea08ff288aed47e42d05cdab5ae1896e.jpg"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/af0f7c73ea08ff288aed47e42d05cdab5ae1896e.jpg"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/b0701312b2759d7673ffbd86e7f4ed675c5f0b1c.png"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/b0701312b2759d7673ffbd86e7f4ed675c5f0b1c.png"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/b10bf61312a886e5eb963e55c1d349e7827f1d1e.png"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/b10bf61312a886e5eb963e55c1d349e7827f1d1e.png"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/b3b5c6fcfe931831df8f5ef6cdb6c569d8c16a61.png"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/b3b5c6fcfe931831df8f5ef6cdb6c569d8c16a61.png"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/b77ac29d7e4d1433c705d31b0f0894c4106066e4.png"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/b77ac29d7e4d1433c705d31b0f0894c4106066e4.png"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/bbe2298c91cf9b280ff9dbb71669fd76c4f81dd3.jpg"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/bbe2298c91cf9b280ff9dbb71669fd76c4f81dd3.jpg"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/bdedd7f7396501a716d3d513fb193bb710df9adf.jpg"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/bdedd7f7396501a716d3d513fb193bb710df9adf.jpg"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/be7373c6ae3daaba7a4fd5d13663c7facb101797.png"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/be7373c6ae3daaba7a4fd5d13663c7facb101797.png"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/be8099ba41f31fc3b5bff26c8871320d7b040725.gif"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/be8099ba41f31fc3b5bff26c8871320d7b040725.gif"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/be87cb487ebf474e92d9603598ad45f9e93625a2.png"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/be87cb487ebf474e92d9603598ad45f9e93625a2.png"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/be9e1b23af3c5d35a767fc27a306706838a15071.png"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/be9e1b23af3c5d35a767fc27a306706838a15071.png"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/c0c91454cf19b2d18f48daf2609e9e7e410df112.png"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/c0c91454cf19b2d18f48daf2609e9e7e410df112.png"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/c3c9d6a27fde7e3537a51595c5fe3a0187545f1e.png"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/c3c9d6a27fde7e3537a51595c5fe3a0187545f1e.png"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/c443ba27ab77680731c0fac122a41c8768eea3b4.jpg"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/c443ba27ab77680731c0fac122a41c8768eea3b4.jpg"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/c757d6fb9b833b4c07bc4615c55e39e98d3353c7.png"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/c757d6fb9b833b4c07bc4615c55e39e98d3353c7.png"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/c9cc95042e45c8c726c2d442cb597bd22b6b04ff.png"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/c9cc95042e45c8c726c2d442cb597bd22b6b04ff.png"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/cae6fe0c322c5f6a99ce5fe075e5d3c56226d7b4.png"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/cae6fe0c322c5f6a99ce5fe075e5d3c56226d7b4.png"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/cb4fc6f5cdc5a8dd7f4c02154439bb44d4527b67.png"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/cb4fc6f5cdc5a8dd7f4c02154439bb44d4527b67.png"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/ce20de0aa31df018b5495abd73f3ced4f9261dd3.png"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/ce20de0aa31df018b5495abd73f3ced4f9261dd3.png"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/d124cd72b2bd8c267aff41e39921f75180f58a89.jpg"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/d124cd72b2bd8c267aff41e39921f75180f58a89.jpg"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/d3fe0b87222b9ab796f87dde3702f73a9d48b4b2.png"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/d3fe0b87222b9ab796f87dde3702f73a9d48b4b2.png"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/d449127a5f26a790e8a039ae1f5c20e28c263cb3.png"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/d449127a5f26a790e8a039ae1f5c20e28c263cb3.png"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/d72f9c8e7380dc544792f5e54b61871cfa4d86b8.jpg"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/d72f9c8e7380dc544792f5e54b61871cfa4d86b8.jpg"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/d9cf8d6132d953289c02264b5cb05c9009027282.png"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/d9cf8d6132d953289c02264b5cb05c9009027282.png"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/d9da394409589946f02bc1fd19116c8ee7077212.png"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/d9da394409589946f02bc1fd19116c8ee7077212.png"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/dc132f643c039fcb4a3c73031a9953ad9c046f43.png"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/dc132f643c039fcb4a3c73031a9953ad9c046f43.png"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/dddd8a09f61d2c5271d428b1dca11da16b7b292e.jpg"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/dddd8a09f61d2c5271d428b1dca11da16b7b292e.jpg"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/e2f75b3b05b23323d52489391559ce4dd7dbfc9f.png"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/e2f75b3b05b23323d52489391559ce4dd7dbfc9f.png"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/e30500ce93e168af5cf082cfdf9342d72d204448.png"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/e30500ce93e168af5cf082cfdf9342d72d204448.png"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/e6b1209e3ee81e409a53693bd622226123b3afb9.jpg"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/e6b1209e3ee81e409a53693bd622226123b3afb9.jpg"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/e92a41c9ab6372dfd56f4b23ec42b0eee26198b6.png"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/e92a41c9ab6372dfd56f4b23ec42b0eee26198b6.png"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/ea9425e1ffb5be45d4368c9fb2fb9efc4d951664.png"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/ea9425e1ffb5be45d4368c9fb2fb9efc4d951664.png"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/ebf096e3f83ee217da372ac51df08055cfaa61c8.jpg"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/ebf096e3f83ee217da372ac51df08055cfaa61c8.jpg"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/ebf4785022f2d057b454dd9540a92c9eb81bd096.png"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/ebf4785022f2d057b454dd9540a92c9eb81bd096.png"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/ed3369e8f14ebf419629adab50308e155d0bd93b.png"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/ed3369e8f14ebf419629adab50308e155d0bd93b.png"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/eec1d4464c79adcaeedbbea44fb37aa60de9bd66.png"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/eec1d4464c79adcaeedbbea44fb37aa60de9bd66.png"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/ef748a5e3e9f2edd45e5eef4d967ca8b496d8a12.jpg"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/ef748a5e3e9f2edd45e5eef4d967ca8b496d8a12.jpg"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/f0b27e6653df1839106b621d3a1fb6502e6ea9db.png"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/f0b27e6653df1839106b621d3a1fb6502e6ea9db.png"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/f0c3e5ce9e00e223fc0948fd9bc469360fa66cec.jpg"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/f0c3e5ce9e00e223fc0948fd9bc469360fa66cec.jpg"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/f255c967f6302b7d2711d1c5cb17da2ef70c6e45.png"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/f255c967f6302b7d2711d1c5cb17da2ef70c6e45.png"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/f404932acd70a2e659d8e3683006dc6807ce2a7b.png"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/f404932acd70a2e659d8e3683006dc6807ce2a7b.png"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/f4f5309cb4bfae9c27ec2e16ed1e5829d83d37b0.jpg"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/f4f5309cb4bfae9c27ec2e16ed1e5829d83d37b0.jpg"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/f83ba2a87d2d3f163b349e428aeccf4d6f0038c9.png"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/f83ba2a87d2d3f163b349e428aeccf4d6f0038c9.png"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/f87bfa26f5c67f563f77cb9dd6935534ac49967f.png"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/f87bfa26f5c67f563f77cb9dd6935534ac49967f.png"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/fa7958cca7e7d39825c68b1b64189c7caebf4a2c.png"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/fa7958cca7e7d39825c68b1b64189c7caebf4a2c.png"
     },
     {
         "type": "Extracting",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-d7f74347123da86b/fd78c1260a2597487e345328ac879b68aae12f99.png"
+        "path": "/tmp/tex2pdf.-59aed54efda89730/fd78c1260a2597487e345328ac879b68aae12f99.png"
     },
     {
         "type": "InlineNotRendered",
