@@ -1,132 +1,132 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://ebadi.github.io/autonomous_platform/</loc>
+         <loc>https://infotiv-research.github.io/autonomous_platform/</loc>
          <lastmod>2023-11-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://ebadi.github.io/autonomous_platform/CHANGELOG/</loc>
+         <loc>https://infotiv-research.github.io/autonomous_platform/CHANGELOG/</loc>
          <lastmod>2023-11-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://ebadi.github.io/autonomous_platform/HARDWARE_DESIGN/</loc>
+         <loc>https://infotiv-research.github.io/autonomous_platform/HARDWARE_DESIGN/</loc>
          <lastmod>2023-11-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://ebadi.github.io/autonomous_platform/HOW_TO_EXTEND/</loc>
+         <loc>https://infotiv-research.github.io/autonomous_platform/HOW_TO_EXTEND/</loc>
          <lastmod>2023-11-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://ebadi.github.io/autonomous_platform/ISSUES_AND_FUTURE_WORK/</loc>
+         <loc>https://infotiv-research.github.io/autonomous_platform/ISSUES_AND_FUTURE_WORK/</loc>
          <lastmod>2023-11-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://ebadi.github.io/autonomous_platform/SOFTWARE_DESIGN/</loc>
+         <loc>https://infotiv-research.github.io/autonomous_platform/SOFTWARE_DESIGN/</loc>
          <lastmod>2023-11-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://ebadi.github.io/autonomous_platform/TEST_DEBUGGING/</loc>
+         <loc>https://infotiv-research.github.io/autonomous_platform/TEST_DEBUGGING/</loc>
          <lastmod>2023-11-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://ebadi.github.io/autonomous_platform/CAD/</loc>
+         <loc>https://infotiv-research.github.io/autonomous_platform/CAD/</loc>
          <lastmod>2023-11-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://ebadi.github.io/autonomous_platform/CAN_Nodes_Microcontroller_Code/</loc>
+         <loc>https://infotiv-research.github.io/autonomous_platform/CAN_Nodes_Microcontroller_Code/</loc>
          <lastmod>2023-11-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://ebadi.github.io/autonomous_platform/CAN_Nodes_Microcontroller_Code/HOW_TO_EXTEND/</loc>
+         <loc>https://infotiv-research.github.io/autonomous_platform/CAN_Nodes_Microcontroller_Code/HOW_TO_EXTEND/</loc>
          <lastmod>2023-11-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://ebadi.github.io/autonomous_platform/CAN_Nodes_Microcontroller_Code/Propulsion_Steering/</loc>
+         <loc>https://infotiv-research.github.io/autonomous_platform/CAN_Nodes_Microcontroller_Code/Propulsion_Steering/</loc>
          <lastmod>2023-11-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://ebadi.github.io/autonomous_platform/CAN_Nodes_Microcontroller_Code/Speed_Sensor/</loc>
+         <loc>https://infotiv-research.github.io/autonomous_platform/CAN_Nodes_Microcontroller_Code/Speed_Sensor/</loc>
          <lastmod>2023-11-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://ebadi.github.io/autonomous_platform/CAN_Nodes_Microcontroller_Code/CAN_LIBRARY_DATABASE/</loc>
+         <loc>https://infotiv-research.github.io/autonomous_platform/CAN_Nodes_Microcontroller_Code/CAN_LIBRARY_DATABASE/</loc>
          <lastmod>2023-11-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://ebadi.github.io/autonomous_platform/CAN_Nodes_Microcontroller_Code/Shared_HW_Node_Libraries/</loc>
+         <loc>https://infotiv-research.github.io/autonomous_platform/CAN_Nodes_Microcontroller_Code/Shared_HW_Node_Libraries/</loc>
          <lastmod>2023-11-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://ebadi.github.io/autonomous_platform/CAN_Nodes_Microcontroller_Code/Shared_HW_Node_Libraries/PropulsionInterface/</loc>
+         <loc>https://infotiv-research.github.io/autonomous_platform/CAN_Nodes_Microcontroller_Code/Shared_HW_Node_Libraries/PropulsionInterface/</loc>
          <lastmod>2023-11-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://ebadi.github.io/autonomous_platform/CAN_Nodes_Microcontroller_Code/Shared_HW_Node_Libraries/PropulsionInterface/documentation_and_research/</loc>
+         <loc>https://infotiv-research.github.io/autonomous_platform/CAN_Nodes_Microcontroller_Code/Shared_HW_Node_Libraries/PropulsionInterface/documentation_and_research/</loc>
          <lastmod>2023-11-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://ebadi.github.io/autonomous_platform/CAN_Nodes_Microcontroller_Code/Shared_HW_Node_Libraries/SteeringMotorInterface/documentation_and_research/</loc>
+         <loc>https://infotiv-research.github.io/autonomous_platform/CAN_Nodes_Microcontroller_Code/Shared_HW_Node_Libraries/SteeringMotorInterface/documentation_and_research/</loc>
          <lastmod>2023-11-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://ebadi.github.io/autonomous_platform/Hardware_Interface_Low_Level_Computer/</loc>
+         <loc>https://infotiv-research.github.io/autonomous_platform/Hardware_Interface_Low_Level_Computer/</loc>
          <lastmod>2023-11-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://ebadi.github.io/autonomous_platform/Hardware_Interface_Low_Level_Computer/HOW_TO_EXTEND/</loc>
+         <loc>https://infotiv-research.github.io/autonomous_platform/Hardware_Interface_Low_Level_Computer/HOW_TO_EXTEND/</loc>
          <lastmod>2023-11-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://ebadi.github.io/autonomous_platform/Hardware_Interface_Low_Level_Computer/SETUP_OF_RASPBERRY_PI/</loc>
+         <loc>https://infotiv-research.github.io/autonomous_platform/Hardware_Interface_Low_Level_Computer/SETUP_OF_RASPBERRY_PI/</loc>
          <lastmod>2023-11-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://ebadi.github.io/autonomous_platform/Hardware_Interface_Low_Level_Computer/TEST_DEBUGGING/</loc>
+         <loc>https://infotiv-research.github.io/autonomous_platform/Hardware_Interface_Low_Level_Computer/TEST_DEBUGGING/</loc>
          <lastmod>2023-11-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://ebadi.github.io/autonomous_platform/High_Level_Control_Computer/</loc>
+         <loc>https://infotiv-research.github.io/autonomous_platform/High_Level_Control_Computer/</loc>
          <lastmod>2023-11-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://ebadi.github.io/autonomous_platform/High_Level_Control_Computer/HOW_TO_EXTEND/</loc>
+         <loc>https://infotiv-research.github.io/autonomous_platform/High_Level_Control_Computer/HOW_TO_EXTEND/</loc>
          <lastmod>2023-11-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://ebadi.github.io/autonomous_platform/High_Level_Control_Computer/TEST_DEBUGGING/</loc>
+         <loc>https://infotiv-research.github.io/autonomous_platform/High_Level_Control_Computer/TEST_DEBUGGING/</loc>
          <lastmod>2023-11-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://ebadi.github.io/autonomous_platform/Images/drawio_files/</loc>
+         <loc>https://infotiv-research.github.io/autonomous_platform/Images/drawio_files/</loc>
          <lastmod>2023-11-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://ebadi.github.io/autonomous_platform/Power_Unit/</loc>
+         <loc>https://infotiv-research.github.io/autonomous_platform/Power_Unit/</loc>
          <lastmod>2023-11-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
