@@ -1,0 +1,55 @@
+### ROS2 ###
+install/
+log/
+build/
+
+# Ignore generated docs
+*.dox
+*.wikidoc
+*.jpg
+*.jpeg
+
+# eclipse stuff
+.project
+.cproject
+
+# qcreator stuff
+CMakeLists.txt.user
+
+srv/_*.py
+*.pcd
+*.pyc
+qtcreator-*
+*.user
+
+ap4-dev-laptop@ap4devlaptop:~/Desktop/autonomous_platform$ 
+*~
+
+# Emacs
+.#*
+
+# Colcon custom files
+COLCON_IGNORE
+AMENT_IGNORE
+AP_DOCUMENTATION.pdf
+tex2pdf*
+
+pandoc*
+tmp.pdf
+
+#Bagfiles
+High_Level_Control_Computer/ap4_hlc_code/ap4hlc_ws/src/bagfiles_2024
+High_Level_Control_Computer/ap4_hlc_code/recorded_data
+High_Level_Control_Computer/ap4_hlc_code/rosbag2_2024_05_06-09_32_17
+*.pt
+recorded_data.zip
+*.db3
+install/
+install/*
+image_output
+current_nodes.txt
+current_topics.txt
+nodes_diff.txt
+topics_diff.txt
+
+

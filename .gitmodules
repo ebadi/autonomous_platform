@@ -1,0 +1,9 @@
+[submodule "CAN_Nodes_Microcontroller_Code/CAN_LIBRARY_DATABASE/dbc_to_c"]
+	path = CAN_Nodes_Microcontroller_Code/CAN_LIBRARY_DATABASE/dbc_to_c
+	url = https://github.com/howerj/dbcc.git
+[submodule "depthai-ros"]
+	path = depthai-ros
+	url = https://github.com/luxonis/depthai-ros.git
+[submodule "recorded_data"]
+	path = High_Level_Control_Computer/ap4_hlc_code/recorded_data
+	url = git@hf.co:datasets/hamidebadi/autonomous_platform_gokartcentrallen_imitation_learning_dataset

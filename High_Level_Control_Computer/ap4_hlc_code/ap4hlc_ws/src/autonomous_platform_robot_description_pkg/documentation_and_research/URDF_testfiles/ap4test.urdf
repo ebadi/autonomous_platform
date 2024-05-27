@@ -1,0 +1,117 @@
+<robot name="pi_robot">
+
+	<!-- * * * Link Definitions * * * -->
+
+ 	<link name="base_link">
+		<visual>
+		    <origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.9 0.50 0.085"/>
+			</geometry>
+			<material name="Cyan1">
+	       		<color rgba="0 0.9 0.9 1.0"/>
+	     	</material>
+		</visual>	
+	</link>
+
+    <link name="wheel_br_link">
+		<visual>
+		    <origin xyz="0 0 0" rpy="1.57 0 0"/>
+			<geometry>
+				<cylinder length="0.1" radius="0.125"/>
+			</geometry>
+			<material name="temp">
+	       		<color rgba="0 0.5 0.1 1.0"/>
+	     	</material>
+		</visual>	
+	</link>
+
+    <link name="wheel_bl_link">
+		<visual>
+		    <origin xyz="0 0 0" rpy="1.57 0 0"/>
+			<geometry>
+				<cylinder length="0.1" radius="0.125"/>
+			</geometry>
+			<material name="temp1">
+	       		<color rgba="0.35 0.5 0.1 1.0"/>
+	     	</material>
+		</visual>	
+	</link>
+	
+    <link name="wheel_swiwel_fl_link">
+		<visual>
+		    <origin xyz="0.45 0.3 0" rpy="0 0 0"/>
+			<geometry>
+				<cylinder length="0.1" radius="0.02"/>
+			</geometry>
+			<material name="temp3">
+	       		<color rgba="0.35 0.5 0.4 1.0"/>
+	     	</material>
+		</visual>	
+	</link>
+
+    <link name="wheel_swiwel_fr_link">
+		<visual>
+		    <origin xyz="0.45 -0.3 0" rpy="0 0 0"/>
+			<geometry>
+				<cylinder length="0.1" radius="0.02"/>
+			</geometry>
+			<material name="temp3">
+	       		<color rgba="0.35 0.5 0.4 1.0"/>
+	     	</material>
+		</visual>	
+	</link>
+
+    <link name="wheel_fixed_fr_link">
+		<visual>
+		    <origin xyz="0.45 -0.3 0" rpy="1.57 0 0"/>
+			<geometry>
+				<cylinder length="0.1" radius="0.02"/>
+			</geometry>
+			<material name="temp3">
+	       		<color rgba="0.35 0.5 0.4 1.0"/>
+	     	</material>
+		</visual>	
+	</link>
+	
+    <link name="wheel_fl_link">
+		<visual>
+		    <origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<cylinder length="0.06" radius="0.075"/>
+			</geometry>
+			<material name="temp4343">
+	       		<color rgba="0.1 0.566 0.1 1.0"/>
+	     	</material>
+		</visual>	
+	</link>
+ 	
+	
+	<!-- * * * Joint Definitions * * * -->
+	
+	<joint name="wheel_br_joint" type="continous">
+    	<parent link="base_link"/>
+    	<child link="wheel_br_link"/>
+    	<origin xyz="-0.45 0.3 0" rpy="0 0 0"/>
+	</joint>
+
+    <joint name="wheel_bl_joint" type="continous">
+    	<parent link="base_link"/>
+    	<child link="wheel_bl_link"/>
+    	<origin xyz="-0.45 -0.3 0" rpy="0 0 0"/>
+	</joint>
+	
+    <joint name="wheel_fl_swiwel_joint" type="continous">
+    	<parent link="wheel_swiwel_fr_link"/>
+    	<child link="wheel_fixed_fr_link"/>
+    	<origin xyz="0 0.65 0" rpy="0 0 0"/>
+	</joint>
+
+    <joint name="wheel_fl_rotating_joint" type="continous">
+    	<parent link="wheel_fixed_fr_link"/>
+    	<child link="wheel_fl_link"/>
+    	<origin xyz="0.45 -0.25 0" rpy="1.57 0 0"/>
+	</joint>
+
+ 
+</robot>

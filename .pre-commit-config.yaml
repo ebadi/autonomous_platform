@@ -1,0 +1,20 @@
+repos:
+- repo: https://github.com/compilerla/conventional-pre-commit
+  rev: v3.2.0
+  hooks:
+    - id: conventional-pre-commit
+      stages: [commit-msg]
+
+- repo: https://github.com/psf/black
+  rev: 24.4.2
+  hooks:
+    - id: black
+
+
+- repo: https://github.com/executablebooks/mdformat
+  rev: 0.7.17
+  hooks:
+    - id: mdformat
+      additional_dependencies:
+      - mdformat-gfm
+      - mdformat-black

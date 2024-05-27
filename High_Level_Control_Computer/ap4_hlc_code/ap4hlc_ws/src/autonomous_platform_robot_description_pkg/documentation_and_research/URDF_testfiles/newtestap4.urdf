@@ -1,0 +1,99 @@
+<?xml version="1.0"?>
+<robot name="my_robot">
+
+    <!-- Global Variables using xacro-->
+    <xacro:arg name="ap4_wheelbase_length" value="0.9"/>
+    <xacro:arg name="ap4_wheelbase_width" value="0.4"/>
+
+   <!-- Links -->
+
+    <link name="ap4_base_link">
+        <visual>
+            <geometry>
+                <sphere radius="0.1"/>
+            </geometry>
+        </visual>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        
+    </link>
+
+    <!-- Gokart Chassi link -->
+    <link name="gokart_chassi">
+        <visual>
+            <geometry>
+                <box size="0.9 0.50 0.085"/>
+            </geometry>
+            <origin xyz="0.45 0 0" rpy="0 0 0"/>
+            <material>
+                <color rgba="0 0.9 0.9 1.0"/>
+            </material>
+        </visual>
+        <origin xyz="0.45 0 0" rpy="0 0 0"/>
+    </link>
+
+    <!-- Gokart back wheel left -->
+    <link name="gokart_wheel_back_left_link">
+        <visual>
+            <geometry>
+                <cylinder length="0.08" radius="0.125"/>
+            </geometry>
+            <origin xyz="0 0.29 0" rpy="1.57 0 0"/>
+            <material name="temp">
+                <color rgba="0 0.3 0 1.0"/>
+            </material>
+        </visual>
+        <origin xyz="0 0.29 0" rpy="1.57 0 0"/>
+    </link>
+
+     <!-- Gokart back right left -->
+    <link name="gokart_wheel_back_right_link">
+        <visual>
+            <geometry>
+                <cylinder length="0.08" radius="0.125"/>
+            </geometry>
+            <origin xyz="0 -0.29 0" rpy="1.57 0 0"/>
+            <material name="temp">
+                <color rgba="0 0.4 0 1.0"/>
+            </material>
+        </visual>
+        <origin xyz="0 -0.29 0" rpy="1.57 0 0"/>
+    </link>
+
+    <!-- Gokart front left steering gemoetry -->
+    <link name="gokart_steering_swiwel_front_left_link">
+        <visual name="vis1">
+            <geometry>
+                <cylinder length="0.1" radius="0.02"/>
+                <box size="0.1 0.1 0.1"/>
+            </geometry>
+            <origin xyz="0.9 0.3 0" rpy="1.57 0 0"/>
+            <material name="temp2">
+                <color rgba="0.4 0.4 0.4 1.0"/>
+            </material>
+        </visual>
+
+         <visual name="vis2">
+            <geometry>
+                <cylinder length="0.1" radius="0.01"/>
+                <box size="0.1 0.1 0.1"/>
+            </geometry>
+            <origin xyz="0.9 0.3 0" rpy="0 0 0"/>
+            <material name="temp4">
+                <color rgba="0.4 0.4 0.4 1.0"/>
+            </material>
+        </visual>
+        
+        
+        <origin xyz="0.9 0.3 0" rpy="1.57 0 0"/>
+    </link>
+
+
+   <!-- Joints -->
+
+   <!-- Place Gokart chassis ontop of base link-->
+   <joint name="Gokart_chassi_base_joint" type="fixed"/>
+        <parent link="ap4_base_link"/>
+        <child link="gokart_chassi"/>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+   </joint>
+</robot>

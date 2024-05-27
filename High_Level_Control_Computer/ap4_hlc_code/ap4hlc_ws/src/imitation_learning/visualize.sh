@@ -1,0 +1,2 @@
+python image_display.py  /home/research/repositories/autonomous_platform/High_Level_Control_Computer/ap4_hlc_code/recorded_data/training/default/image_data_part_1_1713174405.5135002.pkl
+
