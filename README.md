@@ -1,7 +1,5 @@
 # Autonomous Platform (Gen4)
 
-Attention: To download and train [data and the model](https://huggingface.co/datasets/hamidebadi/autonomous_platform_gokartcentrallen_imitation_learning_dataset) either follow [huggingface instruction](https://huggingface.co/docs/hub/repositories-getting-started) or after adding your SSH public key to your user settings  , request for permission and clone the repo as a [submodule](/.gitmodules) by adding `--recurse-submodules` when you clone the repository.
-
 
 [![Source code](Images/gh.png)](https://github.com/infotiv-research/autonomous_platform)
 
@@ -12,18 +10,15 @@ $ git clone --recurse-submodules http://gitlab.infotivlab.se/internal-developmen
 $ git clone --recurse-submodules https://github.com/infotiv-research/autonomous_platform
 ```
 
-![low level overview](Images/3d-low.gif)
-
 This is the repository for Autonomous Platform at Infotiv Technology Development. 
 - The beginning of the fourth generation of Autonomous Platform was created by **Fredrik Juthe** and **Erik Magnusson** as part of a master thesis at Chalmers University of technology spring 2023 under supervision of **Hamid Ebadi**. The master thesis designed the system E/E architecture and implemented a base on which future functionality could be added to. A published version of the thesis with the title of **"Design of a modular centralized E/E and software architecture for a small-scale automotive platform"** is accessible in [in this link ![PDF](Images/PDF_file_icon.svg.png) ](Master_Thesis2023.pdf).
 
-[![Design of a modular centralized E/E and software architecture for a small-scale automotive platform](Images/thesis.png)](Master_Thesis2023.pdf)
 
 
 - The implementation of software pipeline for Imitation Learning for achieving autonomous driving using both behavioral cloning (BC) and Human Gated Dataset Aggregation (HG-DAgger) is done by **Arvid Petersén** and **Johan Wellander**  under supervision of **Hamid Ebadi** as a part of a master thesis with the title of **Autonomous Driving via Imitation Learning in a Small-Scale Automotive Platform - a Comparison Between BC, HG-DAgger, and the use of Various Inputs**  that is accessible [in this link ![PDF](Images/PDF_file_icon.svg.png) ](Master_Thesis2024.pdf).
 
 [![Design of a modular centralized E/E and software architecture for a small-scale automotive platform](Images/Spring_2024/thesis.png)](Master_Thesis2024.pdf)
-
+[![Design of a modular centralized E/E and software architecture for a small-scale automotive platform](Images/thesis.png)](Master_Thesis2023.pdf)
 
 
 [Video Demo](https://www.youtube.com/watch?v=8izLmmYHW0s) ([raw footage](https://www.youtube.com/watch?v=A2l_nDKsU7g)):
@@ -140,16 +135,18 @@ The autonomous driving (AD) is implemented using the [Imitation library](https:/
 
 ### Training Data
 
+Attention: To download and train [data and the model](https://huggingface.co/datasets/hamidebadi/autonomous_platform_gokartcentrallen_imitation_learning_dataset) either follow [huggingface instruction](https://huggingface.co/docs/hub/repositories-getting-started) or after adding your SSH public key to your user settings  , request for permission and clone the repo as a [submodule](/.gitmodules) by adding `--recurse-submodules` when you clone the repository.
+
 All recorded data used for training and validation in the project can be found [here.](https://huggingface.co/datasets/hamidebadi/autonomous_platform_gokartcentrallen_imitation_learning_dataset)
 
 Examples of the data can be seen below:
-<br />
+
 ![Orb positions overlay on color image](Images/Spring_2024/ORBs.png)
-<br />
+
 Orb positions overlay on color image
-<br />
+
 ![View from depth camera](Images/Spring_2024/Depth_image.png)
-<br />
+
 View from depth camera
 
 ## Start AP4 <a name="How-to-start-Autonomous-Platform-Generation-4"></a>
@@ -227,6 +224,10 @@ If the topics and nodes show up, the system has started correctly and can be con
 ## Donkey Car simulation
 
 How to use the donkey car simulator can be found in /Imitation_Learning/README.md
+
+
+![low level overview](Images/3d-low.gif)
+
 
 ## Record data to train Imitation Learning Network
 
