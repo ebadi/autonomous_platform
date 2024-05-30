@@ -20,31 +20,28 @@ This is the repository for Autonomous Platform at Infotiv Technology Development
 [![Design of a modular centralized E/E and software architecture for a small-scale automotive platform](Images/thesis.png)](Master_Thesis2023.pdf)
 
 
-- The implementation of software pipeline for Imitation Learning for achieving autonomous driving using both behavioral cloning (BC) and Human Gated Dataset Aggregation (HG-DAgger) is done by **Arvid Petersén** and **Johan Wellander** as a part of a master thesis with the title of **Autonomous Driving via Imitation Learning in a Small-Scale Automotive Platform - a Comparison Between BC, HG-DAgger, and the use of Various Inputs**  that is accessible [in this link ![PDF](Images/PDF_file_icon.svg.png) ](Master_Thesis2024.pdf).
+- The implementation of software pipeline for Imitation Learning for achieving autonomous driving using both behavioral cloning (BC) and Human Gated Dataset Aggregation (HG-DAgger) is done by **Arvid Petersén** and **Johan Wellander**  under supervision of **Hamid Ebadi** as a part of a master thesis with the title of **Autonomous Driving via Imitation Learning in a Small-Scale Automotive Platform - a Comparison Between BC, HG-DAgger, and the use of Various Inputs**  that is accessible [in this link ![PDF](Images/PDF_file_icon.svg.png) ](Master_Thesis2024.pdf).
 
 [![Design of a modular centralized E/E and software architecture for a small-scale automotive platform](Images/Spring_2024/thesis.png)](Master_Thesis2024.pdf)
 
 
 
+[Video Demo](https://www.youtube.com/watch?v=8izLmmYHW0s) ([raw footage](https://www.youtube.com/watch?v=A2l_nDKsU7g)):
+
+[![AP4 Autonomous Driving](https://img.youtube.com/vi/8izLmmYHW0s/0.jpg)](https://www.youtube.com/watch?v=8izLmmYHW0s)
 
 
-
-Link to when the go-kart is driving autonomously: [AP4 Autonomous Driving](https://www.youtube.com/watch?v=2JW2l2a4bSU&ab_channel=JohanWellander)
-
-
-
-
-[![INFOTIV logo](Images/infotiv-logo.png)](https://www.infotiv.se)
-[![Chalmers logo](Images/chalmers.png)](https://www.chalmers.se)
 
 - The __latest public__ version of documentation and source code for Autonomous Platform (AP) project is available in the following address: [https://infotiv-research.github.io](https://infotiv-research.github.io) and [https://github.com/infotiv-research](https://github.com/infotiv-research).
 - The printer friendly version of this document is [available in this link ![PDF](Images/PDF_file_icon.svg.png)](AutonomousPlatform.pdf).
 
 ## Introduction
 
-![Front view of platform after Master's thesis spring 2023](Images/Pictures/front_view_transparent.png)
 
 Autonomous Platform (generation 4) project is a platform on which internal and external research projects can be tested on. (i.e Autonomous Drive algorithms) and to expand the knowledgeable in different aspects of software and hardware system development. The purpose of this repository is to collect all the software components in one mono-repository, meaning all software (& hardware design) for the different components is placed in a single repository. Any future work on autonomous platform should be integrated into one of the repositories sub directories. This means that any future development or research can always refer back to previous work, making it a viable long term project at Infotiv AB.
+
+![Front view of platform after Master's thesis spring 2023](Images/Pictures/front_view_transparent.png)
+
 
 ## Features and Capabilities <a name="Features-Capabilities"></a>
 
@@ -58,7 +55,6 @@ AP4 is capable to be remotely controlled using an xbox 360 controller.  The xbox
 
 A wifi router is mounted on the back plate, this allows developers to connect to the software whilst it is running to monitor internal states. High-level software can stream commands to the low-level software remotely.
 
-![View of the backplate where the wifi router and Raspberry Pi is mounted](Images/Pictures/implemented_functionalities/back_view2.jpg)
 
 ### Accelerating, Brake & Steering
 
@@ -98,6 +94,8 @@ High-level is supposed to be run on a high performance computer and can be run w
 
 The three software components are connected through hardware and software links. High-level and low-level software is connected using an ethernet interface, meaning the two softwares should be run whilst connected to the same network. The low-level control is connected to the embedded control through a CAN bus network. A custom CAN library and interface has been created to link the embedded control with the low-level control.
 
+![View of the backplate where the wifi router and Raspberry Pi is mounted](Images/Pictures/implemented_functionalities/back_view2.jpg)
+
 ### High-level control
 
 The high-level software consists of three components, an autonomous driving algorithm and a digital twin interface with the Gazebo physics simulator and a switch which sends commands to either the digital twin or the physical platform. As of June 2023 only a simple digital twin is implemented in this software layer. Starting up the high-level control container will start up Gazebo and Rviz. See `FUTURE_WORK.md` for what could be implemented.
@@ -110,6 +108,7 @@ In the illustration above, three components can be seen. Autonomous driving stac
 - __Gazebo Physics Simulator__ Is the proposed digital twin simulation environment. It integrates seamlessly with the ROS2 framework. The physical dimensions and driving dynamics can be configured in xml format. Different simulation environments can be setup and saved as world files. Meaning different AD scenarios can be tested easily.
 
 The high level control folder, `High_Level_Control_Computer` consist of a docker container and a folder with software. The software can start a simple digital twin of Autonomous platform Generation 4. The folder contains a `docker-compose` file which starts a docker container and mounts the `ap4_hlc_code` folder in the container. A ROS2 launch file is then run which starts up the digital twin. The container can be started on any device supporting graphics, i.e a laptop.
+
 
 ### Low-level control
 
@@ -327,3 +326,16 @@ The documentation is split up into smaller parts to keep information manageable 
 - [`ISSUES_AND_FUTURE_WORK.md`](ISSUES_AND_FUTURE_WORK.md) : A Comprehensive list of known bugs & issues and possible future work to be done on the platform.
 - [`REQ_SPEC_BOOM.xlsx`](REQ_SPEC_BOOM.xlsx) contains a list of decided upon requirements and specifications which the autonomous platform should follow. A complete bill of materials (hardware components) can be found in this file. It contains items, what purpose they serve, where they can be bought and a total estimated cost.
   As of *June 2023* the total cost is 16500 SEK to build the base platform and have spare parts over.
+
+
+## Thanks
+
+
+[![INFOTIV logo](Images/infotiv-logo.png)](https://www.infotiv.se)
+[![Chalmers logo](Images/chalmers.png)](https://www.chalmers.se)
+[![GokartCentrallen logo](Images/gokartcentrallen.png)](https://gokartcentralen.se/)
+
+We would like to extend thanks [Gokartcentralen in Kungälv](https://gokartcentralen.se/kungalv/) 
+for generously allowing us to drive, test, and validate our go-kart at their track.
+Without [Gokartcentralen](https://gokartcentralen.se/) and the helpful individuals working there, this project
+would not have turned out as it did.
