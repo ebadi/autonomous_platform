@@ -59,12 +59,14 @@ sudo systemctl status startup_lowlevel.service
 
 output:
 
-![systemd status](Images/extra_documentation_images/systemd_status.png)
+![systemd status](Resources/extra_documentation_images/systemd_status.png)
 In the terminal it would explicity say if something has failed and the service did not start properly. Note that it says ERROR in the screenshot above. Something is therefore wrong!
 
 ### Docker Container starting/Building
 
 If the docker container is not built properly none of the hardware interface software will start properly.
+
+Check that the router has internet connection
 
 Try rebuilding the docker container:
 
@@ -80,7 +82,7 @@ If this fails, there could be something wrong with the dockerfile or docker-comp
 
 One possible error is "error creating overlay mount...". See image below.
 
-![docker build error](Images/extra_documentation_images/docker_build_error_1.png)
+![docker build error](Resources/extra_documentation_images/docker_build_error_1.png)
 
 This could occur because a specific docker layer could not be built. Try pruning the existing docker caches and rebuilding. (This will take some time on Raspberry Pi hardware, enter the commands and grab some coffee!!) Rebuilding a docker container without any saved caches takes about 10 minutes.
 
@@ -94,20 +96,20 @@ docker-compose build
 
 Another error that has previously occurred can be seen in the image below.
 
-![docker_build_error](Images/extra_documentation_images/docker_build_error_2.png) Some files in the repository have been corrupted.
+![docker_build_error](Resources/extra_documentation_images/docker_build_error_2.png) Some files in the repository have been corrupted.
 
 To verify that local files are corrupt in the autonomous_platform repository enter the directory and try pulling changes. In a new console:
 
 ```bash
 cd Desktop
 cd GIT
-cd autonomous_platform
+cd autonomous_platform_generation_4
 git pull
 ```
 
 The output will be something like:
 
-![Raspberry pi corrupted repository](Images/extra_documentation_images/raspberry_pi_corrupted_repository.png)
+![Raspberry pi corrupted repository](Resources/extra_documentation_images/raspberry_pi_corrupted_repository.png)
 
 To resolve this issue, delete the corrupted files and pull from gitlab. According to [this](https://stackoverflow.com/questions/4111728/how-do-i-deal-with-corrupted-git-object-files) forum post.
 
@@ -191,7 +193,7 @@ ros2 node list
 
 The expected output (as of 22/8-2023):
 
-![ROS active nodes](Images/extra_documentation_images/hwi_ros_active_nodes.png)
+![ROS active nodes](Resources/extra_documentation_images/hwi_ros_active_nodes.png)
 
 If the correct ROS2 nodes have not been started, check that the container built successfully. Try rebuilding the container manually. Make sure the Raspberry Pi has internet access.
 
@@ -232,7 +234,7 @@ source install/setup.bash
 set environment variable
 
 ```bash
-EXPORT ROS_DOMAIN_ID=1
+export ROS_DOMAIN_ID=1
 ```
 
 Run the ROS2 launch file which starts up the software nodes
@@ -243,7 +245,7 @@ ros2 launch launch_hwi_software_pkg launch_hwi_ros_software.launch.py
 
 The output should look something similar to this once the startup script has been run:
 
-![ROS2 launch](Images/extra_documentation_images/ros2_launch_successfull.png)
+![ROS2 launch](Resources/extra_documentation_images/ros2_launch_successfull.png)
 
 Try restarting the container and verify that the corrected nodes has been started successfully as described above.
 
@@ -262,7 +264,7 @@ Whilst debugging code it can be useful to comment this line out but the software
 
 This is the expected output when the container is manually started:
 
-![docker manual start](Images/extra_documentation_images/docker_container_manual_start.png)
+![docker manual start](Resources/extra_documentation_images/docker_container_manual_start.png)
 
 4. Check communication between low-level-software and SPCU
 

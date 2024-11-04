@@ -53,7 +53,7 @@ Installing Git through command line is preferred. See the official guide [here](
 
 The High level and low level software runs inside a docker containers (on the Development laptop and Raspberry Pi 4b). [Official Docker Page](https://docs.docker.com/get-started/overview/). It is similar to a Virtual Machine, in that it can run software in a separate compartment from the host computer software. It does not take up as much resources as a VM and is much faster to spin up (start). Docker containers uses the following components to create containers.
 
-![Docker file](Images/extra_documentation_images/dockerfile.PNG)
+![Docker file](Resources/extra_documentation_images/dockerfile.PNG)
 
 Dockerfile: [Dockerfile Official Documentation](https://docs.docker.com/engine/reference/builder/). A dockerfile is a text file describing the software environment which will be run in the container. For example, running Ubuntu as a base with with X,Y standard linux packages installed onto it. So every library or package one would install on a linux desktop version, one could define in this file. This dockerfile can then be built into a docker image. (everytime a container is rebuilt, anything saved in it is LOST). See `Hardware_Interface_Low_Level_Computer/dockerfile` for an example of a dockerfile.Therefore software should be written outside the container and passed into the container through volumes. See `Hardware_Interface_Low_Level_Computer/docker-compose` how this is performed by mounting volumes.
 
@@ -229,11 +229,11 @@ There are a few concepts which are very important to understand in order to unde
 
 [ROS2 Nodes official Documentation](https://docs.ros.org/en/humble/Tutorials/Beginner-CLI-Tools/Understanding-ROS2-Nodes/Understanding-ROS2-Nodes.html)
 
-![ROS nodes](Images/Report_sketches/ROS/ROS_nodes.png)
+![ROS nodes](Resources/Report_sketches/ROS/ROS_nodes.png)
 
 Nodes are where the software applications are written. Each node can be seen as a program (written in C++ or Python) performing some task. Weather it be processing information or interfacing with some hardware/software component. A node can perform multiple tasks and supports parallelization if configured correctly. [See Execution Management](https://docs.ros.org/en/humble/Concepts/About-Executors.html)
 
-![ROS node graph](Images/Report_sketches/ROS/ROS_node_graph.png)
+![ROS node graph](Resources/Report_sketches/ROS/ROS_node_graph.png)
 
 Nodes can communicate with other nodes using Topics, Services or Actions. This means sending information between them using a standardized communication interface. It is up for the developer to structure how information should be received and sent from nodes. This is done in the nodes themselves.
 
@@ -243,7 +243,7 @@ The communication between different ROS2 components on a network uses [DDS Middl
 
 [ROS2 Topic Official Documentation](https://docs.ros.org/en/humble/Tutorials/Beginner-CLI-Tools/Understanding-ROS2-Topics/Understanding-ROS2-Topics.html)
 
-![ROS publisher subscriber](Images/Report_sketches/ROS/ROS_publisher_subscriber.png)
+![ROS publisher subscriber](Resources/Report_sketches/ROS/ROS_publisher_subscriber.png)
 
 Topics are the means in which different Nodes can send and receive specific information. Information can be broadcasted using publishers and listen to using subscribers. These communication channels are called topics, each topic contains a topic name and a data field. The topic name determines what channel it will be sent over and the data field contains the information itself.
 
@@ -262,7 +262,7 @@ Note: There exists multiple [Quality of Service](https://docs.ros.org/en/rolling
 
 [ROS2 Services Official Documentation](https://docs.ros.org/en/humble/Tutorials/Beginner-CLI-Tools/Understanding-ROS2-Services/Understanding-ROS2-Services.html)
 
-![ROS service](Images/Report_sketches/ROS/ROS_service.png)
+![ROS service](Resources/Report_sketches/ROS/ROS_service.png)
 
 Services work much like the topics, but there is a key difference. a node can request information (structured as a topic) from one node, and is guaranteed to receive information back.
 
@@ -272,7 +272,7 @@ Request functionality has to be created by the developer and is not something th
 
 [ROS2 Actions Official Documentation](https://docs.ros.org/en/humble/Tutorials/Beginner-CLI-Tools/Understanding-ROS2-Actions/Understanding-ROS2-Actions.html)
 
-![ROS action](Images/Report_sketches/ROS/ROS_action.png)
+![ROS action](Resources/Report_sketches/ROS/ROS_action.png)
 
 #### Launch files
 
@@ -407,7 +407,7 @@ PlatformIO developed code could be tested offline on a local host computer conne
 
 The image below illustrate how a speed sensor sends data to `High_Level_Control_Computer` and further to development PC.
 
-![communication overview](Images/AP-overview.drawio.png)
+![communication overview](Resources/AP-overview.drawio.png)
 
 The diagram below shows different types of communication channels and IP address for different components.
 

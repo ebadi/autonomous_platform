@@ -52,7 +52,7 @@ sudo systemctl status startup_lowlevel.service
 
 output:
 
-![systemd status](../Images/extra_documentation_images/systemd_status.png)
+![systemd status](../Resources/extra_documentation_images/systemd_status.png)
 In the terminal it would explicity say if something has failed and the service did not start properly. It will also explain exactly what failed. Note that it says ERROR in the screenshot above. Something is therefore wrong! Resolve any issues if present and reboot Raspberry Pi 4b.
 
 ### No ROS2 topic shows in terminal

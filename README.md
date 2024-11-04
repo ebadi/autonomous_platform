@@ -1,7 +1,7 @@
 # Autonomous Platform (Gen4)
 
 
-[![Source code](Images/gh.png)](https://github.com/infotiv-research/autonomous_platform)
+[![Source code](Resources/gh.png)](https://github.com/infotiv-research/autonomous_platform)
 
 [ Link to the github repo](https://github.com/infotiv-research/autonomous_platform)
 
@@ -11,14 +11,14 @@ $ git clone --recurse-submodules https://github.com/infotiv-research/autonomous_
 ```
 
 This is the repository for Autonomous Platform at Infotiv Technology Development. 
-- The beginning of the fourth generation of Autonomous Platform was created by **Fredrik Juthe** and **Erik Magnusson** as part of a master thesis at Chalmers University of technology spring 2023 under supervision of **Hamid Ebadi**. The master thesis designed the system E/E architecture and implemented a base on which future functionality could be added to. A published version of the thesis with the title of **"Design of a modular centralized E/E and software architecture for a small-scale automotive platform"** is accessible in [in this link ![PDF](Images/PDF_file_icon.svg.png) ](Master_Thesis2023.pdf).
+- The beginning of the fourth generation of Autonomous Platform was created by **Fredrik Juthe** and **Erik Magnusson** as part of a master thesis at Chalmers University of technology spring 2023 under supervision of **Hamid Ebadi**. The master thesis designed the system E/E architecture and implemented a base on which future functionality could be added to. A published version of the thesis with the title of **"Design of a modular centralized E/E and software architecture for a small-scale automotive platform"** is accessible in [in this link ![PDF](Resources/PDF_file_icon.svg.png) ](Master_Thesis2023.pdf).
 
 
 
-- The implementation of software pipeline for Imitation Learning for achieving autonomous driving using both behavioral cloning (BC) and Human Gated Dataset Aggregation (HG-DAgger) is done by **Arvid Petersén** and **Johan Wellander**  under supervision of **Hamid Ebadi** as a part of a master thesis with the title of **Autonomous Driving via Imitation Learning in a Small-Scale Automotive Platform - a Comparison Between BC, HG-DAgger, and the use of Various Inputs**  that is accessible [in this link ![PDF](Images/PDF_file_icon.svg.png) ](Master_Thesis2024.pdf).
+- The implementation of software pipeline for Imitation Learning for achieving autonomous driving using both behavioral cloning (BC) and Human Gated Dataset Aggregation (HG-DAgger) is done by **Arvid Petersén** and **Johan Wellander**  under supervision of **Hamid Ebadi** as a part of a master thesis with the title of **Autonomous Driving via Imitation Learning in a Small-Scale Automotive Platform - a Comparison Between BC, HG-DAgger, and the use of Various Inputs**  that is accessible [in this link ![PDF](Resources/PDF_file_icon.svg.png) ](Master_Thesis2024.pdf).
 
-[![Design of a modular centralized E/E and software architecture for a small-scale automotive platform](Images/Spring_2024/thesis.png)](Master_Thesis2024.pdf)
-[![Design of a modular centralized E/E and software architecture for a small-scale automotive platform](Images/thesis.png)](Master_Thesis2023.pdf)
+[![Design of a modular centralized E/E and software architecture for a small-scale automotive platform](Resources/Spring_2024/thesis.png)](Master_Thesis2024.pdf)
+[![Design of a modular centralized E/E and software architecture for a small-scale automotive platform](Resources/thesis.png)](Master_Thesis2023.pdf)
 
 
 [Video Demo](https://www.youtube.com/watch?v=8izLmmYHW0s) ([raw footage](https://www.youtube.com/watch?v=A2l_nDKsU7g)):
@@ -28,14 +28,14 @@ This is the repository for Autonomous Platform at Infotiv Technology Development
 
 
 - The __latest public__ version of documentation and source code for Autonomous Platform (AP) project is available in the following address: [https://infotiv-research.github.io](https://infotiv-research.github.io) and [https://github.com/infotiv-research](https://github.com/infotiv-research).
-- The printer friendly version of this document is [available in this link ![PDF](Images/PDF_file_icon.svg.png)](AutonomousPlatform.pdf).
+- The printer friendly version of this document is [available in this link ![PDF](Resources/PDF_file_icon.svg.png)](AutonomousPlatform.pdf).
 
 ## Introduction
 
 
 Autonomous Platform (generation 4) project is a platform on which internal and external research projects can be tested on. (i.e Autonomous Drive algorithms) and to expand the knowledgeable in different aspects of software and hardware system development. The purpose of this repository is to collect all the software components in one mono-repository, meaning all software (& hardware design) for the different components is placed in a single repository. Any future work on autonomous platform should be integrated into one of the repositories sub directories. This means that any future development or research can always refer back to previous work, making it a viable long term project at Infotiv AB.
 
-![Front view of platform after Master's thesis spring 2023](Images/Pictures/front_view_transparent.png)
+![Front view of platform after Master's thesis spring 2023](Resources/Pictures/front_view_transparent.png)
 
 
 ## Features and Capabilities <a name="Features-Capabilities"></a>
@@ -75,6 +75,10 @@ Consists of a led acid battery and a power supply unit, both can be connected to
 
 The digital twin is implemented in the high-level software. It is described in detail in `High_Level_Control_Computer/README.md`. It is automatically started when the high-level docker container is started.
 
+### Imitation Learning
+Imitation learning is used to learn driving in an environment by observing an expert and by imitating its behavior
+
+
 ## System Architecture <a name="System-Architecture"></a>
 
 The autonomous platform has three different software components:
@@ -85,17 +89,17 @@ The autonomous platform has three different software components:
 
 High-level is supposed to be run on a high performance computer and can be run without being connected to the rest of the system. Low-level control is run on the Raspberry Pi 4b mounted on the hardware platform. The embedded control is run on the ECU nodes mounted to the platform. Software in high-level and low-level are communicating using the Robot Operating System (ROS2) framework. Software in the embedded control is written using the Arduino framework.
 
-![System architecture and software layers illustrated](Images/Report_sketches/SW/software_architecture_detailed_overview.png)
+![System architecture and software layers illustrated](Resources/Report_sketches/SW/software_architecture_detailed_overview.png)
 
 The three software components are connected through hardware and software links. High-level and low-level software is connected using an ethernet interface, meaning the two softwares should be run whilst connected to the same network. The low-level control is connected to the embedded control through a CAN bus network. A custom CAN library and interface has been created to link the embedded control with the low-level control.
 
-![View of the backplate where the wifi router and Raspberry Pi is mounted](Images/Pictures/implemented_functionalities/back_view2.jpg)
+![View of the backplate where the wifi router and Raspberry Pi is mounted](Resources/Pictures/implemented_functionalities/back_view2.jpg)
 
 ### High-level control
 
 The high-level software consists of three components, an autonomous driving algorithm and a digital twin interface with the Gazebo physics simulator and a switch which sends commands to either the digital twin or the physical platform. As of June 2023 only a simple digital twin is implemented in this software layer. Starting up the high-level control container will start up Gazebo and Rviz. See `FUTURE_WORK.md` for what could be implemented.
 
-![high level overview](Images/Report_sketches/SW/high_level_overview.png)
+![high level overview](Resources/Report_sketches/SW/high_level_overview.png)
 In the illustration above, three components can be seen. Autonomous driving stack, digital switch and gazebo physics simulator. These components should be implemented as a set of ROS2 computational nodes. Note: This is the intended structure but has not been implemented yet.
 
 - __Autonomous Drving Stack__ is the proposed set of algorithms which takes in sensor information and responds with suitable actuator control commands.
@@ -111,14 +115,14 @@ The low-level software is responsible for taking platform commands sent from hig
 
 The hardware interface folder, `Hardware_Interface_Low_level_pc` , contains a `docker-compose` file which starts a docker container and mounts the `ap4_hwi_code` folder in the container. A ROS2 launch file is then run which starts up software that interfaces with hardware. This software is specific for the hardware mounted on autonomous platform, therefore it can only be started properly on the Raspberry Pi 4b mounted onto the platform.
 
-![low level overview](Images/Report_sketches/SW/low_level_overview.png)
+![low level overview](Resources/Report_sketches/SW/low_level_overview.png)
 
 ### Embedded control
 
 The embedded software is implemented on the ECUs placed on the platform. This firmware acts as an interface between hardware (actuators or sensors) and pass data to and from the low-level software.
 Currently a single embedded software is implemented, Steering and Propulsion Control Unit (SPCU).
 
-![Embedded control](Images/Report_sketches/SW/Generic_ecu_software.png)
+![Embedded control](Resources/Report_sketches/SW/Generic_ecu_software.png)
 
 `CAN_Nodes_Microcontroller_Code` folder contain PlatformIO projects for each ECU, that is the embedded software running on the generic ECUs. An example of ECU is the SPCU (Steering, Propulsion Control Unit).Furthermore here is the CAN database and the corresponding CAN-library located.
 
@@ -128,26 +132,28 @@ Currently a single embedded software is implemented, Steering and Propulsion Con
 The autonomous driving (AD) is implemented using the [Imitation library](https://imitation.readthedocs.io/en/latest/) where the structure for Behavioral Cloning (BC) and Human Gated Dataset Aggregation (HG-DAgger) are developed for this project. All of the AD is handled by the high-level docker and the overall structure of the implementation can be seen below.
 
 
-![low level overview](Images/extra_documentation_images/start_dagger.png)
+![low level overview](Resources/extra_documentation_images/start_dagger.png)
 
 
 
 
 ### Training Data
 
-Attention: To download and train [data and the model](https://huggingface.co/datasets/hamidebadi/autonomous_platform_gokartcentrallen_imitation_learning_dataset) either follow [huggingface instruction](https://huggingface.co/docs/hub/repositories-getting-started) or after adding your SSH public key to your user settings  , request for permission and clone the repo as a [submodule](/.gitmodules) by adding `--recurse-submodules` when you clone the repository.
+To collect data from training and test drive rosbag2 can be found in [High_Level_Control_Computer/IMITATION_LEARNING.md](High_Level_Control_Computer/IMITATION_LEARNING.md)
+To collect data from training and test drive rosbag2 is used. The data collection is done in the High Level Planner Docker and specifically in the folder bagfiles_2024, within source. With the High Level Control Docker running, the directory is accessed as follows.
 
-All recorded data used for training and validation in the project can be found [here.](https://huggingface.co/datasets/hamidebadi/autonomous_platform_gokartcentrallen_imitation_learning_dataset)
+
+Attention: To download and train [data and the model](https://huggingface.co/datasets/hamidebadi/autonomous_platform_gokartcentrallen_imitation_learning_dataset) either follow [huggingface instruction](https://huggingface.co/docs/hub/repositories-getting-started) or after adding your SSH public key to your user settings  , request for permission and clone the repo as a [submodule](/.gitmodules) by adding `--recurse-submodules` when you clone the repository. All recorded data used for training and validation in the project can be found [here.](https://huggingface.co/datasets/hamidebadi/autonomous_platform_gokartcentrallen_imitation_learning_dataset)
 
 Examples of the data can be seen below:
+- Orb positions overlay on color image
+- View from depth camera
 
-![Orb positions overlay on color image](Images/Spring_2024/ORBs.png)
+![Orb positions overlay on color image](Resources/Spring_2024/ORBs.png)
+![View from depth camera](Resources/Spring_2024/Depth_image.png)
 
-Orb positions overlay on color image
 
-![View from depth camera](Images/Spring_2024/Depth_image.png)
 
-View from depth camera
 
 ## Start AP4 <a name="How-to-start-Autonomous-Platform-Generation-4"></a>
 
@@ -165,7 +171,9 @@ System will now boot up. The wheels will move back and forth.
 
 The platform should beep again after waiting 60 seconds and turn right to left, meaning it is ready to use.
 
-The platform should be controllable using the xbox controller. By holding down the X button and moving the left joystick the front wheels should move and back wheels turn forwards.
+The platform should be controllable using the xbox controller. By holding down the right bumper button and moving the left joystick the front wheels should move and back wheels turn forwards.
+
+- Turn of the AP4 through flipping back the start switch
 
 ## Connect (wireless) and start AP software stack
 
@@ -205,7 +213,7 @@ ros2 node list
 
 The expected output will be something like this:
 
-![ROS active nodes](Images/extra_documentation_images/hwi_ros_active_nodes.png)
+![ROS active nodes](Resources/extra_documentation_images/hwi_ros_active_nodes.png)
 
 Information sent between nodes (such as sensor data or CAN bus traffic) can be monitored using
 
@@ -221,86 +229,8 @@ ros2 topic list
 
 If the topics and nodes show up, the system has started correctly and can be controlled by either an xbox control or any future high-level software control.
 
-## Donkey Car simulation
-
-How to use the donkey car simulator can be found in /Imitation_Learning/README.md
 
 
-![low level overview](Images/3d-low.gif)
-
-
-## Record data to train Imitation Learning Network
-
-To collect data from training and test drive rosbag2 is used. The data collection is done in the High Level Planner Docker and specificilly in the folder bagfiles_2024, within soruce. With the High Level Control Docker running, the directory is accesed as follows.
-
-```bash
-docker exec -it ap4hlc bash
-source rosbag_startup.bash
-```
-
-or
-
-```bash
-docker exec -it ap4hlc bash
-cd ap4hlc_ws
-source install/setup.bash
-cd ap4hlc_ws/src/bagfiles_2024
-```
-
-To record topics from the physical Go-Kart you will have to be in ROS_DOMAIN_ID=1 such as
-
-```bash
-export ROS_DOMAIN_ID=1
-```
-
-When data is published to the topics which you want to record data from (probably /cmd_vel, /color/image, /stereo/depth, /imu)
-
-```bash
-ros2 bag record cmd_vel_stamped color/image stereo/depth imu
-```
-
-The recorded data can be replayed as, replacing <bag> with the desired bag:
-
-```bash
-ros2 bag play <bag>
-```
-
-The playback can also be played as a loop
-
-```bash
-ros2 bag play --loop <bag>
-```
-
-Empty bagfiles directory
-
-```bash
-rm -R -- */
-```
-
-to delete all files in a directory wihtout deleting any folders run:
-
-```bash
-find . -type f -delete
-```
-
-Instead of saving the data to a rosbag and then play it back creating a .pkl file it can also directly be recorded into a .pkl file using the following command:
-
-```bash
-docker exec -it ap4hlc bash
-source data_collection_startup.bash
-```
-
-To train the network using the collected data, the data is written to a .pkl file as this allows training the network fully outside of ROS. This is done by playing the desired rosbag while running the file data_collection.py. It is important to start the data_collection file before starting playing the rosbag. It is also important to play the rosbag with loop for it to be able to collect all the messages.
-
-The subscriber queue deletes the messages with the oldest timestamp first. Therefore no messages eill be collected on the seccond run of the loop.
-
-The data_collection.py file is run in the High Level Computer docker as:
-
-```bash
-ros2 run autonomous_platform_robot_description_pkg data_collection.py 
-```
-
-The .pkl file can then be used as input within train_DAgger.py, found in /autonomous_platform/Imitation_Learning/train_Dagger.py
 
 ## Repository overview
 
@@ -312,10 +242,12 @@ The repository consists of three directories containing software (with a few sub
 
 Within these directories, there exists useful documentation regarding each software component and sub components.
 
-- `CAN_Nodes_Microcontroller_Code/README.md`
-- `CAN_Nodes_Microcontroller_Code/CAN_LIBRARY_DATABASE/README.md`
-- `Hardware_Interface_Low_Level_Computer/README.md`
-- `High_Level_Control_Computer/README.md`
+- [`CAN_Nodes_Microcontroller_Code/README.md`](CAN_Nodes_Microcontroller_Code/README.md)
+- [`CAN_Nodes_Microcontroller_Code/CAN_LIBRARY_DATABASE/README.md`](CAN_Nodes_Microcontroller_Code/CAN_LIBRARY_DATABASE/README.md)
+- [`Hardware_Interface_Low_Level_Computer/README.md`](Hardware_Interface_Low_Level_Computer/README.md)
+- [`High_Level_Control_Computer/README.md`](High_Level_Control_Computer/README.md)
+- [`High_Level_Control_Computer/IMITATION_LEARNING.md`](High_Level_Control_Computer/IMITATION_LEARNING.md)
+- [`High_Level_Control_Computer/DONKEY_CAR_SETUP.md`](High_Level_Control_Computer/DONKEY_CAR_SETUP.md)
 
 The documentation is split up into smaller parts to keep information manageable and separated according to what can be relevant at a given time. The major documentation files located in the root directory of the repository are:
 
@@ -332,9 +264,9 @@ The documentation is split up into smaller parts to keep information manageable 
 ## Thanks
 
 
-[![INFOTIV logo](Images/infotiv-logo.png)](https://www.infotiv.se)
-[![Chalmers logo](Images/chalmers.png)](https://www.chalmers.se)
-[![GokartCentrallen logo](Images/gokartcentrallen.png)](https://gokartcentralen.se/)
+[![INFOTIV logo](Resources/infotiv-logo.png)](https://www.infotiv.se)
+[![Chalmers logo](Resources/chalmers.png)](https://www.chalmers.se)
+[![GokartCentrallen logo](Resources/gokartcentrallen.png)](https://gokartcentralen.se/)
 
 We would like to extend thanks [Gokartcentralen in Kungälv](https://gokartcentralen.se/kungalv/) 
 for generously allowing us to drive, test, and validate our go-kart at their track.

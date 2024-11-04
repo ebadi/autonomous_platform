@@ -37,7 +37,7 @@ The digital twin of autonomous platform is created using Universal Robot Descrip
 
 These files describe everything from the physical platform properties to what sensors are simulated. How the platform is controlled can also be configured. The end result can be seen below, a simplified gokart platform with wheels that can be controlled.
 
-![RVIZ](../Images/Report_sketches/digital_twin/rviz_without_axis_names.png)
+![RVIZ](../Resources/Report_sketches/digital_twin/rviz_without_axis_names.png)
 
 ### Sensor plugins
 
@@ -59,9 +59,9 @@ Worlds can be created using the Gazebo graphical application and saved into the 
 
 Gazebo has access to an exentsive library of 3D models which can be used to crate interesting environments.
 
-![Example Gazebo world top view](../Images/Report_sketches/digital_twin/gazebo_world2.png)
+![Example Gazebo world top view](../Resources/Report_sketches/digital_twin/gazebo_world2.png)
 
-![Example Gazebo world 3D view](../Images/Report_sketches/digital_twin/gazebo_world1.png)
+![Example Gazebo world 3D view](../Resources/Report_sketches/digital_twin/gazebo_world1.png)
 
 ### Software Control Switch
 

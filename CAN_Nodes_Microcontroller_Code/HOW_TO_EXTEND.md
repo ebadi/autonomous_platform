@@ -247,7 +247,7 @@ Very briefly explained, here are the steps you should take to implement new func
 
 The CAN database follows dbc format, [CAN and dbc guide](https://www.csselectronics.com/pages/can-dbc-file-database-intro). The dbc file can be edited using a dbc-editor an example of this is the [KVASER-DATABASE-EDITOR](https://kvaser-database-editor.software.informer.com/2.4/). When opening the dbc file for AP4 in kvaser, it will look like the figure below:
 
-![Images/kvaser.png](Resources/kvaser.png)
+![Resources/kvaser.png](Resources/kvaser.png)
 
 1. **Message Name** in the database. This is the frames defined for a CAN message. What id, Data length (bytes) etc.
 1. **Signals** in each message. User defined regarding name, placement in the data-field, offsets, factor and so on.
@@ -255,7 +255,7 @@ The CAN database follows dbc format, [CAN and dbc guide](https://www.csselectron
 
 In order to make sense of the dbc files, the embedded software needs the information of the dbc file in a c format. Thus AP4 converts dbc file into c-functions and data types, in order to simply encode and decode. Using [howerj dbcc repo](https://github.com/howerj/dbcc) to convert.
 
-![Images/dbc_to_c_illustration.png](Resources/dbc_to_c_illustration.png)
+![Resources/dbc_to_c_illustration.png](Resources/dbc_to_c_illustration.png)
 
 When the dbc is edited and saved, run the following command in a **Linux Machine** whilst located in path: `CAN_Nodes_Microcontroller_Code\CAN_LIBRARY_DATABASE`
 
@@ -265,15 +265,15 @@ When the dbc is edited and saved, run the following command in a **Linux Machine
 
 Down below is a simple flowchart of the way of working with the CAN protocols auto generation and dbc editing.
 
-![Images/CAN.png](Resources/CAN.png)
+![Resources/CAN.png](Resources/CAN.png)
 
 Down below can be seen how all the Software components refers to the same database meaning that a change in the CAN protocol at a single place will affect the whole system.
 
-![Images/can_sw_com_detailed.png](Resources/can_sw_com_detailed.png)
+![Resources/can_sw_com_detailed.png](Resources/can_sw_com_detailed.png)
 
 Also can be seen above how the central master computer, converts CAN messages to ROS2 topics to be later used in higher level algorithms. The *CAN signals To ROS2 Topic Converter* is illustrated in the figure below, implemented on the Raspberry Pi4b that acts as an interface in the central unit. The converter also converts topics to CAN frames that are then transmitted onto the CAN network.
 
-![Images/can_translator_illustration.png](Resources/can_translator_illustration.png)
+![Resources/can_translator_illustration.png](Resources/can_translator_illustration.png)
 
 ### Adding New CAN Frames And Signals
 

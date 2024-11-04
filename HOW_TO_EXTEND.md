@@ -217,7 +217,7 @@ It is recommended to have completed the [internal Infotiv CAN education course](
 
 1. Add new frame(s) and signal(s) for sensor measurements similar to figure below.
 
-![Kvaser speed sensor](Images/kvaser_speed_sensor.PNG)
+![Kvaser speed sensor](Resources/kvaser_speed_sensor.PNG)
 
 NOTE: Use Linux PC for next step (step 3). Push updated CAN_DB.dbc file to git repo. and git pull main branch on Linux PC.
 
@@ -244,7 +244,7 @@ In short, what needs to be added to the ECU template are:
 - Sensor algorithm, decode and encode CAN frame inside loop() function.
   The format of the decode and encode messages can be found inside the generated CAN_DB.h file, example from another sensor can be seen below.
 
-![Velocity encode decode](Images/velocity_encode_decode.PNG)
+![Velocity encode decode](Resources/velocity_encode_decode.PNG)
 
 1. Make sure the code is buildable and upload the code to the microcontroller.
 
@@ -266,7 +266,7 @@ candump can0
 
 Below you can see an output example from candump. It shows which channel the message is being transmitted on (can0), the ID (5DC), the frame size \[8 bits\] and the data bits (00 00 ...).
 
-![candump](Images/candump_showcase.jpg)
+![candump](Resources/candump_showcase.jpg)
 
 #### CAN to ROS communication
 
@@ -355,4 +355,4 @@ ros2 topic list
 ros2 topic echo /from_can_bus
 ```
 
-![ROS2 topic showcase](Images/ros2_topic_showcase.jpg)
+![ROS2 topic showcase](Resources/ros2_topic_showcase.jpg)

@@ -8,7 +8,7 @@ In summary, the Low-level Control & Hardware Interface SW & HW is Hardware speci
 
 Below an illustration of the low level and hardware interfacing software can be seen.
 
-![Low level overview](../Images/Report_sketches/SW/low_level_overview.png)
+![Low level overview](../Resources/Report_sketches/SW/low_level_overview.png)
 
 The software itself is implemented using the ROS2 framework, this software is then run inside a docker container. It is only meant to run on the Raspberry Pi 4b mounted onto autonomous platform and is very hardware specific.
 
@@ -73,15 +73,15 @@ The hardware interface and low level software can communicate with the embedded 
 
 The CAN frames sent over the CAN network must be encoded and decoded correctly and in the same way on both the hardware interface and embedded ECUs. Therefore a unified CAN database file has been constructed for autonomous platform . A helper library is used to convert the CAN database file into a set of C-style data structures.
 
-![CAN communication information transportation illustration.](../Images/Report_sketches/SW/dbc_to_c_illustration.png)
+![CAN communication information transportation illustration.](../Resources/Report_sketches/SW/dbc_to_c_illustration.png)
 
-![CAN communication information transportation illustration.](../Images/Report_sketches/SW/can_db_dependency_graph.png)
+![CAN communication information transportation illustration.](../Resources/Report_sketches/SW/can_db_dependency_graph.png)
 
 Two custom made libraries have then been implemented, one in the embedded software and one in ROS2 in hardware interface and low level software.
 
 How to extend this functionality with new CAN frames and signals is explained in detail in `Hardware_Interface_Low_Level_Computer\HOW_TO_EXTEND.md`. (The parts that are relevant to change in hardware interface and low level software is documented here). How to extended the software for the embedded ECUs is described in `CAN_Nodes_Microcontroller_Code\HOW_TO_EXTEND.md`.
 
-![CAN communication information transportation illustration.](../Images/Report_sketches/SW/can_sw_com_detailed.png)
+![CAN communication information transportation illustration.](../Resources/Report_sketches/SW/can_sw_com_detailed.png)
 
 ### Interfacing with High Level Control Software <a name="Interfacing-with-High-Level-Control-Software"></a>
 
@@ -113,10 +113,10 @@ See section in `SETUP_OF_RASPBERRY_PI.md`
 
 The ECU controlling the steering consists of a lot of loose cables connected with Dupont connectors. These cables should be extended since they now are very short and connected in a better way to avoid loosing the control over the gokart while driving. If the cables would come loose they have been marked with a number between 1-5 for the upper ones and 2.1-2.2 for the lower ones which can be seen in the following figures.
 
-![Illustration of cables to steering ECU.](../Images/extra_documentation_images/loose_cables_1.png)
+![Illustration of cables to steering ECU.](../Resources/extra_documentation_images/loose_cables_1.png)
 
-![Illustration of cables to steering ECU.](../Images/extra_documentation_images/loose_cables_2.png)
+![Illustration of cables to steering ECU.](../Resources/extra_documentation_images/loose_cables_2.png)
 
-![Illustration of cables to steering ECU.](../Images/extra_documentation_images/loose_cables_3.png)
+![Illustration of cables to steering ECU.](../Resources/extra_documentation_images/loose_cables_3.png)
 
-![Illustration of cables to steering ECU.](../Images/extra_documentation_images/loose_cables_4.png)
+![Illustration of cables to steering ECU.](../Resources/extra_documentation_images/loose_cables_4.png)

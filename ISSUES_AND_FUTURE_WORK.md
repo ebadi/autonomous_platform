@@ -15,7 +15,7 @@ It is a known problem that the raspberry pi 4b fills up with junk files and slow
 Over time files on the SD card gets corrupted and affects behavior.
 Common problems are that the docker container cannot be built. A cause for this may be the shutdown procedure of the raspberry pi. Unplugging it to power down may not be optimal. Need to find a solution for properly safely powering down the raspberry pi. Terminal output below.
 
-![Raspberry Pi 4b corrupted files](Images/extra_documentation_images/raspberry_pi_corrupted_repository.png)
+![Raspberry Pi 4b corrupted files](Resources/extra_documentation_images/raspberry_pi_corrupted_repository.png)
 
 See TEST_DEBUGGING.md to see how it is currently resolved.
 
@@ -57,7 +57,7 @@ Many loose / Unlabeled Wires coming out from the back of ECU. Hard to follow exi
 
 - Possible solution: Add a 'Phoenix' style connector to the back of the ECU. Standardized connector type and easily available to buy. Would allow for ECU to be easily removed. A specific phoenix connector which fits into the existing size constraints of the ECU needs to be found. Existing CAD model of ECU HW Node needs to be adjusted accordingly. Existing nodes should be upgrades first. Tommy at Infotiv has a product manual with different types of Phoenix Connectors which can be ordered by Infotiv.
 
-![Phoenix connector](Images/extra_documentation_images/phoenix_connector.png)
+![Phoenix connector](Resources/extra_documentation_images/phoenix_connector.png)
 
 ### Power module
 

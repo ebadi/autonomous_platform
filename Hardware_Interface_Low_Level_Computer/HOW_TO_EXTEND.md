@@ -143,9 +143,9 @@ To describe what does software does in short, this package spawns one ROS2 node 
 
 An illustration for the behavior can be seen in the two figures below:
 
-![CAN frame to ros2 topic overview](../Images/Report_sketches/SW/can_frame_to_ros2_topic_overview.png)
+![CAN frame to ros2 topic overview](../Resources/Report_sketches/SW/can_frame_to_ros2_topic_overview.png)
 
-![../Images/Report_sketches/SW/can_translator_illustration.png](../Images/Report_sketches/SW/can_translator_illustration.png)
+![../Resources/Report_sketches/SW/can_translator_illustration.png](../Resources/Report_sketches/SW/can_translator_illustration.png)
 
 So therefore, for every CAN signal, there has to be a ROS2 publisher and subscriber.
 

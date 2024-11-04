@@ -17,7 +17,7 @@ In order to develop an appropriate propulsion method for the next generation, it
 
 The hall sensor under the pedals. It is connected through \[GND,V_in,V_out\].
 
-![Images/Hall_sensor.jpg](Images/Hall_sensor.jpg)
+![Resources/Hall_sensor.jpg](Resources/Hall_sensor.jpg)
 
 | Accelerate Pedal              | Brake Pedal                        |
 | ----------------------------- | ---------------------------------- |
@@ -25,15 +25,15 @@ The hall sensor under the pedals. It is connected through \[GND,V_in,V_out\].
 | V_in (red)                    | V_in (red)                         |
 | V_out (white) \[0.82-4.35\] V | V_out (brown)      \[0.84-4.33\] V |
 
-![Images/pedal_cables.jpg](Images/pedal_cables.jpg)
+![Resources/pedal_cables.jpg](Resources/pedal_cables.jpg)
 
 From these cables we managed to hotwire in order to read the pedals sensor readings through using a arduino nan  (Arduino code can be found in *\\Segway_Propulsion\\Test_Rig\\ReadBrakePedals*) and according to the setup illustrated below:
 
-![Images/readings.jpg](Images/readings.jpg)
+![Resources/readings.jpg](Resources/readings.jpg)
 
 Even tough a bit blurry but it can be seen how the sensor readings look like. Where the blue line correspond to the accelerator and red to the brake pedal.
 
-![Images/Plots.PNG](Images/Plots.PNG)
+![Resources/Plots.PNG](Resources/Plots.PNG)
 
 ### Additional Finds
 
@@ -41,7 +41,7 @@ Even tough a bit blurry but it can be seen how the sensor readings look like. Wh
 - If for some reason, nothing in the kit seems to work and the kit beeps and blinks most likely it is because the ground between the gokart kit and segway has lost connection
 - If everything seems to be correct put together and is not related to anything mentioned above, it is probably a connector in the gokart kit circuit that is loose. See picture below
 
-![Images/gokart_circuit.jpg](Images/gokart_circuit.jpg)
+![Resources/gokart_circuit.jpg](Resources/gokart_circuit.jpg)
 
 ### How to use on the next Generation Platform
 
@@ -71,7 +71,7 @@ In order to simply test the functionality of the propulsion control a simple loc
 
 |                                                         |
 | :-----------------------------------------------------: |
-| ![Images/wiring_doc_DAC.PNG](Images/wiring_doc_DAC.PNG) |
+| ![Resources/wiring_doc_DAC.PNG](Resources/wiring_doc_DAC.PNG) |
 |               Fig: From manual on MCP4725               |
 
 DAC also has the capability to easily add one more board in parallel, so a total of 2 boards can be used on the same IC^2 bus. The additional MCP4725 library also needs the Adafruit busIO, the later one manage the bus communication easily and userfriendly. So the only neccesary pseudo code in order to operate the MCP4725 DAC becomes:
@@ -107,7 +107,7 @@ Other components was a available Arduino Mega and a oscilloscope to measure the 
 
 |              **DAC Rig**  Wiring              |                   **Ninebot** Wiring                    |
 | :-------------------------------------------: | :-----------------------------------------------------: |
-| ![Images/DAC_setup.jpg](Images/DAC_setup.jpg) | ![Images/Ninebot_wiring.jpg](Images/Ninebot_wiring.jpg) |
+| ![Resources/DAC_setup.jpg](Resources/DAC_setup.jpg) | ![Resources/Ninebot_wiring.jpg](Resources/Ninebot_wiring.jpg) |
 
 ### Results
 
@@ -115,18 +115,18 @@ The test rigs software can be found in `~\autonomous_platform\Documentation\Segw
 
 |                                                           DAC Rig Results                                                           |
 | :---------------------------------------------------------------------------------------------------------------------------------: |
-|                                          ![Images/DAC_Digital.jpg](Images/DAC_Digital.jpg)                                          |
+|                                          ![Resources/DAC_Digital.jpg](Resources/DAC_Digital.jpg)                                          |
 | **Fig**: Comparison between the regular digtal output pin (yellow on Channel 1) and the output voltage from the DAC (blue channel 2 |
-|                                         ![Images/DAC_triangle.jpg](Images/DAC_triangle.jpg)                                         |
+|                                         ![Resources/DAC_triangle.jpg](Resources/DAC_triangle.jpg)                                         |
 |            **Fig**: It is also possible to generate complex signals such as a triangle wave. Now DAC output on channel 1            |
-|                                              ![Images/DAC_sin.jpg](Images/DAC_sin.jpg)                                              |
+|                                              ![Resources/DAC_sin.jpg](Resources/DAC_sin.jpg)                                              |
 |                              **Fig**: Furthermore it is also possible to generate sinusoidal signals.                               |
 
 As the ninebot circuit needs pure analog voltages and not the PWM approximations, the solution whilst using a DAC seems suitable. One other thing noted is that the arduino's analog pin output, cant be controlled in the same manner, as it can only be 0V or 5V. Furthermore with DAC board, arbritary microcontroller can be used.
 
 |                                                                                                                                                                                                Ninebot Rig Results                                                                                                                                                                                                 |
 | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-|                                                                                                                                                                                ![Images/reverse_meas.PNG](Images/reverse_meas.PNG)                                                                                                                                                                                 |
+|                                                                                                                                                                                ![Resources/reverse_meas.PNG](Resources/reverse_meas.PNG)                                                                                                                                                                                 |
 | **Fig:** Whilst doing the testing on DAC with ninebot, we also measured the voltages in each cable, the x-axis in scaled over milli seconds (ms). In order to define the reverse algorithm, it was simply set up to measure signals whilst pressing the pedals manually (2 times rapidly to go into reverse mode). Making it possible to approximate the time constant needed between the presses, $\\tau=200$ ms. |
 |                                                                                                                                                                                                                                                                                                                                                                                                                    |
 |                                                                                                                 [Demo video, demostrating the functionality to control the propulsion using the DAC board.](https://drive.google.com/file/d/1FeQGeAu96iMUcdyh7bQluNmk0nlNBufs/view?usp=share_link)                                                                                                                 |

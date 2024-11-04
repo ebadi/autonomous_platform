@@ -16,7 +16,7 @@ The high level control software is supposed to tell the autonomous platform WHAT
 
 As an example: A high level software component wants the platform to move forward. It relays this on a generic ROS2 topic (i.e /cmd_vel) to the low level software, the low level software then processes it and sends commands specific to the physical platform to the embedded software layer. The low level software would then output hardware specific commands over the CAN bus network.
 
-![High level overview](../Images/Report_sketches/SW/high_level_overview.png)
+![High level overview](../Resources/Report_sketches/SW/high_level_overview.png)
 
 Above is a schematic diagram of how the software in high level control software should be designed. As of August 2023 only a simple digital twin is implemented so far.
 
@@ -167,7 +167,7 @@ Twist_mux takes in two topics for now which is /joystick_cmd_vel (commands from 
 
 The Xbox controller has the highest priority which means that the control from the model can be overridden at all times.
 
-![twist_mux](../Images/extra_documentation_images/twist_mux.png)
+![twist_mux](../Resources/extra_documentation_images/twist_mux.png)
 
 More information about twist_mux can be read here: [Link official twist_mux documentation.](https://wiki.ros.org/twist_mux)
 

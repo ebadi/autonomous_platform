@@ -12,4 +12,4 @@ The implemented SPCU follows the structure and base mentioned in previous chapte
 
 Above is a rendered illustration of the SPCU, with its corresponding modules used for steering and propulsion. Down is a flowchart of the software used for the SPCU. The median run-time of the main-loop is 3 ms. Thus passing the requirement of 20ms for real-time systems.
 
-![Images/SPCU_software_flowchart.png](Resources/SPCU_software_flowchart.png)
+![Resources/SPCU_software_flowchart.png](Resources/SPCU_software_flowchart.png)
