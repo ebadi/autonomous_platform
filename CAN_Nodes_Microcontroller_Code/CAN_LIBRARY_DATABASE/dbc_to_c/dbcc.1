@@ -1,0 +1,161 @@
+.\" Manpage for dbcc
+.\" Contact howe.r.j.89@gmail.com to correct errors or typos.
+.TH dbcc 1 "10 Aug 2021" "1.0.3" "dbcc man page"
+.SH NAME
+dbcc \- Compile DBC files into C code
+.SH SYNOPSIS
+dbcc [-] [-h] [-V] [-v] [-g] [-t] [-x] [-j] [-C] [-N] [-D] [-o dir] [-n version] file*
+.SH DESCRIPTION
+Given a DBC file containing descriptions of CAN messages this program will parse
+that file and generate C functions that can serialize and deserialize those
+messages. Optionally it can produce XML, JSON, or a CSV file, instead of C.
+
+.B **CAN FD IS CURRENTLY NOT SUPPORTED**.
+
+.SH OPTIONS
+
+.TP
+.B -
+Stop processing command line arguments
+
+.TP
+.B -h
+Print a help message to stderr(3) and exit the program unsuccessfully.
+
+.TP
+.B -V
+Print the version information in semver format, well, semver plus a 'v'
+prefix.
+
+.TP
+.B -v
+Increase the verbosity level of the program.
+
+.TP
+.B -g
+Print out the grammar used to parse the DBC files, the DBC format is whitespace
+sensitive so it looks a lot uglier than it should be if the DBC format has been
+designed correctly.
+
+.TP
+.B -t
+Add timestamps to the generated files.
+
+.TP
+.B -x
+Produce an XML file instead of a C code and header file.
+
+.TP
+.B -j
+Produce a JSON file instead of a C code and header file.
+
+.TP
+.B -C
+Produce a CSV file instead of a C code and header file.
+
+.TP
+.B -N
+When generating C code, do not include the CAN ID within the name
+of generated code.
+
+.TP
+.B -b     
+Convert output to BSM (beSTORM) instead of C and header file
+
+.TP
+.B -o dir
+Set the output directory
+
+.TP
+.B -p
+Generate only code to print out CAN messages. Only effect C code generation, if
+neither '-p', '-k' or '-u' are specified all code is generated. This option can
+be specified along with any of the other code limiting options.
+
+.TP
+.B -k
+Generate only code to pack CAN messages. Only effect C code generation, if
+neither '-p', '-k' or '-u' are specified all code is generated. This option can
+be specified along with any of the other code limiting options.
+
+.TP
+.B -u
+Generate only code to unpack CAN messages. Only effect C code generation, if
+neither '-p', '-k' or '-u' are specified all code is generated. This option can
+be specified along with any of the other code limiting options.
+
+.TP
+.B -s
+Disable asserts in generated code. Bad on you for doing this.
+
+.TP
+.B -D
+This option only affects C code generation.
+
+In lieu of generics, you can make all of the encode/decode functions use double
+width floating point types instead of the smallest typed needed for that
+signal. 
+
+.TP
+.B -n version
+Specify the output version to use. When not specified, the latest will be used.
+
+.TP
+.B file
+A DBC file to process
+
+.SH EXAMPLES
+
+.B
+	./dbcc file.dbc
+
+This will run the program on a DBC file called
+.I file.dbc 
+and make two files, one called
+.I file.c
+and another called
+.I file.h
+
+.SH EXIT STATUS
+
+This command returns zero on success and non zero on failure.
+
+.SH SEE ALSO
+
+For more information, see
+.B https://github.com/howerj/dbcc
+which contains the original program source, and
+.B https://github.com/orangeduck/mpc
+for the parser combinator used in this program.
+
+For information about the DBC files for CAN use
+.B http://vector.com/vi_candb_en.html
+And for what CAN is
+.B https://en.wikipedia.org/wiki/CAN_bus
+
+.SH BUGS
+The program is in alpha status and thus is unlikely to work or be complete.
+
+This program may produce invalid C, which may be accepted by your compiler
+depending on how liberal it is with characters outside of the
+range allowed by C in comments. The units string of a CAN DBC file can contain 
+Unicode characters, which will be put into a comment in the generated C code.
+
+As a work around, use iconv(1) on any input DBC that has non-ASCII 
+characters in it, or is not in ASCII encoded, like so:
+
+.B iconv -t -c utf8.dbc > ascii.dbc
+
+For any bugs, contact the author.
+
+.SH AUTHOR
+Richard James Howe (howe.r.j.89@gmail.com)
+
+.SH COPYRIGHT
+The dbcc program is licensed under the MIT license, Copyright (c) 2016,2019 Richard
+Howe.
+
+The mpc parser combinator library belongs to Daniel Holden
+(contact@daniel-holden.com) licensed under BSD3, Copyright (c) 2013. This was
+used in this project to do the actual parsing.
+
