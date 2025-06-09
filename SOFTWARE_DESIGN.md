@@ -37,6 +37,21 @@ The recommended list of extensions are:
 - Python
 - PlatformIO
 
+Notes on Visual Studio configuration.
+
+For Bluepill embedded software:
+
+- On Windows machines and native Ubuntu Linux machines, the Platform IO toolkit can be installed to compile and uploaed binaries to Bluepill processors. When a Bluepill is connected to the host coputer with a USB cable, terminal output can be shown as well.
+
+Do not try to run the Platform IO environment on a WSL environment within Windows. This doesn't work well. Open an enviroment from a Windows based folder, not from a WSL mounted folder.
+
+For (ROS2) C coded packaged on Raspberry Pi (Ubuntu):
+
+On Windows computer, the WSL environment can be installed to compile Linux native code.\
+Use ie. wsl.exe --install -d <Distribution Name> or to list available distributions: wsl.exe -l -o.
+
+Make sure when switching configurations to pull the code from the relevant platform.
+
 ### Linux Ubuntu 22.04 <a name="Linux-Ubuntu-2204"></a>
 
 The project software is meant to be run on Linux Ubuntu 22.04, therefore it is good to have basic understanding on how to use linux. (Good ability to google linux commands and copy paste commands is recommended!)

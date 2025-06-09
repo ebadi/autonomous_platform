@@ -1,11 +1,13 @@
 ### Digital Twin
 
 <a name="Digital-Twin"></a>
-A simplified digital twin has been implemented as of August 2023.
+A simplified digital twin has been implemented as of August 2023. This digital twin were improved in march of 2025.
 
 An important part of the high level software control is the digital twin. It is a completely different component then the autonomous driving stack and should be agnostic to what AD stack is used. This means that any AD stack should be able to be tested on the digital twin. This is accomplished by using standard ROS2 topics as interfaces as briefly described in the previous section. Inputs to the digital twin would be sent over the `/cmd_vel` ROS2 topic, in the same way outputs (vehicle state and sensor readings) would be sent from the digital twin simulation over standard ROS2 topics. I.e "/odom" for vehicle state.
 
 As of August 2023 the digital twin is run using the Gazebo Physics Simulator. [Link official gazebo documentation.](https://gazebosim.org/docs) It is a software that integrates seamlessly with ROS2 and has been used for a long time to simulate robots in complex environments.
+
+In March 2025 the digital twin were improved and Gazebo Classic was changed to Gazebo Ignition Fortress in order to keep the software updated during Gazebo and Ros 2 updates. In addition to that a replica of the GoKart track at Gokartcentralen in Kungälv were created as a Gazebo world to allow "Real life" AD algorithm testing in the simulation.
 
 The code structure for the digital twin is as follows:
 A ROS2 package has been created, autonomous_platform_robot_description_pkg, which contains the digital twin.
@@ -16,13 +18,16 @@ A ROS2 package has been created, autonomous_platform_robot_description_pkg, whic
  ┃ ┃ ┗  ap4hlc_ws
  ┃ ┃   ┗  src
  ┃ ┃      ┗  autonomous_platform_robot_description_pkg
+ ┃ ┃         ┣  config
  ┃ ┃         ┣  launch
+ ┃ ┃         ┣  maps
  ┃ ┃         ┣  rviz
  ┃ ┃         ┣  src
  ┃ ┃         ┃  ┗ description
- ┃ ┃         ┃     ┣  ap4_robot_description.urdf
- ┃ ┃         ┃     ┣  gazebo_control.xacro
- ┃ ┃         ┃     ┣  gokart_chassi.urdf.xacro
+ ┃ ┃         ┃     ┣  ap4_robot_description.urdf.xacro
+ ┃ ┃         ┃     ┣  control_simple_digital_twin.xacro
+ ┃ ┃         ┃     ┣  simple_digital_twin.urdf.xacro   
+ ┃ ┃         ┃     ┣  lidar.xacro                
  ┃ ┃         ┃     ┗  inertia_macros.xacro
  ┃ ┃         ┗  worlds
  ┃ ┃
@@ -51,23 +56,21 @@ As of August 2023 no sensors have yet to be added. Future sensors to add could b
 - [IMU](https://classic.gazebosim.org/tutorials?tut=ros_gzplugins)
 - [Ultrasonic short range sensor](https://classic.gazebosim.org/tutorials?tut=ros_gzplugins)
 
+In 2025 a Lidar was implemented to the Gokart digital twin using the Gazebo Ignition fortress plugin for Lidar.
+
 ### Gazebo worlds
 
 In the same way as the digital twin could be configured, the simulated environment itself can be configured. This allows a developer to create interesting scenarios in which to place the autonomous platform.
 
 Worlds can be created using the Gazebo graphical application and saved into the `worlds` directory. The digital twin can be configured to start in a specific world by configuring the launch file located in `launch` directory.
 
-Gazebo has access to an exentsive library of 3D models which can be used to crate interesting environments.
+In 2025 a replica of the gokartcentralen track for Gazebo was created and added to the `worlds` directory.
 
-![Example Gazebo world top view](../Resources/Report_sketches/digital_twin/gazebo_world2.png)
-
-![Example Gazebo world 3D view](../Resources/Report_sketches/digital_twin/gazebo_world1.png)
+![GOCART](../Resources/Report_sketches/digital_twin/gazebo_world_gokart.png)
 
 ### Software Control Switch
 
 <a name="Software-Control-Switch"></a>
-
-This has not been implemented as of August 2023.
 
 The idea of having a software control switch is for the autonomous driving stack algorithms to EITHER control the physical platform or the digital twin. And be able to switch seamlessly between them. The autonomous driving stacks could be quickly tested on a digital twin to make development faster and when the algorithms are in a mature state they could be tested on the physical platform.
 
@@ -79,9 +82,11 @@ For future reference this switching of control could be actualized using [namesp
 
 The software for the digital twin is located in `autonomous_platform_robot_description_pkg`. Below follows a quick guide on what each subdirectory contains:
 
+- config - Contains config files for Nav2, SLAM and the gazebo-ros bridge
 - launch - Contains launch files
-- rviz - contains a parameter file which can be inserted into Rviz to show useful information upon startup
+- rviz - Contains a parameter file which can be inserted into Rviz to show useful information upon startup
 - worlds - save gazebo simulation environments (worlds) to be run later.
+- maps - Contains maps for the simulation in order to get Nav2 to work
 - /src/description: Contains the xacro and urdf files which describes how the digital twin is built up.
 
 The launch file launch_digital_twin_simulation.launch.py launches the following nodes
@@ -90,12 +95,14 @@ The launch file launch_digital_twin_simulation.launch.py launches the following 
 - Rviz
 - gazebo_node
 - spawn_entity_node
+- Nav2 node
+- Slam_toolbox
 
-The robot state publisher node, takes the robot description files and broadcasts them over the ROS2 network. The Gazebo physics simulator is then launched with a corresponding ROS2 node. Lastly, a spawn entity node is created, which spawns the digital twin inside the gazebo simulation using the information on the robot state publisher information topic. As the digital twin is inserted into the simulation, it spawns further nodes which makes it possible to control the digital twin using the /cmd_vel topic.
+The robot state publisher node, takes the robot description files and broadcasts them over the ROS2 network. The Gazebo physics simulator is then launched with a corresponding ROS2 node. A spawn entity node is created, which spawns the digital twin inside the gazebo simulation using the information on the robot state publisher information topic. The Nav2 and slam_toolbox node allows the digital twin to navigate autonomously around the world and avoiding obstacles.
 
-The digital twin is defined inside the description folder, it is built in modules with the ap4_robot_description.urdf as a base. Onto this base. The gokart_chassi.urdf.xacro describes the kinematics and dynamics of AP4. gazebo_controls.xacro describes how an ackermann drive plugin is used to control the joints of AP4.
+The digital twin is defined inside the description folder, it is built in modules with the ap4_robot_description.urdf as a base. Onto this base. The simple_digital_twin.urdf.xacro describes the kinematics and dynamics of AP4. control_simple_digital_twin.xacro describes how an ackermann drive plugin is used to control the joints of AP4 and lidar.xacro describs the Lidar and import the Lidar Gazebo plugin in order to use it in the simulation.
 
-Future sensors, such as cameras, should be added as xacro modules and included in the ap4_robot_description.urdf file.
+Future sensors, such as the camera, should be added as xacro modules and included in the ap4_robot_description.urdf file.
 
 ### How to Connect to Physical Platform
 
@@ -105,9 +112,9 @@ The high-level control software is meant to be run in two modes; connected to th
 
 The long term goal is that the high level control software should be able to interface with the low level control software running on the Raspberry Pi 4b. This is done through an ethernet connection, meaning it could be done both wirelessly and by wire. The two docker containers for high level software and low level software should therefore be started from devices located on the same network.
 
-As of August 2023 this is NOT needed yet, since no Autonomous Driving algorithms have been implemented yet. But for future reference:
+In 2025 this were achieved by doing the following steps.
 
-- Connect the development laptop to the AP4-ROUTER_2.4Ghz network. ssid and pw credentials can be found in root directory README file.
+- Connect the development laptop to the AP4-ROUTER_2.4Ghz network (Or make sure that the development laptop and the Raspberry Pi are connected to the same network). ssid and pw credentials can be found in root directory README file.
 - Make sure the two docker containers are started
 - Make sure high level software is running on ROS_DOMAIN_ID=1
 
@@ -181,3 +188,102 @@ rosdep install --from-paths src -y --ignore-src
 ```bash
 rosdep install --from-paths src/autonomous_platform_robot_description_pkg -y --ignore-src
 ```
+
+### Make your custom world from a bird view image for Gazebo using Blender
+
+To generate and create a custom world from an image for Gazebo, Blender is a greate choice to use since it can more or less do the whole map for you.
+
+Example of creating a Gazebo world of the GokartCentralen track:
+
+1. Download and open Blender
+
+1. Delete the default box in the Blender workspace
+
+1. On the topbar to the left, click Add-> Mesh-> Plane
+
+![TOPMENU](../Resources/Report_sketches/digital_twin/Topbar_menu.png)
+
+4. Click on the plane and change the scale as you want it to the right in the plane configuration menu
+
+1. Click on TAB to enter Edit-Mode and right click in the plane. In the popup menu select Subdivide. Now a small bar appears in the bottom left corner. Click on that and change "Number of Cuts" to 100, then press enter.
+
+![SUBDIVIDE](../Resources/Report_sketches/digital_twin/Subdivide.png)
+
+6. Do step 5 again but change "Number of Cuts" to 3 instead.
+
+Now your plane should have a fine mesh built of small squares.
+
+7. Press TAB to enter Object Mode again.
+
+1. Navigate to the right plane menu and click on the wrench icon(Modifiers)-> Add Modifier-> Deform-> Displace
+
+![BLENDERWRENCH](../Resources/Report_sketches/digital_twin/Blender_wrench.png)
+
+9. Now click on the icon that looks like a grid(Texture) in the plane menu-> New-> Open
+
+![BLENDETEXTURE](../Resources/Report_sketches/digital_twin/Blender_texture.png)
+
+10. Open the image you want to make a map of. In this case the image over the GokartCentralen track.
+
+01. Now go back to the wrench icon in the menu and change the value of Strength to adjust the height of the walls for your map.
+
+01. When your map looks good and you are done with the settings, click on file-> Export-> Wavefront (.obj)
+
+01. Your map is done and saved. Now you can include this .obj file in your sdf world file for Gazebo!
+
+## Important notes:
+
+- Make sure to remove any text and other non relevant graphics on your map image before open it in Blender
+- Make sure that there is only two colours in the image, i.e. the background colour and the wall colour. If you don't have the exact same colour code for the background and the walls, Blender will do different actions for each colour and the map will not be as you want it. So make sure to have one specific colour for the background, and one for the walls.
+
+### Navigate the digital twin autonomously around the gokart track
+
+To navigate the gokart digital twin autonomously around the gokart track (the gazebo world that has been generated using Blender) we are using the ros2 package nav2 which allows you to get the gokart to follow a waypoints and avoiding obstacles on the track (walls) using data from the Lidar with slam_toolbox.
+
+1. Enter the HLC directory in the terminal
+
+```bash
+cd Desktop/autonomous_platform/High_Level_Control_Computer
+```
+
+2. Start the Docker container by running
+
+```bash
+docker-compose up -d
+```
+
+3. In the same terminal enter the Docker container by running
+
+```bash
+docker exec -it ap4hlc /bin/bash
+```
+
+4. Now inside the docker enter your workspace and source your workspace
+
+```bash
+cd cd ap4hlc_ws
+```
+
+```bash
+source install/setup.bash
+```
+
+5. To give the docker permission to use your display, run this command in another terminal outside the docker.
+
+```bash
+xhost +local:root
+```
+
+6. To start the digital twin simulation with autonomous drive, run this command in the docker terminal.
+
+```bash
+ros2 launch autonomous_platform_robot_description_pkg launch_robot_simulation.launch.py
+```
+
+Now the software should start and you should see the GoKart spawn in Rviz and Gazebo.
+
+To start the navigation press 2D Goal Pose and choose a goal position in the upper right corner of the gray area.
+
+The Gokart should now move autonomously around the gokart track!
+
+DONE!

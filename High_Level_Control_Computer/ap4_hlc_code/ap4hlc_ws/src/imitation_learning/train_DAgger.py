@@ -84,10 +84,7 @@ model_dir = "/root/ap4_hlc_docker_dir/ap4hlc_ws/src/imitation_learning/models"
 dir = "/root/ap4_hlc_docker_dir"
 expert_data_filepath = dir + "/recorded_data/training/default"
 validataion_data_filepath = dir + "/recorded_data/validation"
-donkey_test_dir = (
-    dir
-    + "/src/imitation_learning/simulation_donkeycar/data"
-)
+donkey_test_dir = dir + "/src/imitation_learning/simulation_donkeycar/data"
 
 base_dir = dir + "/recorded_data/training"
 orb_dir = os.path.join(base_dir, "orb")
@@ -109,7 +106,6 @@ for directory in [
     if not os.path.exists(directory):
         print(f"Directory not found {directory}, add recorded data before training.")
 
-        
 
 rng = np.random.default_rng(0)
 image_size = np.array([160, 120])
@@ -243,12 +239,8 @@ for demonstration in validataion_demonstrations[1100:1200]:
     print("BC predicted actions:         " + str(pred_action[0]) + "\n")
 
 
-BC_path_sim = (
-    dir
-    + "/ap4hlc_ws/src/imitation_learning/simulation_donkeycar"
-)
-BC_path_gokart = (model_dir
-)
+BC_path_sim = dir + "/ap4hlc_ws/src/imitation_learning/simulation_donkeycar"
+BC_path_gokart = model_dir
 
 if save_sim_model:
     th.save(best_model.policy, f"{BC_path_sim}/{model_name_sim}")
@@ -261,9 +253,10 @@ else:
 if save_real_gokart_model:
     unique_model_name = generate_unique_model_name(BC_path_gokart, model_name_gokart)
     th.save(best_model.policy, os.path.join(BC_path_gokart, unique_model_name))
-    print(f"Model for real world testing has been saved to: {BC_path_gokart}/{unique_model_name}")
+    print(
+        f"Model for real world testing has been saved to: {BC_path_gokart}/{unique_model_name}"
+    )
 else:
     print(
         "Model for real world testing has not been saved. Set save_real_gokart_model=True if you wish to save the model for real world testing."
     )
- 	

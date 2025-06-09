@@ -1,5 +1,36 @@
 ## Known issues
 
+### 2025 status report
+
+SPCU:
+Current status is the the new SPCU on the new built Go Kart (AP4 version 2) is now working. I had some struggle with the DAC boards for actuation of throtthle/Brake) because a breaking wire. But yesterday and even today I could steer/accelerate and brake with the AP4_2 so that part is ready. Maybe someone would like to clean up and tie wome wires.
+
+Speed sensing:
+The speed sensing was not working completely well now, I saw when integrating the SPCU and looking at the outputs in Ros2. I suppose it's a sync issue of code between Speed Sensor bluepill node and the HWI. It looks like the speed sensor itself is sending data correcly on CAN (that can be seen as well on CAN and on the terminal output of the bluepill).
+
+Strongest recommendation would be to pull the latest code in the repo or whatever is used now in AP4_1 (Anton/Davids) and recompile on AP4_2.
+
+To cleanify the bluepill repo you may need to discard the  ./.pio/\* tree in the working dir of the platform io project for the speed sensor.
+-    on HWI side, you need to remove (rm -rf) the build log and lib directories in the package including the c to ros translator.
+Just colcon build -clean does not clean out everything.
+
+The current problem is that you can see each speed sensor working if you observe the output terminal from the bluepill, but it doesn't show as it should in the ros topics. If you look at the topic for the LeftFront speed sensor you get data if the wheel is turning, but not the other wheels. I suppose that went wrong when I reprogrammed tha latest bluepill for the speed sensor wiht the latest mod from Anton/David without syncing the updated ros2 hwi library .
+
+Recommendations/notes
+
+- Add a few Ros2 commands to trigger acceleration / braking (in the README for Low level computer (raspberry pie). Easy for testing if the xbox controller is not willing to start.
+- Tighten the tops of the speed sensor and SPCU with screws/nuts.
+- Wire the fans to the 12V section.
+- Need to tie some wires with tie wraps.
+- Wire the power of the router from 12V.
+- Document the exp board picture in the repo. Not sure that I pushed that yet.
+- Propulsion actuators (mcp4725 DAC board) are now in a seperate box on the side of the SPCU. Pretty sure that they would just fit mounted on the experiment board. That would save a lot of wiring again and make it more neat and easy to follow.
+- Fine tune steering calibration on kangaroo board.
+- First review the mounting of the steering swithes, so they allow for max steering.  Then do a re-initialization of the kangaroo board and perform a new calibration.  Review the actual steering angles and see that it improved.
+- Charge the batteries now and then. Each Go Kart has a battery for the autonomous system and for the go kart engine. Charge them preferably every 2 months.
+
+/Marten
+
 ### Priority : Fix known Bugs / Issues <a name="Known-Bugs-/-Issues"></a>
 
 There are some known bugs and issues and should have priority
@@ -45,6 +76,22 @@ If there is any error related to long path, open shell as administrator, configu
 git config --system core.longpaths true
 ```
 
+## Issue with the LiDAR and SLAM autonomous navigation software
+
+There are some issues with this and the hardware for the positioning/localization of the AP4 needs to be looked at. Here are the following potential issues that needs to be looked at in order to have the AP4 working properly.
+
+### Steering angle issue
+
+There is a issue with the AP4 steering angle which affects the AP4 to not have te ability to take that sharp turns as it needs in order to navigate around the track. In addition to that the steering angle to the left is greater than the steering angle to the right. It would be good to increase the steering angel in general and as well as that make the steering angle the same for both directions.
+
+### IMU issue
+
+There are some issues with the IMU and it seems that the IMU is drifting much in the physical environment. This would be good to fix in order to have a well function sensor fusion between the speed sensors and the IMU. One thing to look at is how the IMU is oriented in space and make sure that is correct in the ekf node. As well as that some tuning needs to be done.
+
+### Speed sensors/wheel encoders
+
+These works kind of well right now, but it can be benifitical to verify that they are measuring the correct distance and that the steering angle together with the speed sensors gives the correct position of the AP4. This is calculated in the `odom_publisher` node on the Raspberry Pi.
+
 ## Future work <a name="Future-Work"></a>
 
 As the thesis of 2023 concluded there several functionalities that could not be implemented due to time restrictions. Therefore for future work we suggest:
@@ -84,18 +131,6 @@ Analysis of power consumption of platform is insufficient. Platform blew a fuse 
 ### High Level Control Software
 
 The high level control software is very much unfinished. So far a docker container has been setup with the correct environment and software installed.
-
-For future work regarding the digital twin, see __Digital Twin__ section below.
-
-### Digital Twin
-
-The digital twin implemented in spring 2023 is a simple twin created in Gazebo and not very well tuned. The movement dynamics do not behave as the physical AP4 platform does. This needs to be tuned. The dynamics of the physical platform should be investigated, noted down and transferred to the digital twin.
-
-Investigating integration of AP4 into CARLA or other simulations could also be done. As long as the simulation software can integrate with Robot Operating System 2 it should work.
-
-Infotiv already has experience using CARLA for vehicle scenario simulation. Therefore to ease future development of digital twin it could be interesting to transfer the digital twin to the CARLA simulator instead of Gazebo.
-
-- Possible solution:  [ROS bridge installation for ROS2 - Carla Documentation](https://carla.readthedocs.io/projects/ros-bridge/en/latest/ros_installation_ros2/) Note: This is for a previous version of ROS2, AP4 builds on ROS2 Humble so a fix for this needs to be found.
 
 ### Mounting High Performance Computer on AP4
 
@@ -243,3 +278,13 @@ Here is a list of other similar projects, none specifically for the STM32F103xx 
 - [effenco/stm32-can-bootloader](https://github.com/effenco/stm32-can-bootloader)
 - [matejx/stm32f1-CAN-bootloader](https://github.com/matejx/stm32f1-CAN-bootloader)
 - [Someone successfully implemented STM32103xx bootloader - blogpost](https://stackoverflow.com/questions/61243660/stm32103-custom-bootloader-jump-to-main-firmware-issue)
+
+### LiDAR-Camera sensor fusion
+
+In 2024 they implemented a camera to take images from the environment and used edge detection to decide the AP4 next move. In 2025 they implemented a LiDAR to the platform to use SLAM to map the AP4 environemnt during the navigation.
+
+One future work to look at is to do sensor fusion between the LiDAR and the Camera in order to give the AP4 a more accurate view of the environment and probably increase its performance on the gokart track.
+
+### Additional LiDAR
+
+As for now in 2025 the AP4 only have one LiDAR mounted that only can see in front of the AP4, as the AP4 itself blocks everything behind the LiDAR. One future work could be to implement an additional LiDAR mounted on the back of the AP4 in order to have a view of the AP4 surroundings on the back as well. This will improve the view of the AP4 environment and probably will improve the navigation as well.

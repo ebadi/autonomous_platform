@@ -88,7 +88,23 @@ typedef PREPACK struct {
 
 /* Get speed sensor reading */
 typedef PREPACK struct {
-	uint8_t Get_Velocity; /* scaling 100.0, offset 0.0, units cm/s  */
+	/* SpeedSensorLF_PulseCnt: Input from Left Front optical Speed sensor */
+	/* scaling 1.0, offset 0.0, units pulses per sample time  */
+	uint16_t SpeedSensorLF_PulseCnt;
+	/* SpeedSensorRF_PulseCnt: Input from Right Front optical Speed sensor */
+	/* scaling 1.0, offset 0.0, units pulses  per sample time  */
+	uint16_t SpeedSensorRF_PulseCnt;
+	/* SpeedSensorLR_PulseCnt: Input from Left Rear optical Speed sensor
+ */
+	/* scaling 1.0, offset 0.0, units pulses  per sample time  */
+	uint16_t SpeedSensorLR_PulseCnt;
+	/* SpeedSensorRR_PulseCnt: Input from Right Rear optical Speed sensor
+ */
+	/* scaling 1.0, offset 0.0, units pulses  per sample time  */
+	uint16_t SpeedSensorRR_PulseCnt;
+	/* SpeedSensorSampleTime: Sample time base for speed sensor counts */
+	/* scaling 1.0, offset 0.0, units time in ms for speed sensor sample  */
+	uint16_t SpeedSensorSampleTime;
 } POSTPACK can_0x5dc_Get_Speed_Sensor_t;
 
 /* Get sensor reading */
@@ -169,8 +185,16 @@ int decode_can_0x3e8_Act_Reverse(const can_obj_can_db_h_t *o, uint8_t *out);
 int encode_can_0x3e8_Act_Reverse(can_obj_can_db_h_t *o, uint8_t in);
 
 
-int decode_can_0x5dc_Get_Velocity(const can_obj_can_db_h_t *o, uint8_t *out);
-int encode_can_0x5dc_Get_Velocity(can_obj_can_db_h_t *o, uint8_t in);
+int decode_can_0x5dc_SpeedSensorLF_PulseCnt(const can_obj_can_db_h_t *o, uint16_t *out);
+int encode_can_0x5dc_SpeedSensorLF_PulseCnt(can_obj_can_db_h_t *o, uint16_t in);
+int decode_can_0x5dc_SpeedSensorRF_PulseCnt(const can_obj_can_db_h_t *o, uint16_t *out);
+int encode_can_0x5dc_SpeedSensorRF_PulseCnt(can_obj_can_db_h_t *o, uint16_t in);
+int decode_can_0x5dc_SpeedSensorLR_PulseCnt(const can_obj_can_db_h_t *o, uint16_t *out);
+int encode_can_0x5dc_SpeedSensorLR_PulseCnt(can_obj_can_db_h_t *o, uint16_t in);
+int decode_can_0x5dc_SpeedSensorRR_PulseCnt(const can_obj_can_db_h_t *o, uint16_t *out);
+int encode_can_0x5dc_SpeedSensorRR_PulseCnt(can_obj_can_db_h_t *o, uint16_t in);
+int decode_can_0x5dc_SpeedSensorSampleTime(const can_obj_can_db_h_t *o, uint16_t *out);
+int encode_can_0x5dc_SpeedSensorSampleTime(can_obj_can_db_h_t *o, uint16_t in);
 
 
 int decode_can_0x7d0_Get_SteeringAngle(const can_obj_can_db_h_t *o, int16_t *out);
@@ -184,3 +208,4 @@ int encode_can_0x7d0_Get_ReverseMode(can_obj_can_db_h_t *o, uint8_t in);
 #endif
 
 #endif
+

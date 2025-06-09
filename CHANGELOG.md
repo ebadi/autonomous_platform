@@ -35,3 +35,11 @@ by Erik Magnusson and Seamus Taylor. Supervisor: Hamid Ebadi
 The implementation of the software pipeline for Imitation Learning for achieving autonomous driving using both behavioral cloning (BC) and Human Gated Dataset Aggregation (HG-DAgger) is done by Arvid Petersén and Johan Wellander  as part of a master thesis at Chalmers University of technology spring 2024. Supervisor: Hamid Ebadi
 
 ![Arvid Petersén and Johan Wellander](Resources/Spring_2024/AP-JW.jpg)
+
+### Version 4.3, Jan 2025
+
+Building a replica of the go-kart as a way to review and improve the build instructions, and to redesign and enhance various parts of the system by Maria Olsson, Marten Postma, Pär Aronsson. Supervisor: Hamid Ebadi
+
+### Version 4.4, Jun 2025
+
+Speed sensor functionality for the new go-kart, including enhancements to the rear wheels, the addition of a software filter for optocouplers, and configurable parameters for wheel size, sampling interval, and sensor disk size. Improved the 3D designs and refined the wiring layout to make the unit more modular and accessible. by Marten Postma. Supervisor: Hamid Ebadi

@@ -22,7 +22,7 @@ These should be the goals for a new team member. These are simply a guideline an
 - Have a feeling of where certain parts of the project are located at within the repository
 - Cloned the repository to your work computer
 - Started up the physical AP4 platform by following the startup procedure documentation.
-- Read through the major documentation files - Presented in "Where can I find What" Don't expect do understand everything that is mentioned.
+- Read through the major documentation files - Presented in "Where can I find What" Don't expect to understand everything that is mentioned.
 - Install needed software (Git, Docker, VSCode, PlatformIO)
 
 #### Week 2
@@ -121,7 +121,7 @@ In order to understand the implemented architecture, software and hardware here 
 
 ### Adding Wheel Speed Sensor<a name="Adding-Wheel-Speed-Sensor"></a>
 
-This is an example procedure on speed sensors should be added onto the platform.
+This is an example procedure on how speed sensors should be added onto the platform.
 
 This is an overview of how Fredrik and Erik would have done it but you are free to make your own decision if you follow the principles.
 

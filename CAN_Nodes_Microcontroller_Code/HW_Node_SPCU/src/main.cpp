@@ -106,14 +106,17 @@ void setup() {
         break_while=false;
       }
     }
-  
+  Serial.println("Start of Kangaroo setup");
   //Serial3 is used for sending commands to the KANGAROO X2 (drive module for steering modtor)
+  // Serial3 is coded in the arduino object file and is there hardcoded to I/O pin 10 and 11 of the BluePill HW.
+  // The definitions can be found in the arduino.h file.
   Serial3.begin(9600);
   while(!Serial3);
   
   if(propulsion_controller.DAC_init(DAC_Vin,DAC_offset,Serial))
   {
     Serial.println("Propulsion Controll sucessfully initialized");
+
     encode_can_0x3e8_Act_ThrottleVoltage(&can_interface.can_storage_container,DAC_MIN_OUT_VOLTAGE*CAN_Propulsion_Scale_Up);
     decode_can_0x3e8_Act_ThrottleVoltage(&can_interface.can_storage_container,&ThrottleVoltage);
     propulsion_controller.send_voltage("dac_acc",(float)ThrottleVoltage*(float)CAN_Propulsion_Scale_Down);
@@ -122,33 +125,33 @@ void setup() {
     encode_can_0x3e8_Act_BreakVoltage(&can_interface.can_storage_container,DAC_MIN_OUT_VOLTAGE*CAN_Propulsion_Scale_Up);
     decode_can_0x3e8_Act_BreakVoltage(&can_interface.can_storage_container,&BreakVoltage);
     propulsion_controller.send_voltage("dac_break",(float)BreakVoltage*(float)CAN_Propulsion_Scale_Down);
-  }
+    }
   else{
-        Serial.println("Propulsion Controll failed!!");
-  }
-
-  
-  int iteration = 0;
-  bool try_steering_init = true;
-  // kangarro might encounter synchornisation problem during initialization, thereby try until establish serial communiation
-  while(try_steering_init && iteration < 5)
-  {
+    Serial.println("Propulsion Controll failed!!");
+    }
+   Serial.println("Passed Propulsion setup");
+   
+   int iteration = 0;
+   bool try_steering_init = true;
+   // kangarro might encounter synchornisation problem during initialization, thereby try until establish serial communiation
+   while(try_steering_init && iteration < 5)
+   {
     if(steering_motor.init(Serial3, InputPortNr, InputMotorNr, InputMotorFixedSpeed, InputWaitForResponseTime, Serial)){
-      Serial.println("Steering motor successfully initialized!");
-      try_steering_init = false;
-      steering_motor.GetLastErrorMsg() ="";
-    }
-    else {
-      Serial.println("Steering motor initialization ERROR!");
-      Serial.println("Internal error msg=" + steering_motor.GetLastErrorMsg());
-    }
-    iteration = iteration+1;
-    Serial.println("steering try: " + String(iteration) + "\n");
-  }
+       Serial.println("Steering motor successfully initialized!");
+       try_steering_init = false;
+       steering_motor.GetLastErrorMsg() ="";
+     }
+     else {
+       Serial.println("Steering motor initialization ERROR!");
+       Serial.println("Internal error msg=" + steering_motor.GetLastErrorMsg());
+     }
+     iteration = iteration+1;
+     Serial.println("steering try: " + String(iteration) + "\n");
+   }
 
   // WARNING!!! This should only be necessary when there are two nodes in the system. remove later
   Serial.println("waiting 1 minute for raspberry pi to start!!!");
-  delay(60000);
+  //delay(60000);
 
   // Set up of CAN buss
   can_interface.InitMCP2515();
@@ -208,13 +211,16 @@ void setup() {
 "WHILE True-loop"
 */
 void loop() {
+  //Serial.println("Start of main while loop");
+  
   uint32_t t_time = getCurrentMillis();
 
   // the loop function runs over and over again forever
   if(interupt_flag){
-    //Serial.println("hello");
+  //  Serial.println("hello interrupt?");
     interupt_flag=false;
   }
+  //Serial.println("After interrupt flag if");
   can_interface.PeriodicCanSend();
   
   if(recieved_interrupt)
@@ -234,12 +240,12 @@ void loop() {
     Serial.println("Error in steering");
     encode_can_0x1f4_Steering_Error(&can_interface.can_storage_container,1);
     can_interface.SendSingleCanFrame(CAN_ID_ERROR_SPCU);
-  }  
+    }  
   if(!propulsion_controller.get_error_in_dac())
-  {
+    {
     encode_can_0x1f4_Propulsion_Error(&can_interface.can_storage_container,1);
     can_interface.SendSingleCanFrame(CAN_ID_ERROR_SPCU);
-  }
+    }
 
 
 
@@ -250,6 +256,7 @@ void loop() {
     encode_can_0x065_Response_Heartbeat_sig(&can_interface.can_storage_container,uint8_t(1));
     can_interface.SendSingleCanFrame(CAN_ID_RESPONSE_HEARTBEAT_SPCU);
     Heartbeat_frame_recieved =false;
+    
   }
 
   // Steering Control:
@@ -268,7 +275,7 @@ void loop() {
   propulsion_controller.send_voltage("dac_break",tempb);
   
   uint32_t time_print = getCurrentMillis()-t_time;
-  Serial.println("Loop time: " + String(time_print));
+  //Serial.println("ABsolute time" + String(getCurrentMillis()) +"Loop time: " + String(time_print));
 
   
   /* DEMO CODE BELOW
@@ -284,11 +291,17 @@ void loop() {
     t=getCurrentMillis();
     Serial.println(String(t));
   }
+  
   */
+
+  //Serial.println("Last line of while loop");
+  
 } //END OF WHILE
 
 void AP4CANInterrupt() 
 {
   recieved_interrupt = true;
-  
+  Serial.println("in CAn int loop");
+   
 }
+

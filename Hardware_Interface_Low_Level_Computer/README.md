@@ -22,13 +22,47 @@ This abstracts the transfer of information between low level software and embedd
 
 It uses the unified CAN bus database file (.dbc) for autonomous platform in order to decode the information sent on the CAN network. This database file is located at `autonomous_platform\CAN_Nodes_Microcontroller_Code\CAN_LIBRARY_DATABASE\CAN_DB.dbc`. A custom application is then written that maps a specific CAN signal onto a specific ROS2 topic. This means that every data signal sent over the CAN network can be used in algorithms located in the hardware interface and low level software. In the same way, ROS2 topics can be used to set the value of certain signals, meaning commands can be sent from the hardware interface and low level software to the various ECUs mounted onto autonomous platform.
 
+Notes: Every CAN Signal gets it's own ROS Topic.
+
+Examples to send CAN messages from HWI to SPCU by writing to a ROS2 topic
+
+- Publish a CAN message with speed 0x55 on the LF pulse count topic.
+
+> ros2  topic pub /SET_0x5dc_SpeedSensorLF_PulseCnt  std_msgs/msg/UInt16 "{data: 0x55}" -r 10
+
+- Actuate the steering wheel wihtout joy controller:
+
+ros2 topic pub /SET_0x3e8_Act_SteeringPosition std_msgs/msg/Int8 "{data: 40}" -r 100
+
+This latter example can also by achieved by sending a direct command to the CAN interface
+
+> cansend can0 3e8#52035000A4060000
+
+- Show CAN  traffic directly in Linux
+
+> candump can0
+
+showing:  ie\
+can0  3E8   \[8\]  52 03 50 00 A4 06 00 00
+
+or
+
+> cansniffer can0 -B -c -t 0 -h 5 -l 2
+
+Showing CAN traffic
+-B in binary with gaps, sorted in columns
+-c with visual colour changes
+-t <time>   (timeout for ID display \[x10ms\] default: 500, 0 = OFF)
+-h <time>   (hold marker on changes \[x10ms\] default: 100)
+-l <time>   (loop time (display) \[x10ms\] default: 20)
+
 ### Vehicle Control
 
 This is a custom made ROS2 package to control the steering angle and velocity of the hardware on a low level. It receives a desired velocity and steering angle on the `/cmd_vel` ROS2 topic and uses a controller gain to scale the values. The values have to be processed and rescaled in order for the embedded ECUs to actuate correctly.
 
 I.e to control the velocity, the embedded software in the SPCU expects a desired voltage to be sent on the CAN bus. Therefore the desired velocity needs to be converted into a desired voltage that should be applied on the accelerator pedal.
 
-**More advanced control behavior can be implemented later on, I.e some sort of feedback from the velocity sensors. As of now it is open loop controlled**
+**More advanced control behavior can be implemented later on, I.e some sort of feedback from the velocity sensors as for now it is open loop controlled**
 
 ### Joystick Manual Control
 
@@ -112,6 +146,13 @@ See section in `SETUP_OF_RASPBERRY_PI.md`
 ## Wiring
 
 The ECU controlling the steering consists of a lot of loose cables connected with Dupont connectors. These cables should be extended since they now are very short and connected in a better way to avoid loosing the control over the gokart while driving. If the cables would come loose they have been marked with a number between 1-5 for the upper ones and 2.1-2.2 for the lower ones which can be seen in the following figures.
+
+Recommendations for improvement:
+
+Longer term: add terminal rails for ground, +3.3V and 5V powering and loose terminals for interface control.
+Short term on both AP4_1  (the original Go Kart) and AP4_2 (the new built GO Kart):
+added so called "wago" joints for grnd, +3.3V and 5V wiring.
+The Dupont connectors are still there but not wired.
 
 ![Illustration of cables to steering ECU.](../Resources/extra_documentation_images/loose_cables_1.png)
 

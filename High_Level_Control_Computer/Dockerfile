@@ -26,8 +26,11 @@ RUN apt-get update && apt-get install --no-install-recommends -y \
     alsa-utils \
     usbutils \
     && rm -rf /var/lib/apt/lists/* \
+    && pip install depthai \
     && pip install imitation \
     && pip install stable-baselines3
+    
+ENV DISPLAY=:0
 
 # bootstrap rosdep
 RUN rosdep init && \
@@ -43,8 +46,8 @@ RUN colcon mixin add default \
 
 # install ros2 packages
 RUN apt-get update && apt-get install -y --no-install-recommends \
+    ros-humble-ros-base\
     ros-humble-desktop \
-    ros-humble-gazebo-ros-pkgs \
     ros-humble-teleop-twist-keyboard \
     ros-humble-joint-state-publisher-gui \
     ros-humble-xacro \
@@ -53,6 +56,13 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     ros-humble-joy \
     ros-humble-teleop-twist-joy \
     ros-humble-usb-cam \
+    ros-humble-ros-gz \
+    ros-humble-ros-gz-sim \
+    gz-fortress \
+    ros-humble-navigation2 \
+    ros-humble-nav2-bringup \
+    ros-humble-ros-gz-bridge \
+    ros-humble-robot-localization \
     && rm -rf /var/lib/apt/lists/*
 
 # Create the necessary directories and set permissions
@@ -60,7 +70,11 @@ RUN mkdir -p /root/ap4_hlc_docker_dir/ap4hlc_ws/image_output && \
     mkdir -p /root/ap4_hlc_docker_dir/ap4hlc_ws/model && \
     chmod -R 777 /root/ap4_hlc_docker_dir
 
+
 WORKDIR /root/ap4_hlc_docker_dir
+
+RUN echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc
+RUN echo "source /root/ap4_hlc_docker_dir/ap4hlc_ws/install/setup.bash" >> ~/.bashrc
 
 # # Copy twist_mux_example folder into Docker container
 # COPY /ap4_hlc_code/ap4hlc_ws/src/twist_mux-rolling /root/ap4_hlc_docker_dir/twist_mux-rolling

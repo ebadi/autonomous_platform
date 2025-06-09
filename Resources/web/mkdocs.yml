@@ -25,7 +25,6 @@ nav:
     - Setting up RaspberryPi : Hardware_Interface_Low_Level_Computer/SETUP_OF_RASPBERRY_PI.md
   - High Level Control Computer:
     - High Level Control Computer: High_Level_Control_Computer/README.md
-    - How to Extend: High_Level_Control_Computer/HOW_TO_EXTEND.md
     - Imitation Learning: High_Level_Control_Computer/IMITATION_LEARNING.md
     - DonkeyCar simulator: High_Level_Control_Computer/DONKEY_CAR_SETUP.md
     - Digital Twins in ROS: High_Level_Control_Computer/DIGITAL_TWIN_ROS.md

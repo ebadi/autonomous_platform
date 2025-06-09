@@ -418,8 +418,24 @@ static int pack_can_0x5dc_Get_Speed_Sensor(can_obj_can_db_h_t *o, uint64_t *data
 	assert(data);
 	register uint64_t x;
 	register uint64_t i = 0;
-	/* Get_Velocity: start-bit 0, length 8, endianess intel, scaling 100, offset 0 */
-	x = ((uint8_t)(o->can_0x5dc_Get_Speed_Sensor.Get_Velocity)) & 0xff;
+	/* SpeedSensorLF_PulseCnt: start-bit 0, length 12, endianess intel, scaling 1, offset 0 */
+	x = ((uint16_t)(o->can_0x5dc_Get_Speed_Sensor.SpeedSensorLF_PulseCnt)) & 0xfff;
+	i |= x;
+	/* SpeedSensorRF_PulseCnt: start-bit 12, length 12, endianess intel, scaling 1, offset 0 */
+	x = ((uint16_t)(o->can_0x5dc_Get_Speed_Sensor.SpeedSensorRF_PulseCnt)) & 0xfff;
+	x <<= 12; 
+	i |= x;
+	/* SpeedSensorLR_PulseCnt: start-bit 24, length 12, endianess intel, scaling 1, offset 0 */
+	x = ((uint16_t)(o->can_0x5dc_Get_Speed_Sensor.SpeedSensorLR_PulseCnt)) & 0xfff;
+	x <<= 24; 
+	i |= x;
+	/* SpeedSensorRR_PulseCnt: start-bit 36, length 12, endianess intel, scaling 1, offset 0 */
+	x = ((uint16_t)(o->can_0x5dc_Get_Speed_Sensor.SpeedSensorRR_PulseCnt)) & 0xfff;
+	x <<= 36; 
+	i |= x;
+	/* SpeedSensorSampleTime: start-bit 48, length 12, endianess intel, scaling 1, offset 0 */
+	x = ((uint16_t)(o->can_0x5dc_Get_Speed_Sensor.SpeedSensorSampleTime)) & 0xfff;
+	x <<= 48; 
 	i |= x;
 	*data = (i);
 	o->can_0x5dc_Get_Speed_Sensor_tx = 1;
@@ -433,28 +449,93 @@ static int unpack_can_0x5dc_Get_Speed_Sensor(can_obj_can_db_h_t *o, uint64_t dat
 	register uint64_t i = (data);
 	if (dlc < 8)
 		return -1;
-	/* Get_Velocity: start-bit 0, length 8, endianess intel, scaling 100, offset 0 */
-	x = i & 0xff;
-	o->can_0x5dc_Get_Speed_Sensor.Get_Velocity = x;
+	/* SpeedSensorLF_PulseCnt: start-bit 0, length 12, endianess intel, scaling 1, offset 0 */
+	x = i & 0xfff;
+	o->can_0x5dc_Get_Speed_Sensor.SpeedSensorLF_PulseCnt = x;
+	/* SpeedSensorRF_PulseCnt: start-bit 12, length 12, endianess intel, scaling 1, offset 0 */
+	x = (i >> 12) & 0xfff;
+	o->can_0x5dc_Get_Speed_Sensor.SpeedSensorRF_PulseCnt = x;
+	/* SpeedSensorLR_PulseCnt: start-bit 24, length 12, endianess intel, scaling 1, offset 0 */
+	x = (i >> 24) & 0xfff;
+	o->can_0x5dc_Get_Speed_Sensor.SpeedSensorLR_PulseCnt = x;
+	/* SpeedSensorRR_PulseCnt: start-bit 36, length 12, endianess intel, scaling 1, offset 0 */
+	x = (i >> 36) & 0xfff;
+	o->can_0x5dc_Get_Speed_Sensor.SpeedSensorRR_PulseCnt = x;
+	/* SpeedSensorSampleTime: start-bit 48, length 12, endianess intel, scaling 1, offset 0 */
+	x = (i >> 48) & 0xfff;
+	o->can_0x5dc_Get_Speed_Sensor.SpeedSensorSampleTime = x;
 	o->can_0x5dc_Get_Speed_Sensor_rx = 1;
 	o->can_0x5dc_Get_Speed_Sensor_time_stamp_rx = time_stamp;
 	return 8;
 }
 
-int decode_can_0x5dc_Get_Velocity(const can_obj_can_db_h_t *o, uint8_t *out) {
+int decode_can_0x5dc_SpeedSensorLF_PulseCnt(const can_obj_can_db_h_t *o, uint16_t *out) {
 	assert(o);
 	assert(out);
-	//uint8_t rval = (uint8_t)(o->can_0x5dc_Get_Speed_Sensor.Get_Velocity);
-	//rval *= 100;
-	//*out = rval;
-	*out = o->can_0x5dc_Get_Speed_Sensor.Get_Velocity;
+	uint16_t rval = (uint16_t)(o->can_0x5dc_Get_Speed_Sensor.SpeedSensorLF_PulseCnt);
+	*out = rval;
 	return 0;
 }
 
-int encode_can_0x5dc_Get_Velocity(can_obj_can_db_h_t *o, uint8_t in) {
+int encode_can_0x5dc_SpeedSensorLF_PulseCnt(can_obj_can_db_h_t *o, uint16_t in) {
 	assert(o);
-	//in *= 0.01;
-	o->can_0x5dc_Get_Speed_Sensor.Get_Velocity = in;
+	o->can_0x5dc_Get_Speed_Sensor.SpeedSensorLF_PulseCnt = in;
+	return 0;
+}
+
+int decode_can_0x5dc_SpeedSensorRF_PulseCnt(const can_obj_can_db_h_t *o, uint16_t *out) {
+	assert(o);
+	assert(out);
+	uint16_t rval = (uint16_t)(o->can_0x5dc_Get_Speed_Sensor.SpeedSensorRF_PulseCnt);
+	*out = rval;
+	return 0;
+}
+
+int encode_can_0x5dc_SpeedSensorRF_PulseCnt(can_obj_can_db_h_t *o, uint16_t in) {
+	assert(o);
+	o->can_0x5dc_Get_Speed_Sensor.SpeedSensorRF_PulseCnt = in;
+	return 0;
+}
+
+int decode_can_0x5dc_SpeedSensorLR_PulseCnt(const can_obj_can_db_h_t *o, uint16_t *out) {
+	assert(o);
+	assert(out);
+	uint16_t rval = (uint16_t)(o->can_0x5dc_Get_Speed_Sensor.SpeedSensorLR_PulseCnt);
+	*out = rval;
+	return 0;
+}
+
+int encode_can_0x5dc_SpeedSensorLR_PulseCnt(can_obj_can_db_h_t *o, uint16_t in) {
+	assert(o);
+	o->can_0x5dc_Get_Speed_Sensor.SpeedSensorLR_PulseCnt = in;
+	return 0;
+}
+
+int decode_can_0x5dc_SpeedSensorRR_PulseCnt(const can_obj_can_db_h_t *o, uint16_t *out) {
+	assert(o);
+	assert(out);
+	uint16_t rval = (uint16_t)(o->can_0x5dc_Get_Speed_Sensor.SpeedSensorRR_PulseCnt);
+	*out = rval;
+	return 0;
+}
+
+int encode_can_0x5dc_SpeedSensorRR_PulseCnt(can_obj_can_db_h_t *o, uint16_t in) {
+	assert(o);
+	o->can_0x5dc_Get_Speed_Sensor.SpeedSensorRR_PulseCnt = in;
+	return 0;
+}
+
+int decode_can_0x5dc_SpeedSensorSampleTime(const can_obj_can_db_h_t *o, uint16_t *out) {
+	assert(o);
+	assert(out);
+	uint16_t rval = (uint16_t)(o->can_0x5dc_Get_Speed_Sensor.SpeedSensorSampleTime);
+	*out = rval;
+	return 0;
+}
+
+int encode_can_0x5dc_SpeedSensorSampleTime(can_obj_can_db_h_t *o, uint16_t in) {
+	assert(o);
+	o->can_0x5dc_Get_Speed_Sensor.SpeedSensorSampleTime = in;
 	return 0;
 }
 
@@ -462,7 +543,11 @@ int print_can_0x5dc_Get_Speed_Sensor(const can_obj_can_db_h_t *o, FILE *output) 
 	assert(o);
 	assert(output);
 	int r = 0;
-	r = print_helper(r, fprintf(output, "Get_Velocity = (wire: %.0f)\n", (double)(o->can_0x5dc_Get_Speed_Sensor.Get_Velocity)));
+	r = print_helper(r, fprintf(output, "SpeedSensorLF_PulseCnt = (wire: %.0f)\n", (double)(o->can_0x5dc_Get_Speed_Sensor.SpeedSensorLF_PulseCnt)));
+	r = print_helper(r, fprintf(output, "SpeedSensorRF_PulseCnt = (wire: %.0f)\n", (double)(o->can_0x5dc_Get_Speed_Sensor.SpeedSensorRF_PulseCnt)));
+	r = print_helper(r, fprintf(output, "SpeedSensorLR_PulseCnt = (wire: %.0f)\n", (double)(o->can_0x5dc_Get_Speed_Sensor.SpeedSensorLR_PulseCnt)));
+	r = print_helper(r, fprintf(output, "SpeedSensorRR_PulseCnt = (wire: %.0f)\n", (double)(o->can_0x5dc_Get_Speed_Sensor.SpeedSensorRR_PulseCnt)));
+	r = print_helper(r, fprintf(output, "SpeedSensorSampleTime = (wire: %.0f)\n", (double)(o->can_0x5dc_Get_Speed_Sensor.SpeedSensorSampleTime)));
 	return r;
 }
 
@@ -598,4 +683,5 @@ int print_message(const can_obj_can_db_h_t *o, const unsigned long id, FILE *out
 	}
 	return -1; 
 }
+
 

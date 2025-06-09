@@ -52,18 +52,16 @@ class MinimalPublisher(Node):
             nfeatures=1000, scaleFactor=1.2, nlevels=8, edgeThreshold=15
         )
         self.colormap = cv2.COLORMAP_JET
-        #Subscriptions
+        # Subscriptions
         self.subscriber_color_image = message_filters.Subscriber(
             self, Image, "/color/image"
         )
         self.subscriber_imu = message_filters.Subscriber(self, Imu, "/imu")
 
         self.subscriber_depth = message_filters.Subscriber(self, Image, "/stereo/depth")
-            
-        #syncronization
+
+        # syncronization
         self.ts = synchronize_messages(self)
-
-
 
         self.ts.registerCallback(self.predict_actions)
         self.publisher_camera_cmd_vel = self.create_publisher(
@@ -72,7 +70,6 @@ class MinimalPublisher(Node):
 
         self.policy = load_policy(self)
 
-        
         self.twist_msg = Twist()
         self.twist_msg.linear.x = 0.0
         self.twist_msg.linear.y = 0.0
@@ -97,7 +94,7 @@ class MinimalPublisher(Node):
         print("innan publish")
         self.publisher_camera_cmd_vel.publish(self.twist_msg)
 
- 
+
 def main(args=None):
     rclpy.init(args=args)
     minimal_publisher = MinimalPublisher()

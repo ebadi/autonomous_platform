@@ -281,3 +281,321 @@ ros2 topic echo @TODO ACC + BREAK + STEERING ANGLE
 ```
 
 Next Verify that the SPCU software and low-level software can communicate. The low-level software can request a ping signal from the ECUs on one topic and receive ping confirmations on another. The ping will be sent over the CAN
+
+
+
+
+
+
+
+
+
+
+
+## TIPS AND TRICKS
+
+This is a logbook to continuously document what has been done. Could probably be copied
+if documentation is needed somewhere.
+
+**21/01-2025**
+
+**Before starting we would advise to copy the SD card for safety in case something goes wrong. This is done by imaging.**
+
+______________________________________________________________________
+
+### Copy SD-card
+
+**If you are on linux follow these steps, otherwise there are options for windows called Win32
+Disk Imager and DD for Windows however i don't know how safe these are and they require
+admin privileges.**
+
+open terminal and to find SD-card enter the following:\
+`sudo fdisk -l`
+
+We saw:\
+<span style="font-family: 'Roboto Mono', monospace;"><pre>
+Device    Boot Start   End	      Sectors	 Size	 Id	   Type\
+/dev/sda1  *   2048    526335     526335	 256M 	 C	   W95  FAT32 (LBA)\
+/dev/sda2      526336  249737182  249210847	 118.8G  83	   Linux
+</pre></span>
+
+So SD card is /dev/sda (\*1 and \*2 are partitions)
+
+Unmount the device by:\
+`sudo umount /dev/sda`
+
+Create an image of the SD-card. OBS make sure you have enough space, it will copy empty space aswell:\
+`sudo dd if=/dev/sda of~/sd-card-copy.img bs=1M status=progress`
+
+This takes a while
+
+______________________________________________________________________
+
+### Trouble with internet
+
+Apparently if the router is on, it overwrites the Wifi connection. Either use wifi connection alone or with cable connected to WAN. Otherwise it won't connect to the internet even though you are still able to ping devices on the same WiFi.
+
+______________________________________________________________________
+
+### Access Raspberry Pi via SSH
+
+**This can make it easier to pull from git and access the Raspberry withouth needing to move from and to it**
+open a terminal on the Raspberry and install the necessary file by entering:\
+`sudo apt install openssh-server`
+
+Check the status by entering:\
+`sudo systemctl status ssh`
+
+It should return something like this:
+
+<span style="font-family: 'Roboto Mono', monospace; font-size: 1em;"><pre>ssh.service - OpenBSD Secure Shell server\
+Loaded: loaded (/lib/systemd/system/ssh.service; enabled; vendor preset: enabled)\
+Active: active (running) since Mon 2020-06-01 12:34:00 CEST; 9h ago
+</pre></span>
+
+Dissable the firewall to be able to connect from another computer by entering:\
+`sudo ufw allow ssh`
+
+To connect to the Raspberry via another compouter, we first need the raspberry pi's "\<ip_address>" and "\<user>"
+To find these write the following:
+
+for  "\<user>", enter:\
+`whoami`\
+for "\<ip_address>", enter:\
+`ifconfig`
+
+You should see many outputs something similar to:
+
+<span style="font-family: 'Roboto Mono', monospace; font-size: 1em;"><pre>
+wlan0: flags=4163/\<UP,BROADCAST,RUNNING,MULTICAST/>  mtu 1500\
+`inet 192.168.1.150`  netmask 255.255.255.0  broadcast 192.168.1.255\
+inet6 fe80::7a8:fdc8:4fdf:d6f2  prefixlen 64  scopeid 0x20/<link/>\
+ether dc:a6:32:7c:40:aa  txqueuelen 1000  (Ethernet)\
+RX packets 5258  bytes 1564626 (1.5 MB)\
+RX errors 0  dropped 5  overruns 0  frame 0\
+TX packets 2106  bytes 563087 (563.0 KB)\
+TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0\
+</pre></span>
+
+You can also check the "\<ip_address>" by checking WiFi-settings->settings
+in our case "\<user>"=ap4 and "\<ip_address>"=192.168.1.150 however these may change.
+
+Open a terminal on **the computer you want to access the Raspberry from** and enter:\
+`ssh <user>@<ip_address>`
+
+Enter password if necessary, AP42023 in our case.
+
+Now you are in!
+
+______________________________________________________________________
+
+### See ROS2-topics on Raspberry Pi
+
+**To see the ROS2 topics on the raspberry on the Gokart, the below steps are a guide on how to get access to the topics and the workspace from the ROS2 environment.**
+
+First you need the "\<container_name>", find this by opening a terminal on the Raspberry and entering:\
+`docker ps`
+
+This should open something similar to:\
+<span style="font-family: 'Roboto Mono', monospace; font-size: 1em;"><pre>CONTAINER ID  IMAGE  	    COMMAND 	          CREATED    STATUS    PORTS NAMES\
+f0c3b88eb9dc  ros2_image   "/ros_entrypoint.sh"   5 min ago  Up 5 min        ap4hwi</pre>
+</span>
+
+Where you find "\<container_name>" under NAMES, in our case it was ap4hwi.
+
+Now enter:\
+`docker exec -it <container_name> /bin/bash`
+
+This should open the container as an interactive shell where you can access the ROS2 environment.
+
+To see the topics, enter:\
+`ros2 topic list`
+
+This should return all active topics which should look something like the following:
+
+<span style="font-family: 'Roboto Mono', monospace; font-size: 1em;"><pre>/GET_cmd_vel\
+/Get_position\
+/joystick_cmd_vel\
+/etc…
+</pre></span>
+
+To see the values or whats happening in a topic enter:\
+`ros2 topic echo <topic_name>`
+
+Now you should get some output. I would recommend the topic /joystick_cmd_vel which is quite interactive.
+
+______________________________________________________________________
+
+### Merge your git branch into main branch
+
+**Here is a guide for how you can merge your branch to the main branch on gitlab.**
+
+Open the terminal and locate your local git repo and enter:\
+`cd <your_local_repo_directory>`
+
+Check if there are uncommitted changes by entering:\
+`git status`
+
+To switch to the main branc,h enter:\
+`git checkout main`
+
+To pull the latest changes from remote main, enter:\
+`git pull origin main`
+
+Now to merge your branch into main, enter:\
+`git merge <your_branch_name> -m "merge message"`
+
+And lastly to push the merged changes to the remote repository, enter:\
+`git push origin main`
+
+______________________________________________________________________
+
+### rqt_graph on raspberry
+
+**To get the rqp_graph command display show on the raspberry pi you need to make sure the display settings are the same on both the raspberry and the docker. In the docker-compose.yaml file they are set to the same, however, on startup the raspberry display is set to `<empty string>` which makes it non compatible.**
+
+Open a terminal on the raspberry and enter:\
+`export DISPLAY=:0`
+
+Now start the docker, and in the same terminal as before enter:\
+`xhost +local:docker`
+
+If the docker now has the same display port you should be good to go. check this by entering:\
+`echo $DISPLAY`
+
+If you started the docker after you set the display, this should output:\
+<span style="font-family: 'Roboto Mono', monospace; font-size: 1em;"><pre>:0
+</pre></span>
+
+Otherwise in the docker terminal enter:\
+`export DISPLAY=:0`
+
+Now you can run the command rqt_graph to see how nodes are communicating visually
+
+______________________________________________________________________
+
+### rqt_graph on raspberry
+
+**To get the rqp_graph command display show on the raspberry pi you need to make sure the display settings are the same on both the raspberry and the docker. In the docker-compose.yaml file they are set to the same, however, on startup the raspberry display is set to `<empty string>` which makes it non compatible.**
+
+Open a terminal on the raspberry and enter:\
+`export DISPLAY=:0`
+
+Now start the docker, and in the same terminal as before enter:\
+`xhost +local:docker`
+
+If the docker now has the same display port you should be good to go. check this by entering:\
+`echo $DISPLAY`
+
+If you started the docker after you set the display, this should output:\
+<span style="font-family: 'Roboto Mono', monospace; font-size: 1em;"><pre>:0
+</pre></span>
+
+Otherwise in the docker terminal enter:\
+`export DISPLAY=:0`
+
+Now you can run the comman drqt_graph to see how nodes are communicating visually
+
+______________________________________________________________________
+
+### Work with docker
+
+**Here is a quick guide on how to work with the necesarry docker commands to get started.**\
+To work with docker you need to find the dockerfile and/or docker-compose.yaml file you wish to edit. If you want to edit the software which connects the hardware, cd to "\<Hardware_Interface_Low_Level_Computer>". There open a terminal.
+
+Normally the hardware docker should run on startup so if you want to make changes make sure the docker is down. Do this by entering:\
+`docker-compose down`
+
+Now do the changes you want to either the docker-compose.yaml or the dockerfile file and run the docker by entering:\
+`docker-compose up -d`
+
+The "\<-d>" stands for detached and starts the service in the background so you can still use your terminal, if this is not what yuo want runt the same command without "\<-d>". The docker should now be running.
+
+If there occurs some errors try by solving entering:\
+`docker-compose down --volumes --remove-orphans`
+
+and\
+`docker-compose build --no-cache`
+
+and then run the docker again.
+
+______________________________________________________________________
+
+### ROS2 node
+
+**To create a ROS2 node some things have to be setup. First you need ROS2 installed, this can be done on windows but it's easier on linux. This guide will focus on working with ROS2 on the Raspberry which already has ROS2 installed.**
+
+The ROS2 environment is set up in the docker so enter the docker first by entering:\
+`docker exec -it <container_name> /bin/bash`
+
+CD to your soruce directory which in my case is "\<root@ap4-hw-interface-rpi4:~/ap4_hwi_docker_dir/ap4hwi_ws/src>" and create a package by entering:\
+`ros2 pkg create <my_pkg_name> --build-type ament_python --dependencies rclpy`
+
+Now you have to change permissions so others you can push it to hit by entering:\
+`chmod 777 <my_pkg_name>`
+
+Now go to the directory the python files are to be created in. This is "\<my_pkg_name>/\<my_pkg_name>" so enter:\
+`cd <my_pkg_name>/<my_pkg_name>`
+
+Create a python file by entering:\
+`touch <filename.py>`
+
+You also have to make it an executable by entering:\
+`chmod +x <filename.py>`
+
+You can check that it has become an executable by entering `ls` and if "\<filename.py>" is highlighted in green, it is done.\
+Now you can write your code in the "\<filename.py>" file. When that is done, don't forget to add any imports to the `packages.xml` file and add your entrypoints to the`setup.py` file.
+
+Add packages by adding:\
+`<depend>import_to_add</depend>`\
+under the "<license>licenses</license>" line.
+
+Add entrypoints by adding:
+
+<pre style="font-family: 'Roboto Mono', monospace; font-size: 1em;">
+<code>
+entry_points={
+    'console_scripts': [
+        "example_node1 = my_pkg_name.filename1:main",
+        "example_node2 = my_pkg_name.filename2:main"
+    ],
+}
+</code>
+</pre>
+
+When this is done you can build your work space by cd to your work space directory and entering:\
+`colcon build`
+
+When this is done you need to source your variables by entering:\
+`source ~/ap4_hwi_docker_dir/ap4hwi_ws/install/setup.bash`
+
+Thi also depends on your container name and my followed from the docker environmkent mentioned above.
+
+Now you can finally run your ROS2 node by entering:\
+`ros2 run <pkg_name> <node_name>`
+
+______________________________________________________________________
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,4 +1,4 @@
-VERSION "HIPBNYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY/4/%%%/4/'%**4YYY///"
+VERSION ""
 
 
 NS_ : 
@@ -22,40 +22,55 @@ NS_ :
 	SIG_GROUP_
 	SIG_VALTYPE_
 	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
 
 BS_:
 
-BU_: SPCU CMCU
+BU_: SPCU CMCU SSU
 
 
 BO_ 500 Error_SPCU: 1 SPCU
- SG_ Heartbeat : 0|1@1+ (1,0) [0|1] "Bool" Vector__XXX
- SG_ Propulsion_Error : 1|1@1+ (1,0) [0|1] "Bool" Vector__XXX
- SG_ Steering_Error : 2|1@1+ (1,0) [0|1] "Bool" Vector__XXX
+ SG_ Heartbeat : 0|1@1+ (1,0) [0|1] "Bool"  SPCU
+ SG_ Propulsion_Error : 1|1@1+ (1,0) [0|1] "Bool"  SPCU
+ SG_ Steering_Error : 2|1@1+ (1,0) [0|1] "Bool"  SPCU
 
 BO_ 1000 Set_SPCU: 8 CMCU
- SG_ Act_ThrottleVoltage : 33|13@1+ (1,0) [850|5100] "mV" Vector__XXX
- SG_ Act_BreakVoltage : 0|13@1+ (1,0) [850|5100] "mV" Vector__XXX
- SG_ Act_SteeringPosition : 17|8@1- (1,0) [-180|180] "Degree" Vector__XXX
- SG_ Act_Reverse : 16|1@1+ (1,0) [0|1] "Bool" Vector__XXX
- SG_ Act_SteeringVelocity : 25|8@1+ (1,0) [0|0] "units/s" Vector__XXX
+ SG_ Act_ThrottleVoltage : 33|13@1+ (1,0) [850|5100] "mV"  CMCU
+ SG_ Act_BreakVoltage : 0|13@1+ (1,0) [850|5100] "mV"  CMCU
+ SG_ Act_SteeringPosition : 17|8@1- (1,0) [-180|180] "Degree"  CMCU
+ SG_ Act_Reverse : 16|1@1+ (1,0) [0|1] "Bool"  CMCU
+ SG_ Act_SteeringVelocity : 25|8@1+ (1,0) [0|0] "units/s"  CMCU
 
 BO_ 2000 Get_SPCU: 8 SPCU
- SG_ Get_SteeringAngle : 0|9@1- (1,0) [-180|180] "Degree" Vector__XXX
- SG_ Get_ReverseMode : 9|1@1+ (1,0) [0|1] "Bool" Vector__XXX
+ SG_ Get_SteeringAngle : 0|9@1- (1,0) [-180|180] "Degree"  SPCU
+ SG_ Get_ReverseMode : 9|1@1+ (1,0) [0|1] "Bool"  SPCU
 
 BO_ 100 Request_Heartbeat: 8 CMCU
- SG_ Sig_Req_Heartbeat : 0|64@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Sig_Req_Heartbeat : 0|64@1+ (1,0) [0|255] ""  CMCU
 
 BO_ 101 Response_Heartbeat_SPCU: 8 SPCU
- SG_ Response_Heartbeat_sig : 0|8@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Response_Heartbeat_sig : 0|8@1+ (1,0) [0|1] ""  SPCU
 
 BO_ 102 Response_Heartbeat_XXX: 8 Vector__XXX
 
-BO_ 1500 Get_Speed_Sensor: 8 SPCU
- SG_ Get_Velocity : 0|8@1+ (100,0) [0|1000] "cm/s" Vector__XXX
+BO_ 1500 Get_Speed_Sensor: 8 SSU
+ SG_ SpeedSensorLF_PulseCnt : 0|12@1+ (1,0) [0|4095] "pulses per sample time" Vector__XXX
+ SG_ SpeedSensorRF_PulseCnt : 12|12@1+ (1,0) [0|4095] "pulses  per sample time" Vector__XXX
+ SG_ SpeedSensorLR_PulseCnt : 24|12@1+ (1,0) [0|4095] "pulses  per sample time" Vector__XXX
+ SG_ SpeedSensorRR_PulseCnt : 36|12@1+ (1,0) [0|4095] "pulses  per sample time" Vector__XXX
+ SG_ SpeedSensorSampleTime : 48|12@1+ (1,0) [0|4095] "time in ms for speed sensor sample" Vector__XXX
 
 
+
+CM_ BU_ SPCU "Steering and Propulsion Control Unit";
+CM_ BU_ SSU "Speed Sensor Unit\t";
 CM_ BO_ 500 "Error Handler frame";
 CM_ SG_ 500 Heartbeat "heartbeat to detect that the ecu is still active";
 CM_ SG_ 500 Propulsion_Error "Boolean to detect if some error has occrued in propulsion control";
@@ -68,6 +83,13 @@ CM_ SG_ 100 Sig_Req_Heartbeat "Request heartbeat signal from HW nodes";
 CM_ BO_ 101 "Responds to a request heartbeat frame";
 CM_ SG_ 101 Response_Heartbeat_sig "Sends a value of 1 to respond to a heartbeat request";
 CM_ BO_ 1500 "Get speed sensor reading";
+CM_ SG_ 1500 SpeedSensorLF_PulseCnt "Input from Left Front optical Speed sensor";
+CM_ SG_ 1500 SpeedSensorRF_PulseCnt "Input from Right Front optical Speed sensor";
+CM_ SG_ 1500 SpeedSensorLR_PulseCnt "Input from Left Rear optical Speed sensor
+";
+CM_ SG_ 1500 SpeedSensorRR_PulseCnt "Input from Right Rear optical Speed sensor
+";
+CM_ SG_ 1500 SpeedSensorSampleTime "Sample time base for speed sensor counts";
 BA_DEF_ SG_  "SPN" INT 0 524287;
 BA_DEF_ BO_  "VFrameFormat" ENUM  "StandardCAN","ExtendedCAN","reserved","J1939PG";
 BA_DEF_  "DatabaseVersion" STRING ;
@@ -110,3 +132,4 @@ BA_ "ProtocolType" "J1939";
 BA_ "BusType" "CAN";
 BA_ "DatabaseCompiler" "CSS ELECTRONICS (WWW.CSSELECTRONICS.COM)";
 BA_ "DatabaseVersion" "1.0.0";
+

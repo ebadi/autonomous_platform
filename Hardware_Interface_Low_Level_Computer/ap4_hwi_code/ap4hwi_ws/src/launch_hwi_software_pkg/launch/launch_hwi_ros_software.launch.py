@@ -6,7 +6,7 @@ from launch.launch_description_sources import PythonLaunchDescriptionSource
 from ament_index_python import get_package_share_directory
 
 
-# *
+#
 #  AP4 Hardware Interface custom launch file
 #
 #   You can read more about ROS2 launch files here: https://docs.ros.org/en/foxy/Tutorials/Intermediate/Launch/Creating-Launch-Files.html
@@ -51,6 +51,31 @@ def generate_launch_description():
                             "xbox_controller_feed_forward_ctrl_pkg"
                         ),
                         "/launch/launch_xbox_controller_feedforward_ctrl.launch.py",
+                    ]
+                )
+            ),
+            # launch the Lidar node to publish to /scan topic
+            IncludeLaunchDescription(
+                PythonLaunchDescriptionSource(
+                    [
+                        get_package_share_directory("sllidar_ros2"),
+                        "/launch/sllidar_a1_launch.py",
+                    ]
+                )
+            ),
+            IncludeLaunchDescription(
+                PythonLaunchDescriptionSource(
+                    [
+                        get_package_share_directory("odom_publisher"),
+                        "/launch/odom_launch.py",
+                    ]
+                )
+            ),
+            IncludeLaunchDescription(
+                PythonLaunchDescriptionSource(
+                    [
+                        get_package_share_directory("imu_pkg"),
+                        "/launch/imu_launch.py",
                     ]
                 )
             ),

@@ -59,7 +59,7 @@ If new functionality cannot be implemented on an existing ECU node, a new hardwa
 ### build a new ECU
 
 1. Start 3D printing generic ECU components (top, bottom, internal component holders)
-   Please check `CAD` folder for the list of components that need to be printed.
+   Please check `CAD` folder for the list of components that need to be printed. In the CAD folder the Node box bottom is not the same as the one on the existing go-kart.
 
 The estimated material consumption (with reasonable slicer settings) is around 200 grams. And total print time is around 16-18 hours. Grab some coffee and leave it printing overnight! Make sure the first layers stick properly to the printing bed before leaving.
 

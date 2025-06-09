@@ -5,14 +5,17 @@ The intent with this document is to document the steps taken to get an xbox360 c
 ## Steps taken
 
 - install https://github.com/medusalix/xone to get xbox360 wireless controller to work on linux ubuntu (This should be done on the host computer on which the USB dongle is connected)
-  - You need dkms. ```sudo apt-get install dkms```
-  - You need cabextract ``` sudo apt-get install cabextract ``` 
+
+  - You need dkms. `sudo apt-get install dkms`
+  - You need cabextract `sudo apt-get install cabextract`
+
 - in docker, install ros-humble-joy
   http://wiki.ros.org/joy/Tutorials/ConfiguringALinuxJoystick
-  
+
 - js0 should show up when typing ls /dev/input/
+
   - It is crucial that the wireless adapter is on, meaning its light is either blinking or on.
-  - If it doesn't work then you can try following this guide as well. https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debs.html 
+  - If it doesn't work then you can try following this guide as well. https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debs.html
 
 - sudo apt-get install jstest-gtk - test joystick functionality - add to dockerfile
 

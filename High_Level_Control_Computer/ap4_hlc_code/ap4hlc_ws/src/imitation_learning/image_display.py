@@ -3,7 +3,7 @@ import pandas as pd
 import time
 import numpy as np
 import sys
- 
+
 image_df = pd.read_pickle(sys.argv[1])
 
 cv2.namedWindow("Images", cv2.WINDOW_NORMAL)

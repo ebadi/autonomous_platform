@@ -16,9 +16,17 @@ STL files can be opened using any 3D printer slicer software, at Infotiv we use 
 
 ![./Limitswitch_steering_holder/sensor_holder.stl](./Limitswitch_steering_holder/sensor_holder.stl-thumbnail.png){ width=70% }
 
-./camera_sensor_mount/camera_holder.stl:
+./lidar_mount/lidar_holder.stl:
 
-![./camera_sensor_mount/camera_holder.stl](./camera_sensor_mount/camera_holder.stl-thumbnail.png){ width=70% }
+![./lidar_mount/lidar_holder.stl](./lidar_mount/lidar_holder.stl-thumbnail.png){ width=70% }
+
+./camera_mount/camera_joint_female.stl:
+
+![./camera_mount/camera_joint_female.stl](./camera_mount/camera_joint_female.stl-thumbnail.png){ width=70% }
+
+./camera_mount/camera_joint_male.stl:
+
+![./camera_mount/camera_joint_male.stl](./camera_mount/camera_joint_male.stl-thumbnail.png){ width=70% }
 
 ./Speed_Sensor_Back/Holder_base.stl:
 
@@ -128,6 +136,10 @@ STL files can be opened using any 3D printer slicer software, at Infotiv we use 
 
 ![./laptop_holder/laptop_right_holder.stl](./laptop_holder/laptop_right_holder.stl-thumbnail.png){ width=70% }
 
+./laptop_holder/laptop_slider.stl:
+
+![./laptop_holder/laptop_slider.stl](./laptop_holder/laptop_slider.stl-thumbnail.png){ width=70% }
+
 ./Steering_Node_Box/sabertooth_holder.stl:
 
 ![./Steering_Node_Box/sabertooth_holder.stl](./Steering_Node_Box/sabertooth_holder.stl-thumbnail.png){ width=70% }
@@ -139,6 +151,16 @@ STL files can be opened using any 3D printer slicer software, at Infotiv we use 
 ./Steering_Node_Box/limitswitch_holder_top.stl:
 
 ![./Steering_Node_Box/limitswitch_holder_top.stl](./Steering_Node_Box/limitswitch_holder_top.stl-thumbnail.png){ width=70% }
+
+To mimic the wifi router holder mounted on the first go-car we had to use the file router_holder.gcode for 3d printing the holder.
+Because of the .gcode format you have to drag the file to IdeaMaker, it will not be show if choosen to be open up from "Import Models" inside IdeaMaker. When .gcode is dragged
+to IdeaMaker it will be opened in preview mode and no changes can be made but it looks fine when printed.
+
+./wifi_router_holder/router_holder.gcode:
+
+<div style="text-align: center; margin-left: auto; margin-right: auto; width: 70%;">
+    <img src="./wifi_router_holder/wifi_router_holder.png" alt="./wifi_router_holder/router_holder.gcode" style="display: block; margin-left: 20%; width: 70%;">
+</div>
 
 ./wifi_router_holder/xt60_holder.stl:
 

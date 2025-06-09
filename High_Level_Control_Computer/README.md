@@ -4,13 +4,13 @@ This directory contains the high level control software which is responsible for
 
 ## High-Level Control Hardware Requirements <a name="High-Level-Control-Hardware-Requirements"></a>
 
-To run the high-level control software it is preferable to run it on Linux. (Tested on Ubuntu 22.04). The processor should of x86 type. It is preferable to have a dedicated graphics card if one has to run a lot of digital twin simulations.
+To run the high-level control software it is preferable to run it on Linux. (Tested on Ubuntu 22.04). The processor should be of x86 type. It is preferable to have a dedicated graphics card if one has to run a lot of digital twin simulations.
 
 See physics simulator Gazebo Simulator hardware requirements [here.](https://se.mathworks.com/help/robotics/ug/gazebo-simulation-requirements.html)
 
-To run high-level control on windows the docker graphics passthrough methodology needs to be modified. Currently it has only been setup for Linux. There will also be a greater performance loss when running a linux based docker container on windows compared to linux.
+To run high-level control on windows the docker graphics passthrough methodology needs to be modified. Currently it has only been setup for Linux. There will also be a greater performance loss when running a Linux based docker container on windows compared to Linux.
 
-The high level software is the highest level software layer, it is supposed to be hardware agnostic. It should not care what specific hardware is implemented on the physical autonomous platform.
+The high level software is the highest level software layer, it is supposed to be hardware agnostic. It should not care what specific hardware that is implemented on the physical autonomous platform.
 
 The high level control software is supposed to tell the autonomous platform WHAT to do, whilst the low level control software is supposed to tell the platform HOW it should do it. This means that the algorithms developed / used in high level control software can be transferred to any physical platform as long as there exists an interface for it.
 
@@ -19,8 +19,9 @@ As an example: A high level software component wants the platform to move forwar
 ![High level overview](../Resources/Report_sketches/SW/high_level_overview.png)
 
 Above is a schematic diagram of how the software in high level control software should be designed. As of August 2023 only a simple digital twin is implemented so far.
+In 2025 the digital twin was fisnished and can be used to test och evaluate algortihms on.
 
-### How To Start
+### How To Start simulation, LiDAR and SLAM for autonomous navigation
 
 <a name="How-To-Start"></a>
 
@@ -28,14 +29,18 @@ The high level software container should be started on the development laptop. N
 
 If any error occurs, `TEST_DEBUGING.md`, for troubleshooting.
 
-Note: As of August 2023 it starts the digital twin software on ROS_DOMAIN_ID = 0 meaning it will not be able to interact with the physical platform even if the computers are located on the same wifi network. Hardware platform ROS2 network has ROS_DOMAIN_ID = 1.
-
 Note: The host computer needs to be configured to pass graphical elements to the container. (before starting the container)
 
-(Make sure your terminal path is located in this directory)
+In a terminal, run:
 
 ```bash
-xhost +local:*
+xhost +local:root
+```
+
+Navigate to the correct directory in the terminal by:
+
+```bash
+cd Desktop/autonomous_platform/High_Level_Control_Computer
 ```
 
 First, rebuild the container using
@@ -47,47 +52,70 @@ docker-compose build
 The high level software container, with the configurations, can be started using
 
 ```bash
-docker-compose up
+docker-compose up -d
 ```
 
-The expected terminal output is:
-
-![Expected terminal output when starting the HLC docker container](Resources/container_start.png)
-
-Two new windows should open up, Gazebo and Rviz, and will look something like this:
-
-![Expected graphical output when starting the HLC docker container](Resources/container_start_graphics.png)
-
-The digital twin can be controlled (drive around manually) using the keyboard in a new terminal window.
-
-Enter the running container
+Enter the running container by typing
 
 ```bash
 docker exec -it ap4hlc bash
 ```
 
-Navigate to workspace, source environment variables
+When inside the docker, run:
 
 ```bash
-cd ap4hlc_ws
-source install/setup.bash
+ros2 launch autonomous_platform_robot_description_pkg launch_robot_simulation.launch.py
 ```
 
-Start tele-operation twist keyboard:
+Now two windows with Gazebo and RViz2 should open. It should look something like this:
+
+![Digital Twin start-up](../Resources/Report_sketches/digital_twin/simulation_startup.png)
+
+To start the autonomous navigation of the Gokart around the gokart track, press the `2D Goal Pose` in RViz2 and choose a goal point far outside the track, like this:
+
+![Digital Twin start-up](../Resources/Report_sketches/digital_twin/Goal_point.png)
+
+Now the gokart should start moving autonomously around the track until it has driven one lap around the track.
+
+If you want to use the digital twin with IMU for localization as well, you need to change a configuration file name inside the simualtion launch file.
+
+Do this by open `launch_robot_simulation.launch.py` in VS Code and scroll down to line 126 where the `ekf_config` is located. Here you should change line 129 to `ekf_imu.yaml` if you want to use IMU and `ekf.yaml` if you want to test without the IMU.
+
+When changed in the launch file, restart the docker and run the simulation again.
 
 ```bash
-ros2 run teleop_twist_keyboard teleop_twist_keyboard
+exit
 ```
 
-By using 'i', 'j', 'l', 'k' and ',' one can now control the digital twin.
-See expected terminal output below.
-
-![Manual keyboard control of platform](Resources/container_start_teleop_twist_keyboard.png)
-
-A running container can be stopped by either 'Ctrl+C' in the terminal in which 'docker-compose up' was run. OR in a new terminal:
+```bash
+docker-compose down
+```
 
 ```bash
-docker stop ap4hlc
+docker-compose up -d
+```
+
+```bash
+docker exec -it ap4hlc bash
+```
+
+```bash
+ros2 launch autonomous_platform_robot_description_pkg launch_robot_simulation.launch.py
+```
+
+## Path tracker - Record and results
+
+To collect the results for the AP4 navigation a script has been created that calculates the difference betqeen the planned path and the path that the AP4 is taking during the drive. Run the path tracker at the same time as the simulation to record the data from the AP4 path and the planned path.
+
+```bash
+ros2 launch path_tracker launch_path_comparison.launch.py
+```
+
+This will save two csv files under `/ap4_hlc_ws/logs/paths_csv`.
+To visualize the results, copy the name of the two csv-files into the `actual_path_file` and `planned_path_file` in the `result.py` which is in the `path_tracker` package. Then run `result.py`
+
+```bash
+python3 ./result.py
 ```
 
 ## Simulation for imitation learning
@@ -122,6 +150,7 @@ To start the autonomous drive for the gokart or to collect more data for DAgger,
 ```bash
 source start_data_collection.sh --param <param>
 ```
+
 The params can either be:
 
 - default - Collect data from driving the AP4, storing all actions and observations for training
@@ -130,7 +159,6 @@ The params can either be:
 - depth - Starting high level model, setting the inputs to be color camera, depth camera and imu and saving human interactions for training depth HG-DAgger model
 - orb - Starting high level model, setting the inputs to be color camera, orbs and imu and saving human interactions for training orb HG-DAgger model
 
-
 This script starts the following in different terminals:
 
 - Camera docker - starts to publishing information from the imu, depth camera and color camera to ROS.
@@ -138,7 +166,6 @@ This script starts the following in different terminals:
 - Data Collection - Recording and synching the data and then saving as a pickle file.
 - Test script - Starts a test script to check the communication between RPi and laptop, checks for missing topics and nodes etc.
 - High Level Model - Starts on (color, depth and orb), taking inputs from the sensors and predicting the actions.
-
 
 When no more data should be collected it is important to close data_collection and ROS bag with CTRL+C for the data to be saved correctly!
 
@@ -170,8 +197,6 @@ The Xbox controller has the highest priority which means that the control from t
 ![twist_mux](../Resources/extra_documentation_images/twist_mux.png)
 
 More information about twist_mux can be read here: [Link official twist_mux documentation.](https://wiki.ros.org/twist_mux)
-
-
 
 ## Extend High Level Software
 
@@ -216,8 +241,6 @@ First of all make sure you have read the general design principles document for 
 
 Software functionality is created inside ROS2 packages. These can be seen as code libraries that are configured to run and perform a specific task within a ROS2 network.
 
-
-
 # Training Phase
 
 ## Installing imitation learning library
@@ -252,7 +275,7 @@ The training can then be started by running `python train_DAgger.py simulation` 
 
 ### Real world
 
-To train the imitation learning models from the data collected via `source data_collection.sh`, start the high-level docker by standing in High_Level_Control_Computer and running `docker-compose up` then in a new terminal run: 
+To train the imitation learning models from the data collected via `source data_collection.sh`, start the high-level docker by standing in High_Level_Control_Computer and running `docker-compose up` then in a new terminal run:
 
 ```bash
 source start_training --param <param>

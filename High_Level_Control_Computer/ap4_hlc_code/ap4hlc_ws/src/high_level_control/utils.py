@@ -11,6 +11,7 @@ import re
 import message_filters
 import torch as th
 
+
 def find_highest_numbered_model(base_path, base_pattern):
     """
     Finds the highest numbered model in a directory based on a naming pattern.
@@ -31,6 +32,7 @@ def find_highest_numbered_model(base_path, base_pattern):
 
     return highest_numbered_model
 
+
 def synchronize_messages(self):
     if self.param_value == "depth":
         ts = message_filters.ApproximateTimeSynchronizer(
@@ -44,6 +46,7 @@ def synchronize_messages(self):
         )
     return ts
 
+
 def load_policy(self):
     model_path = "/root/ap4_hlc_docker_dir/ap4hlc_ws/src/imitation_learning/models/"
     if self.param_value == "depth":
@@ -52,9 +55,10 @@ def load_policy(self):
         model_name = "model_orb"
     else:
         model_name = "model_color"
-    model_name = find_highest_numbered_model(model_path,model_name)
+    model_name = find_highest_numbered_model(model_path, model_name)
     print(f"Loaded model is: {model_name}")
     return th.load(model_name)
+
 
 def get_obs(self, image, imu, depth):
     angular_velocity = np.array(
@@ -111,6 +115,3 @@ def get_obs(self, image, imu, depth):
     else:
         observation = {"color_image": np.array(image_data), "imu": np.array(imu)}
     return observation
-
-    
-    

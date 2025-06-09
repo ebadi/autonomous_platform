@@ -27,5 +27,5 @@ echo "starting mkdocs"
 rm -rf Resources/web/docs
 mkdir Resources/web/docs
 rsync -av --progress . Resources/web/docs --exclude Resources/web --exclude src  --exclude include --exclude lib --exclude .trunk --exclude INTERNAL
-# mkdocs serve -f ./Resources/web/mkdocs.yml
-mkdocs gh-deploy  -f ./Resources/web/mkdocs.yml  --remote-branch gh-pages
+mkdocs serve -f ./Resources/web/mkdocs.yml
+# mkdocs gh-deploy  -f ./Resources/web/mkdocs.yml  --remote-branch gh-pages

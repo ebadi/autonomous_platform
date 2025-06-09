@@ -7,3 +7,6 @@
 [submodule "recorded_data"]
 	path = High_Level_Control_Computer/ap4_hlc_code/recorded_data
 	url = git@hf.co:datasets/hamidebadi/autonomous_platform_gokartcentrallen_imitation_learning_dataset
+[submodule "CAN_Nodes_Microcontroller_Code/CAN_LIBRARY_DATABASE/dbcc"]
+	path = CAN_Nodes_Microcontroller_Code/CAN_LIBRARY_DATABASE/dbcc
+	url = https://github.com/howerj/dbcc.git

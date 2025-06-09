@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<robot name="ap4_gokart" xmlns:xacro="http://ros.org/wiki/xacro">
+
+ <!-- Include chassi body, wheel and steering information urdf file -->
+ <!-- Parameters for the gokart chassis can be changed inside this file -->
+   <xacro:include filename="$(find autonomous_platform_robot_description_pkg)/src/description/simple_digital_twin.urdf.xacro"/> 
+  <!-- <xacro:include filename="$(find autonomous_platform_robot_description_pkg)/src/description/gokart_chassi.urdf.xacro"/>  -->
+  
+  <!-- Ackermann steering control for simulation of AP4 -->
+  
+ <xacro:include filename="control_simple_digital_twin.xacro"/>
+  <!--<xacro:include filename="ros2_control.xacro"/>-->
+  <xacro:include filename="lidar.xacro"/>
+  <xacro:include filename="imu.xacro"/>
+
+  
+  <!-- TODO add sensors and such here from seperate files-->
+  
+</robot>

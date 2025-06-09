@@ -69,10 +69,10 @@ In order to simply test the functionality of the propulsion control a simple loc
 | ------------------ | -------------------------------------------- | ------------------------------------------- |
 | mcp4725-12-bit-dac | https://github.com/adafruit/Adafruit_MCP4725 | `~\Documentation\Segway_Propulsion\Manuals` |
 
-|                                                         |
-| :-----------------------------------------------------: |
+|                                                               |
+| :-----------------------------------------------------------: |
 | ![Resources/wiring_doc_DAC.PNG](Resources/wiring_doc_DAC.PNG) |
-|               Fig: From manual on MCP4725               |
+|                  Fig: From manual on MCP4725                  |
 
 DAC also has the capability to easily add one more board in parallel, so a total of 2 boards can be used on the same IC^2 bus. The additional MCP4725 library also needs the Adafruit busIO, the later one manage the bus communication easily and userfriendly. So the only neccesary pseudo code in order to operate the MCP4725 DAC becomes:
 
@@ -105,8 +105,8 @@ Other components was a available Arduino Mega and a oscilloscope to measure the 
 1. **DAC rig**, measuring the DAC output voltage using the oscilloscope.
 1. **Ninebot rig**, using the DAC boards in parallell to the Ninebot pedals.
 
-|              **DAC Rig**  Wiring              |                   **Ninebot** Wiring                    |
-| :-------------------------------------------: | :-----------------------------------------------------: |
+|                 **DAC Rig**  Wiring                 |                      **Ninebot** Wiring                       |
+| :-------------------------------------------------: | :-----------------------------------------------------------: |
 | ![Resources/DAC_setup.jpg](Resources/DAC_setup.jpg) | ![Resources/Ninebot_wiring.jpg](Resources/Ninebot_wiring.jpg) |
 
 ### Results
@@ -115,18 +115,18 @@ The test rigs software can be found in `~\autonomous_platform\Documentation\Segw
 
 |                                                           DAC Rig Results                                                           |
 | :---------------------------------------------------------------------------------------------------------------------------------: |
-|                                          ![Resources/DAC_Digital.jpg](Resources/DAC_Digital.jpg)                                          |
+|                                       ![Resources/DAC_Digital.jpg](Resources/DAC_Digital.jpg)                                       |
 | **Fig**: Comparison between the regular digtal output pin (yellow on Channel 1) and the output voltage from the DAC (blue channel 2 |
-|                                         ![Resources/DAC_triangle.jpg](Resources/DAC_triangle.jpg)                                         |
+|                                      ![Resources/DAC_triangle.jpg](Resources/DAC_triangle.jpg)                                      |
 |            **Fig**: It is also possible to generate complex signals such as a triangle wave. Now DAC output on channel 1            |
-|                                              ![Resources/DAC_sin.jpg](Resources/DAC_sin.jpg)                                              |
+|                                           ![Resources/DAC_sin.jpg](Resources/DAC_sin.jpg)                                           |
 |                              **Fig**: Furthermore it is also possible to generate sinusoidal signals.                               |
 
 As the ninebot circuit needs pure analog voltages and not the PWM approximations, the solution whilst using a DAC seems suitable. One other thing noted is that the arduino's analog pin output, cant be controlled in the same manner, as it can only be 0V or 5V. Furthermore with DAC board, arbritary microcontroller can be used.
 
 |                                                                                                                                                                                                Ninebot Rig Results                                                                                                                                                                                                 |
 | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-|                                                                                                                                                                                ![Resources/reverse_meas.PNG](Resources/reverse_meas.PNG)                                                                                                                                                                                 |
+|                                                                                                                                                                             ![Resources/reverse_meas.PNG](Resources/reverse_meas.PNG)                                                                                                                                                                              |
 | **Fig:** Whilst doing the testing on DAC with ninebot, we also measured the voltages in each cable, the x-axis in scaled over milli seconds (ms). In order to define the reverse algorithm, it was simply set up to measure signals whilst pressing the pedals manually (2 times rapidly to go into reverse mode). Making it possible to approximate the time constant needed between the presses, $\\tau=200$ ms. |
 |                                                                                                                                                                                                                                                                                                                                                                                                                    |
 |                                                                                                                 [Demo video, demostrating the functionality to control the propulsion using the DAC board.](https://drive.google.com/file/d/1FeQGeAu96iMUcdyh7bQluNmk0nlNBufs/view?usp=share_link)                                                                                                                 |

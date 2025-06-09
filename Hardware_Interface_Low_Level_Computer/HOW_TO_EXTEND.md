@@ -47,7 +47,7 @@ This section is split up into two parts;
 
 ### Software functionality
 
-If the sensor information already exists and you need to add new software functionality the general implementation steps are:
+If the sensor information already exists and you need to add new software functionality, the general implementation steps are:
 
 ### Sensors
 
@@ -55,7 +55,7 @@ Sensors can be split up into two groups, sensors with a USB interface and sensor
 
 ### USB Based Sensors
 
-If a sensors with a USB interface is to be added to autonomous platform then this can be done solely in `Hardware_Interface_Low_Level_Computer` without touching the embedded software. The general procedure would be.
+If a sensor with a USB interface is to be added to autonomous platform then this can be done solely in `Hardware_Interface_Low_Level_Computer` without touching the embedded software. The general procedure would be.
 
 1. Mount the sensor hardware on platform
 1. Connect USB to AP4 USB hub.

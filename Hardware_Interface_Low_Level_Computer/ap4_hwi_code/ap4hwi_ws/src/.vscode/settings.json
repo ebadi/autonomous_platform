@@ -1,0 +1,20 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/anton/AP4/autonomous_platform/Hardware_Interface_Low_Level_Computer/ap4_hwi_code/ap4hwi_ws/install/xbox_controller_feed_forward_ctrl_pkg/lib/python3.10/site-packages",
+        "/home/anton/AP4/autonomous_platform/Hardware_Interface_Low_Level_Computer/ap4_hwi_code/ap4hwi_ws/install/keyboard_control/lib/python3.10/site-packages",
+        "/home/anton/AP4/autonomous_platform/Hardware_Interface_Low_Level_Computer/ap4_hwi_code/ap4hwi_ws/install/david_anton_test_pkg/lib/python3.10/site-packages",
+        "/home/anton/AP4/autonomous_platform/Hardware_Interface_Low_Level_Computer/ap4_hwi_code/ap4hwi_ws/install/AP4_init_test_package/lib/python3.10/site-packages",
+        "/home/anton/ros2_ws/install/keyboard_control/lib/python3.10/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/anton/AP4/autonomous_platform/Hardware_Interface_Low_Level_Computer/ap4_hwi_code/ap4hwi_ws/install/xbox_controller_feed_forward_ctrl_pkg/lib/python3.10/site-packages",
+        "/home/anton/AP4/autonomous_platform/Hardware_Interface_Low_Level_Computer/ap4_hwi_code/ap4hwi_ws/install/keyboard_control/lib/python3.10/site-packages",
+        "/home/anton/AP4/autonomous_platform/Hardware_Interface_Low_Level_Computer/ap4_hwi_code/ap4hwi_ws/install/david_anton_test_pkg/lib/python3.10/site-packages",
+        "/home/anton/AP4/autonomous_platform/Hardware_Interface_Low_Level_Computer/ap4_hwi_code/ap4hwi_ws/install/AP4_init_test_package/lib/python3.10/site-packages",
+        "/home/anton/ros2_ws/install/keyboard_control/lib/python3.10/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ]
+}

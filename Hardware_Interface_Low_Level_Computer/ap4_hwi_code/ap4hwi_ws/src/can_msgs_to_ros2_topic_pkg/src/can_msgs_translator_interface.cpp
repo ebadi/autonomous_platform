@@ -38,6 +38,12 @@ class TranslatorCANtoROS2Node : public rclcpp::Node
         /*
          * ====================================================================================================================
          * Signal publisher on unique topics
+         * 
+         * Every signal from the CAN Signal DATABASE will get it's own ROS topic.
+         * The GET topics are used to represent the signals that have been published by other CAN Nodes. 
+         * The SET topics are used to represent the signals that are to be written to other CAN nodes by this publisher. 
+         * 
+         * 
         */
         // Frame ID 100
         publisher_frame_100_Req_Heartbeat_= this->create_publisher<std_msgs::msg::Float64>("/GET_0x64_Req_Heartbeat", 10);
@@ -57,7 +63,11 @@ class TranslatorCANtoROS2Node : public rclcpp::Node
         publisher_frame_1000_Act_Reverse_ = this->create_publisher<std_msgs::msg::UInt8>("/GET_0x3e8_Act_Reverse", 10);
 
         // Frame ID 1500
-        publisher_frame_1500_Get_Velocity_ = this->create_publisher<std_msgs::msg::UInt8>("/GET_0x5dc_Get_Velocity", 10);
+        publisher_frame_1500_SpeedSensorLF_PulseCnt_ = this->create_publisher<std_msgs::msg::UInt16>("/GET_0x5dc_SpeedSensorLF_PulseCnt", 10);
+        publisher_frame_1500_SpeedSensorRF_PulseCnt_ = this->create_publisher<std_msgs::msg::UInt16>("/GET_0x5dc_SpeedSensorRF_PulseCnt", 10);
+        publisher_frame_1500_SpeedSensorLR_PulseCnt_ = this->create_publisher<std_msgs::msg::UInt16>("/GET_0x5dc_SpeedSensorLR_PulseCnt", 10);
+        publisher_frame_1500_SpeedSensorRR_PulseCnt_ = this->create_publisher<std_msgs::msg::UInt16>("/GET_0x5dc_SpeedSensorRR_PulseCnt", 10);
+        publisher_frame_1500_SpeedSensorSampleTime_ = this->create_publisher<std_msgs::msg::UInt16>("/GET_0x5dc_SpeedSensorSampleTime", 10);
 
         // Frame ID 2000
         publisher_frame_2000_Get_SteeringAngle_ = this->create_publisher<std_msgs::msg::Int16>("GET_0x7d0_Get_SteeringAngle", 10);
@@ -90,7 +100,12 @@ class TranslatorCANtoROS2Node : public rclcpp::Node
         subscriber_frame_1000_Act_Reverse_ = this->create_subscription<std_msgs::msg::UInt8>("/SET_0x3e8_Act_Reverse", 10, std::bind(&TranslatorCANtoROS2Node::Callback_frame_1000_Act_Reverse, this, std::placeholders::_1));
         
         // Frame ID 1500
-        subscriber_frame_1500_Get_Velocity_ = this->create_subscription<std_msgs::msg::UInt8>("/SET_0x5dc_Get_Velocity", 10, std::bind(&TranslatorCANtoROS2Node::Callback_frame_1500_Get_Velocity, this, std::placeholders::_1));
+
+        subscriber_frame_1500_SpeedSensorLF_PulseCnt_ = this->create_subscription<std_msgs::msg::UInt16>("/SET_0x5dc_SpeedSensorLF_PulseCnt", 10, std::bind(&TranslatorCANtoROS2Node::Callback_frame_1500_SpeedSensorLF_PulseCnt_, this, std::placeholders::_1));
+        subscriber_frame_1500_SpeedSensorRF_PulseCnt_ = this->create_subscription<std_msgs::msg::UInt16>("/SET_0x5dc_SpeedSensorRF_PulseCnt", 10, std::bind(&TranslatorCANtoROS2Node::Callback_frame_1500_SpeedSensorRF_PulseCnt_, this, std::placeholders::_1));
+        subscriber_frame_1500_SpeedSensorLR_PulseCnt_ = this->create_subscription<std_msgs::msg::UInt16>("/SET_0x5dc_SpeedSensorLR_PulseCnt", 10, std::bind(&TranslatorCANtoROS2Node::Callback_frame_1500_SpeedSensorLR_PulseCnt_, this, std::placeholders::_1));
+        subscriber_frame_1500_SpeedSensorRR_PulseCnt_ = this->create_subscription<std_msgs::msg::UInt16>("/SET_0x5dc_SpeedSensorRR_PulseCnt", 10, std::bind(&TranslatorCANtoROS2Node::Callback_frame_1500_SpeedSensorRR_PulseCnt_, this, std::placeholders::_1));
+        subscriber_frame_1500_SpeedSensorSampleTime_ = this->create_subscription<std_msgs::msg::UInt16>("/SET_0x5dc_SpeedSensorSampleTime", 10, std::bind(&TranslatorCANtoROS2Node::Callback_frame_1500_SpeedSensorSampleTime_, this, std::placeholders::_1));
 
         // Frame ID 2000
         subscriber_frame_2000_Get_SteeringAngle_ = this->create_subscription<std_msgs::msg::Int16>("/SET_0x3e8_Get_SteeringAngle", 10, std::bind(&TranslatorCANtoROS2Node::Callback_frame_2000_Get_SteeringAngle, this, std::placeholders::_1));
@@ -205,6 +220,7 @@ class TranslatorCANtoROS2Node : public rclcpp::Node
                 send_data_Act_ThrottleVoltage.data = temp_data_Act_ThrottleVoltage;
                 publisher_frame_1000_Act_ThrottleVoltage_->publish(send_data_Act_ThrottleVoltage);
 
+
                 int8_t temp_data_Act_SteeringPosition; 
                 decode_can_0x3e8_Act_SteeringPosition(&can_storage_container, &temp_data_Act_SteeringPosition);
                 std_msgs::msg::Int8 send_data_Act_SteeringPosition;
@@ -233,11 +249,39 @@ class TranslatorCANtoROS2Node : public rclcpp::Node
 
             case CAN_ID_GET_SPEED_SENSOR:
             {
-                uint8_t temp_data_Get_Velocity;
-                decode_can_0x5dc_Get_Velocity(&can_storage_container, &temp_data_Get_Velocity);
-                std_msgs::msg::UInt8 send_data_Get_Velocity;
-                send_data_Get_Velocity.data = temp_data_Get_Velocity;
-                publisher_frame_1500_Get_Velocity_->publish(send_data_Get_Velocity);
+                uint16_t temp_data_SpeedSensorLF_PulseCnt_;
+                
+                decode_can_0x5dc_SpeedSensorLF_PulseCnt(&can_storage_container, &temp_data_SpeedSensorLF_PulseCnt_);
+                std_msgs::msg::UInt16 send_data_SpeedSensorLF_PulseCnt_;
+                send_data_SpeedSensorLF_PulseCnt_.data = temp_data_SpeedSensorLF_PulseCnt_;
+                publisher_frame_1500_SpeedSensorLF_PulseCnt_ ->publish(send_data_SpeedSensorLF_PulseCnt_);
+                
+
+                uint16_t temp_data_SpeedSensorRF_PulseCnt_;
+                decode_can_0x5dc_SpeedSensorRF_PulseCnt(&can_storage_container, &temp_data_SpeedSensorRF_PulseCnt_);
+                std_msgs::msg::UInt16 send_data_SpeedSensorRF_PulseCnt_;
+                send_data_SpeedSensorRF_PulseCnt_.data = temp_data_SpeedSensorRF_PulseCnt_;
+                publisher_frame_1500_SpeedSensorRF_PulseCnt_ ->publish(send_data_SpeedSensorRF_PulseCnt_);
+                
+
+                uint16_t temp_data_SpeedSensorLR_PulseCnt_;
+                decode_can_0x5dc_SpeedSensorLR_PulseCnt(&can_storage_container, &temp_data_SpeedSensorLR_PulseCnt_);
+                std_msgs::msg::UInt16 send_data_SpeedSensorLR_PulseCnt_;
+                send_data_SpeedSensorLR_PulseCnt_.data = temp_data_SpeedSensorLR_PulseCnt_;
+                publisher_frame_1500_SpeedSensorLR_PulseCnt_ ->publish(send_data_SpeedSensorLR_PulseCnt_);
+                
+                
+                uint16_t temp_data_SpeedSensorRR_PulseCnt_;
+                decode_can_0x5dc_SpeedSensorRR_PulseCnt(&can_storage_container, &temp_data_SpeedSensorRR_PulseCnt_);
+                std_msgs::msg::UInt16 send_data_SpeedSensorRR_PulseCnt_;
+                send_data_SpeedSensorRR_PulseCnt_.data = temp_data_SpeedSensorRR_PulseCnt_;
+                publisher_frame_1500_SpeedSensorRR_PulseCnt_ ->publish(send_data_SpeedSensorRR_PulseCnt_);
+                
+                uint16_t temp_data_SpeedSensorSampleTime_;
+                decode_can_0x5dc_SpeedSensorSampleTime(&can_storage_container, &temp_data_SpeedSensorSampleTime_);
+                std_msgs::msg::UInt16 send_data_SpeedSensorSampleTime_;
+                send_data_SpeedSensorSampleTime_.data = temp_data_SpeedSensorSampleTime_;
+                publisher_frame_1500_SpeedSensorSampleTime_ ->publish(send_data_SpeedSensorSampleTime_);
                 
                 break;
             }
@@ -248,11 +292,22 @@ class TranslatorCANtoROS2Node : public rclcpp::Node
                 publish every can signal contained in frame with id = 2000 = 0x7d0
                 */
 
+                // int16_t temp_data_Get_SteeringAngle; 
+                // decode_can_0x7d0_Get_SteeringAngle(&can_storage_container, &temp_data_Get_SteeringAngle);
+                // std_msgs::msg::Int16 send_data_Get_SteeringAngle;
+                // send_data_Get_SteeringAngle.data = temp_data_Get_SteeringAngle;
+                // publisher_frame_2000_Get_SteeringAngle_->publish(send_data_Get_SteeringAngle);
+
                 int16_t temp_data_Get_SteeringAngle; 
                 decode_can_0x7d0_Get_SteeringAngle(&can_storage_container, &temp_data_Get_SteeringAngle);
+
+                // Clamp the steering angle to actual kinematics
+                temp_data_Get_SteeringAngle = std::max<int16_t>(-40, std::min<int16_t>(temp_data_Get_SteeringAngle, 40));
+
                 std_msgs::msg::Int16 send_data_Get_SteeringAngle;
                 send_data_Get_SteeringAngle.data = temp_data_Get_SteeringAngle;
                 publisher_frame_2000_Get_SteeringAngle_->publish(send_data_Get_SteeringAngle);
+
 
                 uint8_t temp_data_Get_ReverseMode; 
                 decode_can_0x7d0_Get_ReverseMode(&can_storage_container, &temp_data_Get_ReverseMode);
@@ -359,9 +414,42 @@ class TranslatorCANtoROS2Node : public rclcpp::Node
     }
     
     // Callbacks for signals in Frame with ID = 1500
-    void Callback_frame_1500_Get_Velocity(const std_msgs::msg::UInt8 msg)
+   
+   // Needs a callback for every signal in the frame
+
+ void Callback_frame_1500_SpeedSensorLF_PulseCnt_(const std_msgs::msg::UInt16 msg)
     {
-        encode_can_0x5dc_Get_Velocity(&can_storage_container, msg.data);
+        encode_can_0x5dc_SpeedSensorLF_PulseCnt(&can_storage_container, msg.data);
+        PublishCanFrameToCanNetwork(CAN_ID_GET_SPEED_SENSOR);
+    }
+
+ void Callback_frame_1500_SpeedSensorRF_PulseCnt_(const std_msgs::msg::UInt16 msg)
+    {
+        encode_can_0x5dc_SpeedSensorRF_PulseCnt(&can_storage_container, msg.data);
+        
+        PublishCanFrameToCanNetwork(CAN_ID_GET_SPEED_SENSOR);
+    }
+ 
+
+ void Callback_frame_1500_SpeedSensorLR_PulseCnt_(const std_msgs::msg::UInt16 msg)
+    {
+        encode_can_0x5dc_SpeedSensorLR_PulseCnt(&can_storage_container, msg.data);
+        
+        PublishCanFrameToCanNetwork(CAN_ID_GET_SPEED_SENSOR);
+    }
+
+
+ void Callback_frame_1500_SpeedSensorRR_PulseCnt_(const std_msgs::msg::UInt16 msg)
+    {
+        encode_can_0x5dc_SpeedSensorRR_PulseCnt(&can_storage_container, msg.data);
+        
+        PublishCanFrameToCanNetwork(CAN_ID_GET_SPEED_SENSOR);
+    }
+
+    void Callback_frame_1500_SpeedSensorSampleTime_(const std_msgs::msg::UInt16 msg)
+    {
+        encode_can_0x5dc_SpeedSensorSampleTime(&can_storage_container, msg.data);
+        
         PublishCanFrameToCanNetwork(CAN_ID_GET_SPEED_SENSOR);
     }
 
@@ -410,8 +498,12 @@ class TranslatorCANtoROS2Node : public rclcpp::Node
     rclcpp::Publisher<std_msgs::msg::UInt8>::SharedPtr publisher_frame_1000_Act_Reverse_;
 
     // Frame ID 1500
-    rclcpp::Publisher<std_msgs::msg::UInt8>::SharedPtr publisher_frame_1500_Get_Velocity_;
-
+    rclcpp::Publisher<std_msgs::msg::UInt16>::SharedPtr publisher_frame_1500_SpeedSensorLF_PulseCnt_;
+    rclcpp::Publisher<std_msgs::msg::UInt16>::SharedPtr publisher_frame_1500_SpeedSensorRF_PulseCnt_;
+    rclcpp::Publisher<std_msgs::msg::UInt16>::SharedPtr publisher_frame_1500_SpeedSensorLR_PulseCnt_;
+    rclcpp::Publisher<std_msgs::msg::UInt16>::SharedPtr publisher_frame_1500_SpeedSensorRR_PulseCnt_;
+    rclcpp::Publisher<std_msgs::msg::UInt16>::SharedPtr publisher_frame_1500_SpeedSensorSampleTime_;
+    
     // Frame ID 2000
     rclcpp::Publisher<std_msgs::msg::Int16>::SharedPtr publisher_frame_2000_Get_SteeringAngle_;
     rclcpp::Publisher<std_msgs::msg::UInt8>::SharedPtr publisher_frame_2000_Get_ReverseMode_;
@@ -437,7 +529,11 @@ class TranslatorCANtoROS2Node : public rclcpp::Node
     rclcpp::Subscription<std_msgs::msg::UInt8>::SharedPtr subscriber_frame_1000_Act_Reverse_;
 
     // Frame ID 1500
-    rclcpp::Subscription<std_msgs::msg::UInt8>::SharedPtr subscriber_frame_1500_Get_Velocity_;
+    rclcpp::Subscription<std_msgs::msg::UInt16>::SharedPtr subscriber_frame_1500_SpeedSensorLF_PulseCnt_;
+    rclcpp::Subscription<std_msgs::msg::UInt16>::SharedPtr subscriber_frame_1500_SpeedSensorRF_PulseCnt_;
+    rclcpp::Subscription<std_msgs::msg::UInt16>::SharedPtr subscriber_frame_1500_SpeedSensorLR_PulseCnt_;
+    rclcpp::Subscription<std_msgs::msg::UInt16>::SharedPtr subscriber_frame_1500_SpeedSensorRR_PulseCnt_;
+    rclcpp::Subscription<std_msgs::msg::UInt16>::SharedPtr subscriber_frame_1500_SpeedSensorSampleTime_;
 
     // Frame ID 2000
     rclcpp::Subscription<std_msgs::msg::Int16>::SharedPtr subscriber_frame_2000_Get_SteeringAngle_;
@@ -458,4 +554,5 @@ int main(int argc, char * argv[])
   rclcpp::shutdown();
   return 0;
 }
+
 

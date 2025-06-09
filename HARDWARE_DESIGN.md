@@ -34,7 +34,7 @@ Or one can create 3d printed fixtures to mount the plates, I.e:
 
 ### Component list
 
-- Aluminum metal sheet with be fabricated holes: Aluminum Lochblech blank 250x500x1.5mm article nr:  148-21-919 OR 4001116378041  https://www.elfa.se/en/aluminium-perforated-plate-round-holes-500x250x1-5mm-alfer-4001116378041/p/14821919 Holes are spaced 15 mm apart, hole diameter 4.5 mm
+- Aluminum metal sheet with pre fabricated holes: Aluminum Lochblech blank 250x500x1.5mm article nr:  148-21-919 OR 4001116378041  https://www.elfa.se/en/aluminium-perforated-plate-round-holes-500x250x1-5mm-alfer-4001116378041/p/14821919 Holes are spaced 15 mm apart, hole diameter 4.5 mm.
 
 ![Aluminum sheet](Resources/Aluminium_sheet.PNG)
 

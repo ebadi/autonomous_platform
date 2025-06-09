@@ -1,4 +1,3 @@
-
 # Imitation Learning
 
 ### Imitation Learning Network
@@ -74,8 +73,8 @@ ros2 run autonomous_platform_robot_description_pkg data_collection.py
 
 The .pkl file can then be used as input within train_DAgger.py, found in `/autonomous_platform/Imitation_Learning/train_Dagger.py`
 
-
 ### OAK-D camera node
+
 Before running the OAK-D camera node, build the docker with:
 
 ```bash

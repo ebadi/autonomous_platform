@@ -30,5 +30,6 @@
         "urdf",
         "wirelessly",
         "xacro"
-    ]
+    ],
+    "cmake.sourceDirectory": "/home/ap4-dev-laptop/Desktop/autonomous_platform/REMOVETHIS/my_robot_bringup"
 }

@@ -193,14 +193,11 @@ class MinimalPublisher(Node):
 
         # Save the DataFrame to a pickle file
         df.to_pickle(file_path, protocol=4)
-        
+
         del df
         gc.collect()
         print("saving took: " + str(time.time() - data_name))
-        print(
-            "DF was saved to: "
-            + file_path
-        )
+        print("DF was saved to: " + file_path)
 
 
 def main(args=None):
@@ -212,10 +209,18 @@ def main(args=None):
     validation_dir = os.path.join(base_dir, "validation")
 
     rosbag_orb_dir = default_dir = os.path.join(base_dir + "/training/orb", "rosbag")
-    rosbag_default_dir = default_dir = os.path.join(base_dir + "/training/default", "rosbag")
-    rosbag_depth_dir = default_dir = os.path.join(base_dir + "/training/depth", "rosbag")
-    rosbag_color_dir = default_dir = os.path.join(base_dir + "/training/color", "rosbag")
-    rosbag_validation_dir = default_dir = os.path.join(base_dir + "/validation", "rosbag")
+    rosbag_default_dir = default_dir = os.path.join(
+        base_dir + "/training/default", "rosbag"
+    )
+    rosbag_depth_dir = default_dir = os.path.join(
+        base_dir + "/training/depth", "rosbag"
+    )
+    rosbag_color_dir = default_dir = os.path.join(
+        base_dir + "/training/color", "rosbag"
+    )
+    rosbag_validation_dir = default_dir = os.path.join(
+        base_dir + "/validation", "rosbag"
+    )
 
     # Check if directories exist, create them if they don't
     for directory in [
@@ -237,6 +242,7 @@ def main(args=None):
     rclpy.spin(minimal_publisher)
     minimal_publisher.destroy_node()
     rclpy.shutdown()
+
 
 base_dir = "/root/ap4_hlc_docker_dir/recorded_data/"
 

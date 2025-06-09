@@ -8,6 +8,7 @@ from imitation.data.types import DictObs, Transitions
 import os
 import json
 
+
 def select_input(
     expert_data,
     image=True,
@@ -61,6 +62,7 @@ def select_input(
     action_space = gym.spaces.Box(low=-1, high=1, shape=(2,), dtype=np.float32)
 
     return demonstrations, observation_space, action_space
+
 
 def load_human_expert_data(
     csv_file_path,
@@ -286,7 +288,8 @@ def load_human_expert_data(
             ),
             obs_list,
         )
-    
+
+
 def generate_unique_model_name(base_path, base_name):
     """
     Generates a unique model name to avoid overwriting existing models.

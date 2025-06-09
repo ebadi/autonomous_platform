@@ -80,3 +80,37 @@ If no ROS2 topic still doesn't show up
 First make sure that only a specific node does not start up, if other nodes have started up but not the one you are looking for you need to look in the launch file that starts up the hardware interface software.
 
 Make sure it is configured to automatically start by looking in the launch hwi software package `autonomous_platform\Hardware_Interface_Low_Level_Computer\ap4_hwi_code\ap4hwi_ws\src\launch_hwi_software_pkg\launch`
+
+
+
+## Odometry testing and calibration
+
+# Distance testing
+
+In order to get the AD algorithm to work properly we need to have a position system for the Gokart. The Gokarts position is updated by publishing its new positions to the /odom topic. The actual position is calculated in real time by using the Gokarts speed sensors and steering angle sensor that are mounted on the wheels and the steering motor.
+
+This guide describes how you can test and verify that the odometry calculations are correct and that the actual position of the Gokart are being correctly updated to the /odom topic. The X position for the Gokart is tested by using a attatchment on the wheel (Se video below) that counts the exact amount of turns that the wheels are turing during the test. By knowing the wheels circumference you can easy check if the odometry is being updated correctly.
+
+![My Local GIF](Resources/Wheel_turner.gif)
+
+1. Mount the wheel turn counter on the backwheel
+
+1. Decide how many turns you want to measure
+
+1. Calculate the actual distance the Gokart will move by taking: number_of_turns\*circumference = total_distance
+
+1. Start the Gokart and listen to the /odom topic by running:
+
+   ```bash
+       ros2 topic echo /odom
+   ```
+
+1. Move the Gokart forward exact the amount of wheel turns you want by looking at the wheel counter
+
+1. Kill the /odom listener and scroll up to the latest updated odom in the terminal
+
+1. Compare the result for the updated odom in the terminal by your calculated distance earlier. These two should more or less be the same.
+
+# Steering angle tesing
+
+To test and verify the steering angle that later updates the Gokart position we need to manually measure the angle on the steering wheels when turning with the xbox box controller. We measuered the steering angle manualy by two rulers and measure the angle with a "gradskiva". We then compared the angle with the angle showed up in the Get_SteeringAngle topic. This is not the best way to do it and there is probably a more consequent way to do this.
