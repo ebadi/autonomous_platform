@@ -17,13 +17,22 @@ This is the repository for Autonomous Platform at Infotiv Technology Development
 
 - The implementation of a LiDAR using SLAM for autonomous navigation of the AP4 is done by **David Espedalen** and **Anton Stigemyr Hill** under supervision of **Hamid Ebadi** as a part of a master thesis with the title of **Implementation of LiDAR and SLAM on a Small-Scale Autonomous Platform - Investigation of how LiDAR can be used to Simultaneously Localize a Vehicle and Map its Surroundings using SLAM** that is accessible [in this link ![PDF](Resources/PDF_file_icon.svg.png) ](Master_Thesis2025.pdf).
 
-[![Design of a modular centralized E/E and software architecture for a small-scale automotive platform](Resources/thesis.png)](Master_Thesis2025.pdf)
-[![Design of a modular centralized E/E and software architecture for a small-scale automotive platform](Resources/Spring_2024/thesis.png)](Master_Thesis2024.pdf)
+[![Implementation of LiDAR and SLAM on a Small-Scale Autonomous Platform
+](Resources/Thesis_2025.png)](Master_Thesis2025.pdf)
+[![software pipeline for Imitation Learning for achieving autonomous driving using both behavioral cloning (BC) and Human Gated Dataset Aggregation (HG-DAgger) ](Resources/Spring_2024/thesis.png)](Master_Thesis2024.pdf)
 [![Design of a modular centralized E/E and software architecture for a small-scale automotive platform](Resources/thesis.png)](Master_Thesis2023.pdf)
+
+
+
+[![AP4 Autonomous Driving Navigation/SLAM](https://img.youtube.com/vi/hyw-hApxQHU/0.jpg)](https://www.youtube.com/watch?v=hyw-hApxQHU)
+
+
 
 [Video Demo- Imitation Learning](https://www.youtube.com/watch?v=8izLmmYHW0s) ([raw footage](https://www.youtube.com/watch?v=A2l_nDKsU7g)):
 
 [![AP4 Autonomous Driving](https://img.youtube.com/vi/8izLmmYHW0s/0.jpg)](https://www.youtube.com/watch?v=8izLmmYHW0s)
+
+
 
 - The __latest public__ version of documentation and source code for Autonomous Platform (AP) project is available in the following address: [https://infotiv-research.github.io](https://infotiv-research.github.io) and [https://github.com/infotiv-research](https://github.com/infotiv-research).
 - The printer friendly version of this document is [available in this link ![PDF](Resources/PDF_file_icon.svg.png)](AutonomousPlatform.pdf).
@@ -251,9 +260,15 @@ There are some issues with the navigation of the AP4 in the physical environment
 
 Here is an example of the AP4 driving autonomously in the Gokartcentralen track. The first image is the simulation and the second image is the physical environment at the actual gokart track at Gokartcentralen in Kungälv. As seen, the gokart doesn't manage to drive one lap around the track in the physical environment, these issues are described in `ISSUES_AND_FUTURE_WORK.md`.
 
+RVIZ view: Map creation
+
+
 ![simulation](Resources/Report_sketches/digital_twin/Sim_no_imu_map.svg)
 
-![real world](Resources/Report_sketches/digital_twin/gokart_path_mark.png)
+Gazebo simulation: Gokartcentralen replica
+
+
+![real world](Resources/Report_sketches/digital_twin/track_replica.png)
 
 ## Repository overview
 
