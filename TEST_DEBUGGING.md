@@ -599,3 +599,39 @@ ______________________________________________________________________
 
 
 
+
+
+## Wiring modifications
+
+![PCB Side: Wiring between front control module, ninebot engine and power adapter.](connect%20male%20connectors%20to%20PCB%20at%20PCB%20side.jpg)
+
+![Connector side: Wiring between front control module, ninebot engine and power adapter.](connect%20male%20connectors%20to%20PCB.jpg)
+
+Instruction:
+
+The connectors used in this place are JST XH connectors.
+
+They can be found (during the writing of this text) in the lab and crimped with the tool on the picture that also can be found in the lab.
+
+![Crimp tool, connectors and lead pins](lead%20in%20crimp%20tool%20use%20A.jpg)
+
+![Crimp tool usage](jst%20XH%20Lead%20conector%20pins%20and%20Crimp%20tool.jpg)
+
+A better result is obtained when the lead pin is put in the smalled slot. THat requires a little bending of the clamps that are meant for the insulation part of the wire.
+
+## Front control module
+
+![Front Control MOdule connection to Power Adapter, Ninebot Chassis connector and front chassis connector](wiring%20to%20Ninebot%20Engine.png)
+
+The Front control module is a control module, mounted on top of the steering column.
+Reads status from the brake and accelerator pedal and communicates that to the ninebot engine.
+Actuates a head lamp, controlled from the ninebot engine.
+
+IT communicates both wired and wireless with the Ninebot Engine.
+
+THe wired interface contains a wake up signal.
+Other communication is wireless.
+
+Ratio:
+Unplugging the wired interface does not interfere with operation of the motor. Gas and brakepedal work as usual when disconnected.
+Possibly the wire is only used to wake up the front control module.
