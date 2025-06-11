@@ -1,0 +1,3 @@
+[console_scripts]
+imu_output_node = imu_pkg.imu:main
+

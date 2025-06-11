@@ -1,0 +1,4 @@
+source;share/imitation_learning/local_setup.bash
+source;share/imitation_learning/local_setup.dsv
+source;share/imitation_learning/local_setup.sh
+source;share/imitation_learning/local_setup.zsh

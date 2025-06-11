@@ -82,8 +82,6 @@
               <ul>
                   <li class="toctree-l1"><a class="reference internal" href="../../High_Level_Control_Computer/">High Level Control Computer</a>
                   </li>
-                  <li class="toctree-l1"><a class="" href="../../High_Level_Control_Computer/HOW_TO_EXTEND.md">How to Extend</a>
-                  </li>
                   <li class="toctree-l1"><a class="reference internal" href="../../High_Level_Control_Computer/IMITATION_LEARNING/">Imitation Learning</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../../High_Level_Control_Computer/DONKEY_CAR_SETUP/">DonkeyCar simulator</a>
@@ -141,10 +139,10 @@
             <div class="section" itemprop="articleBody">
               
                 <h2 id="setup-hardware-interface-low-level-code-raspberry-pi">Setup Hardware Interface Low Level Code (Raspberry Pi)</h2>
-<p>This document aims to describe how to assemble the hardware of this unit and configure a fresh Raspberry Pi to run the low level software on the autonomous platform. This document contains information about all the individual parts of this unit followed by the assembly of the hardware. It will further on describe how one can install a fresh PI with the required software. Lastly, some reference images and circuit diagram can be found.   </p>
-<p>In theory this unit should already be assembled and the PI should have all of its required software. But, in the cases where one need to replace a piece of hardware or re-install a fresh PI, this document should be helpful. </p>
+<p>This document aims to describe how to assemble the hardware of this unit and configure a fresh Raspberry Pi to run the low level software on the autonomous platform. This document contains information about all the individual parts of this unit followed by the assembly of the hardware. It will further on describe how one can install a fresh PI with the required software. Lastly, some reference images and circuit diagram can be found.</p>
+<p>In theory this unit should already be assembled and the PI should have all of its required software. But, in the cases where one need to replace a piece of hardware or re-install a fresh PI, this document should be helpful.</p>
 <h2 id="list-of-parts">List of parts</h2>
-<p>This is the required hardware to get the hardware interface low level computer up and running from scratch. Items can be found in the <a href="../../REQ_SPEC_BOOM.xlsx">REQ_SPEC_BOOM</a></p>
+<p>This is the required hardware to get the hardware interface low level computer up and running from scratch. Items can be found in the <a href="../REQ_SPEC_BOOM.xlsx">REQ_SPEC_BOOM</a></p>
 <table>
 <thead>
 <tr>
@@ -303,12 +301,14 @@
 </table>
 <h2 id="assembling-the-hardware-parts">Assembling the hardware parts.</h2>
 <p>You need access to some workshop in order to solder, crimp wires, and 3D print the three components. You can find images showcasing how it should look, in the last section of this document <a href="#reference-images">Link to images</a> &amp; <a href="../resources/AP4_HWI_interface.png">Link to diagram</a>.</p>
-<p>Some guidelines to assembling the ahrdware according to the diagram is:
-- Make sure the DC-DC converter is set to output 5V or else the PI will be fried.
-  - On the LM2596 DC-DC converter there is a blue tower with a screw that you can adjust to change the voltage output. 
-- We used 3A fuses.
-- Double check with multimeter that the wiring is correctly setup before connecting PI.
-- The PI should receive a voltage of ~5V +- 5% (4.75 - 5.25)</p>
+<p>Some guidelines to assembling the ahrdware according to the diagram is:</p>
+<ul>
+<li>Make sure the DC-DC converter is set to output 5V or else the PI will be fried.</li>
+<li>On the LM2596 DC-DC converter there is a blue tower with a screw that you can adjust to change the voltage output.</li>
+<li>We used 3A fuses.</li>
+<li>Double check with multimeter that the wiring is correctly setup before connecting PI.</li>
+<li>The PI should receive a voltage of ~5V +- 5% (4.75 - 5.25)</li>
+</ul>
 <p>A computer that can flash a micro sd card is required.</p>
 <h2 id="installing-base-software-on-fresh-raspberry-pi-4b">Installing Base Software on Fresh Raspberry Pi 4b <a name="Installing-Base-Software-on-Fresh-Raspberry-Pi-4b"></a></h2>
 <ul>
@@ -342,7 +342,7 @@ cd GIT
 </code></pre>
 <pre><code class="language-bash">sudo ip link set can0 up type can bitrate 1000000
 </code></pre>
-<p>Follow Docker <a href="https://www.ricmedia.com/tutorials/install-docker-on-raspberry-pi-with-ubuntu">installation guide</a>. Install docker-compose afterwards. </p>
+<p>Follow Docker <a href="https://www.ricmedia.com/tutorials/install-docker-on-raspberry-pi-with-ubuntu">installation guide</a>. Install docker-compose afterwards.</p>
 <pre><code class="language-bash">sudo apt install docker-compose
 </code></pre>
 <pre><code class="language-bash">sudo apt-get update &amp;&amp; sudo apt-get upgrade
@@ -432,7 +432,7 @@ WantedBy=multi-user.target
 </code></pre>
 <p>After this the bash script will execute upon boot-up. And the docker container will always run on startup.</p>
 <h3 id="configuring-a-joystick-optional">Configuring a joystick (Optional).</h3>
-<p>Although not necessary, if you want to configure the xbox controller you can follow <a href="./ap4_hwi_code/ap4hwi_ws/src/xbox_controller_feed_forward_ctrl_pkg/documentation_and_research/README.md">this guide</a>: </p>
+<p>Although not necessary, if you want to configure the xbox controller you can follow <a href="./ap4_hwi_code/ap4hwi_ws/src/xbox_controller_feed_forward_ctrl_pkg/documentation_and_research/README.md">this guide</a>:</p>
 <h3 id="testing-and-debugging-system-level">Testing and debugging (system level)</h3>
 <p>Here is a list of things to test and verify</p>
 <ul>

@@ -1,0 +1,121 @@
+<sdf version="1.6">
+  <world name="gocartcentralen">
+    <physics name="1ms" type="ignored">
+      <max_step_size>0.001</max_step_size>
+      <real_time_factor>0.0</real_time_factor>
+    </physics>
+    <plugin
+      filename="gz-sim-physics-system"
+      name="gz::sim::systems::Physics">
+    </plugin>
+    <plugin
+      filename="gz-sim-user-commands-system"
+      name="gz::sim::systems::UserCommands">
+    </plugin>
+    <plugin
+      filename="gz-sim-scene-broadcaster-system"
+      name="gz::sim::systems::SceneBroadcaster">
+    </plugin>
+    <plugin
+      filename="gz-sim-sensors-system"
+      name="gz::sim::systems::Sensors">
+      <render_engine>ogre2</render_engine>
+    </plugin>
+    <plugin
+      filename="gz-sim-contact-system"
+      name="gz::sim::systems::Contact">
+    </plugin>
+    <plugin filename="libignition-gazebo-imu-system.so"
+        name="ignition::gazebo::systems::Imu">
+    </plugin>
+
+
+    <light type="directional" name="sun">
+      <cast_shadows>true</cast_shadows>
+      <pose>0 0 10 0 0 0</pose>
+      <diffuse>0.8 0.8 0.8 1</diffuse>
+      <specular>0.2 0.2 0.2 1</specular>
+      <attenuation>
+        <range>1000</range>
+        <constant>0.9</constant>
+        <linear>0.01</linear>
+        <quadratic>0.001</quadratic>
+      </attenuation>
+      <direction>-0.5 0.1 -0.9</direction>
+    </light>
+    
+     <model name="ground_plane">
+      <static>true</static>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>150 150</size>
+            </plane>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>150 150</size>
+            </plane>
+          </geometry>
+          <material>
+            <ambient>0.8 0.8 0.8 1</ambient>
+            <diffuse>0.8 0.8 0.8 1</diffuse>
+            <specular>0.8 0.8 0.8 1</specular>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="gocartcentralen">
+      <!-- Make the map static so it doesn't move -->
+      <pose>0 0 0.9 0.785 0 0 </pose>
+      <static>true</static>
+      <link name="map_link">
+        <!-- Collision element -->
+        <collision name="map_collision">
+          <pose>0 0 0.9 0.785 0 0</pose>
+          <geometry>
+            <mesh>
+              <!-- Update this path to your actual DAE file -->
+              <uri>gocart.obj</uri>
+              <scale>49.8 37.35 37.35</scale>
+            </mesh>
+          </geometry>
+          <!-- Optional: Set friction or other surface properties here -->
+          <surface>
+            <friction>
+              <ode>
+                <mu>1.0</mu>
+                <mu2>1.0</mu2>
+              </ode>
+            </friction>
+          </surface>
+        </collision>
+        <!-- Visual element -->
+        <visual name="map_visual">
+          <pose>0 0 0.9 0.785 0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>gocart.obj</uri>
+              <scale>49.8 37.35 37.35</scale>
+            </mesh>
+          </geometry>
+          <!-- You can also specify materials or textures here if needed -->
+        </visual>
+      </link>
+    </model>
+
+  </world>
+</sdf>
+
+
+
+
+
+
+

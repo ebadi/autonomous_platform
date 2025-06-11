@@ -1,0 +1,37 @@
+[0.963s] Invoking command in '/root/ap4_hlc_docker_dir/ap4hlc_ws/src/imu_pkg': PYTHONPATH=/root/ap4_hlc_docker_dir/ap4hlc_ws/build/imu_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/root/ap4_hlc_docker_dir/ap4hlc_ws/install/imu_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/imu_pkg build --build-base /root/ap4_hlc_docker_dir/ap4hlc_ws/build/imu_pkg/build install --record /root/ap4_hlc_docker_dir/ap4hlc_ws/build/imu_pkg/install.log --single-version-externally-managed install_data
+[1.126s] running egg_info
+[1.127s] creating ../../build/imu_pkg/imu_pkg.egg-info
+[1.127s] writing ../../build/imu_pkg/imu_pkg.egg-info/PKG-INFO
+[1.127s] writing dependency_links to ../../build/imu_pkg/imu_pkg.egg-info/dependency_links.txt
+[1.127s] writing entry points to ../../build/imu_pkg/imu_pkg.egg-info/entry_points.txt
+[1.127s] writing requirements to ../../build/imu_pkg/imu_pkg.egg-info/requires.txt
+[1.127s] writing top-level names to ../../build/imu_pkg/imu_pkg.egg-info/top_level.txt
+[1.127s] writing manifest file '../../build/imu_pkg/imu_pkg.egg-info/SOURCES.txt'
+[1.128s] reading manifest file '../../build/imu_pkg/imu_pkg.egg-info/SOURCES.txt'
+[1.129s] writing manifest file '../../build/imu_pkg/imu_pkg.egg-info/SOURCES.txt'
+[1.129s] running build
+[1.129s] running build_py
+[1.129s] creating /root/ap4_hlc_docker_dir/ap4hlc_ws/build/imu_pkg/build
+[1.129s] creating /root/ap4_hlc_docker_dir/ap4hlc_ws/build/imu_pkg/build/lib
+[1.129s] creating /root/ap4_hlc_docker_dir/ap4hlc_ws/build/imu_pkg/build/lib/imu_pkg
+[1.129s] copying imu_pkg/__init__.py -> /root/ap4_hlc_docker_dir/ap4hlc_ws/build/imu_pkg/build/lib/imu_pkg
+[1.129s] copying imu_pkg/imu.py -> /root/ap4_hlc_docker_dir/ap4hlc_ws/build/imu_pkg/build/lib/imu_pkg
+[1.129s] running install
+[1.129s] running install_lib
+[1.130s] creating /root/ap4_hlc_docker_dir/ap4hlc_ws/install/imu_pkg/lib/python3.10/site-packages/imu_pkg
+[1.130s] copying /root/ap4_hlc_docker_dir/ap4hlc_ws/build/imu_pkg/build/lib/imu_pkg/__init__.py -> /root/ap4_hlc_docker_dir/ap4hlc_ws/install/imu_pkg/lib/python3.10/site-packages/imu_pkg
+[1.130s] copying /root/ap4_hlc_docker_dir/ap4hlc_ws/build/imu_pkg/build/lib/imu_pkg/imu.py -> /root/ap4_hlc_docker_dir/ap4hlc_ws/install/imu_pkg/lib/python3.10/site-packages/imu_pkg
+[1.130s] byte-compiling /root/ap4_hlc_docker_dir/ap4hlc_ws/install/imu_pkg/lib/python3.10/site-packages/imu_pkg/__init__.py to __init__.cpython-310.pyc
+[1.130s] byte-compiling /root/ap4_hlc_docker_dir/ap4hlc_ws/install/imu_pkg/lib/python3.10/site-packages/imu_pkg/imu.py to imu.cpython-310.pyc
+[1.131s] running install_data
+[1.131s] creating /root/ap4_hlc_docker_dir/ap4hlc_ws/install/imu_pkg/share/ament_index
+[1.131s] creating /root/ap4_hlc_docker_dir/ap4hlc_ws/install/imu_pkg/share/ament_index/resource_index
+[1.131s] creating /root/ap4_hlc_docker_dir/ap4hlc_ws/install/imu_pkg/share/ament_index/resource_index/packages
+[1.131s] copying resource/imu_pkg -> /root/ap4_hlc_docker_dir/ap4hlc_ws/install/imu_pkg/share/ament_index/resource_index/packages
+[1.131s] copying package.xml -> /root/ap4_hlc_docker_dir/ap4hlc_ws/install/imu_pkg/share/imu_pkg
+[1.131s] running install_egg_info
+[1.132s] Copying ../../build/imu_pkg/imu_pkg.egg-info to /root/ap4_hlc_docker_dir/ap4hlc_ws/install/imu_pkg/lib/python3.10/site-packages/imu_pkg-0.0.0-py3.10.egg-info
+[1.133s] running install_scripts
+[1.147s] Installing imu_output_node script to /root/ap4_hlc_docker_dir/ap4hlc_ws/install/imu_pkg/lib/imu_pkg
+[1.147s] writing list of installed files to '/root/ap4_hlc_docker_dir/ap4hlc_ws/build/imu_pkg/install.log'
+[1.168s] Invoked command in '/root/ap4_hlc_docker_dir/ap4hlc_ws/src/imu_pkg' returned '0': PYTHONPATH=/root/ap4_hlc_docker_dir/ap4hlc_ws/build/imu_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/root/ap4_hlc_docker_dir/ap4hlc_ws/install/imu_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/imu_pkg build --build-base /root/ap4_hlc_docker_dir/ap4hlc_ws/build/imu_pkg/build install --record /root/ap4_hlc_docker_dir/ap4hlc_ws/build/imu_pkg/install.log --single-version-externally-managed install_data

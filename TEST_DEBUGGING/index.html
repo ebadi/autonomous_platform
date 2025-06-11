@@ -80,8 +80,6 @@
               <ul>
                   <li class="toctree-l1"><a class="reference internal" href="../High_Level_Control_Computer/">High Level Control Computer</a>
                   </li>
-                  <li class="toctree-l1"><a class="" href="../High_Level_Control_Computer/HOW_TO_EXTEND.md">How to Extend</a>
-                  </li>
                   <li class="toctree-l1"><a class="reference internal" href="../High_Level_Control_Computer/IMITATION_LEARNING/">Imitation Learning</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../High_Level_Control_Computer/DONKEY_CAR_SETUP/">DonkeyCar simulator</a>
@@ -117,6 +115,32 @@
     <li class="toctree-l3"><a class="reference internal" href="#testing-and-debugging-components">Testing and Debugging Components</a>
     </li>
         </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#tips-and-tricks">TIPS AND TRICKS</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#copy-sd-card">Copy SD-card</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#trouble-with-internet">Trouble with internet</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#access-raspberry-pi-via-ssh">Access Raspberry Pi via SSH</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#see-ros2-topics-on-raspberry-pi">See ROS2-topics on Raspberry Pi</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#merge-your-git-branch-into-main-branch">Merge your git branch into main branch</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#rqt_graph-on-raspberry">rqt_graph on raspberry</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#rqt_graph-on-raspberry_1">rqt_graph on raspberry</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#work-with-docker">Work with docker</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#ros2-node">ROS2 node</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#wiring-modifications">Wiring modifications</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#front-control-module">Front control module</a>
     </li>
     </ul>
                   </li>
@@ -319,6 +343,213 @@ Whilst debugging code it can be useful to comment this line out but the software
 <pre><code class="language-bash">ros2 topic echo @TODO ACC + BREAK + STEERING ANGLE
 </code></pre>
 <p>Next Verify that the SPCU software and low-level software can communicate. The low-level software can request a ping signal from the ECUs on one topic and receive ping confirmations on another. The ping will be sent over the CAN</p>
+<h2 id="tips-and-tricks">TIPS AND TRICKS</h2>
+<p>This is a logbook to continuously document what has been done. Could probably be copied
+if documentation is needed somewhere.</p>
+<p><strong>21/01-2025</strong></p>
+<p><strong>Before starting we would advise to copy the SD card for safety in case something goes wrong. This is done by imaging.</strong></p>
+<hr />
+<h3 id="copy-sd-card">Copy SD-card</h3>
+<p><strong>If you are on linux follow these steps, otherwise there are options for windows called Win32
+Disk Imager and DD for Windows however i don't know how safe these are and they require
+admin privileges.</strong></p>
+<p>open terminal and to find SD-card enter the following:\
+<code>sudo fdisk -l</code></p>
+<p>We saw:\
+<span style="font-family: 'Roboto Mono', monospace;"><pre>
+Device    Boot Start   End        Sectors    Size    Id    Type\
+/dev/sda1  *   2048    526335     526335     256M    C     W95  FAT32 (LBA)\
+/dev/sda2      526336  249737182  249210847  118.8G  83    Linux
+</pre></span></p>
+<p>So SD card is /dev/sda (*1 and *2 are partitions)</p>
+<p>Unmount the device by:\
+<code>sudo umount /dev/sda</code></p>
+<p>Create an image of the SD-card. OBS make sure you have enough space, it will copy empty space aswell:\
+<code>sudo dd if=/dev/sda of~/sd-card-copy.img bs=1M status=progress</code></p>
+<p>This takes a while</p>
+<hr />
+<h3 id="trouble-with-internet">Trouble with internet</h3>
+<p>Apparently if the router is on, it overwrites the Wifi connection. Either use wifi connection alone or with cable connected to WAN. Otherwise it won't connect to the internet even though you are still able to ping devices on the same WiFi.</p>
+<hr />
+<h3 id="access-raspberry-pi-via-ssh">Access Raspberry Pi via SSH</h3>
+<p><strong>This can make it easier to pull from git and access the Raspberry withouth needing to move from and to it</strong>
+open a terminal on the Raspberry and install the necessary file by entering:\
+<code>sudo apt install openssh-server</code></p>
+<p>Check the status by entering:\
+<code>sudo systemctl status ssh</code></p>
+<p>It should return something like this:</p>
+<p><span style="font-family: 'Roboto Mono', monospace; font-size: 1em;"><pre>ssh.service - OpenBSD Secure Shell server\
+Loaded: loaded (/lib/systemd/system/ssh.service; enabled; vendor preset: enabled)\
+Active: active (running) since Mon 2020-06-01 12:34:00 CEST; 9h ago
+</pre></span></p>
+<p>Dissable the firewall to be able to connect from another computer by entering:\
+<code>sudo ufw allow ssh</code></p>
+<p>To connect to the Raspberry via another compouter, we first need the raspberry pi's "\<ip_address>" and "\<user>"
+To find these write the following:</p>
+<p>for  "\<user>", enter:\
+<code>whoami</code>\
+for "\<ip_address>", enter:\
+<code>ifconfig</code></p>
+<p>You should see many outputs something similar to:</p>
+<p><span style="font-family: 'Roboto Mono', monospace; font-size: 1em;"><pre>
+wlan0: flags=4163/\<UP,BROADCAST,RUNNING,MULTICAST/>  mtu 1500\
+<code>inet 192.168.1.150</code>  netmask 255.255.255.0  broadcast 192.168.1.255\
+inet6 fe80::7a8:fdc8:4fdf:d6f2  prefixlen 64  scopeid 0x20/<link/>\
+ether dc:a6:32:7c:40:aa  txqueuelen 1000  (Ethernet)\
+RX packets 5258  bytes 1564626 (1.5 MB)\
+RX errors 0  dropped 5  overruns 0  frame 0\
+TX packets 2106  bytes 563087 (563.0 KB)\
+TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0\
+</pre></span></p>
+<p>You can also check the "\<ip_address>" by checking WiFi-settings-&gt;settings
+in our case "\<user>"=ap4 and "\<ip_address>"=192.168.1.150 however these may change.</p>
+<p>Open a terminal on <strong>the computer you want to access the Raspberry from</strong> and enter:\
+<code>ssh &lt;user&gt;@&lt;ip_address&gt;</code></p>
+<p>Enter password if necessary, AP42023 in our case.</p>
+<p>Now you are in!</p>
+<hr />
+<h3 id="see-ros2-topics-on-raspberry-pi">See ROS2-topics on Raspberry Pi</h3>
+<p><strong>To see the ROS2 topics on the raspberry on the Gokart, the below steps are a guide on how to get access to the topics and the workspace from the ROS2 environment.</strong></p>
+<p>First you need the "\<container_name>", find this by opening a terminal on the Raspberry and entering:\
+<code>docker ps</code></p>
+<p>This should open something similar to:\
+<span style="font-family: 'Roboto Mono', monospace; font-size: 1em;"><pre>CONTAINER ID  IMAGE       COMMAND               CREATED    STATUS    PORTS NAMES\
+f0c3b88eb9dc  ros2_image   "/ros_entrypoint.sh"   5 min ago  Up 5 min        ap4hwi</pre>
+</span></p>
+<p>Where you find "\<container_name>" under NAMES, in our case it was ap4hwi.</p>
+<p>Now enter:\
+<code>docker exec -it &lt;container_name&gt; /bin/bash</code></p>
+<p>This should open the container as an interactive shell where you can access the ROS2 environment.</p>
+<p>To see the topics, enter:\
+<code>ros2 topic list</code></p>
+<p>This should return all active topics which should look something like the following:</p>
+<p><span style="font-family: 'Roboto Mono', monospace; font-size: 1em;"><pre>/GET_cmd_vel\
+/Get_position\
+/joystick_cmd_vel\
+/etc…
+</pre></span></p>
+<p>To see the values or whats happening in a topic enter:\
+<code>ros2 topic echo &lt;topic_name&gt;</code></p>
+<p>Now you should get some output. I would recommend the topic /joystick_cmd_vel which is quite interactive.</p>
+<hr />
+<h3 id="merge-your-git-branch-into-main-branch">Merge your git branch into main branch</h3>
+<p><strong>Here is a guide for how you can merge your branch to the main branch on gitlab.</strong></p>
+<p>Open the terminal and locate your local git repo and enter:\
+<code>cd &lt;your_local_repo_directory&gt;</code></p>
+<p>Check if there are uncommitted changes by entering:\
+<code>git status</code></p>
+<p>To switch to the main branc,h enter:\
+<code>git checkout main</code></p>
+<p>To pull the latest changes from remote main, enter:\
+<code>git pull origin main</code></p>
+<p>Now to merge your branch into main, enter:\
+<code>git merge &lt;your_branch_name&gt; -m "merge message"</code></p>
+<p>And lastly to push the merged changes to the remote repository, enter:\
+<code>git push origin main</code></p>
+<hr />
+<h3 id="rqt_graph-on-raspberry">rqt_graph on raspberry</h3>
+<p><strong>To get the rqp_graph command display show on the raspberry pi you need to make sure the display settings are the same on both the raspberry and the docker. In the docker-compose.yaml file they are set to the same, however, on startup the raspberry display is set to <code>&lt;empty string&gt;</code> which makes it non compatible.</strong></p>
+<p>Open a terminal on the raspberry and enter:\
+<code>export DISPLAY=:0</code></p>
+<p>Now start the docker, and in the same terminal as before enter:\
+<code>xhost +local:docker</code></p>
+<p>If the docker now has the same display port you should be good to go. check this by entering:\
+<code>echo $DISPLAY</code></p>
+<p>If you started the docker after you set the display, this should output:\
+<span style="font-family: 'Roboto Mono', monospace; font-size: 1em;"><pre>:0
+</pre></span></p>
+<p>Otherwise in the docker terminal enter:\
+<code>export DISPLAY=:0</code></p>
+<p>Now you can run the command rqt_graph to see how nodes are communicating visually</p>
+<hr />
+<h3 id="rqt_graph-on-raspberry_1">rqt_graph on raspberry</h3>
+<p><strong>To get the rqp_graph command display show on the raspberry pi you need to make sure the display settings are the same on both the raspberry and the docker. In the docker-compose.yaml file they are set to the same, however, on startup the raspberry display is set to <code>&lt;empty string&gt;</code> which makes it non compatible.</strong></p>
+<p>Open a terminal on the raspberry and enter:\
+<code>export DISPLAY=:0</code></p>
+<p>Now start the docker, and in the same terminal as before enter:\
+<code>xhost +local:docker</code></p>
+<p>If the docker now has the same display port you should be good to go. check this by entering:\
+<code>echo $DISPLAY</code></p>
+<p>If you started the docker after you set the display, this should output:\
+<span style="font-family: 'Roboto Mono', monospace; font-size: 1em;"><pre>:0
+</pre></span></p>
+<p>Otherwise in the docker terminal enter:\
+<code>export DISPLAY=:0</code></p>
+<p>Now you can run the comman drqt_graph to see how nodes are communicating visually</p>
+<hr />
+<h3 id="work-with-docker">Work with docker</h3>
+<p><strong>Here is a quick guide on how to work with the necesarry docker commands to get started.</strong>\
+To work with docker you need to find the dockerfile and/or docker-compose.yaml file you wish to edit. If you want to edit the software which connects the hardware, cd to "\<Hardware_Interface_Low_Level_Computer>". There open a terminal.</p>
+<p>Normally the hardware docker should run on startup so if you want to make changes make sure the docker is down. Do this by entering:\
+<code>docker-compose down</code></p>
+<p>Now do the changes you want to either the docker-compose.yaml or the dockerfile file and run the docker by entering:\
+<code>docker-compose up -d</code></p>
+<p>The "\&lt;-d&gt;" stands for detached and starts the service in the background so you can still use your terminal, if this is not what yuo want runt the same command without "\&lt;-d&gt;". The docker should now be running.</p>
+<p>If there occurs some errors try by solving entering:\
+<code>docker-compose down --volumes --remove-orphans</code></p>
+<p>and\
+<code>docker-compose build --no-cache</code></p>
+<p>and then run the docker again.</p>
+<hr />
+<h3 id="ros2-node">ROS2 node</h3>
+<p><strong>To create a ROS2 node some things have to be setup. First you need ROS2 installed, this can be done on windows but it's easier on linux. This guide will focus on working with ROS2 on the Raspberry which already has ROS2 installed.</strong></p>
+<p>The ROS2 environment is set up in the docker so enter the docker first by entering:\
+<code>docker exec -it &lt;container_name&gt; /bin/bash</code></p>
+<p>CD to your soruce directory which in my case is "\<a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#114;&#111;&#111;&#116;&#64;&#97;&#112;&#52;&#45;&#104;&#119;&#45;&#105;&#110;&#116;&#101;&#114;&#102;&#97;&#99;&#101;&#45;&#114;&#112;&#105;&#52;&#58;&#126;&#47;&#97;&#112;&#52;&#95;&#104;&#119;&#105;&#95;&#100;&#111;&#99;&#107;&#101;&#114;&#95;&#100;&#105;&#114;&#47;&#97;&#112;&#52;&#104;&#119;&#105;&#95;&#119;&#115;&#47;&#115;&#114;&#99;">&#114;&#111;&#111;&#116;&#64;&#97;&#112;&#52;&#45;&#104;&#119;&#45;&#105;&#110;&#116;&#101;&#114;&#102;&#97;&#99;&#101;&#45;&#114;&#112;&#105;&#52;&#58;&#126;&#47;&#97;&#112;&#52;&#95;&#104;&#119;&#105;&#95;&#100;&#111;&#99;&#107;&#101;&#114;&#95;&#100;&#105;&#114;&#47;&#97;&#112;&#52;&#104;&#119;&#105;&#95;&#119;&#115;&#47;&#115;&#114;&#99;</a>" and create a package by entering:\
+<code>ros2 pkg create &lt;my_pkg_name&gt; --build-type ament_python --dependencies rclpy</code></p>
+<p>Now you have to change permissions so others you can push it to hit by entering:\
+<code>chmod 777 &lt;my_pkg_name&gt;</code></p>
+<p>Now go to the directory the python files are to be created in. This is "\<my_pkg_name>/\<my_pkg_name>" so enter:\
+<code>cd &lt;my_pkg_name&gt;/&lt;my_pkg_name&gt;</code></p>
+<p>Create a python file by entering:\
+<code>touch &lt;filename.py&gt;</code></p>
+<p>You also have to make it an executable by entering:\
+<code>chmod +x &lt;filename.py&gt;</code></p>
+<p>You can check that it has become an executable by entering <code>ls</code> and if "\<filename.py>" is highlighted in green, it is done.\
+Now you can write your code in the "\<filename.py>" file. When that is done, don't forget to add any imports to the <code>packages.xml</code> file and add your entrypoints to the<code>setup.py</code> file.</p>
+<p>Add packages by adding:\
+<code>&lt;depend&gt;import_to_add&lt;/depend&gt;</code>\
+under the "<license>licenses</license>" line.</p>
+<p>Add entrypoints by adding:</p>
+<pre style="font-family: 'Roboto Mono', monospace; font-size: 1em;">
+<code>
+entry_points={
+    'console_scripts': [
+        "example_node1 = my_pkg_name.filename1:main",
+        "example_node2 = my_pkg_name.filename2:main"
+    ],
+}
+</code>
+</pre>
+
+<p>When this is done you can build your work space by cd to your work space directory and entering:\
+<code>colcon build</code></p>
+<p>When this is done you need to source your variables by entering:\
+<code>source ~/ap4_hwi_docker_dir/ap4hwi_ws/install/setup.bash</code></p>
+<p>Thi also depends on your container name and my followed from the docker environmkent mentioned above.</p>
+<p>Now you can finally run your ROS2 node by entering:\
+<code>ros2 run &lt;pkg_name&gt; &lt;node_name&gt;</code></p>
+<hr />
+<h2 id="wiring-modifications">Wiring modifications</h2>
+<p><img alt="PCB Side: Wiring between front control module, ninebot engine and power adapter." src="connect%20male%20connectors%20to%20PCB%20at%20PCB%20side.jpg" /></p>
+<p><img alt="Connector side: Wiring between front control module, ninebot engine and power adapter." src="connect%20male%20connectors%20to%20PCB.jpg" /></p>
+<p>Instruction:</p>
+<p>The connectors used in this place are JST XH connectors.</p>
+<p>They can be found (during the writing of this text) in the lab and crimped with the tool on the picture that also can be found in the lab.</p>
+<p><img alt="Crimp tool, connectors and lead pins" src="lead%20in%20crimp%20tool%20use%20A.jpg" /></p>
+<p><img alt="Crimp tool usage" src="jst%20XH%20Lead%20conector%20pins%20and%20Crimp%20tool.jpg" /></p>
+<p>A better result is obtained when the lead pin is put in the smalled slot. THat requires a little bending of the clamps that are meant for the insulation part of the wire.</p>
+<h2 id="front-control-module">Front control module</h2>
+<p><img alt="Front Control MOdule connection to Power Adapter, Ninebot Chassis connector and front chassis connector" src="wiring%20to%20Ninebot%20Engine.png" /></p>
+<p>The Front control module is a control module, mounted on top of the steering column.
+Reads status from the brake and accelerator pedal and communicates that to the ninebot engine.
+Actuates a head lamp, controlled from the ninebot engine.</p>
+<p>IT communicates both wired and wireless with the Ninebot Engine.</p>
+<p>THe wired interface contains a wake up signal.
+Other communication is wireless.</p>
+<p>Ratio:
+Unplugging the wired interface does not interfere with operation of the motor. Gas and brakepedal work as usual when disconnected.
+Possibly the wire is only used to wake up the front control module.</p>
               
             </div>
           </div><footer>

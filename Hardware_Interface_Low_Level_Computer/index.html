@@ -81,19 +81,19 @@
     </li>
     <li class="toctree-l3"><a class="reference internal" href="#convert-data-format-to-ros2-standard">Convert Data Format To ROS2 Standard</a>
     </li>
-    <li class="toctree-l3"><a class="reference internal" href="#low-level-control-hardware-interface-software-hardware-requirements">Low-Level Control &amp; Hardware Interface - Software / Hardware Requirements</a>
+    <li class="toctree-l3"><a class="reference internal" href="#low-level-control-hardware-interface-software-hardware-requirements">Low-Level Control &amp; Hardware Interface - Software / Hardware Requirements </a>
     </li>
     <li class="toctree-l3"><a class="reference internal" href="#usb-devices-connected">USB Devices Connected</a>
     </li>
-    <li class="toctree-l3"><a class="reference internal" href="#interfacing-with-embedded-ecus">Interfacing With Embedded ECUs</a>
+    <li class="toctree-l3"><a class="reference internal" href="#interfacing-with-embedded-ecus">Interfacing With Embedded ECUs </a>
     </li>
-    <li class="toctree-l3"><a class="reference internal" href="#interfacing-with-high-level-control-software">Interfacing with High Level Control Software</a>
+    <li class="toctree-l3"><a class="reference internal" href="#interfacing-with-high-level-control-software">Interfacing with High Level Control Software </a>
     </li>
-    <li class="toctree-l3"><a class="reference internal" href="#adding-new-functionalities">Adding New Functionalities</a>
+    <li class="toctree-l3"><a class="reference internal" href="#adding-new-functionalities">Adding New Functionalities </a>
     </li>
-    <li class="toctree-l3"><a class="reference internal" href="#automatic-startup-of-software">Automatic Startup of Software</a>
+    <li class="toctree-l3"><a class="reference internal" href="#automatic-startup-of-software">Automatic Startup of Software </a>
     </li>
-    <li class="toctree-l3"><a class="reference internal" href="#installing-base-software-on-fresh-raspberry-pi-4b">Installing Base Software on Fresh Raspberry Pi 4b</a>
+    <li class="toctree-l3"><a class="reference internal" href="#installing-base-software-on-fresh-raspberry-pi-4b">Installing Base Software on Fresh Raspberry Pi 4b </a>
     </li>
         </ul>
     </li>
@@ -109,8 +109,6 @@
               <p class="caption"><span class="caption-text">High Level Control Computer</span></p>
               <ul>
                   <li class="toctree-l1"><a class="reference internal" href="../High_Level_Control_Computer/">High Level Control Computer</a>
-                  </li>
-                  <li class="toctree-l1"><a class="" href="../High_Level_Control_Computer/HOW_TO_EXTEND.md">How to Extend</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../High_Level_Control_Computer/IMITATION_LEARNING/">Imitation Learning</a>
                   </li>
@@ -180,10 +178,44 @@
 <p>This is a custom made ROS2 package made spring 2023. The purpose of it is to be a software translation of the CAN bus data from the embedded software layer to useful information available on ROS2 topics.</p>
 <p>This abstracts the transfer of information between low level software and embedded software running on ECUs in the CAN network.</p>
 <p>It uses the unified CAN bus database file (.dbc) for autonomous platform in order to decode the information sent on the CAN network. This database file is located at <code>autonomous_platform\CAN_Nodes_Microcontroller_Code\CAN_LIBRARY_DATABASE\CAN_DB.dbc</code>. A custom application is then written that maps a specific CAN signal onto a specific ROS2 topic. This means that every data signal sent over the CAN network can be used in algorithms located in the hardware interface and low level software. In the same way, ROS2 topics can be used to set the value of certain signals, meaning commands can be sent from the hardware interface and low level software to the various ECUs mounted onto autonomous platform.</p>
+<p>Notes: Every CAN Signal gets it's own ROS Topic.</p>
+<p>Examples to send CAN messages from HWI to SPCU by writing to a ROS2 topic</p>
+<ul>
+<li>Publish a CAN message with speed 0x55 on the LF pulse count topic.</li>
+</ul>
+<blockquote>
+<p>ros2  topic pub /SET_0x5dc_SpeedSensorLF_PulseCnt  std_msgs/msg/UInt16 "{data: 0x55}" -r 10</p>
+</blockquote>
+<ul>
+<li>Actuate the steering wheel wihtout joy controller:</li>
+</ul>
+<p>ros2 topic pub /SET_0x3e8_Act_SteeringPosition std_msgs/msg/Int8 "{data: 40}" -r 100</p>
+<p>This latter example can also by achieved by sending a direct command to the CAN interface</p>
+<blockquote>
+<p>cansend can0 3e8#52035000A4060000</p>
+</blockquote>
+<ul>
+<li>Show CAN  traffic directly in Linux</li>
+</ul>
+<blockquote>
+<p>candump can0</p>
+</blockquote>
+<p>showing:  ie\
+can0  3E8   [8]  52 03 50 00 A4 06 00 00</p>
+<p>or</p>
+<blockquote>
+<p>cansniffer can0 -B -c -t 0 -h 5 -l 2</p>
+</blockquote>
+<p>Showing CAN traffic
+-B in binary with gaps, sorted in columns
+-c with visual colour changes
+-t <time>   (timeout for ID display [x10ms] default: 500, 0 = OFF)
+-h <time>   (hold marker on changes [x10ms] default: 100)
+-l <time>   (loop time (display) [x10ms] default: 20)</p>
 <h3 id="vehicle-control">Vehicle Control</h3>
 <p>This is a custom made ROS2 package to control the steering angle and velocity of the hardware on a low level. It receives a desired velocity and steering angle on the <code>/cmd_vel</code> ROS2 topic and uses a controller gain to scale the values. The values have to be processed and rescaled in order for the embedded ECUs to actuate correctly.</p>
 <p>I.e to control the velocity, the embedded software in the SPCU expects a desired voltage to be sent on the CAN bus. Therefore the desired velocity needs to be converted into a desired voltage that should be applied on the accelerator pedal.</p>
-<p><strong>More advanced control behavior can be implemented later on, I.e some sort of feedback from the velocity sensors. As of now it is open loop controlled</strong></p>
+<p><strong>More advanced control behavior can be implemented later on, I.e some sort of feedback from the velocity sensors as for now it is open loop controlled</strong></p>
 <h3 id="joystick-manual-control">Joystick Manual Control</h3>
 <p>This is a set of ROS2 packages which enables a joystick to be connected to autonomous platform. The output will be in the form of a velocity commands on the <code>/cmd_vel</code> ROS2 topic. This output can then be read in vehicle control to control the gokart.</p>
 <h3 id="convert-data-format-to-ros2-standard">Convert Data Format To ROS2 Standard</h3>
@@ -231,6 +263,11 @@
 <p>See section in <code>SETUP_OF_RASPBERRY_PI.md</code></p>
 <h2 id="wiring">Wiring</h2>
 <p>The ECU controlling the steering consists of a lot of loose cables connected with Dupont connectors. These cables should be extended since they now are very short and connected in a better way to avoid loosing the control over the gokart while driving. If the cables would come loose they have been marked with a number between 1-5 for the upper ones and 2.1-2.2 for the lower ones which can be seen in the following figures.</p>
+<p>Recommendations for improvement:</p>
+<p>Longer term: add terminal rails for ground, +3.3V and 5V powering and loose terminals for interface control.
+Short term on both AP4_1  (the original Go Kart) and AP4_2 (the new built GO Kart):
+added so called "wago" joints for grnd, +3.3V and 5V wiring.
+The Dupont connectors are still there but not wired.</p>
 <p><img alt="Illustration of cables to steering ECU." src="../Resources/extra_documentation_images/loose_cables_1.png" /></p>
 <p><img alt="Illustration of cables to steering ECU." src="../Resources/extra_documentation_images/loose_cables_2.png" /></p>
 <p><img alt="Illustration of cables to steering ECU." src="../Resources/extra_documentation_images/loose_cables_3.png" /></p>

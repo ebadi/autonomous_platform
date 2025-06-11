@@ -1,0 +1,35 @@
+running egg_info
+creating ../../build/imu_pkg/imu_pkg.egg-info
+writing ../../build/imu_pkg/imu_pkg.egg-info/PKG-INFO
+writing dependency_links to ../../build/imu_pkg/imu_pkg.egg-info/dependency_links.txt
+writing entry points to ../../build/imu_pkg/imu_pkg.egg-info/entry_points.txt
+writing requirements to ../../build/imu_pkg/imu_pkg.egg-info/requires.txt
+writing top-level names to ../../build/imu_pkg/imu_pkg.egg-info/top_level.txt
+writing manifest file '../../build/imu_pkg/imu_pkg.egg-info/SOURCES.txt'
+reading manifest file '../../build/imu_pkg/imu_pkg.egg-info/SOURCES.txt'
+writing manifest file '../../build/imu_pkg/imu_pkg.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /root/ap4_hlc_docker_dir/ap4hlc_ws/build/imu_pkg/build
+creating /root/ap4_hlc_docker_dir/ap4hlc_ws/build/imu_pkg/build/lib
+creating /root/ap4_hlc_docker_dir/ap4hlc_ws/build/imu_pkg/build/lib/imu_pkg
+copying imu_pkg/__init__.py -> /root/ap4_hlc_docker_dir/ap4hlc_ws/build/imu_pkg/build/lib/imu_pkg
+copying imu_pkg/imu.py -> /root/ap4_hlc_docker_dir/ap4hlc_ws/build/imu_pkg/build/lib/imu_pkg
+running install
+running install_lib
+creating /root/ap4_hlc_docker_dir/ap4hlc_ws/install/imu_pkg/lib/python3.10/site-packages/imu_pkg
+copying /root/ap4_hlc_docker_dir/ap4hlc_ws/build/imu_pkg/build/lib/imu_pkg/__init__.py -> /root/ap4_hlc_docker_dir/ap4hlc_ws/install/imu_pkg/lib/python3.10/site-packages/imu_pkg
+copying /root/ap4_hlc_docker_dir/ap4hlc_ws/build/imu_pkg/build/lib/imu_pkg/imu.py -> /root/ap4_hlc_docker_dir/ap4hlc_ws/install/imu_pkg/lib/python3.10/site-packages/imu_pkg
+byte-compiling /root/ap4_hlc_docker_dir/ap4hlc_ws/install/imu_pkg/lib/python3.10/site-packages/imu_pkg/__init__.py to __init__.cpython-310.pyc
+byte-compiling /root/ap4_hlc_docker_dir/ap4hlc_ws/install/imu_pkg/lib/python3.10/site-packages/imu_pkg/imu.py to imu.cpython-310.pyc
+running install_data
+creating /root/ap4_hlc_docker_dir/ap4hlc_ws/install/imu_pkg/share/ament_index
+creating /root/ap4_hlc_docker_dir/ap4hlc_ws/install/imu_pkg/share/ament_index/resource_index
+creating /root/ap4_hlc_docker_dir/ap4hlc_ws/install/imu_pkg/share/ament_index/resource_index/packages
+copying resource/imu_pkg -> /root/ap4_hlc_docker_dir/ap4hlc_ws/install/imu_pkg/share/ament_index/resource_index/packages
+copying package.xml -> /root/ap4_hlc_docker_dir/ap4hlc_ws/install/imu_pkg/share/imu_pkg
+running install_egg_info
+Copying ../../build/imu_pkg/imu_pkg.egg-info to /root/ap4_hlc_docker_dir/ap4hlc_ws/install/imu_pkg/lib/python3.10/site-packages/imu_pkg-0.0.0-py3.10.egg-info
+running install_scripts
+Installing imu_output_node script to /root/ap4_hlc_docker_dir/ap4hlc_ws/install/imu_pkg/lib/imu_pkg
+writing list of installed files to '/root/ap4_hlc_docker_dir/ap4hlc_ws/build/imu_pkg/install.log'

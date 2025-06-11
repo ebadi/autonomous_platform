@@ -1,0 +1,238 @@
+[0.000000] (-) TimerEvent: {}
+[0.000118] (autonomous_platform_robot_description_pkg) JobQueued: {'identifier': 'autonomous_platform_robot_description_pkg', 'dependencies': OrderedDict()}
+[0.000139] (high_level_control) JobQueued: {'identifier': 'high_level_control', 'dependencies': OrderedDict()}
+[0.000152] (imitation_learning) JobQueued: {'identifier': 'imitation_learning', 'dependencies': OrderedDict()}
+[0.000163] (imu_pkg) JobQueued: {'identifier': 'imu_pkg', 'dependencies': OrderedDict()}
+[0.000173] (keyboard_control) JobQueued: {'identifier': 'keyboard_control', 'dependencies': OrderedDict()}
+[0.000184] (path_tracker) JobQueued: {'identifier': 'path_tracker', 'dependencies': OrderedDict()}
+[0.000194] (twist_stamper) JobQueued: {'identifier': 'twist_stamper', 'dependencies': OrderedDict()}
+[0.000405] (autonomous_platform_robot_description_pkg) JobStarted: {'identifier': 'autonomous_platform_robot_description_pkg'}
+[0.004996] (high_level_control) JobStarted: {'identifier': 'high_level_control'}
+[0.007244] (imitation_learning) JobStarted: {'identifier': 'imitation_learning'}
+[0.009917] (imu_pkg) JobStarted: {'identifier': 'imu_pkg'}
+[0.013037] (keyboard_control) JobStarted: {'identifier': 'keyboard_control'}
+[0.016049] (path_tracker) JobStarted: {'identifier': 'path_tracker'}
+[0.018994] (twist_stamper) JobStarted: {'identifier': 'twist_stamper'}
+[0.023349] (autonomous_platform_robot_description_pkg) JobProgress: {'identifier': 'autonomous_platform_robot_description_pkg', 'progress': 'cmake'}
+[0.023636] (autonomous_platform_robot_description_pkg) JobProgress: {'identifier': 'autonomous_platform_robot_description_pkg', 'progress': 'build'}
+[0.024027] (autonomous_platform_robot_description_pkg) Command: {'cmd': ['/usr/bin/cmake', '--build', '/root/ap4_hlc_docker_dir/ap4hlc_ws/build/autonomous_platform_robot_description_pkg', '--', '-j20', '-l20'], 'cwd': '/root/ap4_hlc_docker_dir/ap4hlc_ws/build/autonomous_platform_robot_description_pkg', 'env': OrderedDict([('HOSTNAME', 'Research'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/root/ap4_hlc_docker_dir'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('ROS_DOMAIN_ID', '1'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('PWD', '/root/ap4_hlc_docker_dir/ap4hlc_ws/build/autonomous_platform_robot_description_pkg'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.024861] (high_level_control) JobProgress: {'identifier': 'high_level_control', 'progress': 'cmake'}
+[0.025068] (high_level_control) JobProgress: {'identifier': 'high_level_control', 'progress': 'build'}
+[0.025211] (high_level_control) Command: {'cmd': ['/usr/bin/cmake', '--build', '/root/ap4_hlc_docker_dir/ap4hlc_ws/build/high_level_control', '--', '-j20', '-l20'], 'cwd': '/root/ap4_hlc_docker_dir/ap4hlc_ws/build/high_level_control', 'env': OrderedDict([('HOSTNAME', 'Research'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/root/ap4_hlc_docker_dir'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('ROS_DOMAIN_ID', '1'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('PWD', '/root/ap4_hlc_docker_dir/ap4hlc_ws/build/high_level_control'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.026004] (imitation_learning) JobProgress: {'identifier': 'imitation_learning', 'progress': 'cmake'}
+[0.026135] (imitation_learning) JobProgress: {'identifier': 'imitation_learning', 'progress': 'build'}
+[0.026273] (imitation_learning) Command: {'cmd': ['/usr/bin/cmake', '--build', '/root/ap4_hlc_docker_dir/ap4hlc_ws/build/imitation_learning', '--', '-j20', '-l20'], 'cwd': '/root/ap4_hlc_docker_dir/ap4hlc_ws/build/imitation_learning', 'env': OrderedDict([('HOSTNAME', 'Research'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/root/ap4_hlc_docker_dir'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('ROS_DOMAIN_ID', '1'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('PWD', '/root/ap4_hlc_docker_dir/ap4hlc_ws/build/imitation_learning'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.099893] (-) TimerEvent: {}
+[0.200057] (-) TimerEvent: {}
+[0.300238] (-) TimerEvent: {}
+[0.400392] (-) TimerEvent: {}
+[0.500548] (-) TimerEvent: {}
+[0.600709] (-) TimerEvent: {}
+[0.700868] (-) TimerEvent: {}
+[0.722342] (autonomous_platform_robot_description_pkg) CommandEnded: {'returncode': 0}
+[0.731696] (autonomous_platform_robot_description_pkg) JobProgress: {'identifier': 'autonomous_platform_robot_description_pkg', 'progress': 'install'}
+[0.736862] (autonomous_platform_robot_description_pkg) Command: {'cmd': ['/usr/bin/cmake', '--install', '/root/ap4_hlc_docker_dir/ap4hlc_ws/build/autonomous_platform_robot_description_pkg'], 'cwd': '/root/ap4_hlc_docker_dir/ap4hlc_ws/build/autonomous_platform_robot_description_pkg', 'env': OrderedDict([('HOSTNAME', 'Research'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/root/ap4_hlc_docker_dir'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('ROS_DOMAIN_ID', '1'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('PWD', '/root/ap4_hlc_docker_dir/ap4hlc_ws/build/autonomous_platform_robot_description_pkg'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.737518] (high_level_control) CommandEnded: {'returncode': 0}
+[0.737791] (high_level_control) JobProgress: {'identifier': 'high_level_control', 'progress': 'install'}
+[0.737926] (high_level_control) Command: {'cmd': ['/usr/bin/cmake', '--install', '/root/ap4_hlc_docker_dir/ap4hlc_ws/build/high_level_control'], 'cwd': '/root/ap4_hlc_docker_dir/ap4hlc_ws/build/high_level_control', 'env': OrderedDict([('HOSTNAME', 'Research'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/root/ap4_hlc_docker_dir'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('ROS_DOMAIN_ID', '1'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('PWD', '/root/ap4_hlc_docker_dir/ap4hlc_ws/build/high_level_control'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.738651] (imitation_learning) CommandEnded: {'returncode': 0}
+[0.738911] (imitation_learning) JobProgress: {'identifier': 'imitation_learning', 'progress': 'install'}
+[0.739037] (imitation_learning) Command: {'cmd': ['/usr/bin/cmake', '--install', '/root/ap4_hlc_docker_dir/ap4hlc_ws/build/imitation_learning'], 'cwd': '/root/ap4_hlc_docker_dir/ap4hlc_ws/build/imitation_learning', 'env': OrderedDict([('HOSTNAME', 'Research'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/root/ap4_hlc_docker_dir'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('ROS_DOMAIN_ID', '1'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('PWD', '/root/ap4_hlc_docker_dir/ap4hlc_ws/build/imitation_learning'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.744880] (autonomous_platform_robot_description_pkg) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.745374] (autonomous_platform_robot_description_pkg) StdoutLine: {'line': b'-- Up-to-date: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/autonomous_platform_robot_description_pkg/share/autonomous_platform_robot_description_pkg/src\n'}
+[0.745586] (autonomous_platform_robot_description_pkg) StdoutLine: {'line': b'-- Up-to-date: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/autonomous_platform_robot_description_pkg/share/autonomous_platform_robot_description_pkg/src/description\n'}
+[0.745631] (autonomous_platform_robot_description_pkg) StdoutLine: {'line': b'-- Up-to-date: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/autonomous_platform_robot_description_pkg/share/autonomous_platform_robot_description_pkg/src/description/simple_digital_twin.urdf.xacro\n'}
+[0.745675] (autonomous_platform_robot_description_pkg) StdoutLine: {'line': b'-- Up-to-date: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/autonomous_platform_robot_description_pkg/share/autonomous_platform_robot_description_pkg/src/description/inertia_macros.xacro\n'}
+[0.745717] (autonomous_platform_robot_description_pkg) StdoutLine: {'line': b'-- Up-to-date: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/autonomous_platform_robot_description_pkg/share/autonomous_platform_robot_description_pkg/src/description/ap4_robot_description.urdf.xacro\n'}
+[0.745758] (autonomous_platform_robot_description_pkg) StdoutLine: {'line': b'-- Up-to-date: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/autonomous_platform_robot_description_pkg/share/autonomous_platform_robot_description_pkg/src/description/lidar.xacro\n'}
+[0.745799] (autonomous_platform_robot_description_pkg) StdoutLine: {'line': b'-- Up-to-date: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/autonomous_platform_robot_description_pkg/share/autonomous_platform_robot_description_pkg/src/description/control_simple_digital_twin.xacro\n'}
+[0.745840] (autonomous_platform_robot_description_pkg) StdoutLine: {'line': b'-- Up-to-date: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/autonomous_platform_robot_description_pkg/share/autonomous_platform_robot_description_pkg/src/description/imu.xacro\n'}
+[0.745880] (autonomous_platform_robot_description_pkg) StdoutLine: {'line': b'-- Up-to-date: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/autonomous_platform_robot_description_pkg/share/autonomous_platform_robot_description_pkg/launch\n'}
+[0.745921] (autonomous_platform_robot_description_pkg) StdoutLine: {'line': b'-- Up-to-date: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/autonomous_platform_robot_description_pkg/share/autonomous_platform_robot_description_pkg/launch/launch_robot.launch.py\n'}
+[0.745961] (autonomous_platform_robot_description_pkg) StdoutLine: {'line': b'-- Installing: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/autonomous_platform_robot_description_pkg/share/autonomous_platform_robot_description_pkg/launch/launch_robot_simulation.launch.py\n'}
+[0.746175] (autonomous_platform_robot_description_pkg) StdoutLine: {'line': b'-- Up-to-date: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/autonomous_platform_robot_description_pkg/share/autonomous_platform_robot_description_pkg/rviz\n'}
+[0.746234] (autonomous_platform_robot_description_pkg) StdoutLine: {'line': b'-- Up-to-date: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/autonomous_platform_robot_description_pkg/share/autonomous_platform_robot_description_pkg/rviz/rviz_nav2.rviz\n'}
+[0.746276] (autonomous_platform_robot_description_pkg) StdoutLine: {'line': b'-- Up-to-date: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/autonomous_platform_robot_description_pkg/share/autonomous_platform_robot_description_pkg/worlds\n'}
+[0.746316] (autonomous_platform_robot_description_pkg) StdoutLine: {'line': b'-- Up-to-date: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/autonomous_platform_robot_description_pkg/share/autonomous_platform_robot_description_pkg/worlds/gocart.mtl\n'}
+[0.746356] (autonomous_platform_robot_description_pkg) StdoutLine: {'line': b'-- Up-to-date: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/autonomous_platform_robot_description_pkg/share/autonomous_platform_robot_description_pkg/worlds/example_world\n'}
+[0.746396] (autonomous_platform_robot_description_pkg) StdoutLine: {'line': b'-- Up-to-date: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/autonomous_platform_robot_description_pkg/share/autonomous_platform_robot_description_pkg/worlds/gocart.blend\n'}
+[0.746436] (autonomous_platform_robot_description_pkg) StdoutLine: {'line': b'-- Up-to-date: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/autonomous_platform_robot_description_pkg/share/autonomous_platform_robot_description_pkg/worlds/gocart.obj\n'}
+[0.746492] (autonomous_platform_robot_description_pkg) StdoutLine: {'line': b'-- Up-to-date: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/autonomous_platform_robot_description_pkg/share/autonomous_platform_robot_description_pkg/worlds/test_models\n'}
+[0.746535] (autonomous_platform_robot_description_pkg) StdoutLine: {'line': b'-- Up-to-date: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/autonomous_platform_robot_description_pkg/share/autonomous_platform_robot_description_pkg/worlds/test_models/model.config\n'}
+[0.746575] (autonomous_platform_robot_description_pkg) StdoutLine: {'line': b'-- Up-to-date: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/autonomous_platform_robot_description_pkg/share/autonomous_platform_robot_description_pkg/worlds/test_models/model.sdf\n'}
+[0.746616] (autonomous_platform_robot_description_pkg) StdoutLine: {'line': b'-- Up-to-date: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/autonomous_platform_robot_description_pkg/share/autonomous_platform_robot_description_pkg/worlds/gocartcentralen.world\n'}
+[0.746656] (autonomous_platform_robot_description_pkg) StdoutLine: {'line': b'-- Up-to-date: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/autonomous_platform_robot_description_pkg/share/autonomous_platform_robot_description_pkg/config\n'}
+[0.746696] (autonomous_platform_robot_description_pkg) StdoutLine: {'line': b'-- Up-to-date: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/autonomous_platform_robot_description_pkg/share/autonomous_platform_robot_description_pkg/config/ekf_imu.yaml\n'}
+[0.746790] (autonomous_platform_robot_description_pkg) StdoutLine: {'line': b'-- Up-to-date: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/autonomous_platform_robot_description_pkg/share/autonomous_platform_robot_description_pkg/config/mapper_params_online_async_simulation.yaml\n'}
+[0.746832] (autonomous_platform_robot_description_pkg) StdoutLine: {'line': b'-- Up-to-date: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/autonomous_platform_robot_description_pkg/share/autonomous_platform_robot_description_pkg/config/ekf.yaml\n'}
+[0.746871] (autonomous_platform_robot_description_pkg) StdoutLine: {'line': b'-- Up-to-date: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/autonomous_platform_robot_description_pkg/share/autonomous_platform_robot_description_pkg/config/nav2_config.yaml\n'}
+[0.746925] (autonomous_platform_robot_description_pkg) StdoutLine: {'line': b'-- Up-to-date: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/autonomous_platform_robot_description_pkg/share/autonomous_platform_robot_description_pkg/config/nav2_config_sim.yaml\n'}
+[0.746966] (autonomous_platform_robot_description_pkg) StdoutLine: {'line': b'-- Up-to-date: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/autonomous_platform_robot_description_pkg/share/autonomous_platform_robot_description_pkg/config/mapper_params_online_async.yaml\n'}
+[0.747007] (autonomous_platform_robot_description_pkg) StdoutLine: {'line': b'-- Up-to-date: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/autonomous_platform_robot_description_pkg/share/autonomous_platform_robot_description_pkg/config/gz_bridge.yaml\n'}
+[0.747046] (autonomous_platform_robot_description_pkg) StdoutLine: {'line': b'-- Up-to-date: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/autonomous_platform_robot_description_pkg/share/ament_index/resource_index/package_run_dependencies/autonomous_platform_robot_description_pkg\n'}
+[0.747151] (autonomous_platform_robot_description_pkg) StdoutLine: {'line': b'-- Up-to-date: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/autonomous_platform_robot_description_pkg/share/ament_index/resource_index/parent_prefix_path/autonomous_platform_robot_description_pkg\n'}
+[0.747196] (autonomous_platform_robot_description_pkg) StdoutLine: {'line': b'-- Up-to-date: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/autonomous_platform_robot_description_pkg/share/autonomous_platform_robot_description_pkg/environment/ament_prefix_path.sh\n'}
+[0.747236] (autonomous_platform_robot_description_pkg) StdoutLine: {'line': b'-- Up-to-date: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/autonomous_platform_robot_description_pkg/share/autonomous_platform_robot_description_pkg/environment/ament_prefix_path.dsv\n'}
+[0.747276] (autonomous_platform_robot_description_pkg) StdoutLine: {'line': b'-- Up-to-date: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/autonomous_platform_robot_description_pkg/share/autonomous_platform_robot_description_pkg/environment/path.sh\n'}
+[0.747316] (autonomous_platform_robot_description_pkg) StdoutLine: {'line': b'-- Up-to-date: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/autonomous_platform_robot_description_pkg/share/autonomous_platform_robot_description_pkg/environment/path.dsv\n'}
+[0.747356] (autonomous_platform_robot_description_pkg) StdoutLine: {'line': b'-- Up-to-date: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/autonomous_platform_robot_description_pkg/share/autonomous_platform_robot_description_pkg/local_setup.bash\n'}
+[0.747396] (autonomous_platform_robot_description_pkg) StdoutLine: {'line': b'-- Up-to-date: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/autonomous_platform_robot_description_pkg/share/autonomous_platform_robot_description_pkg/local_setup.sh\n'}
+[0.747436] (autonomous_platform_robot_description_pkg) StdoutLine: {'line': b'-- Up-to-date: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/autonomous_platform_robot_description_pkg/share/autonomous_platform_robot_description_pkg/local_setup.zsh\n'}
+[0.747475] (autonomous_platform_robot_description_pkg) StdoutLine: {'line': b'-- Up-to-date: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/autonomous_platform_robot_description_pkg/share/autonomous_platform_robot_description_pkg/local_setup.dsv\n'}
+[0.747515] (autonomous_platform_robot_description_pkg) StdoutLine: {'line': b'-- Up-to-date: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/autonomous_platform_robot_description_pkg/share/autonomous_platform_robot_description_pkg/package.dsv\n'}
+[0.747560] (autonomous_platform_robot_description_pkg) StdoutLine: {'line': b'-- Up-to-date: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/autonomous_platform_robot_description_pkg/share/ament_index/resource_index/packages/autonomous_platform_robot_description_pkg\n'}
+[0.747601] (autonomous_platform_robot_description_pkg) StdoutLine: {'line': b'-- Up-to-date: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/autonomous_platform_robot_description_pkg/share/autonomous_platform_robot_description_pkg/cmake/autonomous_platform_robot_description_pkgConfig.cmake\n'}
+[0.747653] (autonomous_platform_robot_description_pkg) StdoutLine: {'line': b'-- Up-to-date: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/autonomous_platform_robot_description_pkg/share/autonomous_platform_robot_description_pkg/cmake/autonomous_platform_robot_description_pkgConfig-version.cmake\n'}
+[0.747694] (autonomous_platform_robot_description_pkg) StdoutLine: {'line': b'-- Up-to-date: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/autonomous_platform_robot_description_pkg/share/autonomous_platform_robot_description_pkg/package.xml\n'}
+[0.747733] (high_level_control) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.747798] (high_level_control) StdoutLine: {'line': b'-- Up-to-date: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/high_level_control/lib/high_level_control/high_level_model.py\n'}
+[0.747839] (high_level_control) StdoutLine: {'line': b'-- Up-to-date: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/high_level_control/lib/high_level_control/data_collection.py\n'}
+[0.747878] (high_level_control) StdoutLine: {'line': b'-- Up-to-date: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/high_level_control/lib/high_level_control/utils.py\n'}
+[0.747917] (high_level_control) StdoutLine: {'line': b'-- Up-to-date: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/high_level_control/share/ament_index/resource_index/package_run_dependencies/high_level_control\n'}
+[0.747957] (high_level_control) StdoutLine: {'line': b'-- Up-to-date: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/high_level_control/share/ament_index/resource_index/parent_prefix_path/high_level_control\n'}
+[0.747996] (high_level_control) StdoutLine: {'line': b'-- Up-to-date: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/high_level_control/share/high_level_control/environment/ament_prefix_path.sh\n'}
+[0.748035] (high_level_control) StdoutLine: {'line': b'-- Up-to-date: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/high_level_control/share/high_level_control/environment/ament_prefix_path.dsv\n'}
+[0.748110] (high_level_control) StdoutLine: {'line': b'-- Up-to-date: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/high_level_control/share/high_level_control/environment/path.sh\n'}
+[0.748172] (high_level_control) StdoutLine: {'line': b'-- Up-to-date: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/high_level_control/share/high_level_control/environment/path.dsv\n'}
+[0.748213] (high_level_control) StdoutLine: {'line': b'-- Up-to-date: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/high_level_control/share/high_level_control/local_setup.bash\n'}
+[0.748252] (high_level_control) StdoutLine: {'line': b'-- Up-to-date: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/high_level_control/share/high_level_control/local_setup.sh\n'}
+[0.748291] (high_level_control) StdoutLine: {'line': b'-- Up-to-date: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/high_level_control/share/high_level_control/local_setup.zsh\n'}
+[0.748329] (high_level_control) StdoutLine: {'line': b'-- Up-to-date: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/high_level_control/share/high_level_control/local_setup.dsv\n'}
+[0.748368] (high_level_control) StdoutLine: {'line': b'-- Up-to-date: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/high_level_control/share/high_level_control/package.dsv\n'}
+[0.748406] (high_level_control) StdoutLine: {'line': b'-- Up-to-date: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/high_level_control/share/ament_index/resource_index/packages/high_level_control\n'}
+[0.748455] (high_level_control) StdoutLine: {'line': b'-- Up-to-date: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/high_level_control/share/high_level_control/cmake/high_level_controlConfig.cmake\n'}
+[0.748494] (high_level_control) StdoutLine: {'line': b'-- Up-to-date: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/high_level_control/share/high_level_control/cmake/high_level_controlConfig-version.cmake\n'}
+[0.748533] (high_level_control) StdoutLine: {'line': b'-- Up-to-date: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/high_level_control/share/high_level_control/package.xml\n'}
+[0.748577] (imitation_learning) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.748672] (imitation_learning) StdoutLine: {'line': b'-- Up-to-date: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/imitation_learning/share/imitation_learning/simulation_donkeycar\n'}
+[0.748714] (imitation_learning) StdoutLine: {'line': b'-- Up-to-date: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/imitation_learning/share/imitation_learning/simulation_donkeycar/ppo_train.py\n'}
+[0.748754] (imitation_learning) StdoutLine: {'line': b'-- Up-to-date: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/imitation_learning/share/imitation_learning/simulation_donkeycar/train.py\n'}
+[0.748793] (imitation_learning) StdoutLine: {'line': b'-- Up-to-date: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/imitation_learning/share/imitation_learning/simulation_donkeycar/manage.py\n'}
+[0.748832] (imitation_learning) StdoutLine: {'line': b'-- Up-to-date: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/imitation_learning/share/imitation_learning/simulation_donkeycar/calibrate.py\n'}
+[0.748871] (imitation_learning) StdoutLine: {'line': b'-- Up-to-date: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/imitation_learning/share/imitation_learning/simulation_donkeycar/start_simualtion.sh\n'}
+[0.748910] (imitation_learning) StdoutLine: {'line': b'-- Up-to-date: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/imitation_learning/share/imitation_learning/simulation_donkeycar/config.py\n'}
+[0.748949] (imitation_learning) StdoutLine: {'line': b'-- Up-to-date: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/imitation_learning/share/imitation_learning/simulation_donkeycar/.gitignore\n'}
+[0.748989] (imitation_learning) StdoutLine: {'line': b'-- Up-to-date: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/imitation_learning/share/imitation_learning/simulation_donkeycar/myconfig.py\n'}
+[0.749027] (imitation_learning) StdoutLine: {'line': b'-- Up-to-date: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/imitation_learning/lib/imitation_learning/train_DAgger.py\n'}
+[0.749074] (imitation_learning) StdoutLine: {'line': b'-- Up-to-date: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/imitation_learning/lib/imitation_learning/evaluate_models.py\n'}
+[0.749170] (imitation_learning) StdoutLine: {'line': b'-- Up-to-date: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/imitation_learning/lib/imitation_learning/image_display.py\n'}
+[0.749212] (imitation_learning) StdoutLine: {'line': b'-- Up-to-date: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/imitation_learning/lib/imitation_learning/utils.py\n'}
+[0.749251] (imitation_learning) StdoutLine: {'line': b'-- Up-to-date: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/imitation_learning/share/ament_index/resource_index/package_run_dependencies/imitation_learning\n'}
+[0.749291] (imitation_learning) StdoutLine: {'line': b'-- Up-to-date: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/imitation_learning/share/ament_index/resource_index/parent_prefix_path/imitation_learning\n'}
+[0.749332] (imitation_learning) StdoutLine: {'line': b'-- Up-to-date: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/imitation_learning/share/imitation_learning/environment/ament_prefix_path.sh\n'}
+[0.749372] (imitation_learning) StdoutLine: {'line': b'-- Up-to-date: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/imitation_learning/share/imitation_learning/environment/ament_prefix_path.dsv\n'}
+[0.749412] (imitation_learning) StdoutLine: {'line': b'-- Up-to-date: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/imitation_learning/share/imitation_learning/environment/path.sh\n'}
+[0.749451] (imitation_learning) StdoutLine: {'line': b'-- Up-to-date: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/imitation_learning/share/imitation_learning/environment/path.dsv\n'}
+[0.749490] (imitation_learning) StdoutLine: {'line': b'-- Up-to-date: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/imitation_learning/share/imitation_learning/local_setup.bash\n'}
+[0.749530] (imitation_learning) StdoutLine: {'line': b'-- Up-to-date: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/imitation_learning/share/imitation_learning/local_setup.sh\n'}
+[0.749576] (imitation_learning) StdoutLine: {'line': b'-- Up-to-date: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/imitation_learning/share/imitation_learning/local_setup.zsh\n'}
+[0.749616] (imitation_learning) StdoutLine: {'line': b'-- Up-to-date: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/imitation_learning/share/imitation_learning/local_setup.dsv\n'}
+[0.749655] (imitation_learning) StdoutLine: {'line': b'-- Up-to-date: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/imitation_learning/share/imitation_learning/package.dsv\n'}
+[0.749694] (imitation_learning) StdoutLine: {'line': b'-- Up-to-date: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/imitation_learning/share/ament_index/resource_index/packages/imitation_learning\n'}
+[0.749739] (imitation_learning) StdoutLine: {'line': b'-- Up-to-date: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/imitation_learning/share/imitation_learning/cmake/imitation_learningConfig.cmake\n'}
+[0.749780] (imitation_learning) StdoutLine: {'line': b'-- Up-to-date: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/imitation_learning/share/imitation_learning/cmake/imitation_learningConfig-version.cmake\n'}
+[0.749820] (imitation_learning) StdoutLine: {'line': b'-- Up-to-date: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/imitation_learning/share/imitation_learning/package.xml\n'}
+[0.749860] (autonomous_platform_robot_description_pkg) CommandEnded: {'returncode': 0}
+[0.760333] (autonomous_platform_robot_description_pkg) JobEnded: {'identifier': 'autonomous_platform_robot_description_pkg', 'rc': 0}
+[0.760873] (high_level_control) CommandEnded: {'returncode': 0}
+[0.768753] (high_level_control) JobEnded: {'identifier': 'high_level_control', 'rc': 0}
+[0.769380] (imitation_learning) CommandEnded: {'returncode': 0}
+[0.776817] (imitation_learning) JobEnded: {'identifier': 'imitation_learning', 'rc': 0}
+[0.800987] (-) TimerEvent: {}
+[0.901160] (-) TimerEvent: {}
+[0.977641] (twist_stamper) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/twist_stamper', 'build', '--build-base', '/root/ap4_hlc_docker_dir/ap4hlc_ws/build/twist_stamper/build', 'install', '--record', '/root/ap4_hlc_docker_dir/ap4hlc_ws/build/twist_stamper/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/root/ap4_hlc_docker_dir/ap4hlc_ws/src/twist_stamper', 'env': {'HOSTNAME': 'Research', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/root', 'OLDPWD': '/root/ap4_hlc_docker_dir', 'ROS_PYTHON_VERSION': '3', 'ROS_DISTRO': 'humble', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'ROS_DOMAIN_ID': '1', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'PWD': '/root/ap4_hlc_docker_dir/ap4hlc_ws/build/twist_stamper', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/root/ap4_hlc_docker_dir/ap4hlc_ws/build/twist_stamper/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/root/ap4_hlc_docker_dir/ap4hlc_ws/install/twist_stamper/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1'}, 'shell': False}
+[0.979108] (keyboard_control) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/keyboard_control', 'build', '--build-base', '/root/ap4_hlc_docker_dir/ap4hlc_ws/build/keyboard_control/build', 'install', '--record', '/root/ap4_hlc_docker_dir/ap4hlc_ws/build/keyboard_control/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/root/ap4_hlc_docker_dir/ap4hlc_ws/src/keyboard_control', 'env': {'HOSTNAME': 'Research', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/root', 'OLDPWD': '/root/ap4_hlc_docker_dir', 'ROS_PYTHON_VERSION': '3', 'ROS_DISTRO': 'humble', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'ROS_DOMAIN_ID': '1', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'PWD': '/root/ap4_hlc_docker_dir/ap4hlc_ws/build/keyboard_control', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/root/ap4_hlc_docker_dir/ap4hlc_ws/build/keyboard_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/root/ap4_hlc_docker_dir/ap4hlc_ws/install/keyboard_control/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1'}, 'shell': False}
+[0.980793] (imu_pkg) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/imu_pkg', 'build', '--build-base', '/root/ap4_hlc_docker_dir/ap4hlc_ws/build/imu_pkg/build', 'install', '--record', '/root/ap4_hlc_docker_dir/ap4hlc_ws/build/imu_pkg/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/root/ap4_hlc_docker_dir/ap4hlc_ws/src/imu_pkg', 'env': {'HOSTNAME': 'Research', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/root', 'OLDPWD': '/root/ap4_hlc_docker_dir', 'ROS_PYTHON_VERSION': '3', 'ROS_DISTRO': 'humble', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'ROS_DOMAIN_ID': '1', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'PWD': '/root/ap4_hlc_docker_dir/ap4hlc_ws/build/imu_pkg', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/root/ap4_hlc_docker_dir/ap4hlc_ws/build/imu_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/root/ap4_hlc_docker_dir/ap4hlc_ws/install/imu_pkg/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1'}, 'shell': False}
+[0.982364] (path_tracker) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/path_tracker', 'build', '--build-base', '/root/ap4_hlc_docker_dir/ap4hlc_ws/build/path_tracker/build', 'install', '--record', '/root/ap4_hlc_docker_dir/ap4hlc_ws/build/path_tracker/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/root/ap4_hlc_docker_dir/ap4hlc_ws/src/path_tracker', 'env': {'HOSTNAME': 'Research', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/root', 'OLDPWD': '/root/ap4_hlc_docker_dir', 'ROS_PYTHON_VERSION': '3', 'ROS_DISTRO': 'humble', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'ROS_DOMAIN_ID': '1', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'PWD': '/root/ap4_hlc_docker_dir/ap4hlc_ws/build/path_tracker', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/root/ap4_hlc_docker_dir/ap4hlc_ws/build/path_tracker/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/root/ap4_hlc_docker_dir/ap4hlc_ws/install/path_tracker/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1'}, 'shell': False}
+[1.001238] (-) TimerEvent: {}
+[1.101398] (-) TimerEvent: {}
+[1.144010] (imu_pkg) StdoutLine: {'line': b'running egg_info\n'}
+[1.144415] (imu_pkg) StdoutLine: {'line': b'writing ../../build/imu_pkg/imu_pkg.egg-info/PKG-INFO\n'}
+[1.144569] (imu_pkg) StdoutLine: {'line': b'writing dependency_links to ../../build/imu_pkg/imu_pkg.egg-info/dependency_links.txt\n'}
+[1.144786] (imu_pkg) StdoutLine: {'line': b'writing entry points to ../../build/imu_pkg/imu_pkg.egg-info/entry_points.txt\n'}
+[1.144837] (imu_pkg) StdoutLine: {'line': b'writing requirements to ../../build/imu_pkg/imu_pkg.egg-info/requires.txt\n'}
+[1.144878] (imu_pkg) StdoutLine: {'line': b'writing top-level names to ../../build/imu_pkg/imu_pkg.egg-info/top_level.txt\n'}
+[1.145370] (keyboard_control) StdoutLine: {'line': b'running egg_info\n'}
+[1.145838] (imu_pkg) StdoutLine: {'line': b"reading manifest file '../../build/imu_pkg/imu_pkg.egg-info/SOURCES.txt'\n"}
+[1.145889] (keyboard_control) StdoutLine: {'line': b'writing ../../build/keyboard_control/keyboard_control.egg-info/PKG-INFO\n'}
+[1.145983] (keyboard_control) StdoutLine: {'line': b'writing dependency_links to ../../build/keyboard_control/keyboard_control.egg-info/dependency_links.txt\n'}
+[1.146080] (keyboard_control) StdoutLine: {'line': b'writing entry points to ../../build/keyboard_control/keyboard_control.egg-info/entry_points.txt\n'}
+[1.146208] (keyboard_control) StdoutLine: {'line': b'writing requirements to ../../build/keyboard_control/keyboard_control.egg-info/requires.txt\n'}
+[1.146250] (keyboard_control) StdoutLine: {'line': b'writing top-level names to ../../build/keyboard_control/keyboard_control.egg-info/top_level.txt\n'}
+[1.146380] (imu_pkg) StdoutLine: {'line': b"writing manifest file '../../build/imu_pkg/imu_pkg.egg-info/SOURCES.txt'\n"}
+[1.146424] (imu_pkg) StdoutLine: {'line': b'running build\n'}
+[1.146463] (imu_pkg) StdoutLine: {'line': b'running build_py\n'}
+[1.146604] (imu_pkg) StdoutLine: {'line': b'running install\n'}
+[1.146644] (twist_stamper) StdoutLine: {'line': b'running egg_info\n'}
+[1.146777] (imu_pkg) StdoutLine: {'line': b'running install_lib\n'}
+[1.147089] (twist_stamper) StdoutLine: {'line': b'writing ../../build/twist_stamper/twist_stamper.egg-info/PKG-INFO\n'}
+[1.147226] (twist_stamper) StdoutLine: {'line': b'writing dependency_links to ../../build/twist_stamper/twist_stamper.egg-info/dependency_links.txt\n'}
+[1.147349] (keyboard_control) StdoutLine: {'line': b"reading manifest file '../../build/keyboard_control/keyboard_control.egg-info/SOURCES.txt'\n"}
+[1.147475] (twist_stamper) StdoutLine: {'line': b'writing entry points to ../../build/twist_stamper/twist_stamper.egg-info/entry_points.txt\n'}
+[1.147514] (twist_stamper) StdoutLine: {'line': b'writing requirements to ../../build/twist_stamper/twist_stamper.egg-info/requires.txt\n'}
+[1.147554] (twist_stamper) StdoutLine: {'line': b'writing top-level names to ../../build/twist_stamper/twist_stamper.egg-info/top_level.txt\n'}
+[1.147683] (imu_pkg) StdoutLine: {'line': b'running install_data\n'}
+[1.147727] (imu_pkg) StdoutLine: {'line': b'running install_egg_info\n'}
+[1.147835] (keyboard_control) StdoutLine: {'line': b"writing manifest file '../../build/keyboard_control/keyboard_control.egg-info/SOURCES.txt'\n"}
+[1.147931] (keyboard_control) StdoutLine: {'line': b'running build\n'}
+[1.147970] (keyboard_control) StdoutLine: {'line': b'running build_py\n'}
+[1.148141] (keyboard_control) StdoutLine: {'line': b'running install\n'}
+[1.148344] (keyboard_control) StdoutLine: {'line': b'running install_lib\n'}
+[1.148522] (twist_stamper) StdoutLine: {'line': b"reading manifest file '../../build/twist_stamper/twist_stamper.egg-info/SOURCES.txt'\n"}
+[1.148659] (twist_stamper) StdoutLine: {'line': b"adding license file 'LICENSE'\n"}
+[1.148765] (imu_pkg) StdoutLine: {'line': b"removing '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/imu_pkg/lib/python3.10/site-packages/imu_pkg-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[1.148953] (imu_pkg) StdoutLine: {'line': b'Copying ../../build/imu_pkg/imu_pkg.egg-info to /root/ap4_hlc_docker_dir/ap4hlc_ws/install/imu_pkg/lib/python3.10/site-packages/imu_pkg-0.0.0-py3.10.egg-info\n'}
+[1.149113] (twist_stamper) StdoutLine: {'line': b"writing manifest file '../../build/twist_stamper/twist_stamper.egg-info/SOURCES.txt'\n"}
+[1.149281] (twist_stamper) StdoutLine: {'line': b'running build\n'}
+[1.149320] (twist_stamper) StdoutLine: {'line': b'running build_py\n'}
+[1.149358] (keyboard_control) StdoutLine: {'line': b'running install_data\n'}
+[1.149447] (keyboard_control) StdoutLine: {'line': b'running install_egg_info\n'}
+[1.149487] (twist_stamper) StdoutLine: {'line': b'running install\n'}
+[1.149614] (imu_pkg) StdoutLine: {'line': b'running install_scripts\n'}
+[1.149656] (twist_stamper) StdoutLine: {'line': b'running install_lib\n'}
+[1.150214] (path_tracker) StdoutLine: {'line': b'running egg_info\n'}
+[1.150360] (keyboard_control) StdoutLine: {'line': b"removing '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/keyboard_control/lib/python3.10/site-packages/keyboard_control-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[1.150471] (twist_stamper) StdoutLine: {'line': b'running install_data\n'}
+[1.150591] (keyboard_control) StdoutLine: {'line': b'Copying ../../build/keyboard_control/keyboard_control.egg-info to /root/ap4_hlc_docker_dir/ap4hlc_ws/install/keyboard_control/lib/python3.10/site-packages/keyboard_control-0.0.0-py3.10.egg-info\n'}
+[1.150632] (twist_stamper) StdoutLine: {'line': b'running install_egg_info\n'}
+[1.150729] (path_tracker) StdoutLine: {'line': b'writing ../../build/path_tracker/path_tracker.egg-info/PKG-INFO\n'}
+[1.150866] (path_tracker) StdoutLine: {'line': b'writing dependency_links to ../../build/path_tracker/path_tracker.egg-info/dependency_links.txt\n'}
+[1.150966] (path_tracker) StdoutLine: {'line': b'writing entry points to ../../build/path_tracker/path_tracker.egg-info/entry_points.txt\n'}
+[1.151117] (path_tracker) StdoutLine: {'line': b'writing requirements to ../../build/path_tracker/path_tracker.egg-info/requires.txt\n'}
+[1.151163] (keyboard_control) StdoutLine: {'line': b'running install_scripts\n'}
+[1.151203] (path_tracker) StdoutLine: {'line': b'writing top-level names to ../../build/path_tracker/path_tracker.egg-info/top_level.txt\n'}
+[1.151736] (twist_stamper) StdoutLine: {'line': b"removing '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/twist_stamper/lib/python3.10/site-packages/twist_stamper-0.0.3-py3.10.egg-info' (and everything under it)\n"}
+[1.151927] (twist_stamper) StdoutLine: {'line': b'Copying ../../build/twist_stamper/twist_stamper.egg-info to /root/ap4_hlc_docker_dir/ap4hlc_ws/install/twist_stamper/lib/python3.10/site-packages/twist_stamper-0.0.3-py3.10.egg-info\n'}
+[1.152173] (path_tracker) StdoutLine: {'line': b"reading manifest file '../../build/path_tracker/path_tracker.egg-info/SOURCES.txt'\n"}
+[1.152482] (twist_stamper) StdoutLine: {'line': b'running install_scripts\n'}
+[1.152732] (path_tracker) StdoutLine: {'line': b"writing manifest file '../../build/path_tracker/path_tracker.egg-info/SOURCES.txt'\n"}
+[1.152831] (path_tracker) StdoutLine: {'line': b'running build\n'}
+[1.152870] (path_tracker) StdoutLine: {'line': b'running build_py\n'}
+[1.153032] (path_tracker) StdoutLine: {'line': b'running install\n'}
+[1.153256] (path_tracker) StdoutLine: {'line': b'running install_lib\n'}
+[1.154161] (path_tracker) StdoutLine: {'line': b'running install_data\n'}
+[1.154253] (path_tracker) StdoutLine: {'line': b'running install_egg_info\n'}
+[1.155398] (path_tracker) StdoutLine: {'line': b"removing '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/path_tracker/lib/python3.10/site-packages/path_tracker-0.1.0-py3.10.egg-info' (and everything under it)\n"}
+[1.155627] (path_tracker) StdoutLine: {'line': b'Copying ../../build/path_tracker/path_tracker.egg-info to /root/ap4_hlc_docker_dir/ap4hlc_ws/install/path_tracker/lib/python3.10/site-packages/path_tracker-0.1.0-py3.10.egg-info\n'}
+[1.156180] (path_tracker) StdoutLine: {'line': b'running install_scripts\n'}
+[1.163742] (imu_pkg) StdoutLine: {'line': b'Installing imu_output_node script to /root/ap4_hlc_docker_dir/ap4hlc_ws/install/imu_pkg/lib/imu_pkg\n'}
+[1.163948] (imu_pkg) StdoutLine: {'line': b"writing list of installed files to '/root/ap4_hlc_docker_dir/ap4hlc_ws/build/imu_pkg/install.log'\n"}
+[1.165260] (keyboard_control) StdoutLine: {'line': b'Installing keyboard_control_node script to /root/ap4_hlc_docker_dir/ap4hlc_ws/install/keyboard_control/lib/keyboard_control\n'}
+[1.165439] (keyboard_control) StdoutLine: {'line': b'Installing lidar_output_node script to /root/ap4_hlc_docker_dir/ap4hlc_ws/install/keyboard_control/lib/keyboard_control\n'}
+[1.165596] (keyboard_control) StdoutLine: {'line': b"writing list of installed files to '/root/ap4_hlc_docker_dir/ap4hlc_ws/build/keyboard_control/install.log'\n"}
+[1.166769] (twist_stamper) StdoutLine: {'line': b'Installing twist_stamper script to /root/ap4_hlc_docker_dir/ap4hlc_ws/install/twist_stamper/lib/twist_stamper\n'}
+[1.166944] (twist_stamper) StdoutLine: {'line': b'Installing twist_unstamper script to /root/ap4_hlc_docker_dir/ap4hlc_ws/install/twist_stamper/lib/twist_stamper\n'}
+[1.167123] (twist_stamper) StdoutLine: {'line': b"writing list of installed files to '/root/ap4_hlc_docker_dir/ap4hlc_ws/build/twist_stamper/install.log'\n"}
+[1.171095] (path_tracker) StdoutLine: {'line': b'Installing odom_recorder script to /root/ap4_hlc_docker_dir/ap4hlc_ws/install/path_tracker/lib/path_tracker\n'}
+[1.171302] (path_tracker) StdoutLine: {'line': b'Installing path_recorder script to /root/ap4_hlc_docker_dir/ap4hlc_ws/install/path_tracker/lib/path_tracker\n'}
+[1.171446] (path_tracker) StdoutLine: {'line': b"writing list of installed files to '/root/ap4_hlc_docker_dir/ap4hlc_ws/build/path_tracker/install.log'\n"}
+[1.184749] (imu_pkg) CommandEnded: {'returncode': 0}
+[1.189802] (imu_pkg) JobEnded: {'identifier': 'imu_pkg', 'rc': 0}
+[1.190688] (keyboard_control) CommandEnded: {'returncode': 0}
+[1.195461] (keyboard_control) JobEnded: {'identifier': 'keyboard_control', 'rc': 0}
+[1.195903] (twist_stamper) CommandEnded: {'returncode': 0}
+[1.200405] (twist_stamper) JobEnded: {'identifier': 'twist_stamper', 'rc': 0}
+[1.201137] (path_tracker) CommandEnded: {'returncode': 0}
+[1.201467] (-) TimerEvent: {}
+[1.205818] (path_tracker) JobEnded: {'identifier': 'path_tracker', 'rc': 0}
+[1.206135] (-) EventReactorShutdown: {}

@@ -80,11 +80,13 @@
               <ul class="current">
                   <li class="toctree-l1 current"><a class="reference internal current" href="./">High Level Control Computer</a>
     <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#high-level-control-hardware-requirements">High-Level Control Hardware Requirements</a>
+    <li class="toctree-l2"><a class="reference internal" href="#high-level-control-hardware-requirements">High-Level Control Hardware Requirements </a>
         <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#how-to-start">How To Start</a>
+    <li class="toctree-l3"><a class="reference internal" href="#how-to-start-simulation-lidar-and-slam-for-autonomous-navigation">How To Start simulation, LiDAR and SLAM for autonomous navigation</a>
     </li>
         </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#path-tracker-record-and-results">Path tracker - Record and results</a>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#simulation-for-imitation-learning">Simulation for imitation learning</a>
         <ul>
@@ -109,8 +111,6 @@
         </ul>
     </li>
     </ul>
-                  </li>
-                  <li class="toctree-l1"><a class="" href="HOW_TO_EXTEND.md">How to Extend</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="IMITATION_LEARNING/">Imitation Learning</a>
                   </li>
@@ -171,49 +171,63 @@
                 <h1 id="high-level-control-software">High-Level Control Software</h1>
 <p>This directory contains the high level control software which is responsible for sending high level control commands to the low level control software.</p>
 <h2 id="high-level-control-hardware-requirements">High-Level Control Hardware Requirements <a name="High-Level-Control-Hardware-Requirements"></a></h2>
-<p>To run the high-level control software it is preferable to run it on Linux. (Tested on Ubuntu 22.04). The processor should of x86 type. It is preferable to have a dedicated graphics card if one has to run a lot of digital twin simulations.</p>
+<p>To run the high-level control software it is preferable to run it on Linux. (Tested on Ubuntu 22.04). The processor should be of x86 type. It is preferable to have a dedicated graphics card if one has to run a lot of digital twin simulations.</p>
 <p>See physics simulator Gazebo Simulator hardware requirements <a href="https://se.mathworks.com/help/robotics/ug/gazebo-simulation-requirements.html">here.</a></p>
-<p>To run high-level control on windows the docker graphics passthrough methodology needs to be modified. Currently it has only been setup for Linux. There will also be a greater performance loss when running a linux based docker container on windows compared to linux.</p>
-<p>The high level software is the highest level software layer, it is supposed to be hardware agnostic. It should not care what specific hardware is implemented on the physical autonomous platform.</p>
+<p>To run high-level control on windows the docker graphics passthrough methodology needs to be modified. Currently it has only been setup for Linux. There will also be a greater performance loss when running a Linux based docker container on windows compared to Linux.</p>
+<p>The high level software is the highest level software layer, it is supposed to be hardware agnostic. It should not care what specific hardware that is implemented on the physical autonomous platform.</p>
 <p>The high level control software is supposed to tell the autonomous platform WHAT to do, whilst the low level control software is supposed to tell the platform HOW it should do it. This means that the algorithms developed / used in high level control software can be transferred to any physical platform as long as there exists an interface for it.</p>
 <p>As an example: A high level software component wants the platform to move forward. It relays this on a generic ROS2 topic (i.e /cmd_vel) to the low level software, the low level software then processes it and sends commands specific to the physical platform to the embedded software layer. The low level software would then output hardware specific commands over the CAN bus network.</p>
 <p><img alt="High level overview" src="../Resources/Report_sketches/SW/high_level_overview.png" /></p>
-<p>Above is a schematic diagram of how the software in high level control software should be designed. As of August 2023 only a simple digital twin is implemented so far.</p>
-<h3 id="how-to-start">How To Start</h3>
+<p>Above is a schematic diagram of how the software in high level control software should be designed. As of August 2023 only a simple digital twin is implemented so far.
+In 2025 the digital twin was fisnished and can be used to test och evaluate algortihms on.</p>
+<h3 id="how-to-start-simulation-lidar-and-slam-for-autonomous-navigation">How To Start simulation, LiDAR and SLAM for autonomous navigation</h3>
 <p><a name="How-To-Start"></a></p>
 <p>The high level software container should be started on the development laptop. NOT on the Raspberry Pi since it can not render the 3D gazebo simulation.</p>
 <p>If any error occurs, <code>TEST_DEBUGING.md</code>, for troubleshooting.</p>
-<p>Note: As of August 2023 it starts the digital twin software on ROS_DOMAIN_ID = 0 meaning it will not be able to interact with the physical platform even if the computers are located on the same wifi network. Hardware platform ROS2 network has ROS_DOMAIN_ID = 1.</p>
 <p>Note: The host computer needs to be configured to pass graphical elements to the container. (before starting the container)</p>
-<p>(Make sure your terminal path is located in this directory)</p>
-<pre><code class="language-bash">xhost +local:*
+<p>In a terminal, run:</p>
+<pre><code class="language-bash">xhost +local:root
+</code></pre>
+<p>Navigate to the correct directory in the terminal by:</p>
+<pre><code class="language-bash">cd Desktop/autonomous_platform/High_Level_Control_Computer
 </code></pre>
 <p>First, rebuild the container using</p>
 <pre><code class="language-bash">docker-compose build
 </code></pre>
 <p>The high level software container, with the configurations, can be started using</p>
-<pre><code class="language-bash">docker-compose up
+<pre><code class="language-bash">docker-compose up -d
 </code></pre>
-<p>The expected terminal output is:</p>
-<p><img alt="Expected terminal output when starting the HLC docker container" src="Resources/container_start.png" /></p>
-<p>Two new windows should open up, Gazebo and Rviz, and will look something like this:</p>
-<p><img alt="Expected graphical output when starting the HLC docker container" src="Resources/container_start_graphics.png" /></p>
-<p>The digital twin can be controlled (drive around manually) using the keyboard in a new terminal window.</p>
-<p>Enter the running container</p>
+<p>Enter the running container by typing</p>
 <pre><code class="language-bash">docker exec -it ap4hlc bash
 </code></pre>
-<p>Navigate to workspace, source environment variables</p>
-<pre><code class="language-bash">cd ap4hlc_ws
-source install/setup.bash
+<p>When inside the docker, run:</p>
+<pre><code class="language-bash">ros2 launch autonomous_platform_robot_description_pkg launch_robot_simulation.launch.py
 </code></pre>
-<p>Start tele-operation twist keyboard:</p>
-<pre><code class="language-bash">ros2 run teleop_twist_keyboard teleop_twist_keyboard
+<p>Now two windows with Gazebo and RViz2 should open. It should look something like this:</p>
+<p><img alt="Digital Twin start-up" src="../Resources/Report_sketches/digital_twin/simulation_startup.png" /></p>
+<p>To start the autonomous navigation of the Gokart around the gokart track, press the <code>2D Goal Pose</code> in RViz2 and choose a goal point far outside the track, like this:</p>
+<p><img alt="Digital Twin start-up" src="../Resources/Report_sketches/digital_twin/Goal_point.png" /></p>
+<p>Now the gokart should start moving autonomously around the track until it has driven one lap around the track.</p>
+<p>If you want to use the digital twin with IMU for localization as well, you need to change a configuration file name inside the simualtion launch file.</p>
+<p>Do this by open <code>launch_robot_simulation.launch.py</code> in VS Code and scroll down to line 126 where the <code>ekf_config</code> is located. Here you should change line 129 to <code>ekf_imu.yaml</code> if you want to use IMU and <code>ekf.yaml</code> if you want to test without the IMU.</p>
+<p>When changed in the launch file, restart the docker and run the simulation again.</p>
+<pre><code class="language-bash">exit
 </code></pre>
-<p>By using 'i', 'j', 'l', 'k' and ',' one can now control the digital twin.
-See expected terminal output below.</p>
-<p><img alt="Manual keyboard control of platform" src="Resources/container_start_teleop_twist_keyboard.png" /></p>
-<p>A running container can be stopped by either 'Ctrl+C' in the terminal in which 'docker-compose up' was run. OR in a new terminal:</p>
-<pre><code class="language-bash">docker stop ap4hlc
+<pre><code class="language-bash">docker-compose down
+</code></pre>
+<pre><code class="language-bash">docker-compose up -d
+</code></pre>
+<pre><code class="language-bash">docker exec -it ap4hlc bash
+</code></pre>
+<pre><code class="language-bash">ros2 launch autonomous_platform_robot_description_pkg launch_robot_simulation.launch.py
+</code></pre>
+<h2 id="path-tracker-record-and-results">Path tracker - Record and results</h2>
+<p>To collect the results for the AP4 navigation a script has been created that calculates the difference betqeen the planned path and the path that the AP4 is taking during the drive. Run the path tracker at the same time as the simulation to record the data from the AP4 path and the planned path.</p>
+<pre><code class="language-bash">ros2 launch path_tracker launch_path_comparison.launch.py
+</code></pre>
+<p>This will save two csv files under <code>/ap4_hlc_ws/logs/paths_csv</code>.
+To visualize the results, copy the name of the two csv-files into the <code>actual_path_file</code> and <code>planned_path_file</code> in the <code>result.py</code> which is in the <code>path_tracker</code> package. Then run <code>result.py</code></p>
+<pre><code class="language-bash">python3 ./result.py
 </code></pre>
 <h2 id="simulation-for-imitation-learning">Simulation for imitation learning</h2>
 <p>The simulation used for imitation learning is a donkey car simulator and the setup can be seen in DONKEY_CAR_SETUP.md.</p>
@@ -318,7 +332,7 @@ collecting data from the simulation can be done in the following way.</p>
 </code></pre>
 <p>The training can then be started by running <code>python train_DAgger.py simulation</code> .</p>
 <h3 id="real-world">Real world</h3>
-<p>To train the imitation learning models from the data collected via <code>source data_collection.sh</code>, start the high-level docker by standing in High_Level_Control_Computer and running <code>docker-compose up</code> then in a new terminal run: </p>
+<p>To train the imitation learning models from the data collected via <code>source data_collection.sh</code>, start the high-level docker by standing in High_Level_Control_Computer and running <code>docker-compose up</code> then in a new terminal run:</p>
 <pre><code class="language-bash">source start_training --param &lt;param&gt;
 </code></pre>
 <p>The params can either be:</p>

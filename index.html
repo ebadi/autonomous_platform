@@ -47,7 +47,7 @@
     <ul class="current">
     <li class="toctree-l2"><a class="reference internal" href="#introduction">Introduction</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#features-and-capabilities">Features and Capabilities</a>
+    <li class="toctree-l2"><a class="reference internal" href="#features-and-capabilities">Features and Capabilities </a>
         <ul>
     <li class="toctree-l3"><a class="reference internal" href="#drive-by-wireless-controller">Drive by wireless controller</a>
     </li>
@@ -59,13 +59,13 @@
     </li>
     <li class="toctree-l3"><a class="reference internal" href="#power-module">Power Module</a>
     </li>
-    <li class="toctree-l3"><a class="reference internal" href="#digital-twin">Digital Twin</a>
+    <li class="toctree-l3"><a class="reference internal" href="#digital-twin">Digital Twin </a>
     </li>
     <li class="toctree-l3"><a class="reference internal" href="#imitation-learning">Imitation Learning</a>
     </li>
         </ul>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#system-architecture">System Architecture</a>
+    <li class="toctree-l2"><a class="reference internal" href="#system-architecture">System Architecture </a>
         <ul>
     <li class="toctree-l3"><a class="reference internal" href="#high-level-control">High-level control</a>
     </li>
@@ -79,9 +79,11 @@
     </li>
         </ul>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#start-ap4">Start AP4</a>
+    <li class="toctree-l2"><a class="reference internal" href="#start-ap4">Start AP4 </a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#connect-wireless-and-start-ap-software-stack">Connect (wireless) and start AP software stack</a>
+    <li class="toctree-l2"><a class="reference internal" href="#connect-wireless-or-wired-and-start-ap-software-stack">Connect wireless or wired and start AP software stack</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#start-the-autonomous-navigation-of-ap4-using-lidar-and-slam">Start the autonomous navigation of AP4 using LiDAR and SLAM</a>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#repository-overview">Repository overview</a>
     </li>
@@ -123,8 +125,6 @@
               <p class="caption"><span class="caption-text">High Level Control Computer</span></p>
               <ul>
                   <li class="toctree-l1"><a class="reference internal" href="High_Level_Control_Computer/">High Level Control Computer</a>
-                  </li>
-                  <li class="toctree-l1"><a class="" href="High_Level_Control_Computer/HOW_TO_EXTEND.md">How to Extend</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="High_Level_Control_Computer/IMITATION_LEARNING/">Imitation Learning</a>
                   </li>
@@ -188,14 +188,24 @@
 <pre><code class="language-bash">$ git clone --recurse-submodules http://gitlab.infotivlab.se/internal-development/autonomous_platform.git # Internally
 $ git clone --recurse-submodules https://github.com/infotiv-research/autonomous_platform
 </code></pre>
-<p>This is the repository for Autonomous Platform at Infotiv Technology Development. 
-- The beginning of the fourth generation of Autonomous Platform was created by <strong>Fredrik Juthe</strong> and <strong>Erik Magnusson</strong> as part of a master thesis at Chalmers University of technology spring 2023 under supervision of <strong>Hamid Ebadi</strong>. The master thesis designed the system E/E architecture and implemented a base on which future functionality could be added to. A published version of the thesis with the title of <strong>"Design of a modular centralized E/E and software architecture for a small-scale automotive platform"</strong> is accessible in <a href="Master_Thesis2023.pdf">in this link <img alt="PDF" src="Resources/PDF_file_icon.svg.png" /> </a>.</p>
+<p>This is the repository for Autonomous Platform at Infotiv Technology Development.</p>
 <ul>
-<li>The implementation of software pipeline for Imitation Learning for achieving autonomous driving using both behavioral cloning (BC) and Human Gated Dataset Aggregation (HG-DAgger) is done by <strong>Arvid Petersén</strong> and <strong>Johan Wellander</strong>  under supervision of <strong>Hamid Ebadi</strong> as a part of a master thesis with the title of <strong>Autonomous Driving via Imitation Learning in a Small-Scale Automotive Platform - a Comparison Between BC, HG-DAgger, and the use of Various Inputs</strong>  that is accessible <a href="Master_Thesis2024.pdf">in this link <img alt="PDF" src="Resources/PDF_file_icon.svg.png" /> </a>.</li>
+<li>
+<p>The beginning of the fourth generation of Autonomous Platform was created by <strong>Fredrik Juthe</strong> and <strong>Erik Magnusson</strong> as part of a master thesis at Chalmers University of technology spring 2023 under supervision of <strong>Hamid Ebadi</strong>. The master thesis designed the system E/E architecture and implemented a base on which future functionality could be added to. A published version of the thesis with the title of <strong>"Design of a modular centralized E/E and software architecture for a small-scale automotive platform"</strong> is accessible in <a href="Master_Thesis2023.pdf">in this link <img alt="PDF" src="Resources/PDF_file_icon.svg.png" /> </a>.</p>
+</li>
+<li>
+<p>The implementation of software pipeline for Imitation Learning for achieving autonomous driving using both behavioral cloning (BC) and Human Gated Dataset Aggregation (HG-DAgger) is done by <strong>Arvid Petersén</strong> and <strong>Johan Wellander</strong>  under supervision of <strong>Hamid Ebadi</strong> as a part of a master thesis with the title of <strong>Autonomous Driving via Imitation Learning in a Small-Scale Automotive Platform - a Comparison Between BC, HG-DAgger, and the use of Various Inputs</strong>  that is accessible <a href="Master_Thesis2024.pdf">in this link <img alt="PDF" src="Resources/PDF_file_icon.svg.png" /> </a>.</p>
+</li>
+<li>
+<p>The implementation of a LiDAR using SLAM for autonomous navigation of the AP4 is done by <strong>David Espedalen</strong> and <strong>Anton Stigemyr Hill</strong> under supervision of <strong>Hamid Ebadi</strong> as a part of a master thesis with the title of <strong>Implementation of LiDAR and SLAM on a Small-Scale Autonomous Platform - Investigation of how LiDAR can be used to Simultaneously Localize a Vehicle and Map its Surroundings using SLAM</strong> that is accessible <a href="Master_Thesis2025.pdf">in this link <img alt="PDF" src="Resources/PDF_file_icon.svg.png" /> </a>.</p>
+</li>
 </ul>
-<p><a href="Master_Thesis2024.pdf"><img alt="Design of a modular centralized E/E and software architecture for a small-scale automotive platform" src="Resources/Spring_2024/thesis.png" /></a>
+<p><a href="Master_Thesis2025.pdf"><img alt="Implementation of LiDAR and SLAM on a Small-Scale Autonomous Platform
+" src="Resources/Thesis_2025.png" /></a>
+<a href="Master_Thesis2024.pdf"><img alt="software pipeline for Imitation Learning for achieving autonomous driving using both behavioral cloning (BC) and Human Gated Dataset Aggregation (HG-DAgger) " src="Resources/Spring_2024/thesis.png" /></a>
 <a href="Master_Thesis2023.pdf"><img alt="Design of a modular centralized E/E and software architecture for a small-scale automotive platform" src="Resources/thesis.png" /></a></p>
-<p><a href="https://www.youtube.com/watch?v=8izLmmYHW0s">Video Demo</a> (<a href="https://www.youtube.com/watch?v=A2l_nDKsU7g">raw footage</a>):</p>
+<p><a href="https://www.youtube.com/watch?v=hyw-hApxQHU"><img alt="AP4 Autonomous Driving Navigation/SLAM" src="https://img.youtube.com/vi/hyw-hApxQHU/0.jpg" /></a></p>
+<p><a href="https://www.youtube.com/watch?v=8izLmmYHW0s">Video Demo- Imitation Learning</a> (<a href="https://www.youtube.com/watch?v=A2l_nDKsU7g">raw footage</a>):</p>
 <p><a href="https://www.youtube.com/watch?v=8izLmmYHW0s"><img alt="AP4 Autonomous Driving" src="https://img.youtube.com/vi/8izLmmYHW0s/0.jpg" /></a></p>
 <ul>
 <li>The <strong>latest public</strong> version of documentation and source code for Autonomous Platform (AP) project is available in the following address: <a href="https://infotiv-research.github.io">https://infotiv-research.github.io</a> and <a href="https://github.com/infotiv-research">https://github.com/infotiv-research</a>.</li>
@@ -261,9 +271,11 @@ Currently a single embedded software is implemented, Steering and Propulsion Con
 <p>To collect data from training and test drive rosbag2 can be found in <a href="High_Level_Control_Computer/IMITATION_LEARNING/">High_Level_Control_Computer/IMITATION_LEARNING.md</a>
 To collect data from training and test drive rosbag2 is used. The data collection is done in the High Level Planner Docker and specifically in the folder bagfiles_2024, within source. With the High Level Control Docker running, the directory is accessed as follows.</p>
 <p>Attention: To download and train <a href="https://huggingface.co/datasets/hamidebadi/autonomous_platform_gokartcentrallen_imitation_learning_dataset">data and the model</a> either follow <a href="https://huggingface.co/docs/hub/repositories-getting-started">huggingface instruction</a> or after adding your SSH public key to your user settings  , request for permission and clone the repo as a <a href="/.gitmodules">submodule</a> by adding <code>--recurse-submodules</code> when you clone the repository. All recorded data used for training and validation in the project can be found <a href="https://huggingface.co/datasets/hamidebadi/autonomous_platform_gokartcentrallen_imitation_learning_dataset">here.</a></p>
-<p>Examples of the data can be seen below:
-- Orb positions overlay on color image
-- View from depth camera</p>
+<p>Examples of the data can be seen below:</p>
+<ul>
+<li>Orb positions overlay on color image</li>
+<li>View from depth camera</li>
+</ul>
 <p><img alt="Orb positions overlay on color image" src="Resources/Spring_2024/ORBs.png" />
 <img alt="View from depth camera" src="Resources/Spring_2024/Depth_image.png" /></p>
 <h2 id="start-ap4">Start AP4 <a name="How-to-start-Autonomous-Platform-Generation-4"></a></h2>
@@ -284,22 +296,14 @@ To collect data from training and test drive rosbag2 is used. The data collectio
 <ul>
 <li>Turn of the AP4 through flipping back the start switch</li>
 </ul>
-<h2 id="connect-wireless-and-start-ap-software-stack">Connect (wireless) and start AP software stack</h2>
-<p>To check that the software is up and running as expected one can connect to the platform wirelessly and monitor the ROS2 network. On an external computer (dev-laptop or other linux computer) start the high-level software container. Make sure the computer is connected to the wifi network of autonomous platform.</p>
+<h2 id="connect-wireless-or-wired-and-start-ap-software-stack">Connect wireless or wired and start AP software stack</h2>
+<p>To check that the software is up and running as expected one can connect to the platform wirelessly or wired and monitor the ROS2 network. On an external computer (dev-laptop or other linux computer) start the high-level software container. Make sure the computer is connected to the same wifi network as the Raspberry Pi, or is wired connected to the AP4 router.</p>
 <p>NOTE: User credentials are available only in the infotiv internal gitlab repository.</p>
-<p>NOTE: high-level software automatically starts the digital twin simulation environment, the RVIZ and gazebo windows can be ignored.</p>
 <p>In a new terminal, start the docker container:</p>
 <pre><code class="language-bash">cd High_Level_Control_Computer
 docker-compose build
-docker-compose up
-</code></pre>
-<p>In a new terminal, enter the docker container</p>
-<pre><code class="language-bash">docker exec -it ap4hlc bash
-</code></pre>
-<p>Source environment variables and export configuration environment variables</p>
-<pre><code class="language-bash">cd ap4hlc_ws
-source install/setup.bash
-export ROS_DOMAIN_ID=1
+docker-compose up -d
+docker exec -it ap4hlc bash
 </code></pre>
 <p>The low-level software components should be visible to the high level software components. This can be checked with</p>
 <pre><code class="language-bash">ros2 node list
@@ -312,7 +316,37 @@ export ROS_DOMAIN_ID=1
 <p>For a list of active ROS2 topics, the following command can be used.</p>
 <pre><code class="language-bash">ros2 topic list
 </code></pre>
-<p>If the topics and nodes show up, the system has started correctly and can be controlled by either an xbox control or any future high-level software control.</p>
+<p>If the topics and nodes show up, the system has started correctly and can be controlled by either an xbox control or the autonomous navigation using ther LiDAR and SLAM.</p>
+<h2 id="start-the-autonomous-navigation-of-ap4-using-lidar-and-slam">Start the autonomous navigation of AP4 using LiDAR and SLAM</h2>
+<p>To setup and start the autonomous navigation of the AP4 on the gokart track the previous step of connecting the laptop to the Raspberry Pi needs to be done. When the AP4 is started and the laptop and the Raspberry Pi are on the same network, we can start the autonomous navigation.</p>
+<p>First, ensure the laptop and the Raspberry Pi has the same timestamp, do this by enter the Raspberry Pi via SSH from the laptop.</p>
+<pre><code class="language-bash">ssh ap4@IP_for_RbPI
+Password: AP42023
+</code></pre>
+<p>In the same terminal, enter the HWI docker</p>
+<pre><code class="language-bash">docker exec -it ap4hwi /bin/bash
+</code></pre>
+<p>In another terminal, enter the HLC docker</p>
+<pre><code class="language-bash">docker exec -it ap4hlc /bin/bash
+</code></pre>
+<p>In both dockers type</p>
+<pre><code class="language-bash">date
+</code></pre>
+<p>Run both terminals at the same time, if they show the same time you are good to move forward, but if they show different time do the following.</p>
+<p>Run this command in both terminals at the same time</p>
+<pre><code class="language-bash">sudo date --set &quot;25 Sep 2025 15:00:00&quot;
+</code></pre>
+<p>Now when the laptop and the Raspberry Pi has the same date and time, we can run the autonomous drive software.</p>
+<p>In the HLC docker on the laptop run:</p>
+<pre><code class="language-bash">ros2 launch autonomous_platform_robot_description_pkg launch_robot.launch.py
+</code></pre>
+<p>Now RViz2 should open and show the AP4 with the current mapped area. To begin navigate, press the <code>2D Goal Pose</code> button in Rviz and choose a goal point for the AP4. Now the gokart should move autonomously to the goal.</p>
+<p>There are some issues with the navigation of the AP4 in the physical environment that limits the AP4 to drive one full lap around the track. These issues are described in the <code>ISSUES_AND_FUTURE_WORK.md</code></p>
+<p>Here is an example of the AP4 driving autonomously in the Gokartcentralen track. The first image is the simulation and the second image is the physical environment at the actual gokart track at Gokartcentralen in Kungälv. As seen, the gokart doesn't manage to drive one lap around the track in the physical environment, these issues are described in <code>ISSUES_AND_FUTURE_WORK.md</code>.</p>
+<p>RVIZ view: Map creation</p>
+<p><img alt="simulation" src="Resources/Report_sketches/digital_twin/Sim_no_imu_map.png" /></p>
+<p>Gazebo simulation: Gokartcentralen replica</p>
+<p><img alt="real world" src="Resources/Report_sketches/digital_twin/track_replica.png" /></p>
 <h2 id="repository-overview">Repository overview</h2>
 <p>The repository consists of three directories containing software (with a few subdirectories each):</p>
 <ul>
@@ -337,14 +371,14 @@ export ROS_DOMAIN_ID=1
 <li><a href="HOW_TO_EXTEND/"><code>HOW_TO_EXTEND.md</code></a> : Are you a new team member? Look at this file for a quick introduction to the project and how to get going. It also has a general design principles for the project to keep in mind when adding new functionality.</li>
 <li><a href="TEST_DEBUGGING/"><code>TEST_DEBUGGING.md</code></a> : Contains a list of known errors when working with AP4 and how to solve them</li>
 <li><a href="ISSUES_AND_FUTURE_WORK/"><code>ISSUES_AND_FUTURE_WORK.md</code></a> : A Comprehensive list of known bugs &amp; issues and possible future work to be done on the platform.</li>
-<li><a href="REQ_SPEC_BOOM.xlsx"><code>REQ_SPEC_BOOM.xlsx</code></a> contains a list of decided upon requirements and specifications which the autonomous platform should follow. A complete bill of materials (hardware components) can be found in this file. It contains items, what purpose they serve, where they can be bought and a total estimated cost.
+<li><a href="Resources/BOM">BOM</a> contains a list of decided upon requirements and specifications which the autonomous platform should follow. A complete bill of materials (hardware components) can be found in this file. It contains items, what purpose they serve, where they can be bought and a total estimated cost.
   As of <em>June 2023</em> the total cost is 16500 SEK to build the base platform and have spare parts over.</li>
 </ul>
 <h2 id="thanks">Thanks</h2>
 <p><a href="https://www.infotiv.se"><img alt="INFOTIV logo" src="Resources/infotiv-logo.png" /></a>
 <a href="https://www.chalmers.se"><img alt="Chalmers logo" src="Resources/chalmers.png" /></a>
 <a href="https://gokartcentralen.se/"><img alt="GokartCentrallen logo" src="Resources/gokartcentrallen.png" /></a></p>
-<p>We would like to extend thanks <a href="https://gokartcentralen.se/kungalv/">Gokartcentralen in Kungälv</a> 
+<p>We would like to extend thanks <a href="https://gokartcentralen.se/kungalv/">Gokartcentralen in Kungälv</a>
 for generously allowing us to drive, test, and validate our go-kart at their track.
 Without <a href="https://gokartcentralen.se/">Gokartcentralen</a> and the helpful individuals working there, this project
 would not have turned out as it did.</p>

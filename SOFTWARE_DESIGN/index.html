@@ -53,13 +53,13 @@
     <ul class="current">
     <li class="toctree-l2"><a class="reference internal" href="#information-and-background">Information and Background</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#ide">IDE</a>
+    <li class="toctree-l2"><a class="reference internal" href="#ide">IDE </a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#linux-ubuntu-2204">Linux Ubuntu 22.04</a>
+    <li class="toctree-l2"><a class="reference internal" href="#linux-ubuntu-2204">Linux Ubuntu 22.04 </a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#git">Git</a>
+    <li class="toctree-l2"><a class="reference internal" href="#git">Git </a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#containerization">Containerization</a>
+    <li class="toctree-l2"><a class="reference internal" href="#containerization">Containerization </a>
         <ul>
     <li class="toctree-l3"><a class="reference internal" href="#installation-of-docker">Installation of Docker</a>
     </li>
@@ -67,7 +67,7 @@
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#containers">Containers</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#robot-operating-system-2-ros2">Robot Operating System 2 (ROS2)</a>
+    <li class="toctree-l2"><a class="reference internal" href="#robot-operating-system-2-ros2">Robot Operating System 2 (ROS2) </a>
         <ul>
     <li class="toctree-l3"><a class="reference internal" href="#ros2-useful-commands-quick-reference">ROS2 Useful commands quick reference</a>
     </li>
@@ -77,9 +77,9 @@
     </li>
     <li class="toctree-l3"><a class="reference internal" href="#saving-data-sent-on-topics">Saving data sent on topics</a>
     </li>
-    <li class="toctree-l3"><a class="reference internal" href="#available-ros2-resources">Available ROS2 Resources</a>
+    <li class="toctree-l3"><a class="reference internal" href="#available-ros2-resources">Available ROS2 Resources </a>
     </li>
-    <li class="toctree-l3"><a class="reference internal" href="#ros2-concepts">ROS2 Concepts</a>
+    <li class="toctree-l3"><a class="reference internal" href="#ros2-concepts">ROS2 Concepts </a>
     </li>
     <li class="toctree-l3"><a class="reference internal" href="#node">Node</a>
     </li>
@@ -131,8 +131,6 @@
               <p class="caption"><span class="caption-text">High Level Control Computer</span></p>
               <ul>
                   <li class="toctree-l1"><a class="reference internal" href="../High_Level_Control_Computer/">High Level Control Computer</a>
-                  </li>
-                  <li class="toctree-l1"><a class="" href="../High_Level_Control_Computer/HOW_TO_EXTEND.md">How to Extend</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../High_Level_Control_Computer/IMITATION_LEARNING/">Imitation Learning</a>
                   </li>
@@ -221,6 +219,16 @@ You need:</p>
 <li>Python</li>
 <li>PlatformIO</li>
 </ul>
+<p>Notes on Visual Studio configuration.</p>
+<p>For Bluepill embedded software:</p>
+<ul>
+<li>On Windows machines and native Ubuntu Linux machines, the Platform IO toolkit can be installed to compile and uploaed binaries to Bluepill processors. When a Bluepill is connected to the host coputer with a USB cable, terminal output can be shown as well.</li>
+</ul>
+<p>Do not try to run the Platform IO environment on a WSL environment within Windows. This doesn't work well. Open an enviroment from a Windows based folder, not from a WSL mounted folder.</p>
+<p>For (ROS2) C coded packaged on Raspberry Pi (Ubuntu):</p>
+<p>On Windows computer, the WSL environment can be installed to compile Linux native code.\
+Use ie. wsl.exe --install -d <Distribution Name> or to list available distributions: wsl.exe -l -o.</p>
+<p>Make sure when switching configurations to pull the code from the relevant platform.</p>
 <h3 id="linux-ubuntu-2204">Linux Ubuntu 22.04 <a name="Linux-Ubuntu-2204"></a></h3>
 <p>The project software is meant to be run on Linux Ubuntu 22.04, therefore it is good to have basic understanding on how to use linux. (Good ability to google linux commands and copy paste commands is recommended!)</p>
 <p>A linux for beginners guide related to development using Robot Operating System Framework can be found <a href="https://www.theconstructsim.com/robotigniteacademy_learnros/ros-courses-library/linux-for-robotics/">here</a>. It is an online interactive tutorial suitable for a project member which has NEVER worked in linux before. If you know how to navigate using the linux terminal and copy paste commands, skip this!</p>

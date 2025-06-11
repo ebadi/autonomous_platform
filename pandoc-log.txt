@@ -1,2323 +1,2953 @@
 [
     {
+        "type": "LoadedResource",
+        "verbosity": "INFO",
+        "for": "Resources/gh.png",
+        "from": "Resources/gh.png"
+    },
+    {
+        "type": "LoadedResource",
+        "verbosity": "INFO",
+        "for": "Resources/PDF_file_icon.svg.png",
+        "from": "Resources/PDF_file_icon.svg.png"
+    },
+    {
+        "type": "LoadedResource",
+        "verbosity": "INFO",
+        "for": "Resources/Thesis_2025.png",
+        "from": "Resources/Thesis_2025.png"
+    },
+    {
+        "type": "LoadedResource",
+        "verbosity": "INFO",
+        "for": "Resources/Spring_2024/thesis.png",
+        "from": "Resources/Spring_2024/thesis.png"
+    },
+    {
+        "type": "LoadedResource",
+        "verbosity": "INFO",
+        "for": "Resources/thesis.png",
+        "from": "Resources/thesis.png"
+    },
+    {
+        "type": "Fetching",
+        "verbosity": "INFO",
+        "path": "https://img.youtube.com/vi/hyw-hApxQHU/0.jpg"
+    },
+    {
         "type": "Fetching",
         "verbosity": "INFO",
         "path": "https://img.youtube.com/vi/8izLmmYHW0s/0.jpg"
     },
     {
+        "type": "LoadedResource",
+        "verbosity": "INFO",
+        "for": "Resources/Pictures/front_view_transparent.png",
+        "from": "Resources/Pictures/front_view_transparent.png"
+    },
+    {
+        "type": "LoadedResource",
+        "verbosity": "INFO",
+        "for": "Resources/Report_sketches/SW/software_architecture_detailed_overview.png",
+        "from": "Resources/Report_sketches/SW/software_architecture_detailed_overview.png"
+    },
+    {
+        "type": "LoadedResource",
+        "verbosity": "INFO",
+        "for": "Resources/Pictures/implemented_functionalities/back_view2.jpg",
+        "from": "Resources/Pictures/implemented_functionalities/back_view2.jpg"
+    },
+    {
+        "type": "LoadedResource",
+        "verbosity": "INFO",
+        "for": "Resources/Report_sketches/SW/high_level_overview.png",
+        "from": "Resources/Report_sketches/SW/high_level_overview.png"
+    },
+    {
+        "type": "LoadedResource",
+        "verbosity": "INFO",
+        "for": "Resources/Report_sketches/SW/low_level_overview.png",
+        "from": "Resources/Report_sketches/SW/low_level_overview.png"
+    },
+    {
+        "type": "LoadedResource",
+        "verbosity": "INFO",
+        "for": "Resources/Report_sketches/SW/Generic_ecu_software.png",
+        "from": "Resources/Report_sketches/SW/Generic_ecu_software.png"
+    },
+    {
+        "type": "LoadedResource",
+        "verbosity": "INFO",
+        "for": "Resources/extra_documentation_images/start_dagger.png",
+        "from": "Resources/extra_documentation_images/start_dagger.png"
+    },
+    {
+        "type": "LoadedResource",
+        "verbosity": "INFO",
+        "for": "Resources/Spring_2024/ORBs.png",
+        "from": "Resources/Spring_2024/ORBs.png"
+    },
+    {
+        "type": "LoadedResource",
+        "verbosity": "INFO",
+        "for": "Resources/Spring_2024/Depth_image.png",
+        "from": "Resources/Spring_2024/Depth_image.png"
+    },
+    {
+        "type": "LoadedResource",
+        "verbosity": "INFO",
+        "for": "Resources/extra_documentation_images/hwi_ros_active_nodes.png",
+        "from": "Resources/extra_documentation_images/hwi_ros_active_nodes.png"
+    },
+    {
+        "type": "LoadedResource",
+        "verbosity": "INFO",
+        "for": "Resources/Report_sketches/digital_twin/Sim_no_imu_map.png",
+        "from": "Resources/Report_sketches/digital_twin/Sim_no_imu_map.png"
+    },
+    {
+        "type": "LoadedResource",
+        "verbosity": "INFO",
+        "for": "Resources/Report_sketches/digital_twin/track_replica.png",
+        "from": "Resources/Report_sketches/digital_twin/track_replica.png"
+    },
+    {
+        "type": "LoadedResource",
+        "verbosity": "INFO",
+        "for": "Resources/infotiv-logo.png",
+        "from": "Resources/infotiv-logo.png"
+    },
+    {
+        "type": "LoadedResource",
+        "verbosity": "INFO",
+        "for": "Resources/chalmers.png",
+        "from": "Resources/chalmers.png"
+    },
+    {
+        "type": "LoadedResource",
+        "verbosity": "INFO",
+        "for": "Resources/gokartcentrallen.png",
+        "from": "Resources/gokartcentrallen.png"
+    },
+    {
+        "type": "LoadedResource",
+        "verbosity": "INFO",
+        "for": "Resources/EM-FJ.jpeg",
+        "from": "Resources/EM-FJ.jpeg"
+    },
+    {
+        "type": "LoadedResource",
+        "verbosity": "INFO",
+        "for": "Resources/AR-ST.jpg",
+        "from": "Resources/AR-ST.jpg"
+    },
+    {
+        "type": "LoadedResource",
+        "verbosity": "INFO",
+        "for": "Resources/Spring_2024/AP-JW.jpg",
+        "from": "Resources/Spring_2024/AP-JW.jpg"
+    },
+    {
+        "type": "LoadedResource",
+        "verbosity": "INFO",
+        "for": "Resources/layout.PNG",
+        "from": "Resources/layout.PNG"
+    },
+    {
+        "type": "LoadedResource",
+        "verbosity": "INFO",
+        "for": "Resources/mounting_idea.PNG",
+        "from": "Resources/mounting_idea.PNG"
+    },
+    {
+        "type": "LoadedResource",
+        "verbosity": "INFO",
+        "for": "Resources/component_mounting.PNG",
+        "from": "Resources/component_mounting.PNG"
+    },
+    {
+        "type": "LoadedResource",
+        "verbosity": "INFO",
+        "for": "Resources/pre_existing_holes.PNG",
+        "from": "Resources/pre_existing_holes.PNG"
+    },
+    {
+        "type": "LoadedResource",
+        "verbosity": "INFO",
+        "for": "Resources/plate_fixture.PNG",
+        "from": "Resources/plate_fixture.PNG"
+    },
+    {
+        "type": "LoadedResource",
+        "verbosity": "INFO",
+        "for": "Resources/Aluminium_sheet.PNG",
+        "from": "Resources/Aluminium_sheet.PNG"
+    },
+    {
+        "type": "LoadedResource",
+        "verbosity": "INFO",
+        "for": "Resources/existing_cable_management.PNG",
+        "from": "Resources/existing_cable_management.PNG"
+    },
+    {
+        "type": "LoadedResource",
+        "verbosity": "INFO",
+        "for": "Resources/cable_management.PNG",
+        "from": "Resources/cable_management.PNG"
+    },
+    {
+        "type": "LoadedResource",
+        "verbosity": "INFO",
+        "for": "Resources/cable_management_above.PNG",
+        "from": "Resources/cable_management_above.PNG"
+    },
+    {
+        "type": "LoadedResource",
+        "verbosity": "INFO",
+        "for": "Resources/extra_documentation_images/dockerfile.PNG",
+        "from": "Resources/extra_documentation_images/dockerfile.PNG"
+    },
+    {
+        "type": "LoadedResource",
+        "verbosity": "INFO",
+        "for": "Resources/Report_sketches/ROS/ROS_nodes.png",
+        "from": "Resources/Report_sketches/ROS/ROS_nodes.png"
+    },
+    {
+        "type": "LoadedResource",
+        "verbosity": "INFO",
+        "for": "Resources/Report_sketches/ROS/ROS_node_graph.png",
+        "from": "Resources/Report_sketches/ROS/ROS_node_graph.png"
+    },
+    {
+        "type": "LoadedResource",
+        "verbosity": "INFO",
+        "for": "Resources/Report_sketches/ROS/ROS_publisher_subscriber.png",
+        "from": "Resources/Report_sketches/ROS/ROS_publisher_subscriber.png"
+    },
+    {
+        "type": "LoadedResource",
+        "verbosity": "INFO",
+        "for": "Resources/Report_sketches/ROS/ROS_service.png",
+        "from": "Resources/Report_sketches/ROS/ROS_service.png"
+    },
+    {
+        "type": "LoadedResource",
+        "verbosity": "INFO",
+        "for": "Resources/Report_sketches/ROS/ROS_action.png",
+        "from": "Resources/Report_sketches/ROS/ROS_action.png"
+    },
+    {
+        "type": "LoadedResource",
+        "verbosity": "INFO",
+        "for": "Resources/AP-overview.drawio.png",
+        "from": "Resources/AP-overview.drawio.png"
+    },
+    {
+        "type": "LoadedResource",
+        "verbosity": "INFO",
+        "for": "Resources/kvaser_speed_sensor.PNG",
+        "from": "Resources/kvaser_speed_sensor.PNG"
+    },
+    {
+        "type": "LoadedResource",
+        "verbosity": "INFO",
+        "for": "Resources/velocity_encode_decode.PNG",
+        "from": "Resources/velocity_encode_decode.PNG"
+    },
+    {
+        "type": "LoadedResource",
+        "verbosity": "INFO",
+        "for": "Resources/candump_showcase.jpg",
+        "from": "Resources/candump_showcase.jpg"
+    },
+    {
+        "type": "LoadedResource",
+        "verbosity": "INFO",
+        "for": "Resources/ros2_topic_showcase.jpg",
+        "from": "Resources/ros2_topic_showcase.jpg"
+    },
+    {
+        "type": "LoadedResource",
+        "verbosity": "INFO",
+        "for": "Resources/E_E_architecture_AP4.jpg",
+        "from": "CAN_Nodes_Microcontroller_Code/Resources/E_E_architecture_AP4.jpg"
+    },
+    {
+        "type": "LoadedResource",
+        "verbosity": "INFO",
+        "for": "Resources/EasyEDA/SPCU_cable_schema_2024-10-24_image.png",
+        "from": "CAN_Nodes_Microcontroller_Code/Resources/EasyEDA/SPCU_cable_schema_2024-10-24_image.png"
+    },
+    {
+        "type": "LoadedResource",
+        "verbosity": "INFO",
+        "for": "Resources/SPCU.PNG",
+        "from": "CAN_Nodes_Microcontroller_Code/Resources/SPCU.PNG"
+    },
+    {
+        "type": "LoadedResource",
+        "verbosity": "INFO",
+        "for": "Resources/SPCU_photo.png",
+        "from": "CAN_Nodes_Microcontroller_Code/Resources/SPCU_photo.png"
+    },
+    {
+        "type": "LoadedResource",
+        "verbosity": "INFO",
+        "for": "Resources/SSCU.png",
+        "from": "CAN_Nodes_Microcontroller_Code/Resources/SSCU.png"
+    },
+    {
+        "type": "LoadedResource",
+        "verbosity": "INFO",
+        "for": "Resources/Generic_ECU.jpg",
+        "from": "CAN_Nodes_Microcontroller_Code/Resources/Generic_ECU.jpg"
+    },
+    {
+        "type": "LoadedResource",
+        "verbosity": "INFO",
+        "for": "Resources/node.PNG",
+        "from": "CAN_Nodes_Microcontroller_Code/Resources/node.PNG"
+    },
+    {
+        "type": "LoadedResource",
+        "verbosity": "INFO",
+        "for": "Resources/Generic_ecu_software.png",
+        "from": "CAN_Nodes_Microcontroller_Code/Resources/Generic_ecu_software.png"
+    },
+    {
+        "type": "LoadedResource",
+        "verbosity": "INFO",
+        "for": "../Resources/Report_sketches/SW/dbc_to_c_illustration.png",
+        "from": "Power_Unit/../Resources/Report_sketches/SW/dbc_to_c_illustration.png"
+    },
+    {
+        "type": "LoadedResource",
+        "verbosity": "INFO",
+        "for": "../Resources/Report_sketches/SW/can_db_dependency_graph.png",
+        "from": "Power_Unit/../Resources/Report_sketches/SW/can_db_dependency_graph.png"
+    },
+    {
+        "type": "LoadedResource",
+        "verbosity": "INFO",
+        "for": "../Resources/Report_sketches/SW/can_sw_com_detailed.png",
+        "from": "Power_Unit/../Resources/Report_sketches/SW/can_sw_com_detailed.png"
+    },
+    {
         "type": "CouldNotFetchResource",
         "verbosity": "WARNING",
         "message": "replacing image with description",
-        "path": "Resources/SPCU_cable_schema_2024-10-24_image.png"
+        "path": "Shared_HW_Node_Libraries%5CSteeringMotorInterface%5Cdocumentation%5Ckangaroo_dips_and_wires.png"
     },
     {
-        "type": "Extracting",
+        "type": "LoadedResource",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/02148e31d9dbbaa5fbdddd3ae7bb7c40a1dd6f82.png"
+        "for": "Resources/SPCU_software_flowchart.png",
+        "from": "CAN_Nodes_Microcontroller_Code/Resources/SPCU_software_flowchart.png"
     },
     {
-        "type": "Extracting",
+        "type": "LoadedResource",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/031babf2838b6531dd11acd05a9c15209885189d.png"
+        "for": "Shared_HW_Node_Libraries/SpeedSensorInterface/documentation_and_research/diagrams/ECU-speed_sensor_block_diagram.drawio.png",
+        "from": "CAN_Nodes_Microcontroller_Code/Shared_HW_Node_Libraries/SpeedSensorInterface/documentation_and_research/diagrams/ECU-speed_sensor_block_diagram.drawio.png"
     },
     {
-        "type": "Extracting",
+        "type": "LoadedResource",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/0404eea12ccf944ed136f42bd80ea20ff1d9e48c.jpg"
+        "for": "Shared_HW_Node_Libraries/SpeedSensorInterface/documentation_and_research/diagrams/ECU-speed_sensor_wiring_overlay.drawio.png",
+        "from": "CAN_Nodes_Microcontroller_Code/Shared_HW_Node_Libraries/SpeedSensorInterface/documentation_and_research/diagrams/ECU-speed_sensor_wiring_overlay.drawio.png"
     },
     {
-        "type": "Extracting",
+        "type": "LoadedResource",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/042b064b6a874630abd8acc483e977b976a067d9.jpg"
+        "for": "Shared_HW_Node_Libraries/SpeedSensorInterface/documentation_and_research/diagrams/Schematic_Infotiv_2023-08-07.png",
+        "from": "CAN_Nodes_Microcontroller_Code/Shared_HW_Node_Libraries/SpeedSensorInterface/documentation_and_research/diagrams/Schematic_Infotiv_2023-08-07.png"
     },
     {
-        "type": "Extracting",
+        "type": "LoadedResource",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/05e63b89f8326e73a0efb2328f313c3228f5521d.png"
+        "for": "Resources/slicing_preperarations_supports.png",
+        "from": "CAN_Nodes_Microcontroller_Code/Resources/slicing_preperarations_supports.png"
     },
     {
-        "type": "Extracting",
+        "type": "LoadedResource",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/06a45bed59d6132836a70774c24d81803563ce37.png"
+        "for": "Resources/assembling_new_ecu/1.jpg",
+        "from": "CAN_Nodes_Microcontroller_Code/Resources/assembling_new_ecu/1.jpg"
     },
     {
-        "type": "Extracting",
+        "type": "LoadedResource",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/07d0c08b7b43f72acdd4934db12c32831c3be3ae.jpg"
+        "for": "Resources/assembling_new_ecu/2.jpg",
+        "from": "CAN_Nodes_Microcontroller_Code/Resources/assembling_new_ecu/2.jpg"
     },
     {
-        "type": "Extracting",
+        "type": "LoadedResource",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/0ae93e114186b6c76556a2441065a2a98c5bb651.png"
+        "for": "Resources/assembling_new_ecu/3.jpg",
+        "from": "CAN_Nodes_Microcontroller_Code/Resources/assembling_new_ecu/3.jpg"
     },
     {
-        "type": "Extracting",
+        "type": "LoadedResource",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/0d101e0aa7e373d952518f846abe9e961d73d2a5.png"
+        "for": "Resources/assembling_new_ecu/4.jpg",
+        "from": "CAN_Nodes_Microcontroller_Code/Resources/assembling_new_ecu/4.jpg"
     },
     {
-        "type": "Extracting",
+        "type": "LoadedResource",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/10564d15f5d0a291cd88f5cc99c59b4b579ab02f.jpg"
+        "for": "Resources/assembling_new_ecu/5.jpg",
+        "from": "CAN_Nodes_Microcontroller_Code/Resources/assembling_new_ecu/5.jpg"
     },
     {
-        "type": "Extracting",
+        "type": "LoadedResource",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/1056c9b17589506e3c5b57c2ab861fc5180cd56f.jpg"
+        "for": "Resources/assembling_new_ecu/6.jpg",
+        "from": "CAN_Nodes_Microcontroller_Code/Resources/assembling_new_ecu/6.jpg"
     },
     {
-        "type": "Extracting",
+        "type": "LoadedResource",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/1075d9952e52dd6058d3bd607783206f2ca5652b.png"
+        "for": "Resources/assembling_new_ecu/7.jpg",
+        "from": "CAN_Nodes_Microcontroller_Code/Resources/assembling_new_ecu/7.jpg"
     },
     {
-        "type": "Extracting",
+        "type": "LoadedResource",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/10abe30e9f87d2aabdce8714b71c81f4280186d6.png"
+        "for": "Resources/assembling_new_ecu/8.jpg",
+        "from": "CAN_Nodes_Microcontroller_Code/Resources/assembling_new_ecu/8.jpg"
     },
     {
-        "type": "Extracting",
+        "type": "LoadedResource",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/12c60a958ddf498625c75f76f0d0fd016a09a181.png"
+        "for": "Resources/assembling_new_ecu/9.jpg",
+        "from": "CAN_Nodes_Microcontroller_Code/Resources/assembling_new_ecu/9.jpg"
     },
     {
-        "type": "Extracting",
+        "type": "LoadedResource",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/13f0ce58f141463825d6149b69f58cf57a582976.png"
+        "for": "Resources/assembling_new_ecu/10.jpg",
+        "from": "CAN_Nodes_Microcontroller_Code/Resources/assembling_new_ecu/10.jpg"
     },
     {
-        "type": "Extracting",
+        "type": "LoadedResource",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/168f1d5adf0679e9412ae78de31094134144b2af.jpg"
+        "for": "Resources/assembling_new_ecu/13.jpg",
+        "from": "CAN_Nodes_Microcontroller_Code/Resources/assembling_new_ecu/13.jpg"
     },
     {
-        "type": "Extracting",
+        "type": "LoadedResource",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/18a301f62e302e160cf5753f779439c1f0439085.png"
+        "for": "Resources/assembling_new_ecu/14.jpg",
+        "from": "CAN_Nodes_Microcontroller_Code/Resources/assembling_new_ecu/14.jpg"
     },
     {
-        "type": "Extracting",
+        "type": "LoadedResource",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/18f0412df2ba5e8cd68734d61a5e5c7b0af7fb1f.png"
+        "for": "Resources/assembling_new_ecu/15.jpg",
+        "from": "CAN_Nodes_Microcontroller_Code/Resources/assembling_new_ecu/15.jpg"
     },
     {
-        "type": "Extracting",
+        "type": "LoadedResource",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/1ac01fd2ff7db848d2b199d190c48bc5e2e71d27.png"
+        "for": "Resources/assembling_new_ecu/16.jpg",
+        "from": "CAN_Nodes_Microcontroller_Code/Resources/assembling_new_ecu/16.jpg"
     },
     {
-        "type": "Extracting",
+        "type": "LoadedResource",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/1c54b5de06807dd6f7861922104553446db5e9e6.png"
+        "for": "Resources/assembling_new_ecu/16.1.jpg",
+        "from": "CAN_Nodes_Microcontroller_Code/Resources/assembling_new_ecu/16.1.jpg"
     },
     {
-        "type": "Extracting",
+        "type": "LoadedResource",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/21d3b9d459b8b6234ccdbea7be41ca36f777411c.jpg"
+        "for": "Resources/assembling_new_ecu/16.2.jpg",
+        "from": "CAN_Nodes_Microcontroller_Code/Resources/assembling_new_ecu/16.2.jpg"
     },
     {
-        "type": "Extracting",
+        "type": "LoadedResource",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/21e72ce28c0205551f14b5cb28972bae9af0035a.png"
+        "for": "Resources/assembling_new_ecu/17.jpg",
+        "from": "CAN_Nodes_Microcontroller_Code/Resources/assembling_new_ecu/17.jpg"
     },
     {
-        "type": "Extracting",
+        "type": "LoadedResource",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/23c4314b53b24f29c5ca678a8578560164cc2604.jpg"
+        "for": "Resources/assembling_new_ecu/18.jpg",
+        "from": "CAN_Nodes_Microcontroller_Code/Resources/assembling_new_ecu/18.jpg"
     },
     {
-        "type": "Extracting",
+        "type": "LoadedResource",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/243167e351888d0de120f4141301c79776218f96.png"
+        "for": "Resources/assembling_new_ecu/19.jpg",
+        "from": "CAN_Nodes_Microcontroller_Code/Resources/assembling_new_ecu/19.jpg"
     },
     {
-        "type": "Extracting",
+        "type": "LoadedResource",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/2455e7ea4797a961b610f505eb4376690a7c6b03.png"
+        "for": "Resources/assembling_new_ecu/20.jpg",
+        "from": "CAN_Nodes_Microcontroller_Code/Resources/assembling_new_ecu/20.jpg"
     },
     {
-        "type": "Extracting",
+        "type": "LoadedResource",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/258151363191375d31c5ce533a1c752b72014351.jpg"
+        "for": "Resources/assembling_new_ecu/20.1.jpg",
+        "from": "CAN_Nodes_Microcontroller_Code/Resources/assembling_new_ecu/20.1.jpg"
     },
     {
-        "type": "Extracting",
+        "type": "LoadedResource",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/284306e25e7ed038bf93c8f2e3c56f6a56540ab1.png"
+        "for": "Resources/assembling_new_ecu/20.2.jpg",
+        "from": "CAN_Nodes_Microcontroller_Code/Resources/assembling_new_ecu/20.2.jpg"
     },
     {
-        "type": "Extracting",
+        "type": "LoadedResource",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/293be0db82fca46c2506a17d47e4aa7ce838e711.png"
+        "for": "Resources/assembling_new_ecu/21.jpg",
+        "from": "CAN_Nodes_Microcontroller_Code/Resources/assembling_new_ecu/21.jpg"
     },
     {
-        "type": "Extracting",
+        "type": "LoadedResource",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/2a19e6ffc3abd84c79d9e437c6d2dcb4bce2968e.png"
+        "for": "Resources/EasyEDA/Schematic_generic_ecu_diagram_image.png",
+        "from": "CAN_Nodes_Microcontroller_Code/Resources/EasyEDA/Schematic_generic_ecu_diagram_image.png"
     },
     {
-        "type": "Extracting",
+        "type": "LoadedResource",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/2a6de2fea2416bad304a64f2f7d76fc013379353.png"
+        "for": "Resources/assembling_new_ecu/22.jpg",
+        "from": "CAN_Nodes_Microcontroller_Code/Resources/assembling_new_ecu/22.jpg"
     },
     {
-        "type": "Extracting",
+        "type": "LoadedResource",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/2ecb693c74037752e02c6fe85593f0ad46d5e269.png"
+        "for": "Resources/kvaser.png",
+        "from": "CAN_Nodes_Microcontroller_Code/Resources/kvaser.png"
     },
     {
-        "type": "Extracting",
+        "type": "LoadedResource",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/2f8b2193a7f6390ee33e49312b7d5292e4e347dc.jpg"
+        "for": "Resources/dbc_to_c_illustration.png",
+        "from": "CAN_Nodes_Microcontroller_Code/Resources/dbc_to_c_illustration.png"
     },
     {
-        "type": "Extracting",
+        "type": "LoadedResource",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/305cd8960f089a1f96062523cb8334b4ae542abd.png"
+        "for": "Resources/CAN.png",
+        "from": "CAN_Nodes_Microcontroller_Code/Resources/CAN.png"
     },
     {
-        "type": "Extracting",
+        "type": "LoadedResource",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/3409e7c2a9e024a65cee0b8ac44394ad48202d83.png"
+        "for": "Resources/can_sw_com_detailed.png",
+        "from": "CAN_Nodes_Microcontroller_Code/Resources/can_sw_com_detailed.png"
     },
     {
-        "type": "Extracting",
+        "type": "LoadedResource",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/352805d866c4a51edb602bbae8ca868a2209333f.png"
+        "for": "Resources/can_translator_illustration.png",
+        "from": "CAN_Nodes_Microcontroller_Code/Resources/can_translator_illustration.png"
     },
     {
-        "type": "Extracting",
+        "type": "LoadedResource",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/3729f4ad8876d6776b902e2ef92ed91ab25d90aa.png"
+        "for": "images/CAN.jpg",
+        "from": "CAN_Nodes_Microcontroller_Code/CAN_LIBRARY_DATABASE/images/CAN.jpg"
     },
     {
-        "type": "Extracting",
+        "type": "LoadedResource",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/374abf2bbb1c3be90eec6f1a9888820aee26b4e2.png"
+        "for": "images/dbc_editor.PNG",
+        "from": "CAN_Nodes_Microcontroller_Code/CAN_LIBRARY_DATABASE/images/dbc_editor.PNG"
     },
     {
-        "type": "Extracting",
+        "type": "LoadedResource",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/37e68c662ef27a0517b907835b41e744d51869f2.png"
+        "for": "../Resources/Report_sketches/SW/low_level_overview.png",
+        "from": "Power_Unit/../Resources/Report_sketches/SW/low_level_overview.png"
     },
     {
-        "type": "Extracting",
+        "type": "LoadedResource",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/3a54b6c87d1df83dfb3058f6bda3bd5d96ed01e1.png"
+        "for": "../Resources/extra_documentation_images/loose_cables_1.png",
+        "from": "Power_Unit/../Resources/extra_documentation_images/loose_cables_1.png"
     },
     {
-        "type": "Extracting",
+        "type": "LoadedResource",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/3afb545920dea62399e51913384bceb9ba6ccd33.png"
+        "for": "../Resources/extra_documentation_images/loose_cables_2.png",
+        "from": "Power_Unit/../Resources/extra_documentation_images/loose_cables_2.png"
     },
     {
-        "type": "Extracting",
+        "type": "LoadedResource",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/3cf8a629f1307a5a17f377c4c9d6b739a4b798e8.png"
+        "for": "../Resources/extra_documentation_images/loose_cables_3.png",
+        "from": "Power_Unit/../Resources/extra_documentation_images/loose_cables_3.png"
     },
     {
-        "type": "Extracting",
+        "type": "LoadedResource",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/401eb10a91bc2efc9c1eb4c4018c600b4f8a029a.png"
+        "for": "../Resources/extra_documentation_images/loose_cables_4.png",
+        "from": "Power_Unit/../Resources/extra_documentation_images/loose_cables_4.png"
     },
     {
-        "type": "Extracting",
+        "type": "LoadedResource",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/417db494baf6a78d07dc4a5a9469a47af099bce5.png"
+        "for": "../Resources/Report_sketches/SW/can_frame_to_ros2_topic_overview.png",
+        "from": "Power_Unit/../Resources/Report_sketches/SW/can_frame_to_ros2_topic_overview.png"
     },
     {
-        "type": "Extracting",
+        "type": "LoadedResource",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/41da9e1fd22682e21fcad2983bf0d9afbab01022.png"
+        "for": "../Resources/Report_sketches/SW/can_translator_illustration.png",
+        "from": "Power_Unit/../Resources/Report_sketches/SW/can_translator_illustration.png"
     },
     {
-        "type": "Extracting",
+        "type": "LoadedResource",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/441467e673aa33f70e8a4626dba4b45ace0f4f0d.png"
+        "for": "../Resources/Pictures/CAD/RB4.PNG",
+        "from": "Power_Unit/../Resources/Pictures/CAD/RB4.PNG"
     },
     {
-        "type": "Extracting",
+        "type": "LoadedResource",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/44d21bba220eba66a203be7c9a6150fac6f0a9f2.png"
+        "for": "../Resources/extra_documentation_images/raspberry_pi_hwi_outside.jpg",
+        "from": "Power_Unit/../Resources/extra_documentation_images/raspberry_pi_hwi_outside.jpg"
     },
     {
-        "type": "Extracting",
+        "type": "LoadedResource",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/44d70ffd9540ce9f440ccb5bfa78fc6effafc3dd.png"
+        "for": "../Resources/extra_documentation_images/raspberry_pi_hwi_inside.jpg",
+        "from": "Power_Unit/../Resources/extra_documentation_images/raspberry_pi_hwi_inside.jpg"
     },
     {
-        "type": "Extracting",
+        "type": "LoadedResource",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/45b9535cc006dc26abea3971b164d30b6d15d291.png"
+        "for": "./resources/AP4_HWI_interface.png",
+        "from": "Hardware_Interface_Low_Level_Computer/./resources/AP4_HWI_interface.png"
     },
     {
-        "type": "Extracting",
+        "type": "LoadedResource",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/46b610c3b35397c9a0f285c9b936819264a0fc0b.png"
+        "for": "../Resources/Report_sketches/SW/high_level_overview.png",
+        "from": "Power_Unit/../Resources/Report_sketches/SW/high_level_overview.png"
     },
     {
-        "type": "Extracting",
+        "type": "LoadedResource",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/47f8ba6bcab9741464df98f1e70599b89a087fa4.png"
+        "for": "../Resources/Report_sketches/digital_twin/simulation_startup.png",
+        "from": "Power_Unit/../Resources/Report_sketches/digital_twin/simulation_startup.png"
     },
     {
-        "type": "Extracting",
+        "type": "LoadedResource",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/48ef51d7368a9b3dff98595559ef7877f8ad3eef.jpg"
+        "for": "../Resources/Report_sketches/digital_twin/Goal_point.png",
+        "from": "Power_Unit/../Resources/Report_sketches/digital_twin/Goal_point.png"
     },
     {
-        "type": "Extracting",
+        "type": "LoadedResource",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/493b52f139702f6d5a5451a7607d2a33bb03fa42.png"
+        "for": "../Resources/extra_documentation_images/twist_mux.png",
+        "from": "Power_Unit/../Resources/extra_documentation_images/twist_mux.png"
     },
     {
-        "type": "Extracting",
+        "type": "LoadedResource",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/4a2f765a1201cb17ffeebe404ccb68eec24f99e3.jpg"
+        "for": "../Resources/Report_sketches/digital_twin/rviz_without_axis_names.png",
+        "from": "Power_Unit/../Resources/Report_sketches/digital_twin/rviz_without_axis_names.png"
     },
     {
-        "type": "Extracting",
+        "type": "LoadedResource",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/4bb9090df6e0078dff6662c9922b008e688d8ea6.png"
+        "for": "../Resources/Report_sketches/digital_twin/gazebo_world_gokart.png",
+        "from": "Power_Unit/../Resources/Report_sketches/digital_twin/gazebo_world_gokart.png"
     },
     {
-        "type": "Extracting",
+        "type": "LoadedResource",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/4c64b73d1b589aa7b0763f8cb4b489174f990b7e.jpg"
+        "for": "../Resources/Report_sketches/digital_twin/Topbar_menu.png",
+        "from": "Power_Unit/../Resources/Report_sketches/digital_twin/Topbar_menu.png"
     },
     {
-        "type": "Extracting",
+        "type": "LoadedResource",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/4e16a1126f17da74efff450591702db266bcd75d.png"
+        "for": "../Resources/Report_sketches/digital_twin/Subdivide.png",
+        "from": "Power_Unit/../Resources/Report_sketches/digital_twin/Subdivide.png"
     },
     {
-        "type": "Extracting",
+        "type": "LoadedResource",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/50d61729eaabcf8d3e3a82e490dbdfb2fc12af38.png"
+        "for": "../Resources/Report_sketches/digital_twin/Blender_wrench.png",
+        "from": "Power_Unit/../Resources/Report_sketches/digital_twin/Blender_wrench.png"
     },
     {
-        "type": "Extracting",
+        "type": "LoadedResource",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/543e1dabb62f6f81525a40d2be68e9150e0ccf80.jpg"
+        "for": "../Resources/Report_sketches/digital_twin/Blender_texture.png",
+        "from": "Power_Unit/../Resources/Report_sketches/digital_twin/Blender_texture.png"
     },
     {
-        "type": "Extracting",
+        "type": "LoadedResource",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/563fc33b7ce7cfea14b8fc3592842561db37a0b7.png"
+        "for": "Resources/Circuit-In-Out.png",
+        "from": "Power_Unit/Resources/Circuit-In-Out.png"
     },
     {
-        "type": "Extracting",
+        "type": "LoadedResource",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/57786ec6f2ac90d7456af608d8d80db8a229cf35.png"
+        "for": "Resources/Circuit-Power_Module-Battery.png",
+        "from": "Power_Unit/Resources/Circuit-Power_Module-Battery.png"
     },
     {
-        "type": "Extracting",
+        "type": "LoadedResource",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/61a29ac40e985b60ed1088a4db80453b1b169418.png"
+        "for": "Resources/powr_module.png",
+        "from": "Power_Unit/Resources/powr_module.png"
     },
     {
-        "type": "Extracting",
+        "type": "LoadedResource",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/6544655e96f392c2bd0296abfedc8dc082ec1b32.png"
+        "for": "Resources/Schematic_Power_Module.png",
+        "from": "Power_Unit/Resources/Schematic_Power_Module.png"
     },
     {
-        "type": "Extracting",
+        "type": "LoadedResource",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/66cd82af5b5afe2583181dfa9db8f5943d66221b.png"
+        "for": "Resources/power_module_side.jpg",
+        "from": "Power_Unit/Resources/power_module_side.jpg"
     },
     {
-        "type": "Extracting",
+        "type": "LoadedResource",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/69e6c16dfeba8a89e1cae067b572c9110326b1e6.png"
+        "for": "Resources/power_module_ipa2.jpg",
+        "from": "Power_Unit/Resources/power_module_ipa2.jpg"
     },
     {
-        "type": "Extracting",
+        "type": "LoadedResource",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/6af00af00f77c43fbf6c3b6411ee4b4a0f2a979c.png"
+        "for": "Resources/extra_documentation_images/systemd_status.png",
+        "from": "Resources/extra_documentation_images/systemd_status.png"
     },
     {
-        "type": "Extracting",
+        "type": "LoadedResource",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/6b1da92ef934ee8e3eb48daac72545158760dd91.jpg"
+        "for": "Resources/extra_documentation_images/docker_build_error_1.png",
+        "from": "Resources/extra_documentation_images/docker_build_error_1.png"
     },
     {
-        "type": "Extracting",
+        "type": "LoadedResource",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/6b5776fd6af66ef3a87e9e4d6515a55ba1522356.jpg"
+        "for": "Resources/extra_documentation_images/docker_build_error_2.png",
+        "from": "Resources/extra_documentation_images/docker_build_error_2.png"
     },
     {
-        "type": "Extracting",
+        "type": "LoadedResource",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/6baf9889d974b9d25043d3d09507b21d6e6b7b57.png"
+        "for": "Resources/extra_documentation_images/raspberry_pi_corrupted_repository.png",
+        "from": "Resources/extra_documentation_images/raspberry_pi_corrupted_repository.png"
     },
     {
-        "type": "Extracting",
+        "type": "LoadedResource",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/70d4414dc4e4592b78e6942c3966ab7eba2ad2ff.png"
+        "for": "Resources/extra_documentation_images/ros2_launch_successfull.png",
+        "from": "Resources/extra_documentation_images/ros2_launch_successfull.png"
     },
     {
-        "type": "Extracting",
+        "type": "LoadedResource",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/71e1754c3edc0984453f46b20bd4439085a4d6a9.png"
+        "for": "Resources/extra_documentation_images/docker_container_manual_start.png",
+        "from": "Resources/extra_documentation_images/docker_container_manual_start.png"
     },
     {
-        "type": "Extracting",
-        "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/7243b6470af567637a58e1319c0f92fd426e0c2e.png"
-    },
-    {
-        "type": "Extracting",
-        "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/734185836da7e8718dc1afbfcc0c83817cf9246c.png"
-    },
-    {
-        "type": "Extracting",
-        "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/73458aead3439a55aebee7d6a11cd71ea39bb4d3.png"
-    },
-    {
-        "type": "Extracting",
-        "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/738a8602a621dd60c981be6a5dfc8972e8e00ff1.png"
-    },
-    {
-        "type": "Extracting",
-        "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/758131ad861dd71d708786ab35d8cc97d2abddce.png"
-    },
-    {
-        "type": "Extracting",
-        "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/77663a4d498b47ed36d1454a4a19c2064f48c470.jpg"
-    },
-    {
-        "type": "Extracting",
-        "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/7826947d9981a5e84aa9fdf4e7c4e426c29b5ffd.png"
-    },
-    {
-        "type": "Extracting",
-        "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/79d43e1e4f58738502559aed0b1227e8ee5e8a33.png"
-    },
-    {
-        "type": "Extracting",
-        "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/7d77e227b68547728ba8a7c8fc3b0919a221cee8.png"
-    },
-    {
-        "type": "Extracting",
-        "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/7e955733cfd8f0c7eb05e3981d3757dc1955c647.png"
-    },
-    {
-        "type": "Extracting",
-        "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/7f61f3132cb1bf4a2979e6bccb51cec353302dac.png"
-    },
-    {
-        "type": "Extracting",
-        "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/8171b57deb7671b4d656bcb9484897ec1d5b9a5e.png"
-    },
-    {
-        "type": "Extracting",
-        "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/8324295ee9a8eec8b34b7416abf3a3c599de843c.png"
-    },
-    {
-        "type": "Extracting",
-        "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/87be0637fe1d5eae51424d63848156f363f29bad.png"
-    },
-    {
-        "type": "Extracting",
-        "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/8882847326557a4c346aeceaaddb30b8ba67a41a.png"
-    },
-    {
-        "type": "Extracting",
-        "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/88df3dc282dcabdbb3e8d780aa7a1d2ff1b3c3db.png"
-    },
-    {
-        "type": "Extracting",
-        "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/89499e4d5d52a6a7620663497004bc523068507e.png"
-    },
-    {
-        "type": "Extracting",
-        "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/8963d0892fb1f754c77a4110dca9364f4b4eb717.png"
-    },
-    {
-        "type": "Extracting",
-        "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/8b57cc46d9d384dd441d6f829d6ee369260c1f03.png"
-    },
-    {
-        "type": "Extracting",
-        "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/8c0a67f8c11ea440a587647343b1eb2b6f5f3a8c.png"
-    },
-    {
-        "type": "Extracting",
-        "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/8d2b21b9a14ffb0b3d6bd023ce41b599a04ee114.png"
-    },
-    {
-        "type": "Extracting",
-        "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/8e8de17d873cd863cdb1e4bc071d7a8793aa6858.png"
-    },
-    {
-        "type": "Extracting",
-        "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/8e930af17854134db61d6b0df58cec370df99c71.jpg"
-    },
-    {
-        "type": "Extracting",
-        "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/8f9780f02ebc6c8fbb8e2d4b1ce4b66540f60cee.jpg"
-    },
-    {
-        "type": "Extracting",
-        "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/8fa4796ba80af74edba648804f142eaa86faa9eb.png"
-    },
-    {
-        "type": "Extracting",
-        "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/91b0498b8a2a56f36c6c3a57acd21b3045f381c5.png"
-    },
-    {
-        "type": "Extracting",
-        "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/93d015910c564705b6953e463d5f95761dcdedc1.png"
-    },
-    {
-        "type": "Extracting",
-        "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/94b3d211586f56a0fdddd6e1153094b6139f4a91.png"
-    },
-    {
-        "type": "Extracting",
-        "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/95730e6152fd2b21d682abc33626d493c12ae50d.png"
-    },
-    {
-        "type": "Extracting",
-        "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/97148e7581cc7c8bc7bbc1b6f29db3057a36c301.jpg"
+        "type": "CouldNotFetchResource",
+        "verbosity": "WARNING",
+        "message": "replacing image with description",
+        "path": "connect%20male%20connectors%20to%20PCB%20at%20PCB%20side.jpg"
     },
     {
-        "type": "Extracting",
-        "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/983182d98bf3330266f5059e4772268231a8a467.png"
-    },
-    {
-        "type": "Extracting",
-        "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/98d9814f2e29507e6a209eb7d5a5db13d347db1f.jpg"
-    },
-    {
-        "type": "Extracting",
-        "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/9a35156940c4c750589421daff78f4c363f192b1.png"
-    },
-    {
-        "type": "Extracting",
-        "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/9e0a29fa0b1ef3c6a715b5e3498a173fb0f2e6d7.png"
+        "type": "CouldNotFetchResource",
+        "verbosity": "WARNING",
+        "message": "replacing image with description",
+        "path": "connect%20male%20connectors%20to%20PCB.jpg"
     },
     {
-        "type": "Extracting",
-        "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/9e494d88048ab5521cfb65e7688041a0d8f0c108.png"
+        "type": "CouldNotFetchResource",
+        "verbosity": "WARNING",
+        "message": "replacing image with description",
+        "path": "lead%20in%20crimp%20tool%20use%20A.jpg"
     },
     {
-        "type": "Extracting",
-        "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/9e902bd161694cb7ba5b2233ab6c91f5894ab09f.png"
+        "type": "CouldNotFetchResource",
+        "verbosity": "WARNING",
+        "message": "replacing image with description",
+        "path": "jst%20XH%20Lead%20conector%20pins%20and%20Crimp%20tool.jpg"
     },
     {
-        "type": "Extracting",
-        "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/a073dc875e3a5c86207ad6676b0be5dec8f2d3d7.png"
+        "type": "CouldNotFetchResource",
+        "verbosity": "WARNING",
+        "message": "replacing image with description",
+        "path": "wiring%20to%20Ninebot%20Engine.png"
     },
     {
-        "type": "Extracting",
+        "type": "LoadedResource",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/a0cee9eeb85a5c9e4d4cf0abd2d982b50d623ed3.jpg"
+        "for": "../Resources/extra_documentation_images/systemd_status.png",
+        "from": "Power_Unit/../Resources/extra_documentation_images/systemd_status.png"
     },
     {
-        "type": "Extracting",
+        "type": "LoadedResource",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/a1004805ff64293ac206b20f3abfb92970d717ab.png"
+        "for": "Resources/Wheel_turner.gif",
+        "from": "Resources/Wheel_turner.gif"
     },
     {
-        "type": "Extracting",
+        "type": "LoadedResource",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/a24dbe4fad7e04e7b3ded622d2a57f358e1cbfed.png"
+        "for": "Resources/extra_documentation_images/phoenix_connector.png",
+        "from": "Resources/extra_documentation_images/phoenix_connector.png"
     },
     {
-        "type": "Extracting",
+        "type": "LoadedResource",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/a47d9bfaad6d1b696081ca06782d5f91105cfbef.png"
+        "for": "./Limitswitch_steering_holder/limittswitch_bottom_holder.stl-thumbnail.png",
+        "from": "CAD/./Limitswitch_steering_holder/limittswitch_bottom_holder.stl-thumbnail.png"
     },
     {
-        "type": "Extracting",
+        "type": "LoadedResource",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/a62ad31d80d768cf4ed17aeb88d818dce0ffb02c.png"
+        "for": "./Limitswitch_steering_holder/limitswitch_holder_top.stl-thumbnail.png",
+        "from": "CAD/./Limitswitch_steering_holder/limitswitch_holder_top.stl-thumbnail.png"
     },
     {
-        "type": "Extracting",
+        "type": "LoadedResource",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/a8e837c962b173287f0772660d200da830e9814f.png"
+        "for": "./Limitswitch_steering_holder/sensor_holder.stl-thumbnail.png",
+        "from": "CAD/./Limitswitch_steering_holder/sensor_holder.stl-thumbnail.png"
     },
     {
-        "type": "Extracting",
+        "type": "LoadedResource",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/a96c236c0e0c3ad05a9a3ccd43d78a5044c6cd60.png"
+        "for": "./lidar_mount/lidar_holder.stl-thumbnail.png",
+        "from": "CAD/./lidar_mount/lidar_holder.stl-thumbnail.png"
     },
     {
-        "type": "Extracting",
+        "type": "LoadedResource",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/adac2dd199a13a986e280a26369b8ff056d53999.jpg"
+        "for": "./camera_mount/camera_joint_female.stl-thumbnail.png",
+        "from": "CAD/./camera_mount/camera_joint_female.stl-thumbnail.png"
     },
     {
-        "type": "Extracting",
+        "type": "LoadedResource",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/add66f08236a1b31f4527a42450de646bad7a4fd.jpg"
+        "for": "./camera_mount/camera_joint_male.stl-thumbnail.png",
+        "from": "CAD/./camera_mount/camera_joint_male.stl-thumbnail.png"
     },
     {
-        "type": "Extracting",
+        "type": "LoadedResource",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/af002e8c1ed8ba9769adc4e21d6211734d4ed823.png"
+        "for": "./Speed_Sensor_Back/Holder_base.stl-thumbnail.png",
+        "from": "CAD/./Speed_Sensor_Back/Holder_base.stl-thumbnail.png"
     },
     {
-        "type": "Extracting",
+        "type": "LoadedResource",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/af0f7c73ea08ff288aed47e42d05cdab5ae1896e.jpg"
+        "for": "./Speed_Sensor_Back/Sensor_Holder.stl-thumbnail.png",
+        "from": "CAD/./Speed_Sensor_Back/Sensor_Holder.stl-thumbnail.png"
     },
     {
-        "type": "Extracting",
+        "type": "LoadedResource",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/b0701312b2759d7673ffbd86e7f4ed675c5f0b1c.png"
+        "for": "./Speed_Sensor_Back/Holder_ajustable.stl-thumbnail.png",
+        "from": "CAD/./Speed_Sensor_Back/Holder_ajustable.stl-thumbnail.png"
     },
     {
-        "type": "Extracting",
+        "type": "LoadedResource",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/b10bf61312a886e5eb963e55c1d349e7827f1d1e.png"
+        "for": "./Battery_BOX/x60_clamp.stl-thumbnail.png",
+        "from": "CAD/./Battery_BOX/x60_clamp.stl-thumbnail.png"
     },
     {
-        "type": "Extracting",
+        "type": "LoadedResource",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/b3b5c6fcfe931831df8f5ef6cdb6c569d8c16a61.png"
+        "for": "./Battery_BOX/Holder.stl-thumbnail.png",
+        "from": "CAD/./Battery_BOX/Holder.stl-thumbnail.png"
     },
     {
-        "type": "Extracting",
+        "type": "LoadedResource",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/b77ac29d7e4d1433c705d31b0f0894c4106066e4.png"
+        "for": "./Battery_BOX/Top.stl-thumbnail.png",
+        "from": "CAD/./Battery_BOX/Top.stl-thumbnail.png"
     },
     {
-        "type": "Extracting",
+        "type": "LoadedResource",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/b8bdff3d7154b870f875aab724f3498df3629128.jpg"
+        "for": "./Battery_BOX/Battery_charger_holder.stl-thumbnail.png",
+        "from": "CAD/./Battery_BOX/Battery_charger_holder.stl-thumbnail.png"
     },
     {
-        "type": "Extracting",
+        "type": "LoadedResource",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/bbe2298c91cf9b280ff9dbb71669fd76c4f81dd3.jpg"
+        "for": "./Battery_BOX/din_rail_psu_holder.stl-thumbnail.png",
+        "from": "CAD/./Battery_BOX/din_rail_psu_holder.stl-thumbnail.png"
     },
     {
-        "type": "Extracting",
+        "type": "LoadedResource",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/bdedd7f7396501a716d3d513fb193bb710df9adf.jpg"
+        "for": "./Node_Box/Termination_Resistor_Bottom.stl-thumbnail.png",
+        "from": "CAD/./Node_Box/Termination_Resistor_Bottom.stl-thumbnail.png"
     },
     {
-        "type": "Extracting",
+        "type": "LoadedResource",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/be7373c6ae3daaba7a4fd5d13663c7facb101797.png"
+        "for": "./Node_Box/cable_out_clamp.stl-thumbnail.png",
+        "from": "CAD/./Node_Box/cable_out_clamp.stl-thumbnail.png"
     },
     {
-        "type": "Extracting",
+        "type": "LoadedResource",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/be87cb487ebf474e92d9603598ad45f9e93625a2.png"
+        "for": "./Node_Box/ecu_nametag.stl-thumbnail.png",
+        "from": "CAD/./Node_Box/ecu_nametag.stl-thumbnail.png"
     },
     {
-        "type": "Extracting",
+        "type": "LoadedResource",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/be9e1b23af3c5d35a767fc27a306706838a15071.png"
+        "for": "./Node_Box/xt60_clampdown.stl-thumbnail.png",
+        "from": "CAD/./Node_Box/xt60_clampdown.stl-thumbnail.png"
     },
     {
-        "type": "Extracting",
+        "type": "LoadedResource",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/c0c91454cf19b2d18f48daf2609e9e7e410df112.png"
+        "for": "./Node_Box/HW_Node_Bottom_Box.stl-thumbnail.png",
+        "from": "CAD/./Node_Box/HW_Node_Bottom_Box.stl-thumbnail.png"
     },
     {
-        "type": "Extracting",
+        "type": "LoadedResource",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/c3c9d6a27fde7e3537a51595c5fe3a0187545f1e.png"
+        "for": "./Node_Box/Termination_Resistor_Bottom_Top.stl-thumbnail.png",
+        "from": "CAD/./Node_Box/Termination_Resistor_Bottom_Top.stl-thumbnail.png"
     },
     {
-        "type": "Extracting",
+        "type": "LoadedResource",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/c443ba27ab77680731c0fac122a41c8768eea3b4.jpg"
+        "for": "./Node_Box/HW_Node_Top_Cover.stl-thumbnail.png",
+        "from": "CAD/./Node_Box/HW_Node_Top_Cover.stl-thumbnail.png"
     },
     {
-        "type": "Extracting",
+        "type": "LoadedResource",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/c757d6fb9b833b4c07bc4615c55e39e98d3353c7.png"
+        "for": "./Node_Box/STM32_bluepill_holddown.stl-thumbnail.png",
+        "from": "CAD/./Node_Box/STM32_bluepill_holddown.stl-thumbnail.png"
     },
     {
-        "type": "Extracting",
+        "type": "LoadedResource",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/c9cc95042e45c8c726c2d442cb597bd22b6b04ff.png"
+        "for": "./Cable_Management/small_spiral_sleve_holder.stl-thumbnail.png",
+        "from": "CAD/./Cable_Management/small_spiral_sleve_holder.stl-thumbnail.png"
     },
     {
-        "type": "Extracting",
+        "type": "LoadedResource",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/cae6fe0c322c5f6a99ce5fe075e5d3c56226d7b4.png"
+        "for": "./Cable_Management/Cable_management_v2.stl-thumbnail.png",
+        "from": "CAD/./Cable_Management/Cable_management_v2.stl-thumbnail.png"
     },
     {
-        "type": "Extracting",
+        "type": "LoadedResource",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/cb4fc6f5cdc5a8dd7f4c02154439bb44d4527b67.png"
+        "for": "./Cable_Management/big_spiral_holder_1.stl-thumbnail.png",
+        "from": "CAD/./Cable_Management/big_spiral_holder_1.stl-thumbnail.png"
     },
     {
-        "type": "Extracting",
+        "type": "LoadedResource",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/ce20de0aa31df018b5495abd73f3ced4f9261dd3.png"
+        "for": "./Cable_Management/files/Cable_management2.0_2.stl-thumbnail.png",
+        "from": "CAD/./Cable_Management/files/Cable_management2.0_2.stl-thumbnail.png"
     },
     {
-        "type": "Extracting",
+        "type": "LoadedResource",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/d124cd72b2bd8c267aff41e39921f75180f58a89.jpg"
+        "for": "./Cable_Management/files/Cable_management2.0.stl-thumbnail.png",
+        "from": "CAD/./Cable_Management/files/Cable_management2.0.stl-thumbnail.png"
     },
     {
-        "type": "Extracting",
+        "type": "LoadedResource",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/d3fe0b87222b9ab796f87dde3702f73a9d48b4b2.png"
+        "for": "./Cable_Management/files/Cable_management2.0-4.stl-thumbnail.png",
+        "from": "CAD/./Cable_Management/files/Cable_management2.0-4.stl-thumbnail.png"
     },
     {
-        "type": "Extracting",
+        "type": "LoadedResource",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/d449127a5f26a790e8a039ae1f5c20e28c263cb3.png"
+        "for": "./Cable_Management/files/Cable_management2.0-4.2.stl-thumbnail.png",
+        "from": "CAD/./Cable_Management/files/Cable_management2.0-4.2.stl-thumbnail.png"
     },
     {
-        "type": "Extracting",
+        "type": "LoadedResource",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/d5fdc6a2bcde5ab70037ea734d708c0def614f8e.jpg"
+        "for": "./Cable_Management/files/Cable_management2.0-3.stl-thumbnail.png",
+        "from": "CAD/./Cable_Management/files/Cable_management2.0-3.stl-thumbnail.png"
     },
     {
-        "type": "Extracting",
+        "type": "LoadedResource",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/d72f9c8e7380dc544792f5e54b61871cfa4d86b8.jpg"
+        "for": "./laptop_holder/laptop_left_holder.stl-thumbnail.png",
+        "from": "CAD/./laptop_holder/laptop_left_holder.stl-thumbnail.png"
     },
     {
-        "type": "Extracting",
+        "type": "LoadedResource",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/d9cf8d6132d953289c02264b5cb05c9009027282.png"
+        "for": "./laptop_holder/laptop_holder_hole_board.stl-thumbnail.png",
+        "from": "CAD/./laptop_holder/laptop_holder_hole_board.stl-thumbnail.png"
     },
     {
-        "type": "Extracting",
+        "type": "LoadedResource",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/d9da394409589946f02bc1fd19116c8ee7077212.png"
+        "for": "./laptop_holder/laptop_right_holder.stl-thumbnail.png",
+        "from": "CAD/./laptop_holder/laptop_right_holder.stl-thumbnail.png"
     },
     {
-        "type": "Extracting",
+        "type": "LoadedResource",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/dc132f643c039fcb4a3c73031a9953ad9c046f43.png"
+        "for": "./laptop_holder/laptop_slider.stl-thumbnail.png",
+        "from": "CAD/./laptop_holder/laptop_slider.stl-thumbnail.png"
     },
     {
-        "type": "Extracting",
+        "type": "LoadedResource",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/dddd8a09f61d2c5271d428b1dca11da16b7b292e.jpg"
+        "for": "./Steering_Node_Box/sabertooth_holder.stl-thumbnail.png",
+        "from": "CAD/./Steering_Node_Box/sabertooth_holder.stl-thumbnail.png"
     },
     {
-        "type": "Extracting",
+        "type": "LoadedResource",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/e2f75b3b05b23323d52489391559ce4dd7dbfc9f.png"
+        "for": "./Steering_Node_Box/limittswitch_bottom_holder.stl-thumbnail.png",
+        "from": "CAD/./Steering_Node_Box/limittswitch_bottom_holder.stl-thumbnail.png"
     },
     {
-        "type": "Extracting",
+        "type": "LoadedResource",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/e30500ce93e168af5cf082cfdf9342d72d204448.png"
+        "for": "./Steering_Node_Box/limitswitch_holder_top.stl-thumbnail.png",
+        "from": "CAD/./Steering_Node_Box/limitswitch_holder_top.stl-thumbnail.png"
     },
     {
-        "type": "Extracting",
+        "type": "LoadedResource",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/e6b1209e3ee81e409a53693bd622226123b3afb9.jpg"
+        "for": "./wifi_router_holder/xt60_holder.stl-thumbnail.png",
+        "from": "CAD/./wifi_router_holder/xt60_holder.stl-thumbnail.png"
     },
     {
-        "type": "Extracting",
+        "type": "LoadedResource",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/e92a41c9ab6372dfd56f4b23ec42b0eee26198b6.png"
+        "for": "./wifi_router_holder/left_holder.stl-thumbnail.png",
+        "from": "CAD/./wifi_router_holder/left_holder.stl-thumbnail.png"
     },
     {
-        "type": "Extracting",
+        "type": "LoadedResource",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/ea9425e1ffb5be45d4368c9fb2fb9efc4d951664.png"
+        "for": "./wifi_router_holder/right_holder.stl-thumbnail.png",
+        "from": "CAD/./wifi_router_holder/right_holder.stl-thumbnail.png"
     },
     {
-        "type": "Extracting",
+        "type": "LoadedResource",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/ebf096e3f83ee217da372ac51df08055cfaa61c8.jpg"
+        "for": "./Speed_sensor_holder/hole_wheel_speed_sensor.stl-thumbnail.png",
+        "from": "CAD/./Speed_sensor_holder/hole_wheel_speed_sensor.stl-thumbnail.png"
     },
     {
-        "type": "Extracting",
+        "type": "LoadedResource",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/ebf4785022f2d057b454dd9540a92c9eb81bd096.png"
+        "for": "./Speed_sensor_holder/front_holder.stl-thumbnail.png",
+        "from": "CAD/./Speed_sensor_holder/front_holder.stl-thumbnail.png"
     },
     {
-        "type": "Extracting",
+        "type": "LoadedResource",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/ed3369e8f14ebf419629adab50308e155d0bd93b.png"
+        "for": "./Speed_sensor_holder/front_sensor_holder_lmitswitch.stl-thumbnail.png",
+        "from": "CAD/./Speed_sensor_holder/front_sensor_holder_lmitswitch.stl-thumbnail.png"
     },
     {
-        "type": "Extracting",
+        "type": "LoadedResource",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/eec1d4464c79adcaeedbbea44fb37aa60de9bd66.png"
+        "for": "./Speed_sensor_holder/front_speed_sensor_disc.stl-thumbnail.png",
+        "from": "CAD/./Speed_sensor_holder/front_speed_sensor_disc.stl-thumbnail.png"
     },
     {
-        "type": "Extracting",
+        "type": "LoadedResource",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/ef748a5e3e9f2edd45e5eef4d967ca8b496d8a12.jpg"
+        "for": "./front_win_grid/front_wing_grid.stl-thumbnail.png",
+        "from": "CAD/./front_win_grid/front_wing_grid.stl-thumbnail.png"
     },
     {
-        "type": "Extracting",
+        "type": "LoadedResource",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/f0b27e6653df1839106b621d3a1fb6502e6ea9db.png"
+        "for": "./USB_Hub_clampdown/power_connection_holddown.stl-thumbnail.png",
+        "from": "CAD/./USB_Hub_clampdown/power_connection_holddown.stl-thumbnail.png"
     },
     {
-        "type": "Extracting",
+        "type": "LoadedResource",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/f0c3e5ce9e00e223fc0948fd9bc469360fa66cec.jpg"
+        "for": "./USB_Hub_clampdown/hub_clampdown_bottom.stl-thumbnail.png",
+        "from": "CAD/./USB_Hub_clampdown/hub_clampdown_bottom.stl-thumbnail.png"
     },
     {
-        "type": "Extracting",
+        "type": "LoadedResource",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/f255c967f6302b7d2711d1c5cb17da2ef70c6e45.png"
+        "for": "./USB_Hub_clampdown/hub_clampdown_power.stl-thumbnail.png",
+        "from": "CAD/./USB_Hub_clampdown/hub_clampdown_power.stl-thumbnail.png"
     },
     {
-        "type": "Extracting",
+        "type": "LoadedResource",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/f404932acd70a2e659d8e3683006dc6807ce2a7b.png"
+        "for": "./USB_Hub_clampdown/hub_clampdown_top.stl-thumbnail.png",
+        "from": "CAD/./USB_Hub_clampdown/hub_clampdown_top.stl-thumbnail.png"
     },
     {
-        "type": "Extracting",
+        "type": "LoadedResource",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/f4f5309cb4bfae9c27ec2e16ed1e5829d83d37b0.jpg"
+        "for": "./Back_plate_holder/holder_under.stl-thumbnail.png",
+        "from": "CAD/./Back_plate_holder/holder_under.stl-thumbnail.png"
     },
     {
-        "type": "Extracting",
+        "type": "LoadedResource",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/f83ba2a87d2d3f163b349e428aeccf4d6f0038c9.png"
+        "for": "./Back_plate_holder/holder_top.stl-thumbnail.png",
+        "from": "CAD/./Back_plate_holder/holder_top.stl-thumbnail.png"
     },
     {
-        "type": "Extracting",
+        "type": "LoadedResource",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/f87bfa26f5c67f563f77cb9dd6935534ac49967f.png"
+        "for": "./portable_screen_holder/Screen_holder.stl-thumbnail.png",
+        "from": "CAD/./portable_screen_holder/Screen_holder.stl-thumbnail.png"
     },
     {
-        "type": "Extracting",
+        "type": "LoadedResource",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/fa7958cca7e7d39825c68b1b64189c7caebf4a2c.png"
+        "for": "./Arduino_Mega_holder/bottom_nut_holder.stl-thumbnail.png",
+        "from": "CAD/./Arduino_Mega_holder/bottom_nut_holder.stl-thumbnail.png"
     },
     {
-        "type": "Extracting",
+        "type": "LoadedResource",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/fae0d83f3b58bfea13b7bdaf46cc0323afe3845e.png"
+        "for": "./Arduino_Mega_holder/adapter.stl-thumbnail.png",
+        "from": "CAD/./Arduino_Mega_holder/adapter.stl-thumbnail.png"
     },
     {
-        "type": "Extracting",
+        "type": "LoadedResource",
         "verbosity": "INFO",
-        "path": "/tmp/tex2pdf.-9a3cde5860b0a86e/fd78c1260a2597487e345328ac879b68aae12f99.png"
+        "for": "./Mounting_Plate/plate_holder.stl-thumbnail.png",
+        "from": "CAD/./Mounting_Plate/plate_holder.stl-thumbnail.png"
     },
     {
         "type": "InlineNotRendered",
         "verbosity": "INFO",
         "contents": {
-            "t": "RawInline",
             "c": [
                 "html",
                 "<a name=\"Features-Capabilities\">"
-            ]
+            ],
+            "t": "RawInline"
         }
     },
     {
         "type": "InlineNotRendered",
         "verbosity": "INFO",
         "contents": {
-            "t": "RawInline",
             "c": [
                 "html",
                 "</a>"
-            ]
+            ],
+            "t": "RawInline"
         }
     },
     {
         "type": "InlineNotRendered",
         "verbosity": "INFO",
         "contents": {
-            "t": "RawInline",
             "c": [
                 "html",
                 "<a name=\"Features-Capabilities\">"
-            ]
+            ],
+            "t": "RawInline"
         }
     },
     {
         "type": "InlineNotRendered",
         "verbosity": "INFO",
         "contents": {
-            "t": "RawInline",
             "c": [
                 "html",
                 "</a>"
-            ]
+            ],
+            "t": "RawInline"
         }
     },
     {
         "type": "InlineNotRendered",
         "verbosity": "INFO",
         "contents": {
-            "t": "RawInline",
             "c": [
                 "html",
                 "<a name=\"Digital-Twin\">"
-            ]
+            ],
+            "t": "RawInline"
         }
     },
     {
         "type": "InlineNotRendered",
         "verbosity": "INFO",
         "contents": {
-            "t": "RawInline",
             "c": [
                 "html",
                 "</a>"
-            ]
+            ],
+            "t": "RawInline"
         }
     },
     {
         "type": "InlineNotRendered",
         "verbosity": "INFO",
         "contents": {
-            "t": "RawInline",
             "c": [
                 "html",
                 "<a name=\"Digital-Twin\">"
-            ]
+            ],
+            "t": "RawInline"
         }
     },
     {
         "type": "InlineNotRendered",
         "verbosity": "INFO",
         "contents": {
-            "t": "RawInline",
             "c": [
                 "html",
                 "</a>"
-            ]
+            ],
+            "t": "RawInline"
         }
     },
     {
         "type": "InlineNotRendered",
         "verbosity": "INFO",
         "contents": {
-            "t": "RawInline",
             "c": [
                 "html",
                 "<a name=\"System-Architecture\">"
-            ]
+            ],
+            "t": "RawInline"
         }
     },
     {
         "type": "InlineNotRendered",
         "verbosity": "INFO",
         "contents": {
-            "t": "RawInline",
             "c": [
                 "html",
                 "</a>"
-            ]
+            ],
+            "t": "RawInline"
         }
     },
     {
         "type": "InlineNotRendered",
         "verbosity": "INFO",
         "contents": {
-            "t": "RawInline",
             "c": [
                 "html",
                 "<a name=\"System-Architecture\">"
-            ]
+            ],
+            "t": "RawInline"
         }
     },
     {
         "type": "InlineNotRendered",
         "verbosity": "INFO",
         "contents": {
-            "t": "RawInline",
             "c": [
                 "html",
                 "</a>"
-            ]
+            ],
+            "t": "RawInline"
         }
     },
     {
         "type": "InlineNotRendered",
         "verbosity": "INFO",
         "contents": {
-            "t": "RawInline",
             "c": [
                 "html",
                 "<a name=\"How-to-start-Autonomous-Platform-Generation-4\">"
-            ]
+            ],
+            "t": "RawInline"
         }
     },
     {
         "type": "InlineNotRendered",
         "verbosity": "INFO",
         "contents": {
-            "t": "RawInline",
             "c": [
                 "html",
                 "</a>"
-            ]
+            ],
+            "t": "RawInline"
         }
     },
     {
         "type": "InlineNotRendered",
         "verbosity": "INFO",
         "contents": {
-            "t": "RawInline",
             "c": [
                 "html",
                 "<a name=\"How-to-start-Autonomous-Platform-Generation-4\">"
-            ]
+            ],
+            "t": "RawInline"
         }
     },
     {
         "type": "InlineNotRendered",
         "verbosity": "INFO",
         "contents": {
-            "t": "RawInline",
             "c": [
                 "html",
                 "</a>"
-            ]
+            ],
+            "t": "RawInline"
         }
     },
     {
         "type": "InlineNotRendered",
         "verbosity": "INFO",
         "contents": {
-            "t": "RawInline",
             "c": [
                 "html",
                 "<a name=\"VSCode\">"
-            ]
+            ],
+            "t": "RawInline"
         }
     },
     {
         "type": "InlineNotRendered",
         "verbosity": "INFO",
         "contents": {
-            "t": "RawInline",
             "c": [
                 "html",
                 "</a>"
-            ]
+            ],
+            "t": "RawInline"
         }
     },
     {
         "type": "InlineNotRendered",
         "verbosity": "INFO",
         "contents": {
-            "t": "RawInline",
             "c": [
                 "html",
                 "<a name=\"VSCode\">"
-            ]
+            ],
+            "t": "RawInline"
         }
     },
     {
         "type": "InlineNotRendered",
         "verbosity": "INFO",
         "contents": {
-            "t": "RawInline",
             "c": [
                 "html",
                 "</a>"
-            ]
+            ],
+            "t": "RawInline"
         }
     },
     {
         "type": "InlineNotRendered",
         "verbosity": "INFO",
         "contents": {
-            "t": "RawInline",
+            "c": [
+                "html",
+                "<Distribution Name>"
+            ],
+            "t": "RawInline"
+        }
+    },
+    {
+        "type": "InlineNotRendered",
+        "verbosity": "INFO",
+        "contents": {
             "c": [
                 "html",
                 "<a name=\"Linux-Ubuntu-2204\">"
-            ]
+            ],
+            "t": "RawInline"
         }
     },
     {
         "type": "InlineNotRendered",
         "verbosity": "INFO",
         "contents": {
-            "t": "RawInline",
             "c": [
                 "html",
                 "</a>"
-            ]
+            ],
+            "t": "RawInline"
         }
     },
     {
         "type": "InlineNotRendered",
         "verbosity": "INFO",
         "contents": {
-            "t": "RawInline",
             "c": [
                 "html",
                 "<a name=\"Linux-Ubuntu-2204\">"
-            ]
+            ],
+            "t": "RawInline"
         }
     },
     {
         "type": "InlineNotRendered",
         "verbosity": "INFO",
         "contents": {
-            "t": "RawInline",
             "c": [
                 "html",
                 "</a>"
-            ]
+            ],
+            "t": "RawInline"
         }
     },
     {
         "type": "InlineNotRendered",
         "verbosity": "INFO",
         "contents": {
-            "t": "RawInline",
             "c": [
                 "html",
                 "<a name=\"Git\">"
-            ]
+            ],
+            "t": "RawInline"
         }
     },
     {
         "type": "InlineNotRendered",
         "verbosity": "INFO",
         "contents": {
-            "t": "RawInline",
             "c": [
                 "html",
                 "</a>"
-            ]
+            ],
+            "t": "RawInline"
         }
     },
     {
         "type": "InlineNotRendered",
         "verbosity": "INFO",
         "contents": {
-            "t": "RawInline",
             "c": [
                 "html",
                 "<a name=\"Git\">"
-            ]
+            ],
+            "t": "RawInline"
         }
     },
     {
         "type": "InlineNotRendered",
         "verbosity": "INFO",
         "contents": {
-            "t": "RawInline",
             "c": [
                 "html",
                 "</a>"
-            ]
+            ],
+            "t": "RawInline"
         }
     },
     {
         "type": "InlineNotRendered",
         "verbosity": "INFO",
         "contents": {
-            "t": "RawInline",
             "c": [
                 "html",
                 "<a name=\"Containerization\">"
-            ]
+            ],
+            "t": "RawInline"
         }
     },
     {
         "type": "InlineNotRendered",
         "verbosity": "INFO",
         "contents": {
-            "t": "RawInline",
             "c": [
                 "html",
                 "</a>"
-            ]
+            ],
+            "t": "RawInline"
         }
     },
     {
         "type": "InlineNotRendered",
         "verbosity": "INFO",
         "contents": {
-            "t": "RawInline",
             "c": [
                 "html",
                 "<a name=\"Containerization\">"
-            ]
+            ],
+            "t": "RawInline"
         }
     },
     {
         "type": "InlineNotRendered",
         "verbosity": "INFO",
         "contents": {
-            "t": "RawInline",
             "c": [
                 "html",
                 "</a>"
-            ]
+            ],
+            "t": "RawInline"
         }
     },
     {
         "type": "InlineNotRendered",
         "verbosity": "INFO",
         "contents": {
-            "t": "RawInline",
             "c": [
                 "html",
                 "<a name=\"Robot-Operating-System-2-(ROS2)\">"
-            ]
+            ],
+            "t": "RawInline"
         }
     },
     {
         "type": "InlineNotRendered",
         "verbosity": "INFO",
         "contents": {
-            "t": "RawInline",
             "c": [
                 "html",
                 "</a>"
-            ]
+            ],
+            "t": "RawInline"
         }
     },
     {
         "type": "InlineNotRendered",
         "verbosity": "INFO",
         "contents": {
-            "t": "RawInline",
             "c": [
                 "html",
                 "<a name=\"Robot-Operating-System-2-(ROS2)\">"
-            ]
+            ],
+            "t": "RawInline"
         }
     },
     {
         "type": "InlineNotRendered",
         "verbosity": "INFO",
         "contents": {
-            "t": "RawInline",
             "c": [
                 "html",
                 "</a>"
-            ]
+            ],
+            "t": "RawInline"
         }
     },
     {
         "type": "InlineNotRendered",
         "verbosity": "INFO",
         "contents": {
-            "t": "RawInline",
             "c": [
                 "html",
                 "<a name=\"Additional-ROS2-Resources\">"
-            ]
+            ],
+            "t": "RawInline"
         }
     },
     {
         "type": "InlineNotRendered",
         "verbosity": "INFO",
         "contents": {
-            "t": "RawInline",
             "c": [
                 "html",
                 "</a>"
-            ]
+            ],
+            "t": "RawInline"
         }
     },
     {
         "type": "InlineNotRendered",
         "verbosity": "INFO",
         "contents": {
-            "t": "RawInline",
             "c": [
                 "html",
                 "<a name=\"Additional-ROS2-Resources\">"
-            ]
+            ],
+            "t": "RawInline"
         }
     },
     {
         "type": "InlineNotRendered",
         "verbosity": "INFO",
         "contents": {
-            "t": "RawInline",
             "c": [
                 "html",
                 "</a>"
-            ]
+            ],
+            "t": "RawInline"
         }
     },
     {
         "type": "InlineNotRendered",
         "verbosity": "INFO",
         "contents": {
-            "t": "RawInline",
             "c": [
                 "html",
                 "<a name=\"ROS2-Concepts\">"
-            ]
+            ],
+            "t": "RawInline"
         }
     },
     {
         "type": "InlineNotRendered",
         "verbosity": "INFO",
         "contents": {
-            "t": "RawInline",
             "c": [
                 "html",
                 "</a>"
-            ]
+            ],
+            "t": "RawInline"
         }
     },
     {
         "type": "InlineNotRendered",
         "verbosity": "INFO",
         "contents": {
-            "t": "RawInline",
             "c": [
                 "html",
                 "<a name=\"ROS2-Concepts\">"
-            ]
+            ],
+            "t": "RawInline"
         }
     },
     {
         "type": "InlineNotRendered",
         "verbosity": "INFO",
         "contents": {
-            "t": "RawInline",
             "c": [
                 "html",
                 "</a>"
-            ]
+            ],
+            "t": "RawInline"
         }
     },
     {
         "type": "InlineNotRendered",
         "verbosity": "INFO",
         "contents": {
-            "t": "RawInline",
             "c": [
                 "html",
                 "<a name=\"Prerequisite-Software-&-Skills\">"
-            ]
+            ],
+            "t": "RawInline"
         }
     },
     {
         "type": "InlineNotRendered",
         "verbosity": "INFO",
         "contents": {
-            "t": "RawInline",
             "c": [
                 "html",
                 "</a>"
-            ]
+            ],
+            "t": "RawInline"
         }
     },
     {
         "type": "InlineNotRendered",
         "verbosity": "INFO",
         "contents": {
-            "t": "RawInline",
             "c": [
                 "html",
                 "<a name=\"Prerequisite-Software-&-Skills\">"
-            ]
+            ],
+            "t": "RawInline"
         }
     },
     {
         "type": "InlineNotRendered",
         "verbosity": "INFO",
         "contents": {
-            "t": "RawInline",
             "c": [
                 "html",
                 "</a>"
-            ]
+            ],
+            "t": "RawInline"
         }
     },
     {
         "type": "InlineNotRendered",
         "verbosity": "INFO",
         "contents": {
-            "t": "RawInline",
             "c": [
                 "html",
                 "<a name=\"Adding-Wheel-Speed-Sensor\">"
-            ]
+            ],
+            "t": "RawInline"
         }
     },
     {
         "type": "InlineNotRendered",
         "verbosity": "INFO",
         "contents": {
-            "t": "RawInline",
             "c": [
                 "html",
                 "</a>"
-            ]
+            ],
+            "t": "RawInline"
         }
     },
     {
         "type": "InlineNotRendered",
         "verbosity": "INFO",
         "contents": {
-            "t": "RawInline",
             "c": [
                 "html",
                 "<a name=\"Adding-Wheel-Speed-Sensor\">"
-            ]
+            ],
+            "t": "RawInline"
         }
     },
     {
         "type": "InlineNotRendered",
         "verbosity": "INFO",
         "contents": {
-            "t": "RawInline",
             "c": [
                 "html",
                 "</a>"
-            ]
+            ],
+            "t": "RawInline"
         }
     },
     {
         "type": "InlineNotRendered",
         "verbosity": "INFO",
         "contents": {
-            "t": "RawInline",
             "c": [
                 "html",
                 "<a name=\"Prerequisites\">"
-            ]
+            ],
+            "t": "RawInline"
         }
     },
     {
         "type": "InlineNotRendered",
         "verbosity": "INFO",
         "contents": {
-            "t": "RawInline",
             "c": [
                 "html",
                 "</a>"
-            ]
+            ],
+            "t": "RawInline"
         }
     },
     {
         "type": "InlineNotRendered",
         "verbosity": "INFO",
         "contents": {
-            "t": "RawInline",
             "c": [
                 "html",
                 "<a name=\"Prerequisites\">"
-            ]
+            ],
+            "t": "RawInline"
         }
     },
     {
         "type": "InlineNotRendered",
         "verbosity": "INFO",
         "contents": {
-            "t": "RawInline",
             "c": [
                 "html",
                 "</a>"
-            ]
+            ],
+            "t": "RawInline"
         }
     },
     {
         "type": "InlineNotRendered",
         "verbosity": "INFO",
         "contents": {
-            "t": "RawInline",
             "c": [
                 "html",
                 "<a name=\"Introduction\">"
-            ]
+            ],
+            "t": "RawInline"
         }
     },
     {
         "type": "InlineNotRendered",
         "verbosity": "INFO",
         "contents": {
-            "t": "RawInline",
             "c": [
                 "html",
                 "</a>"
-            ]
+            ],
+            "t": "RawInline"
         }
     },
     {
         "type": "InlineNotRendered",
         "verbosity": "INFO",
         "contents": {
-            "t": "RawInline",
             "c": [
                 "html",
                 "<a name=\"Introduction\">"
-            ]
+            ],
+            "t": "RawInline"
         }
     },
     {
         "type": "InlineNotRendered",
         "verbosity": "INFO",
         "contents": {
-            "t": "RawInline",
             "c": [
                 "html",
                 "</a>"
-            ]
+            ],
+            "t": "RawInline"
         }
     },
     {
         "type": "InlineNotRendered",
         "verbosity": "INFO",
         "contents": {
-            "t": "RawInline",
             "c": [
                 "html",
                 "<a name=\"SPCU\">"
-            ]
+            ],
+            "t": "RawInline"
         }
     },
     {
         "type": "InlineNotRendered",
         "verbosity": "INFO",
         "contents": {
-            "t": "RawInline",
             "c": [
                 "html",
                 "</a>"
-            ]
+            ],
+            "t": "RawInline"
         }
     },
     {
         "type": "InlineNotRendered",
         "verbosity": "INFO",
         "contents": {
-            "t": "RawInline",
             "c": [
                 "html",
                 "<a name=\"SPCU\">"
-            ]
+            ],
+            "t": "RawInline"
         }
     },
     {
         "type": "InlineNotRendered",
         "verbosity": "INFO",
         "contents": {
-            "t": "RawInline",
             "c": [
                 "html",
                 "</a>"
-            ]
+            ],
+            "t": "RawInline"
         }
     },
     {
         "type": "InlineNotRendered",
         "verbosity": "INFO",
         "contents": {
-            "t": "RawInline",
+            "c": [
+                "html",
+                "<time>"
+            ],
+            "t": "RawInline"
+        }
+    },
+    {
+        "type": "InlineNotRendered",
+        "verbosity": "INFO",
+        "contents": {
+            "c": [
+                "html",
+                "<time>"
+            ],
+            "t": "RawInline"
+        }
+    },
+    {
+        "type": "InlineNotRendered",
+        "verbosity": "INFO",
+        "contents": {
+            "c": [
+                "html",
+                "<time>"
+            ],
+            "t": "RawInline"
+        }
+    },
+    {
+        "type": "InlineNotRendered",
+        "verbosity": "INFO",
+        "contents": {
             "c": [
                 "html",
                 "<a name=\"Low-Level-Control-Hardware-Interface-Software-Hardware-Requirements\">"
-            ]
+            ],
+            "t": "RawInline"
         }
     },
     {
         "type": "InlineNotRendered",
         "verbosity": "INFO",
         "contents": {
-            "t": "RawInline",
             "c": [
                 "html",
                 "</a>"
-            ]
+            ],
+            "t": "RawInline"
         }
     },
     {
         "type": "InlineNotRendered",
         "verbosity": "INFO",
         "contents": {
-            "t": "RawInline",
             "c": [
                 "html",
                 "<a name=\"Low-Level-Control-Hardware-Interface-Software-Hardware-Requirements\">"
-            ]
+            ],
+            "t": "RawInline"
         }
     },
     {
         "type": "InlineNotRendered",
         "verbosity": "INFO",
         "contents": {
-            "t": "RawInline",
             "c": [
                 "html",
                 "</a>"
-            ]
+            ],
+            "t": "RawInline"
         }
     },
     {
         "type": "InlineNotRendered",
         "verbosity": "INFO",
         "contents": {
-            "t": "RawInline",
             "c": [
                 "html",
                 "<a name=\"Interfacing-with-Embedded-ECUs\">"
-            ]
+            ],
+            "t": "RawInline"
         }
     },
     {
         "type": "InlineNotRendered",
         "verbosity": "INFO",
         "contents": {
-            "t": "RawInline",
             "c": [
                 "html",
                 "</a>"
-            ]
+            ],
+            "t": "RawInline"
         }
     },
     {
         "type": "InlineNotRendered",
         "verbosity": "INFO",
         "contents": {
-            "t": "RawInline",
             "c": [
                 "html",
                 "<a name=\"Interfacing-with-Embedded-ECUs\">"
-            ]
+            ],
+            "t": "RawInline"
         }
     },
     {
         "type": "InlineNotRendered",
         "verbosity": "INFO",
         "contents": {
-            "t": "RawInline",
             "c": [
                 "html",
                 "</a>"
-            ]
+            ],
+            "t": "RawInline"
         }
     },
     {
         "type": "InlineNotRendered",
         "verbosity": "INFO",
         "contents": {
-            "t": "RawInline",
             "c": [
                 "html",
                 "<a name=\"Interfacing-with-High-Level-Control-Software\">"
-            ]
+            ],
+            "t": "RawInline"
         }
     },
     {
         "type": "InlineNotRendered",
         "verbosity": "INFO",
         "contents": {
-            "t": "RawInline",
             "c": [
                 "html",
                 "</a>"
-            ]
+            ],
+            "t": "RawInline"
         }
     },
     {
         "type": "InlineNotRendered",
         "verbosity": "INFO",
         "contents": {
-            "t": "RawInline",
             "c": [
                 "html",
                 "<a name=\"Interfacing-with-High-Level-Control-Software\">"
-            ]
+            ],
+            "t": "RawInline"
         }
     },
     {
         "type": "InlineNotRendered",
         "verbosity": "INFO",
         "contents": {
-            "t": "RawInline",
             "c": [
                 "html",
                 "</a>"
-            ]
+            ],
+            "t": "RawInline"
         }
     },
     {
         "type": "InlineNotRendered",
         "verbosity": "INFO",
         "contents": {
-            "t": "RawInline",
             "c": [
                 "html",
                 "<a name=\"Adding-New-Functionalities\">"
-            ]
+            ],
+            "t": "RawInline"
         }
     },
     {
         "type": "InlineNotRendered",
         "verbosity": "INFO",
         "contents": {
-            "t": "RawInline",
             "c": [
                 "html",
                 "</a>"
-            ]
+            ],
+            "t": "RawInline"
         }
     },
     {
         "type": "InlineNotRendered",
         "verbosity": "INFO",
         "contents": {
-            "t": "RawInline",
             "c": [
                 "html",
                 "<a name=\"Adding-New-Functionalities\">"
-            ]
+            ],
+            "t": "RawInline"
         }
     },
     {
         "type": "InlineNotRendered",
         "verbosity": "INFO",
         "contents": {
-            "t": "RawInline",
             "c": [
                 "html",
                 "</a>"
-            ]
+            ],
+            "t": "RawInline"
         }
     },
     {
         "type": "InlineNotRendered",
         "verbosity": "INFO",
         "contents": {
-            "t": "RawInline",
             "c": [
                 "html",
                 "<a name=\"Automatic-Startup-of-Software\">"
-            ]
+            ],
+            "t": "RawInline"
         }
     },
     {
         "type": "InlineNotRendered",
         "verbosity": "INFO",
         "contents": {
-            "t": "RawInline",
             "c": [
                 "html",
                 "</a>"
-            ]
+            ],
+            "t": "RawInline"
         }
     },
     {
         "type": "InlineNotRendered",
         "verbosity": "INFO",
         "contents": {
-            "t": "RawInline",
             "c": [
                 "html",
                 "<a name=\"Automatic-Startup-of-Software\">"
-            ]
+            ],
+            "t": "RawInline"
         }
     },
     {
         "type": "InlineNotRendered",
         "verbosity": "INFO",
         "contents": {
-            "t": "RawInline",
             "c": [
                 "html",
                 "</a>"
-            ]
+            ],
+            "t": "RawInline"
         }
     },
     {
         "type": "InlineNotRendered",
         "verbosity": "INFO",
         "contents": {
-            "t": "RawInline",
             "c": [
                 "html",
                 "<a name=\"Installing-Base-Software-on-Fresh-Raspberry-Pi-4b\">"
-            ]
+            ],
+            "t": "RawInline"
         }
     },
     {
         "type": "InlineNotRendered",
         "verbosity": "INFO",
         "contents": {
-            "t": "RawInline",
             "c": [
                 "html",
                 "</a>"
-            ]
+            ],
+            "t": "RawInline"
         }
     },
     {
         "type": "InlineNotRendered",
         "verbosity": "INFO",
         "contents": {
-            "t": "RawInline",
             "c": [
                 "html",
                 "<a name=\"Installing-Base-Software-on-Fresh-Raspberry-Pi-4b\">"
-            ]
+            ],
+            "t": "RawInline"
         }
     },
     {
         "type": "InlineNotRendered",
         "verbosity": "INFO",
         "contents": {
-            "t": "RawInline",
             "c": [
                 "html",
                 "</a>"
-            ]
+            ],
+            "t": "RawInline"
         }
     },
     {
         "type": "BlockNotRendered",
         "verbosity": "INFO",
         "contents": {
-            "t": "RawBlock",
             "c": [
                 "html",
                 "<!-- \n1. **Edit the CAN database file** (.dbc) located at `CAN_Nodes_Microcontroller_Code\\CAN_LIBRARY_DATABASE  \nCAN_DB.dbc` can be opened using kvaser software. Write over the existing file. \n[Simple explanation of CAN dbc file.](https://www.autopi.io/blog/the-meaning-of-dbc-file/#:~:text=DBC%20files%20are%20basic%20text,(i.e.%2C%20CAN%20IDs).) Push to gitlab.  \nNote: Editing the database with kvaser has only been tested on Windows 10. \n\n2. **Generate new CAN_DB.c/h files.**\nOn a linux host computer, pull down the latest CAN_DB.dbc file. \nFollow the procedure in `CAN_Nodes_Microcontroller_Code\\CAN_LIBRARY_DATABASE` README file. Run the \"create_database_from_dbc_script.sh\". in a terminal.  \nExpected output: CAN_DB.c/h in /src/ should be overwritten. (one can delete the existing CAN_DB.h / CAN_DB.c and re run the script to verify that it works)  \nPush changes to gitlab.  \nNote: Frame names / Signal names are generated according to a standard. Keep this in mind when trying to access a specific signal programmatically later on.\n...<Frame_ID>_<Signal_name>...\n\n3. **Create embedded software in ECU.**\nSee step by step documentation in `CAN_Nodes_Microcontroller_Code`\n-->"
-            ]
+            ],
+            "t": "RawBlock"
         }
     },
     {
         "type": "InlineNotRendered",
         "verbosity": "INFO",
         "contents": {
-            "t": "RawInline",
             "c": [
                 "html",
                 "<a name=\"Installing-Base-Software-on-Fresh-Raspberry-Pi-4b\">"
-            ]
+            ],
+            "t": "RawInline"
         }
     },
     {
         "type": "InlineNotRendered",
         "verbosity": "INFO",
         "contents": {
-            "t": "RawInline",
             "c": [
                 "html",
                 "</a>"
-            ]
+            ],
+            "t": "RawInline"
         }
     },
     {
         "type": "InlineNotRendered",
         "verbosity": "INFO",
         "contents": {
-            "t": "RawInline",
             "c": [
                 "html",
                 "<a name=\"Installing-Base-Software-on-Fresh-Raspberry-Pi-4b\">"
-            ]
+            ],
+            "t": "RawInline"
         }
     },
     {
         "type": "InlineNotRendered",
         "verbosity": "INFO",
         "contents": {
-            "t": "RawInline",
             "c": [
                 "html",
                 "</a>"
-            ]
+            ],
+            "t": "RawInline"
         }
     },
     {
         "type": "InlineNotRendered",
         "verbosity": "INFO",
         "contents": {
-            "t": "RawInline",
             "c": [
                 "html",
                 "<a name=\"High-Level-Control-Hardware-Requirements\">"
-            ]
+            ],
+            "t": "RawInline"
         }
     },
     {
         "type": "InlineNotRendered",
         "verbosity": "INFO",
         "contents": {
-            "t": "RawInline",
             "c": [
                 "html",
                 "</a>"
-            ]
+            ],
+            "t": "RawInline"
         }
     },
     {
         "type": "InlineNotRendered",
         "verbosity": "INFO",
         "contents": {
-            "t": "RawInline",
             "c": [
                 "html",
                 "<a name=\"High-Level-Control-Hardware-Requirements\">"
-            ]
+            ],
+            "t": "RawInline"
         }
     },
     {
         "type": "InlineNotRendered",
         "verbosity": "INFO",
         "contents": {
-            "t": "RawInline",
             "c": [
                 "html",
                 "</a>"
-            ]
+            ],
+            "t": "RawInline"
         }
     },
     {
         "type": "InlineNotRendered",
         "verbosity": "INFO",
         "contents": {
-            "t": "RawInline",
             "c": [
                 "html",
                 "<a name=\"How-To-Start\">"
-            ]
+            ],
+            "t": "RawInline"
         }
     },
     {
         "type": "InlineNotRendered",
         "verbosity": "INFO",
         "contents": {
-            "t": "RawInline",
             "c": [
                 "html",
                 "</a>"
-            ]
+            ],
+            "t": "RawInline"
         }
     },
     {
         "type": "InlineNotRendered",
         "verbosity": "INFO",
         "contents": {
-            "t": "RawInline",
             "c": [
                 "html",
                 "<bag>"
-            ]
+            ],
+            "t": "RawInline"
         }
     },
     {
         "type": "InlineNotRendered",
         "verbosity": "INFO",
         "contents": {
-            "t": "RawInline",
             "c": [
                 "html",
                 "<a name=\"Digital-Twin\">"
-            ]
+            ],
+            "t": "RawInline"
         }
     },
     {
         "type": "InlineNotRendered",
         "verbosity": "INFO",
         "contents": {
-            "t": "RawInline",
             "c": [
                 "html",
                 "</a>"
-            ]
+            ],
+            "t": "RawInline"
         }
     },
     {
         "type": "InlineNotRendered",
         "verbosity": "INFO",
         "contents": {
-            "t": "RawInline",
             "c": [
                 "html",
                 "<a name=\"Software-Control-Switch\">"
-            ]
+            ],
+            "t": "RawInline"
         }
     },
     {
         "type": "InlineNotRendered",
         "verbosity": "INFO",
         "contents": {
-            "t": "RawInline",
             "c": [
                 "html",
                 "</a>"
-            ]
+            ],
+            "t": "RawInline"
         }
     },
     {
         "type": "InlineNotRendered",
         "verbosity": "INFO",
         "contents": {
-            "t": "RawInline",
             "c": [
                 "html",
                 "<a name=\"How-to-Connect-to-Physical-Platform\">"
-            ]
+            ],
+            "t": "RawInline"
         }
     },
     {
         "type": "InlineNotRendered",
         "verbosity": "INFO",
         "contents": {
-            "t": "RawInline",
             "c": [
                 "html",
                 "</a>"
-            ]
+            ],
+            "t": "RawInline"
         }
     },
     {
         "type": "InlineNotRendered",
         "verbosity": "INFO",
         "contents": {
-            "t": "RawInline",
             "c": [
                 "html",
                 "<a name=\"High-Level-Control-Underlying-Software-Components\">"
-            ]
+            ],
+            "t": "RawInline"
         }
     },
     {
         "type": "InlineNotRendered",
         "verbosity": "INFO",
         "contents": {
-            "t": "RawInline",
             "c": [
                 "html",
                 "</a>"
-            ]
+            ],
+            "t": "RawInline"
         }
     },
     {
         "type": "InlineNotRendered",
         "verbosity": "INFO",
         "contents": {
-            "t": "RawInline",
             "c": [
                 "html",
                 "<a name=\"High-Level-Control-Underlying-Software-Components\">"
-            ]
+            ],
+            "t": "RawInline"
         }
     },
     {
         "type": "InlineNotRendered",
         "verbosity": "INFO",
         "contents": {
-            "t": "RawInline",
             "c": [
                 "html",
                 "</a>"
-            ]
+            ],
+            "t": "RawInline"
         }
     },
     {
         "type": "InlineNotRendered",
         "verbosity": "INFO",
         "contents": {
-            "t": "RawInline",
             "c": [
                 "html",
                 "<a name=\"Containerization]\">"
-            ]
+            ],
+            "t": "RawInline"
         }
     },
     {
         "type": "InlineNotRendered",
         "verbosity": "INFO",
         "contents": {
-            "t": "RawInline",
             "c": [
                 "html",
                 "</a>"
-            ]
+            ],
+            "t": "RawInline"
         }
     },
     {
         "type": "InlineNotRendered",
         "verbosity": "INFO",
         "contents": {
-            "t": "RawInline",
             "c": [
                 "html",
                 "<a name=\"Containerization]\">"
-            ]
+            ],
+            "t": "RawInline"
         }
     },
     {
         "type": "InlineNotRendered",
         "verbosity": "INFO",
         "contents": {
-            "t": "RawInline",
             "c": [
                 "html",
                 "</a>"
-            ]
+            ],
+            "t": "RawInline"
         }
     },
     {
         "type": "InlineNotRendered",
         "verbosity": "INFO",
         "contents": {
-            "t": "RawInline",
             "c": [
                 "html",
                 "<a name=\"Robot-Operating-System-2-(ROS2)\">"
-            ]
+            ],
+            "t": "RawInline"
         }
     },
     {
         "type": "InlineNotRendered",
         "verbosity": "INFO",
         "contents": {
-            "t": "RawInline",
             "c": [
                 "html",
                 "</a>"
-            ]
+            ],
+            "t": "RawInline"
         }
     },
     {
         "type": "InlineNotRendered",
         "verbosity": "INFO",
         "contents": {
-            "t": "RawInline",
             "c": [
                 "html",
                 "<a name=\"Robot-Operating-System-2-(ROS2)\">"
-            ]
+            ],
+            "t": "RawInline"
         }
     },
     {
         "type": "InlineNotRendered",
         "verbosity": "INFO",
         "contents": {
-            "t": "RawInline",
             "c": [
                 "html",
                 "</a>"
-            ]
+            ],
+            "t": "RawInline"
         }
     },
     {
         "type": "InlineNotRendered",
         "verbosity": "INFO",
         "contents": {
-            "t": "RawInline",
+            "c": [
+                "html",
+                "<span style=\"font-family: 'Roboto Mono', monospace;\">"
+            ],
+            "t": "RawInline"
+        }
+    },
+    {
+        "type": "BlockNotRendered",
+        "verbosity": "INFO",
+        "contents": {
+            "c": [
+                "html",
+                "<pre>\nDevice    Boot Start   End        Sectors    Size    Id    Type\\\n/dev/sda1  *   2048    526335     526335     256M    C     W95  FAT32 (LBA)\\\n/dev/sda2      526336  249737182  249210847  118.8G  83    Linux\n</pre>"
+            ],
+            "t": "RawBlock"
+        }
+    },
+    {
+        "type": "InlineNotRendered",
+        "verbosity": "INFO",
+        "contents": {
+            "c": [
+                "html",
+                "</span>"
+            ],
+            "t": "RawInline"
+        }
+    },
+    {
+        "type": "InlineNotRendered",
+        "verbosity": "INFO",
+        "contents": {
+            "c": [
+                "html",
+                "<span style=\"font-family: 'Roboto Mono', monospace; font-size: 1em;\">"
+            ],
+            "t": "RawInline"
+        }
+    },
+    {
+        "type": "BlockNotRendered",
+        "verbosity": "INFO",
+        "contents": {
+            "c": [
+                "html",
+                "<pre>ssh.service - OpenBSD Secure Shell server\\\nLoaded: loaded (/lib/systemd/system/ssh.service; enabled; vendor preset: enabled)\\\nActive: active (running) since Mon 2020-06-01 12:34:00 CEST; 9h ago\n</pre>"
+            ],
+            "t": "RawBlock"
+        }
+    },
+    {
+        "type": "InlineNotRendered",
+        "verbosity": "INFO",
+        "contents": {
+            "c": [
+                "html",
+                "</span>"
+            ],
+            "t": "RawInline"
+        }
+    },
+    {
+        "type": "InlineNotRendered",
+        "verbosity": "INFO",
+        "contents": {
+            "c": [
+                "html",
+                "<span style=\"font-family: 'Roboto Mono', monospace; font-size: 1em;\">"
+            ],
+            "t": "RawInline"
+        }
+    },
+    {
+        "type": "BlockNotRendered",
+        "verbosity": "INFO",
+        "contents": {
+            "c": [
+                "html",
+                "<pre>\nwlan0: flags=4163/\\<UP,BROADCAST,RUNNING,MULTICAST/>  mtu 1500\\\n`inet 192.168.1.150`  netmask 255.255.255.0  broadcast 192.168.1.255\\\ninet6 fe80::7a8:fdc8:4fdf:d6f2  prefixlen 64  scopeid 0x20/<link/>\\\nether dc:a6:32:7c:40:aa  txqueuelen 1000  (Ethernet)\\\nRX packets 5258  bytes 1564626 (1.5 MB)\\\nRX errors 0  dropped 5  overruns 0  frame 0\\\nTX packets 2106  bytes 563087 (563.0 KB)\\\nTX errors 0  dropped 0 overruns 0  carrier 0  collisions 0\\\n</pre>"
+            ],
+            "t": "RawBlock"
+        }
+    },
+    {
+        "type": "InlineNotRendered",
+        "verbosity": "INFO",
+        "contents": {
+            "c": [
+                "html",
+                "</span>"
+            ],
+            "t": "RawInline"
+        }
+    },
+    {
+        "type": "InlineNotRendered",
+        "verbosity": "INFO",
+        "contents": {
+            "c": [
+                "html",
+                "<span style=\"font-family: 'Roboto Mono', monospace; font-size: 1em;\">"
+            ],
+            "t": "RawInline"
+        }
+    },
+    {
+        "type": "BlockNotRendered",
+        "verbosity": "INFO",
+        "contents": {
+            "c": [
+                "html",
+                "<pre>CONTAINER ID  IMAGE       COMMAND               CREATED    STATUS    PORTS NAMES\\\nf0c3b88eb9dc  ros2_image   \"/ros_entrypoint.sh\"   5 min ago  Up 5 min        ap4hwi</pre>"
+            ],
+            "t": "RawBlock"
+        }
+    },
+    {
+        "type": "InlineNotRendered",
+        "verbosity": "INFO",
+        "contents": {
+            "c": [
+                "html",
+                "</span>"
+            ],
+            "t": "RawInline"
+        }
+    },
+    {
+        "type": "InlineNotRendered",
+        "verbosity": "INFO",
+        "contents": {
+            "c": [
+                "html",
+                "<span style=\"font-family: 'Roboto Mono', monospace; font-size: 1em;\">"
+            ],
+            "t": "RawInline"
+        }
+    },
+    {
+        "type": "BlockNotRendered",
+        "verbosity": "INFO",
+        "contents": {
+            "c": [
+                "html",
+                "<pre>/GET_cmd_vel\\\n/Get_position\\\n/joystick_cmd_vel\\\n/etc…\n</pre>"
+            ],
+            "t": "RawBlock"
+        }
+    },
+    {
+        "type": "InlineNotRendered",
+        "verbosity": "INFO",
+        "contents": {
+            "c": [
+                "html",
+                "</span>"
+            ],
+            "t": "RawInline"
+        }
+    },
+    {
+        "type": "InlineNotRendered",
+        "verbosity": "INFO",
+        "contents": {
+            "c": [
+                "html",
+                "<span style=\"font-family: 'Roboto Mono', monospace; font-size: 1em;\">"
+            ],
+            "t": "RawInline"
+        }
+    },
+    {
+        "type": "BlockNotRendered",
+        "verbosity": "INFO",
+        "contents": {
+            "c": [
+                "html",
+                "<pre>:0\n</pre>"
+            ],
+            "t": "RawBlock"
+        }
+    },
+    {
+        "type": "InlineNotRendered",
+        "verbosity": "INFO",
+        "contents": {
+            "c": [
+                "html",
+                "</span>"
+            ],
+            "t": "RawInline"
+        }
+    },
+    {
+        "type": "InlineNotRendered",
+        "verbosity": "INFO",
+        "contents": {
+            "c": [
+                "html",
+                "<span style=\"font-family: 'Roboto Mono', monospace; font-size: 1em;\">"
+            ],
+            "t": "RawInline"
+        }
+    },
+    {
+        "type": "BlockNotRendered",
+        "verbosity": "INFO",
+        "contents": {
+            "c": [
+                "html",
+                "<pre>:0\n</pre>"
+            ],
+            "t": "RawBlock"
+        }
+    },
+    {
+        "type": "InlineNotRendered",
+        "verbosity": "INFO",
+        "contents": {
+            "c": [
+                "html",
+                "</span>"
+            ],
+            "t": "RawInline"
+        }
+    },
+    {
+        "type": "InlineNotRendered",
+        "verbosity": "INFO",
+        "contents": {
+            "c": [
+                "html",
+                "<license>"
+            ],
+            "t": "RawInline"
+        }
+    },
+    {
+        "type": "InlineNotRendered",
+        "verbosity": "INFO",
+        "contents": {
+            "c": [
+                "html",
+                "</license>"
+            ],
+            "t": "RawInline"
+        }
+    },
+    {
+        "type": "BlockNotRendered",
+        "verbosity": "INFO",
+        "contents": {
+            "c": [
+                "html",
+                "<pre style=\"font-family: 'Roboto Mono', monospace; font-size: 1em;\">\n<code>\nentry_points={\n    'console_scripts': [\n        \"example_node1 = my_pkg_name.filename1:main\",\n        \"example_node2 = my_pkg_name.filename2:main\"\n    ],\n}\n</code>\n</pre>"
+            ],
+            "t": "RawBlock"
+        }
+    },
+    {
+        "type": "InlineNotRendered",
+        "verbosity": "INFO",
+        "contents": {
             "c": [
                 "html",
                 "<a name=\"Known-Bugs-/-Issues\">"
-            ]
+            ],
+            "t": "RawInline"
         }
     },
     {
         "type": "InlineNotRendered",
         "verbosity": "INFO",
         "contents": {
-            "t": "RawInline",
             "c": [
                 "html",
                 "</a>"
-            ]
+            ],
+            "t": "RawInline"
         }
     },
     {
         "type": "InlineNotRendered",
         "verbosity": "INFO",
         "contents": {
-            "t": "RawInline",
             "c": [
                 "html",
                 "<a name=\"Known-Bugs-/-Issues\">"
-            ]
+            ],
+            "t": "RawInline"
         }
     },
     {
         "type": "InlineNotRendered",
         "verbosity": "INFO",
         "contents": {
-            "t": "RawInline",
             "c": [
                 "html",
                 "</a>"
-            ]
+            ],
+            "t": "RawInline"
         }
     },
     {
         "type": "InlineNotRendered",
         "verbosity": "INFO",
         "contents": {
-            "t": "RawInline",
             "c": [
                 "html",
                 "<a name=\"Future-Work\">"
-            ]
+            ],
+            "t": "RawInline"
         }
     },
     {
         "type": "InlineNotRendered",
         "verbosity": "INFO",
         "contents": {
-            "t": "RawInline",
             "c": [
                 "html",
                 "</a>"
-            ]
+            ],
+            "t": "RawInline"
         }
     },
     {
         "type": "InlineNotRendered",
         "verbosity": "INFO",
         "contents": {
-            "t": "RawInline",
             "c": [
                 "html",
                 "<a name=\"Future-Work\">"
-            ]
+            ],
+            "t": "RawInline"
         }
     },
     {
         "type": "InlineNotRendered",
         "verbosity": "INFO",
         "contents": {
-            "t": "RawInline",
             "c": [
                 "html",
                 "</a>"
-            ]
+            ],
+            "t": "RawInline"
         }
     },
     {
         "type": "InlineNotRendered",
         "verbosity": "INFO",
         "contents": {
-            "t": "RawInline",
             "c": [
                 "html",
                 "<a name=\"Sensor-Measurements\">"
-            ]
+            ],
+            "t": "RawInline"
         }
     },
     {
         "type": "InlineNotRendered",
         "verbosity": "INFO",
         "contents": {
-            "t": "RawInline",
             "c": [
                 "html",
                 "</a>"
-            ]
+            ],
+            "t": "RawInline"
         }
     },
     {
         "type": "InlineNotRendered",
         "verbosity": "INFO",
         "contents": {
-            "t": "RawInline",
             "c": [
                 "html",
                 "<a name=\"Sensor-Measurements\">"
-            ]
+            ],
+            "t": "RawInline"
         }
     },
     {
         "type": "InlineNotRendered",
         "verbosity": "INFO",
         "contents": {
-            "t": "RawInline",
             "c": [
                 "html",
                 "</a>"
-            ]
+            ],
+            "t": "RawInline"
         }
     },
     {
         "type": "InlineNotRendered",
         "verbosity": "INFO",
         "contents": {
-            "t": "RawInline",
             "c": [
                 "html",
                 "<FRAME ID>"
-            ]
+            ],
+            "t": "RawInline"
         }
     },
     {
         "type": "BlockNotRendered",
         "verbosity": "INFO",
         "contents": {
-            "t": "RawBlock",
             "c": [
                 "html",
                 "<!-- Note: This should probably be moved to a more appropriate spot in documentation and not future work -->"
-            ]
+            ],
+            "t": "RawBlock"
         }
     },
     {
         "type": "BlockNotRendered",
         "verbosity": "INFO",
         "contents": {
-            "t": "RawBlock",
             "c": [
                 "html",
                 "<!-- -->"
-            ]
+            ],
+            "t": "RawBlock"
         }
     },
     {
         "type": "BlockNotRendered",
         "verbosity": "INFO",
         "contents": {
-            "t": "RawBlock",
             "c": [
                 "html",
                 "<!-- -->"
-            ]
+            ],
+            "t": "RawBlock"
         }
     },
     {
         "type": "BlockNotRendered",
         "verbosity": "INFO",
         "contents": {
-            "t": "RawBlock",
             "c": [
                 "html",
                 "<!---  AUTOMATICALLY GENERATED FILE. DONT EDIT THIS FILE DIRECTLY. EDIT thumbnail.sh INSTEAD -->"
-            ]
+            ],
+            "t": "RawBlock"
         }
+    },
+    {
+        "type": "MissingCharacter",
+        "verbosity": "WARNING",
+        "message": "There is no   (U+2002) (U+2002) in font [lmroman10-regular]:mapping=t"
+    },
+    {
+        "type": "MissingCharacter",
+        "verbosity": "WARNING",
+        "message": "There is no   (U+2002) (U+2002) in font [lmroman10-regular]:mapping=t"
+    },
+    {
+        "type": "MissingCharacter",
+        "verbosity": "WARNING",
+        "message": "There is no   (U+2002) (U+2002) in font [lmroman10-regular]:mapping=t"
+    },
+    {
+        "type": "MissingCharacter",
+        "verbosity": "WARNING",
+        "message": "There is no   (U+2002) (U+2002) in font [lmroman10-regular]:mapping=t"
     }
 ]

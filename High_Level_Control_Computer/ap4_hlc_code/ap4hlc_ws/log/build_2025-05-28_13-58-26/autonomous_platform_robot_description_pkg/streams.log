@@ -1,0 +1,74 @@
+[0.023s] Invoking command in '/root/ap4_hlc_docker_dir/ap4hlc_ws/build/autonomous_platform_robot_description_pkg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /root/ap4_hlc_docker_dir/ap4hlc_ws/src/autonomous_platform_robot_description_pkg -DCMAKE_INSTALL_PREFIX=/root/ap4_hlc_docker_dir/ap4hlc_ws/install/autonomous_platform_robot_description_pkg
+[0.730s] -- The C compiler identification is GNU 11.4.0
+[0.730s] -- The CXX compiler identification is GNU 11.4.0
+[0.730s] -- Detecting C compiler ABI info
+[0.730s] -- Detecting C compiler ABI info - done
+[0.730s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.730s] -- Detecting C compile features
+[0.730s] -- Detecting C compile features - done
+[0.730s] -- Detecting CXX compiler ABI info
+[0.730s] -- Detecting CXX compiler ABI info - done
+[0.730s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.730s] -- Detecting CXX compile features
+[0.730s] -- Detecting CXX compile features - done
+[0.730s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.730s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.731s] -- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.731s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.731s] -- Added test 'lint_cmake' to check CMake code style
+[0.731s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.731s] -- Added test 'xmllint' to check XML markup files
+[0.731s] -- Configuring done
+[0.731s] -- Generating done
+[0.731s] -- Build files have been written to: /root/ap4_hlc_docker_dir/ap4hlc_ws/build/autonomous_platform_robot_description_pkg
+[0.734s] Invoked command in '/root/ap4_hlc_docker_dir/ap4hlc_ws/build/autonomous_platform_robot_description_pkg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /root/ap4_hlc_docker_dir/ap4hlc_ws/src/autonomous_platform_robot_description_pkg -DCMAKE_INSTALL_PREFIX=/root/ap4_hlc_docker_dir/ap4hlc_ws/install/autonomous_platform_robot_description_pkg
+[0.734s] Invoking command in '/root/ap4_hlc_docker_dir/ap4hlc_ws/build/autonomous_platform_robot_description_pkg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /root/ap4_hlc_docker_dir/ap4hlc_ws/build/autonomous_platform_robot_description_pkg -- -j20 -l20
+[0.755s] Invoked command in '/root/ap4_hlc_docker_dir/ap4hlc_ws/build/autonomous_platform_robot_description_pkg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /root/ap4_hlc_docker_dir/ap4hlc_ws/build/autonomous_platform_robot_description_pkg -- -j20 -l20
+[0.761s] Invoking command in '/root/ap4_hlc_docker_dir/ap4hlc_ws/build/autonomous_platform_robot_description_pkg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /root/ap4_hlc_docker_dir/ap4hlc_ws/build/autonomous_platform_robot_description_pkg
+[0.765s] -- Install configuration: ""
+[0.766s] -- Installing: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/autonomous_platform_robot_description_pkg/share/autonomous_platform_robot_description_pkg/src
+[0.766s] -- Installing: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/autonomous_platform_robot_description_pkg/share/autonomous_platform_robot_description_pkg/src/description
+[0.766s] -- Installing: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/autonomous_platform_robot_description_pkg/share/autonomous_platform_robot_description_pkg/src/description/simple_digital_twin.urdf.xacro
+[0.766s] -- Installing: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/autonomous_platform_robot_description_pkg/share/autonomous_platform_robot_description_pkg/src/description/inertia_macros.xacro
+[0.766s] -- Installing: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/autonomous_platform_robot_description_pkg/share/autonomous_platform_robot_description_pkg/src/description/ap4_robot_description.urdf.xacro
+[0.766s] -- Installing: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/autonomous_platform_robot_description_pkg/share/autonomous_platform_robot_description_pkg/src/description/lidar.xacro
+[0.766s] -- Installing: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/autonomous_platform_robot_description_pkg/share/autonomous_platform_robot_description_pkg/src/description/control_simple_digital_twin.xacro
+[0.766s] -- Installing: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/autonomous_platform_robot_description_pkg/share/autonomous_platform_robot_description_pkg/src/description/imu.xacro
+[0.766s] -- Installing: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/autonomous_platform_robot_description_pkg/share/autonomous_platform_robot_description_pkg/launch
+[0.766s] -- Installing: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/autonomous_platform_robot_description_pkg/share/autonomous_platform_robot_description_pkg/launch/launch_robot.launch.py
+[0.766s] -- Installing: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/autonomous_platform_robot_description_pkg/share/autonomous_platform_robot_description_pkg/launch/launch_robot_simulation.launch.py
+[0.766s] -- Installing: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/autonomous_platform_robot_description_pkg/share/autonomous_platform_robot_description_pkg/rviz
+[0.766s] -- Installing: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/autonomous_platform_robot_description_pkg/share/autonomous_platform_robot_description_pkg/rviz/rviz_nav2.rviz
+[0.766s] -- Installing: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/autonomous_platform_robot_description_pkg/share/autonomous_platform_robot_description_pkg/worlds
+[0.766s] -- Installing: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/autonomous_platform_robot_description_pkg/share/autonomous_platform_robot_description_pkg/worlds/gocart.mtl
+[0.766s] -- Installing: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/autonomous_platform_robot_description_pkg/share/autonomous_platform_robot_description_pkg/worlds/example_world
+[0.767s] -- Installing: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/autonomous_platform_robot_description_pkg/share/autonomous_platform_robot_description_pkg/worlds/gocart.blend
+[0.786s] -- Installing: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/autonomous_platform_robot_description_pkg/share/autonomous_platform_robot_description_pkg/worlds/gocart.obj
+[0.786s] -- Installing: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/autonomous_platform_robot_description_pkg/share/autonomous_platform_robot_description_pkg/worlds/test_models
+[0.786s] -- Installing: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/autonomous_platform_robot_description_pkg/share/autonomous_platform_robot_description_pkg/worlds/test_models/model.config
+[0.786s] -- Installing: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/autonomous_platform_robot_description_pkg/share/autonomous_platform_robot_description_pkg/worlds/test_models/model.sdf
+[0.786s] -- Installing: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/autonomous_platform_robot_description_pkg/share/autonomous_platform_robot_description_pkg/worlds/gocartcentralen.world
+[0.786s] -- Installing: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/autonomous_platform_robot_description_pkg/share/autonomous_platform_robot_description_pkg/config
+[0.786s] -- Installing: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/autonomous_platform_robot_description_pkg/share/autonomous_platform_robot_description_pkg/config/ekf_imu.yaml
+[0.786s] -- Installing: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/autonomous_platform_robot_description_pkg/share/autonomous_platform_robot_description_pkg/config/mapper_params_online_async_simulation.yaml
+[0.786s] -- Installing: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/autonomous_platform_robot_description_pkg/share/autonomous_platform_robot_description_pkg/config/ekf.yaml
+[0.786s] -- Installing: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/autonomous_platform_robot_description_pkg/share/autonomous_platform_robot_description_pkg/config/nav2_config.yaml
+[0.787s] -- Installing: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/autonomous_platform_robot_description_pkg/share/autonomous_platform_robot_description_pkg/config/nav2_config_sim.yaml
+[0.787s] -- Installing: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/autonomous_platform_robot_description_pkg/share/autonomous_platform_robot_description_pkg/config/mapper_params_online_async.yaml
+[0.787s] -- Installing: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/autonomous_platform_robot_description_pkg/share/autonomous_platform_robot_description_pkg/config/gz_bridge.yaml
+[0.787s] -- Installing: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/autonomous_platform_robot_description_pkg/share/ament_index/resource_index/package_run_dependencies/autonomous_platform_robot_description_pkg
+[0.787s] -- Installing: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/autonomous_platform_robot_description_pkg/share/ament_index/resource_index/parent_prefix_path/autonomous_platform_robot_description_pkg
+[0.787s] -- Installing: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/autonomous_platform_robot_description_pkg/share/autonomous_platform_robot_description_pkg/environment/ament_prefix_path.sh
+[0.787s] -- Installing: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/autonomous_platform_robot_description_pkg/share/autonomous_platform_robot_description_pkg/environment/ament_prefix_path.dsv
+[0.787s] -- Installing: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/autonomous_platform_robot_description_pkg/share/autonomous_platform_robot_description_pkg/environment/path.sh
+[0.787s] -- Installing: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/autonomous_platform_robot_description_pkg/share/autonomous_platform_robot_description_pkg/environment/path.dsv
+[0.787s] -- Installing: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/autonomous_platform_robot_description_pkg/share/autonomous_platform_robot_description_pkg/local_setup.bash
+[0.787s] -- Installing: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/autonomous_platform_robot_description_pkg/share/autonomous_platform_robot_description_pkg/local_setup.sh
+[0.787s] -- Installing: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/autonomous_platform_robot_description_pkg/share/autonomous_platform_robot_description_pkg/local_setup.zsh
+[0.787s] -- Installing: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/autonomous_platform_robot_description_pkg/share/autonomous_platform_robot_description_pkg/local_setup.dsv
+[0.787s] -- Installing: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/autonomous_platform_robot_description_pkg/share/autonomous_platform_robot_description_pkg/package.dsv
+[0.787s] -- Installing: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/autonomous_platform_robot_description_pkg/share/ament_index/resource_index/packages/autonomous_platform_robot_description_pkg
+[0.787s] -- Installing: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/autonomous_platform_robot_description_pkg/share/autonomous_platform_robot_description_pkg/cmake/autonomous_platform_robot_description_pkgConfig.cmake
+[0.787s] -- Installing: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/autonomous_platform_robot_description_pkg/share/autonomous_platform_robot_description_pkg/cmake/autonomous_platform_robot_description_pkgConfig-version.cmake
+[0.787s] -- Installing: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/autonomous_platform_robot_description_pkg/share/autonomous_platform_robot_description_pkg/package.xml
+[0.796s] Invoked command in '/root/ap4_hlc_docker_dir/ap4hlc_ws/build/autonomous_platform_robot_description_pkg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /root/ap4_hlc_docker_dir/ap4hlc_ws/build/autonomous_platform_robot_description_pkg

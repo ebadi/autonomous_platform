@@ -102,8 +102,6 @@
               <ul>
                   <li class="toctree-l1"><a class="reference internal" href="../../High_Level_Control_Computer/">High Level Control Computer</a>
                   </li>
-                  <li class="toctree-l1"><a class="" href="../../High_Level_Control_Computer/HOW_TO_EXTEND.md">How to Extend</a>
-                  </li>
                   <li class="toctree-l1"><a class="reference internal" href="../../High_Level_Control_Computer/IMITATION_LEARNING/">Imitation Learning</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../../High_Level_Control_Computer/DONKEY_CAR_SETUP/">DonkeyCar simulator</a>
@@ -200,11 +198,11 @@
 <li><a href="">Embedded Microcontroller Sensors</a></li>
 </ul>
 <h3 id="software-functionality">Software functionality</h3>
-<p>If the sensor information already exists and you need to add new software functionality the general implementation steps are:</p>
+<p>If the sensor information already exists and you need to add new software functionality, the general implementation steps are:</p>
 <h3 id="sensors">Sensors</h3>
 <p>Sensors can be split up into two groups, sensors with a USB interface and sensors that require an embedded (microcontroller) interface. Integration of sensors that require them to be connected to the embedded ECU. How to add these on the ECU level is described in <code>CAN_Nodes_Microcontroller_Code/HOW_TO_EXTEND.md</code>.</p>
 <h3 id="usb-based-sensors">USB Based Sensors</h3>
-<p>If a sensors with a USB interface is to be added to autonomous platform then this can be done solely in <code>Hardware_Interface_Low_Level_Computer</code> without touching the embedded software. The general procedure would be.</p>
+<p>If a sensor with a USB interface is to be added to autonomous platform then this can be done solely in <code>Hardware_Interface_Low_Level_Computer</code> without touching the embedded software. The general procedure would be.</p>
 <ol>
 <li>Mount the sensor hardware on platform</li>
 <li>Connect USB to AP4 USB hub.</li>

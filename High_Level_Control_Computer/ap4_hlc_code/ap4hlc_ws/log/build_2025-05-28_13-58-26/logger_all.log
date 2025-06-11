@@ -1,0 +1,474 @@
+[0.088s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.088s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=20, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7b8677dfc6a0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7b8677dfc130>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7b8677dfc130>>, mixin_verb=('build',))
+[0.204s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.204s] INFO:colcon.colcon_metadata.package_discovery.colcon_meta:Using configuration from '/root/.colcon/metadata/default/Gazebo.meta'
+[0.205s] INFO:colcon.colcon_metadata.package_discovery.colcon_meta:Using configuration from '/root/.colcon/metadata/default/fastdds.meta'
+[0.205s] INFO:colcon.colcon_metadata.package_discovery.colcon_meta:Using configuration from '/root/.colcon/metadata/default/fastrtps.meta'
+[0.205s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.205s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.205s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.205s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.205s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.205s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/root/ap4_hlc_docker_dir/ap4hlc_ws'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomous_platform_robot_description_pkg) by extensions ['ignore', 'ignore_ament_install']
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomous_platform_robot_description_pkg) by extension 'ignore'
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomous_platform_robot_description_pkg) by extension 'ignore_ament_install'
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomous_platform_robot_description_pkg) by extensions ['colcon_pkg']
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomous_platform_robot_description_pkg) by extension 'colcon_pkg'
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomous_platform_robot_description_pkg) by extensions ['colcon_meta']
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomous_platform_robot_description_pkg) by extension 'colcon_meta'
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomous_platform_robot_description_pkg) by extensions ['ros']
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomous_platform_robot_description_pkg) by extension 'ros'
+[0.216s] DEBUG:colcon.colcon_core.package_identification:Package 'src/autonomous_platform_robot_description_pkg' with type 'ros.ament_cmake' and name 'autonomous_platform_robot_description_pkg'
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/high_level_control) by extensions ['ignore', 'ignore_ament_install']
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/high_level_control) by extension 'ignore'
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/high_level_control) by extension 'ignore_ament_install'
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/high_level_control) by extensions ['colcon_pkg']
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/high_level_control) by extension 'colcon_pkg'
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/high_level_control) by extensions ['colcon_meta']
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/high_level_control) by extension 'colcon_meta'
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/high_level_control) by extensions ['ros']
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/high_level_control) by extension 'ros'
+[0.217s] DEBUG:colcon.colcon_core.package_identification:Package 'src/high_level_control' with type 'ros.ament_cmake' and name 'high_level_control'
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/imitation_learning) by extensions ['ignore', 'ignore_ament_install']
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/imitation_learning) by extension 'ignore'
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/imitation_learning) by extension 'ignore_ament_install'
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/imitation_learning) by extensions ['colcon_pkg']
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/imitation_learning) by extension 'colcon_pkg'
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/imitation_learning) by extensions ['colcon_meta']
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/imitation_learning) by extension 'colcon_meta'
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/imitation_learning) by extensions ['ros']
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/imitation_learning) by extension 'ros'
+[0.218s] DEBUG:colcon.colcon_core.package_identification:Package 'src/imitation_learning' with type 'ros.ament_cmake' and name 'imitation_learning'
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(src/imu_pkg) by extensions ['ignore', 'ignore_ament_install']
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(src/imu_pkg) by extension 'ignore'
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(src/imu_pkg) by extension 'ignore_ament_install'
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(src/imu_pkg) by extensions ['colcon_pkg']
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(src/imu_pkg) by extension 'colcon_pkg'
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(src/imu_pkg) by extensions ['colcon_meta']
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(src/imu_pkg) by extension 'colcon_meta'
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(src/imu_pkg) by extensions ['ros']
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(src/imu_pkg) by extension 'ros'
+[0.218s] DEBUG:colcon.colcon_core.package_identification:Package 'src/imu_pkg' with type 'ros.ament_python' and name 'imu_pkg'
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(src/keyboard_control) by extensions ['ignore', 'ignore_ament_install']
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(src/keyboard_control) by extension 'ignore'
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(src/keyboard_control) by extension 'ignore_ament_install'
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(src/keyboard_control) by extensions ['colcon_pkg']
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(src/keyboard_control) by extension 'colcon_pkg'
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(src/keyboard_control) by extensions ['colcon_meta']
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(src/keyboard_control) by extension 'colcon_meta'
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(src/keyboard_control) by extensions ['ros']
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(src/keyboard_control) by extension 'ros'
+[0.219s] DEBUG:colcon.colcon_core.package_identification:Package 'src/keyboard_control' with type 'ros.ament_python' and name 'keyboard_control'
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(src/path_tracker) by extensions ['ignore', 'ignore_ament_install']
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(src/path_tracker) by extension 'ignore'
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(src/path_tracker) by extension 'ignore_ament_install'
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(src/path_tracker) by extensions ['colcon_pkg']
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(src/path_tracker) by extension 'colcon_pkg'
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(src/path_tracker) by extensions ['colcon_meta']
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(src/path_tracker) by extension 'colcon_meta'
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(src/path_tracker) by extensions ['ros']
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(src/path_tracker) by extension 'ros'
+[0.220s] DEBUG:colcon.colcon_core.package_identification:Package 'src/path_tracker' with type 'ros.ament_python' and name 'path_tracker'
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(src/twist_stamper) by extensions ['ignore', 'ignore_ament_install']
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(src/twist_stamper) by extension 'ignore'
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(src/twist_stamper) by extension 'ignore_ament_install'
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(src/twist_stamper) by extensions ['colcon_pkg']
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(src/twist_stamper) by extension 'colcon_pkg'
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(src/twist_stamper) by extensions ['colcon_meta']
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(src/twist_stamper) by extension 'colcon_meta'
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(src/twist_stamper) by extensions ['ros']
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(src/twist_stamper) by extension 'ros'
+[0.221s] DEBUG:colcon.colcon_core.package_identification:Package 'src/twist_stamper' with type 'ros.ament_python' and name 'twist_stamper'
+[0.221s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.221s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.221s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.221s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.221s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.240s] Level 5:colcon.colcon_core.verb:set package 'autonomous_platform_robot_description_pkg' build argument 'cmake_args' from command line to 'None'
+[0.240s] Level 5:colcon.colcon_core.verb:set package 'autonomous_platform_robot_description_pkg' build argument 'cmake_target' from command line to 'None'
+[0.240s] Level 5:colcon.colcon_core.verb:set package 'autonomous_platform_robot_description_pkg' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.240s] Level 5:colcon.colcon_core.verb:set package 'autonomous_platform_robot_description_pkg' build argument 'cmake_clean_cache' from command line to 'False'
+[0.240s] Level 5:colcon.colcon_core.verb:set package 'autonomous_platform_robot_description_pkg' build argument 'cmake_clean_first' from command line to 'False'
+[0.240s] Level 5:colcon.colcon_core.verb:set package 'autonomous_platform_robot_description_pkg' build argument 'cmake_force_configure' from command line to 'False'
+[0.240s] Level 5:colcon.colcon_core.verb:set package 'autonomous_platform_robot_description_pkg' build argument 'ament_cmake_args' from command line to 'None'
+[0.240s] Level 5:colcon.colcon_core.verb:set package 'autonomous_platform_robot_description_pkg' build argument 'catkin_cmake_args' from command line to 'None'
+[0.240s] Level 5:colcon.colcon_core.verb:set package 'autonomous_platform_robot_description_pkg' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.240s] DEBUG:colcon.colcon_core.verb:Building package 'autonomous_platform_robot_description_pkg' with the following arguments: {'ament_cmake_args': None, 'build_base': '/root/ap4_hlc_docker_dir/ap4hlc_ws/build/autonomous_platform_robot_description_pkg', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/autonomous_platform_robot_description_pkg', 'merge_install': False, 'path': '/root/ap4_hlc_docker_dir/ap4hlc_ws/src/autonomous_platform_robot_description_pkg', 'symlink_install': False, 'test_result_base': None}
+[0.240s] Level 5:colcon.colcon_core.verb:set package 'high_level_control' build argument 'cmake_args' from command line to 'None'
+[0.240s] Level 5:colcon.colcon_core.verb:set package 'high_level_control' build argument 'cmake_target' from command line to 'None'
+[0.240s] Level 5:colcon.colcon_core.verb:set package 'high_level_control' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.241s] Level 5:colcon.colcon_core.verb:set package 'high_level_control' build argument 'cmake_clean_cache' from command line to 'False'
+[0.241s] Level 5:colcon.colcon_core.verb:set package 'high_level_control' build argument 'cmake_clean_first' from command line to 'False'
+[0.241s] Level 5:colcon.colcon_core.verb:set package 'high_level_control' build argument 'cmake_force_configure' from command line to 'False'
+[0.241s] Level 5:colcon.colcon_core.verb:set package 'high_level_control' build argument 'ament_cmake_args' from command line to 'None'
+[0.241s] Level 5:colcon.colcon_core.verb:set package 'high_level_control' build argument 'catkin_cmake_args' from command line to 'None'
+[0.241s] Level 5:colcon.colcon_core.verb:set package 'high_level_control' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.241s] DEBUG:colcon.colcon_core.verb:Building package 'high_level_control' with the following arguments: {'ament_cmake_args': None, 'build_base': '/root/ap4_hlc_docker_dir/ap4hlc_ws/build/high_level_control', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/high_level_control', 'merge_install': False, 'path': '/root/ap4_hlc_docker_dir/ap4hlc_ws/src/high_level_control', 'symlink_install': False, 'test_result_base': None}
+[0.241s] Level 5:colcon.colcon_core.verb:set package 'imitation_learning' build argument 'cmake_args' from command line to 'None'
+[0.241s] Level 5:colcon.colcon_core.verb:set package 'imitation_learning' build argument 'cmake_target' from command line to 'None'
+[0.241s] Level 5:colcon.colcon_core.verb:set package 'imitation_learning' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.241s] Level 5:colcon.colcon_core.verb:set package 'imitation_learning' build argument 'cmake_clean_cache' from command line to 'False'
+[0.241s] Level 5:colcon.colcon_core.verb:set package 'imitation_learning' build argument 'cmake_clean_first' from command line to 'False'
+[0.241s] Level 5:colcon.colcon_core.verb:set package 'imitation_learning' build argument 'cmake_force_configure' from command line to 'False'
+[0.241s] Level 5:colcon.colcon_core.verb:set package 'imitation_learning' build argument 'ament_cmake_args' from command line to 'None'
+[0.241s] Level 5:colcon.colcon_core.verb:set package 'imitation_learning' build argument 'catkin_cmake_args' from command line to 'None'
+[0.241s] Level 5:colcon.colcon_core.verb:set package 'imitation_learning' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.241s] DEBUG:colcon.colcon_core.verb:Building package 'imitation_learning' with the following arguments: {'ament_cmake_args': None, 'build_base': '/root/ap4_hlc_docker_dir/ap4hlc_ws/build/imitation_learning', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/imitation_learning', 'merge_install': False, 'path': '/root/ap4_hlc_docker_dir/ap4hlc_ws/src/imitation_learning', 'symlink_install': False, 'test_result_base': None}
+[0.241s] Level 5:colcon.colcon_core.verb:set package 'imu_pkg' build argument 'cmake_args' from command line to 'None'
+[0.241s] Level 5:colcon.colcon_core.verb:set package 'imu_pkg' build argument 'cmake_target' from command line to 'None'
+[0.241s] Level 5:colcon.colcon_core.verb:set package 'imu_pkg' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.241s] Level 5:colcon.colcon_core.verb:set package 'imu_pkg' build argument 'cmake_clean_cache' from command line to 'False'
+[0.241s] Level 5:colcon.colcon_core.verb:set package 'imu_pkg' build argument 'cmake_clean_first' from command line to 'False'
+[0.241s] Level 5:colcon.colcon_core.verb:set package 'imu_pkg' build argument 'cmake_force_configure' from command line to 'False'
+[0.241s] Level 5:colcon.colcon_core.verb:set package 'imu_pkg' build argument 'ament_cmake_args' from command line to 'None'
+[0.241s] Level 5:colcon.colcon_core.verb:set package 'imu_pkg' build argument 'catkin_cmake_args' from command line to 'None'
+[0.241s] Level 5:colcon.colcon_core.verb:set package 'imu_pkg' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.241s] DEBUG:colcon.colcon_core.verb:Building package 'imu_pkg' with the following arguments: {'ament_cmake_args': None, 'build_base': '/root/ap4_hlc_docker_dir/ap4hlc_ws/build/imu_pkg', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/imu_pkg', 'merge_install': False, 'path': '/root/ap4_hlc_docker_dir/ap4hlc_ws/src/imu_pkg', 'symlink_install': False, 'test_result_base': None}
+[0.242s] Level 5:colcon.colcon_core.verb:set package 'keyboard_control' build argument 'cmake_args' from command line to 'None'
+[0.242s] Level 5:colcon.colcon_core.verb:set package 'keyboard_control' build argument 'cmake_target' from command line to 'None'
+[0.242s] Level 5:colcon.colcon_core.verb:set package 'keyboard_control' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.242s] Level 5:colcon.colcon_core.verb:set package 'keyboard_control' build argument 'cmake_clean_cache' from command line to 'False'
+[0.242s] Level 5:colcon.colcon_core.verb:set package 'keyboard_control' build argument 'cmake_clean_first' from command line to 'False'
+[0.242s] Level 5:colcon.colcon_core.verb:set package 'keyboard_control' build argument 'cmake_force_configure' from command line to 'False'
+[0.242s] Level 5:colcon.colcon_core.verb:set package 'keyboard_control' build argument 'ament_cmake_args' from command line to 'None'
+[0.242s] Level 5:colcon.colcon_core.verb:set package 'keyboard_control' build argument 'catkin_cmake_args' from command line to 'None'
+[0.242s] Level 5:colcon.colcon_core.verb:set package 'keyboard_control' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.242s] DEBUG:colcon.colcon_core.verb:Building package 'keyboard_control' with the following arguments: {'ament_cmake_args': None, 'build_base': '/root/ap4_hlc_docker_dir/ap4hlc_ws/build/keyboard_control', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/keyboard_control', 'merge_install': False, 'path': '/root/ap4_hlc_docker_dir/ap4hlc_ws/src/keyboard_control', 'symlink_install': False, 'test_result_base': None}
+[0.242s] Level 5:colcon.colcon_core.verb:set package 'path_tracker' build argument 'cmake_args' from command line to 'None'
+[0.242s] Level 5:colcon.colcon_core.verb:set package 'path_tracker' build argument 'cmake_target' from command line to 'None'
+[0.242s] Level 5:colcon.colcon_core.verb:set package 'path_tracker' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.242s] Level 5:colcon.colcon_core.verb:set package 'path_tracker' build argument 'cmake_clean_cache' from command line to 'False'
+[0.242s] Level 5:colcon.colcon_core.verb:set package 'path_tracker' build argument 'cmake_clean_first' from command line to 'False'
+[0.242s] Level 5:colcon.colcon_core.verb:set package 'path_tracker' build argument 'cmake_force_configure' from command line to 'False'
+[0.242s] Level 5:colcon.colcon_core.verb:set package 'path_tracker' build argument 'ament_cmake_args' from command line to 'None'
+[0.242s] Level 5:colcon.colcon_core.verb:set package 'path_tracker' build argument 'catkin_cmake_args' from command line to 'None'
+[0.242s] Level 5:colcon.colcon_core.verb:set package 'path_tracker' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.242s] DEBUG:colcon.colcon_core.verb:Building package 'path_tracker' with the following arguments: {'ament_cmake_args': None, 'build_base': '/root/ap4_hlc_docker_dir/ap4hlc_ws/build/path_tracker', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/path_tracker', 'merge_install': False, 'path': '/root/ap4_hlc_docker_dir/ap4hlc_ws/src/path_tracker', 'symlink_install': False, 'test_result_base': None}
+[0.243s] Level 5:colcon.colcon_core.verb:set package 'twist_stamper' build argument 'cmake_args' from command line to 'None'
+[0.243s] Level 5:colcon.colcon_core.verb:set package 'twist_stamper' build argument 'cmake_target' from command line to 'None'
+[0.243s] Level 5:colcon.colcon_core.verb:set package 'twist_stamper' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.243s] Level 5:colcon.colcon_core.verb:set package 'twist_stamper' build argument 'cmake_clean_cache' from command line to 'False'
+[0.243s] Level 5:colcon.colcon_core.verb:set package 'twist_stamper' build argument 'cmake_clean_first' from command line to 'False'
+[0.243s] Level 5:colcon.colcon_core.verb:set package 'twist_stamper' build argument 'cmake_force_configure' from command line to 'False'
+[0.243s] Level 5:colcon.colcon_core.verb:set package 'twist_stamper' build argument 'ament_cmake_args' from command line to 'None'
+[0.243s] Level 5:colcon.colcon_core.verb:set package 'twist_stamper' build argument 'catkin_cmake_args' from command line to 'None'
+[0.243s] Level 5:colcon.colcon_core.verb:set package 'twist_stamper' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.243s] DEBUG:colcon.colcon_core.verb:Building package 'twist_stamper' with the following arguments: {'ament_cmake_args': None, 'build_base': '/root/ap4_hlc_docker_dir/ap4hlc_ws/build/twist_stamper', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/twist_stamper', 'merge_install': False, 'path': '/root/ap4_hlc_docker_dir/ap4hlc_ws/src/twist_stamper', 'symlink_install': False, 'test_result_base': None}
+[0.243s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.243s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.244s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/root/ap4_hlc_docker_dir/ap4hlc_ws/src/autonomous_platform_robot_description_pkg' with build type 'ament_cmake'
+[0.244s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/root/ap4_hlc_docker_dir/ap4hlc_ws/src/autonomous_platform_robot_description_pkg'
+[0.245s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.245s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.245s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.248s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/root/ap4_hlc_docker_dir/ap4hlc_ws/src/high_level_control' with build type 'ament_cmake'
+[0.248s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/root/ap4_hlc_docker_dir/ap4hlc_ws/src/high_level_control'
+[0.248s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.248s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.250s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/root/ap4_hlc_docker_dir/ap4hlc_ws/src/imitation_learning' with build type 'ament_cmake'
+[0.250s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/root/ap4_hlc_docker_dir/ap4hlc_ws/src/imitation_learning'
+[0.250s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.250s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.252s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/root/ap4_hlc_docker_dir/ap4hlc_ws/src/imu_pkg' with build type 'ament_python'
+[0.253s] Level 1:colcon.colcon_core.shell:create_environment_hook('imu_pkg', 'ament_prefix_path')
+[0.253s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/imu_pkg/share/imu_pkg/hook/ament_prefix_path.ps1'
+[0.253s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/imu_pkg/share/imu_pkg/hook/ament_prefix_path.dsv'
+[0.253s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/imu_pkg/share/imu_pkg/hook/ament_prefix_path.sh'
+[0.254s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.254s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.256s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/root/ap4_hlc_docker_dir/ap4hlc_ws/src/keyboard_control' with build type 'ament_python'
+[0.256s] Level 1:colcon.colcon_core.shell:create_environment_hook('keyboard_control', 'ament_prefix_path')
+[0.256s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/keyboard_control/share/keyboard_control/hook/ament_prefix_path.ps1'
+[0.256s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/keyboard_control/share/keyboard_control/hook/ament_prefix_path.dsv'
+[0.257s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/keyboard_control/share/keyboard_control/hook/ament_prefix_path.sh'
+[0.257s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.257s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.259s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/root/ap4_hlc_docker_dir/ap4hlc_ws/src/path_tracker' with build type 'ament_python'
+[0.259s] Level 1:colcon.colcon_core.shell:create_environment_hook('path_tracker', 'ament_prefix_path')
+[0.259s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/path_tracker/share/path_tracker/hook/ament_prefix_path.ps1'
+[0.259s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/path_tracker/share/path_tracker/hook/ament_prefix_path.dsv'
+[0.260s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/path_tracker/share/path_tracker/hook/ament_prefix_path.sh'
+[0.260s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.260s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.262s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/root/ap4_hlc_docker_dir/ap4hlc_ws/src/twist_stamper' with build type 'ament_python'
+[0.262s] Level 1:colcon.colcon_core.shell:create_environment_hook('twist_stamper', 'ament_prefix_path')
+[0.262s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/twist_stamper/share/twist_stamper/hook/ament_prefix_path.ps1'
+[0.262s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/twist_stamper/share/twist_stamper/hook/ament_prefix_path.dsv'
+[0.263s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/twist_stamper/share/twist_stamper/hook/ament_prefix_path.sh'
+[0.263s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.263s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.267s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/ap4_hlc_docker_dir/ap4hlc_ws/build/autonomous_platform_robot_description_pkg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /root/ap4_hlc_docker_dir/ap4hlc_ws/src/autonomous_platform_robot_description_pkg -DCMAKE_INSTALL_PREFIX=/root/ap4_hlc_docker_dir/ap4hlc_ws/install/autonomous_platform_robot_description_pkg
+[0.268s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/ap4_hlc_docker_dir/ap4hlc_ws/build/high_level_control': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /root/ap4_hlc_docker_dir/ap4hlc_ws/src/high_level_control -DCMAKE_INSTALL_PREFIX=/root/ap4_hlc_docker_dir/ap4hlc_ws/install/high_level_control
+[0.269s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/ap4_hlc_docker_dir/ap4hlc_ws/build/imitation_learning': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /root/ap4_hlc_docker_dir/ap4hlc_ws/src/imitation_learning -DCMAKE_INSTALL_PREFIX=/root/ap4_hlc_docker_dir/ap4hlc_ws/install/imitation_learning
+[0.445s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/root/ap4_hlc_docker_dir/ap4hlc_ws/src/imu_pkg'
+[0.445s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.445s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.622s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/root/ap4_hlc_docker_dir/ap4hlc_ws/src/keyboard_control'
+[0.622s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.622s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.797s] WARNING:colcon.colcon_ros.task.ament_python.build:Package 'path_tracker' doesn't explicitly install a marker in the package index (colcon-ros currently does it implicitly but that fallback will be removed in the future)
+[0.797s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/root/ap4_hlc_docker_dir/ap4hlc_ws/src/path_tracker'
+[0.797s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.797s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.970s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/root/ap4_hlc_docker_dir/ap4hlc_ws/src/twist_stamper'
+[0.970s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.970s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.978s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/ap4_hlc_docker_dir/ap4hlc_ws/build/autonomous_platform_robot_description_pkg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /root/ap4_hlc_docker_dir/ap4hlc_ws/src/autonomous_platform_robot_description_pkg -DCMAKE_INSTALL_PREFIX=/root/ap4_hlc_docker_dir/ap4hlc_ws/install/autonomous_platform_robot_description_pkg
+[0.978s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/ap4_hlc_docker_dir/ap4hlc_ws/build/autonomous_platform_robot_description_pkg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /root/ap4_hlc_docker_dir/ap4hlc_ws/build/autonomous_platform_robot_description_pkg -- -j20 -l20
+[0.978s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/ap4_hlc_docker_dir/ap4hlc_ws/build/high_level_control' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /root/ap4_hlc_docker_dir/ap4hlc_ws/src/high_level_control -DCMAKE_INSTALL_PREFIX=/root/ap4_hlc_docker_dir/ap4hlc_ws/install/high_level_control
+[0.978s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/ap4_hlc_docker_dir/ap4hlc_ws/build/high_level_control': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /root/ap4_hlc_docker_dir/ap4hlc_ws/build/high_level_control -- -j20 -l20
+[0.978s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/ap4_hlc_docker_dir/ap4hlc_ws/build/imitation_learning' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /root/ap4_hlc_docker_dir/ap4hlc_ws/src/imitation_learning -DCMAKE_INSTALL_PREFIX=/root/ap4_hlc_docker_dir/ap4hlc_ws/install/imitation_learning
+[0.979s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/ap4_hlc_docker_dir/ap4hlc_ws/build/imitation_learning': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /root/ap4_hlc_docker_dir/ap4hlc_ws/build/imitation_learning -- -j20 -l20
+[0.999s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/ap4_hlc_docker_dir/ap4hlc_ws/build/autonomous_platform_robot_description_pkg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /root/ap4_hlc_docker_dir/ap4hlc_ws/build/autonomous_platform_robot_description_pkg -- -j20 -l20
+[1.005s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/ap4_hlc_docker_dir/ap4hlc_ws/build/autonomous_platform_robot_description_pkg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /root/ap4_hlc_docker_dir/ap4hlc_ws/build/autonomous_platform_robot_description_pkg
+[1.005s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/ap4_hlc_docker_dir/ap4hlc_ws/build/high_level_control' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /root/ap4_hlc_docker_dir/ap4hlc_ws/build/high_level_control -- -j20 -l20
+[1.006s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/ap4_hlc_docker_dir/ap4hlc_ws/build/high_level_control': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /root/ap4_hlc_docker_dir/ap4hlc_ws/build/high_level_control
+[1.007s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/ap4_hlc_docker_dir/ap4hlc_ws/build/imitation_learning' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /root/ap4_hlc_docker_dir/ap4hlc_ws/build/imitation_learning -- -j20 -l20
+[1.007s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/ap4_hlc_docker_dir/ap4hlc_ws/build/imitation_learning': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /root/ap4_hlc_docker_dir/ap4hlc_ws/build/imitation_learning
+[1.014s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(high_level_control)
+[1.014s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/ap4_hlc_docker_dir/ap4hlc_ws/build/high_level_control' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /root/ap4_hlc_docker_dir/ap4hlc_ws/build/high_level_control
+[1.017s] Level 1:colcon.colcon_core.environment:checking '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/high_level_control' for CMake module files
+[1.017s] Level 1:colcon.colcon_core.environment:checking '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/high_level_control' for CMake config files
+[1.018s] Level 1:colcon.colcon_core.shell:create_environment_hook('high_level_control', 'cmake_prefix_path')
+[1.018s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/high_level_control/share/high_level_control/hook/cmake_prefix_path.ps1'
+[1.019s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/high_level_control/share/high_level_control/hook/cmake_prefix_path.dsv'
+[1.019s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/high_level_control/share/high_level_control/hook/cmake_prefix_path.sh'
+[1.020s] Level 1:colcon.colcon_core.environment:checking '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/high_level_control/lib'
+[1.020s] Level 1:colcon.colcon_core.environment:checking '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/high_level_control/bin'
+[1.020s] Level 1:colcon.colcon_core.environment:checking '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/high_level_control/lib/pkgconfig/high_level_control.pc'
+[1.020s] Level 1:colcon.colcon_core.environment:checking '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/high_level_control/lib/python3.10/site-packages'
+[1.021s] Level 1:colcon.colcon_core.environment:checking '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/high_level_control/bin'
+[1.021s] INFO:colcon.colcon_core.shell:Creating package script '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/high_level_control/share/high_level_control/package.ps1'
+[1.022s] INFO:colcon.colcon_core.shell:Creating package descriptor '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/high_level_control/share/high_level_control/package.dsv'
+[1.022s] INFO:colcon.colcon_core.shell:Creating package script '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/high_level_control/share/high_level_control/package.sh'
+[1.023s] INFO:colcon.colcon_core.shell:Creating package script '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/high_level_control/share/high_level_control/package.bash'
+[1.024s] INFO:colcon.colcon_core.shell:Creating package script '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/high_level_control/share/high_level_control/package.zsh'
+[1.024s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/root/ap4_hlc_docker_dir/ap4hlc_ws/install/high_level_control/share/colcon-core/packages/high_level_control)
+[1.025s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(high_level_control)
+[1.025s] Level 1:colcon.colcon_core.environment:checking '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/high_level_control' for CMake module files
+[1.025s] Level 1:colcon.colcon_core.environment:checking '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/high_level_control' for CMake config files
+[1.026s] Level 1:colcon.colcon_core.shell:create_environment_hook('high_level_control', 'cmake_prefix_path')
+[1.026s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/high_level_control/share/high_level_control/hook/cmake_prefix_path.ps1'
+[1.026s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/high_level_control/share/high_level_control/hook/cmake_prefix_path.dsv'
+[1.026s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/high_level_control/share/high_level_control/hook/cmake_prefix_path.sh'
+[1.027s] Level 1:colcon.colcon_core.environment:checking '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/high_level_control/lib'
+[1.027s] Level 1:colcon.colcon_core.environment:checking '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/high_level_control/bin'
+[1.027s] Level 1:colcon.colcon_core.environment:checking '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/high_level_control/lib/pkgconfig/high_level_control.pc'
+[1.027s] Level 1:colcon.colcon_core.environment:checking '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/high_level_control/lib/python3.10/site-packages'
+[1.027s] Level 1:colcon.colcon_core.environment:checking '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/high_level_control/bin'
+[1.027s] INFO:colcon.colcon_core.shell:Creating package script '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/high_level_control/share/high_level_control/package.ps1'
+[1.027s] INFO:colcon.colcon_core.shell:Creating package descriptor '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/high_level_control/share/high_level_control/package.dsv'
+[1.028s] INFO:colcon.colcon_core.shell:Creating package script '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/high_level_control/share/high_level_control/package.sh'
+[1.028s] INFO:colcon.colcon_core.shell:Creating package script '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/high_level_control/share/high_level_control/package.bash'
+[1.028s] INFO:colcon.colcon_core.shell:Creating package script '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/high_level_control/share/high_level_control/package.zsh'
+[1.029s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/root/ap4_hlc_docker_dir/ap4hlc_ws/install/high_level_control/share/colcon-core/packages/high_level_control)
+[1.029s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(imitation_learning)
+[1.030s] Level 1:colcon.colcon_core.environment:checking '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/imitation_learning' for CMake module files
+[1.031s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/ap4_hlc_docker_dir/ap4hlc_ws/build/imitation_learning' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /root/ap4_hlc_docker_dir/ap4hlc_ws/build/imitation_learning
+[1.031s] Level 1:colcon.colcon_core.environment:checking '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/imitation_learning' for CMake config files
+[1.031s] Level 1:colcon.colcon_core.shell:create_environment_hook('imitation_learning', 'cmake_prefix_path')
+[1.032s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/imitation_learning/share/imitation_learning/hook/cmake_prefix_path.ps1'
+[1.032s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/imitation_learning/share/imitation_learning/hook/cmake_prefix_path.dsv'
+[1.032s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/imitation_learning/share/imitation_learning/hook/cmake_prefix_path.sh'
+[1.032s] Level 1:colcon.colcon_core.environment:checking '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/imitation_learning/lib'
+[1.032s] Level 1:colcon.colcon_core.environment:checking '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/imitation_learning/bin'
+[1.033s] Level 1:colcon.colcon_core.environment:checking '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/imitation_learning/lib/pkgconfig/imitation_learning.pc'
+[1.033s] Level 1:colcon.colcon_core.environment:checking '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/imitation_learning/lib/python3.10/site-packages'
+[1.033s] Level 1:colcon.colcon_core.environment:checking '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/imitation_learning/bin'
+[1.033s] INFO:colcon.colcon_core.shell:Creating package script '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/imitation_learning/share/imitation_learning/package.ps1'
+[1.033s] INFO:colcon.colcon_core.shell:Creating package descriptor '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/imitation_learning/share/imitation_learning/package.dsv'
+[1.034s] INFO:colcon.colcon_core.shell:Creating package script '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/imitation_learning/share/imitation_learning/package.sh'
+[1.034s] INFO:colcon.colcon_core.shell:Creating package script '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/imitation_learning/share/imitation_learning/package.bash'
+[1.034s] INFO:colcon.colcon_core.shell:Creating package script '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/imitation_learning/share/imitation_learning/package.zsh'
+[1.034s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/root/ap4_hlc_docker_dir/ap4hlc_ws/install/imitation_learning/share/colcon-core/packages/imitation_learning)
+[1.035s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(imitation_learning)
+[1.035s] Level 1:colcon.colcon_core.environment:checking '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/imitation_learning' for CMake module files
+[1.035s] Level 1:colcon.colcon_core.environment:checking '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/imitation_learning' for CMake config files
+[1.035s] Level 1:colcon.colcon_core.shell:create_environment_hook('imitation_learning', 'cmake_prefix_path')
+[1.035s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/imitation_learning/share/imitation_learning/hook/cmake_prefix_path.ps1'
+[1.036s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/imitation_learning/share/imitation_learning/hook/cmake_prefix_path.dsv'
+[1.036s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/imitation_learning/share/imitation_learning/hook/cmake_prefix_path.sh'
+[1.036s] Level 1:colcon.colcon_core.environment:checking '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/imitation_learning/lib'
+[1.036s] Level 1:colcon.colcon_core.environment:checking '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/imitation_learning/bin'
+[1.036s] Level 1:colcon.colcon_core.environment:checking '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/imitation_learning/lib/pkgconfig/imitation_learning.pc'
+[1.037s] Level 1:colcon.colcon_core.environment:checking '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/imitation_learning/lib/python3.10/site-packages'
+[1.037s] Level 1:colcon.colcon_core.environment:checking '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/imitation_learning/bin'
+[1.037s] INFO:colcon.colcon_core.shell:Creating package script '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/imitation_learning/share/imitation_learning/package.ps1'
+[1.037s] INFO:colcon.colcon_core.shell:Creating package descriptor '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/imitation_learning/share/imitation_learning/package.dsv'
+[1.038s] INFO:colcon.colcon_core.shell:Creating package script '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/imitation_learning/share/imitation_learning/package.sh'
+[1.038s] INFO:colcon.colcon_core.shell:Creating package script '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/imitation_learning/share/imitation_learning/package.bash'
+[1.038s] INFO:colcon.colcon_core.shell:Creating package script '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/imitation_learning/share/imitation_learning/package.zsh'
+[1.038s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/root/ap4_hlc_docker_dir/ap4hlc_ws/install/imitation_learning/share/colcon-core/packages/imitation_learning)
+[1.039s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(autonomous_platform_robot_description_pkg)
+[1.039s] Level 1:colcon.colcon_core.environment:checking '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/autonomous_platform_robot_description_pkg' for CMake module files
+[1.039s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/ap4_hlc_docker_dir/ap4hlc_ws/build/autonomous_platform_robot_description_pkg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /root/ap4_hlc_docker_dir/ap4hlc_ws/build/autonomous_platform_robot_description_pkg
+[1.039s] Level 1:colcon.colcon_core.environment:checking '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/autonomous_platform_robot_description_pkg' for CMake config files
+[1.040s] Level 1:colcon.colcon_core.shell:create_environment_hook('autonomous_platform_robot_description_pkg', 'cmake_prefix_path')
+[1.040s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/autonomous_platform_robot_description_pkg/share/autonomous_platform_robot_description_pkg/hook/cmake_prefix_path.ps1'
+[1.040s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/autonomous_platform_robot_description_pkg/share/autonomous_platform_robot_description_pkg/hook/cmake_prefix_path.dsv'
+[1.040s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/autonomous_platform_robot_description_pkg/share/autonomous_platform_robot_description_pkg/hook/cmake_prefix_path.sh'
+[1.041s] Level 1:colcon.colcon_core.environment:checking '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/autonomous_platform_robot_description_pkg/bin'
+[1.041s] Level 1:colcon.colcon_core.environment:checking '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/autonomous_platform_robot_description_pkg/lib/pkgconfig/autonomous_platform_robot_description_pkg.pc'
+[1.041s] Level 1:colcon.colcon_core.environment:checking '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/autonomous_platform_robot_description_pkg/lib/python3.10/site-packages'
+[1.041s] Level 1:colcon.colcon_core.environment:checking '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/autonomous_platform_robot_description_pkg/bin'
+[1.041s] INFO:colcon.colcon_core.shell:Creating package script '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/autonomous_platform_robot_description_pkg/share/autonomous_platform_robot_description_pkg/package.ps1'
+[1.042s] INFO:colcon.colcon_core.shell:Creating package descriptor '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/autonomous_platform_robot_description_pkg/share/autonomous_platform_robot_description_pkg/package.dsv'
+[1.042s] INFO:colcon.colcon_core.shell:Creating package script '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/autonomous_platform_robot_description_pkg/share/autonomous_platform_robot_description_pkg/package.sh'
+[1.042s] INFO:colcon.colcon_core.shell:Creating package script '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/autonomous_platform_robot_description_pkg/share/autonomous_platform_robot_description_pkg/package.bash'
+[1.042s] INFO:colcon.colcon_core.shell:Creating package script '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/autonomous_platform_robot_description_pkg/share/autonomous_platform_robot_description_pkg/package.zsh'
+[1.042s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/root/ap4_hlc_docker_dir/ap4hlc_ws/install/autonomous_platform_robot_description_pkg/share/colcon-core/packages/autonomous_platform_robot_description_pkg)
+[1.043s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(autonomous_platform_robot_description_pkg)
+[1.043s] Level 1:colcon.colcon_core.environment:checking '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/autonomous_platform_robot_description_pkg' for CMake module files
+[1.043s] Level 1:colcon.colcon_core.environment:checking '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/autonomous_platform_robot_description_pkg' for CMake config files
+[1.044s] Level 1:colcon.colcon_core.shell:create_environment_hook('autonomous_platform_robot_description_pkg', 'cmake_prefix_path')
+[1.044s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/autonomous_platform_robot_description_pkg/share/autonomous_platform_robot_description_pkg/hook/cmake_prefix_path.ps1'
+[1.044s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/autonomous_platform_robot_description_pkg/share/autonomous_platform_robot_description_pkg/hook/cmake_prefix_path.dsv'
+[1.044s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/autonomous_platform_robot_description_pkg/share/autonomous_platform_robot_description_pkg/hook/cmake_prefix_path.sh'
+[1.045s] Level 1:colcon.colcon_core.environment:checking '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/autonomous_platform_robot_description_pkg/bin'
+[1.045s] Level 1:colcon.colcon_core.environment:checking '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/autonomous_platform_robot_description_pkg/lib/pkgconfig/autonomous_platform_robot_description_pkg.pc'
+[1.045s] Level 1:colcon.colcon_core.environment:checking '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/autonomous_platform_robot_description_pkg/lib/python3.10/site-packages'
+[1.045s] Level 1:colcon.colcon_core.environment:checking '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/autonomous_platform_robot_description_pkg/bin'
+[1.045s] INFO:colcon.colcon_core.shell:Creating package script '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/autonomous_platform_robot_description_pkg/share/autonomous_platform_robot_description_pkg/package.ps1'
+[1.045s] INFO:colcon.colcon_core.shell:Creating package descriptor '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/autonomous_platform_robot_description_pkg/share/autonomous_platform_robot_description_pkg/package.dsv'
+[1.046s] INFO:colcon.colcon_core.shell:Creating package script '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/autonomous_platform_robot_description_pkg/share/autonomous_platform_robot_description_pkg/package.sh'
+[1.046s] INFO:colcon.colcon_core.shell:Creating package script '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/autonomous_platform_robot_description_pkg/share/autonomous_platform_robot_description_pkg/package.bash'
+[1.046s] INFO:colcon.colcon_core.shell:Creating package script '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/autonomous_platform_robot_description_pkg/share/autonomous_platform_robot_description_pkg/package.zsh'
+[1.047s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/root/ap4_hlc_docker_dir/ap4hlc_ws/install/autonomous_platform_robot_description_pkg/share/colcon-core/packages/autonomous_platform_robot_description_pkg)
+[1.216s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/ap4_hlc_docker_dir/ap4hlc_ws/src/imu_pkg': PYTHONPATH=/root/ap4_hlc_docker_dir/ap4hlc_ws/build/imu_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/root/ap4_hlc_docker_dir/ap4hlc_ws/install/imu_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/imu_pkg build --build-base /root/ap4_hlc_docker_dir/ap4hlc_ws/build/imu_pkg/build install --record /root/ap4_hlc_docker_dir/ap4hlc_ws/build/imu_pkg/install.log --single-version-externally-managed install_data
+[1.222s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/ap4_hlc_docker_dir/ap4hlc_ws/src/twist_stamper': PYTHONPATH=/root/ap4_hlc_docker_dir/ap4hlc_ws/build/twist_stamper/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/root/ap4_hlc_docker_dir/ap4hlc_ws/install/twist_stamper/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/twist_stamper build --build-base /root/ap4_hlc_docker_dir/ap4hlc_ws/build/twist_stamper/build install --record /root/ap4_hlc_docker_dir/ap4hlc_ws/build/twist_stamper/install.log --single-version-externally-managed install_data
+[1.223s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/ap4_hlc_docker_dir/ap4hlc_ws/src/path_tracker': PYTHONPATH=/root/ap4_hlc_docker_dir/ap4hlc_ws/build/path_tracker/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/root/ap4_hlc_docker_dir/ap4hlc_ws/install/path_tracker/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/path_tracker build --build-base /root/ap4_hlc_docker_dir/ap4hlc_ws/build/path_tracker/build install --record /root/ap4_hlc_docker_dir/ap4hlc_ws/build/path_tracker/install.log --single-version-externally-managed install_data
+[1.224s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/ap4_hlc_docker_dir/ap4hlc_ws/src/keyboard_control': PYTHONPATH=/root/ap4_hlc_docker_dir/ap4hlc_ws/build/keyboard_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/root/ap4_hlc_docker_dir/ap4hlc_ws/install/keyboard_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/keyboard_control build --build-base /root/ap4_hlc_docker_dir/ap4hlc_ws/build/keyboard_control/build install --record /root/ap4_hlc_docker_dir/ap4hlc_ws/build/keyboard_control/install.log --single-version-externally-managed install_data
+[1.420s] Level 1:colcon.colcon_core.environment:checking '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/imu_pkg' for CMake module files
+[1.420s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/ap4_hlc_docker_dir/ap4hlc_ws/src/imu_pkg' returned '0': PYTHONPATH=/root/ap4_hlc_docker_dir/ap4hlc_ws/build/imu_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/root/ap4_hlc_docker_dir/ap4hlc_ws/install/imu_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/imu_pkg build --build-base /root/ap4_hlc_docker_dir/ap4hlc_ws/build/imu_pkg/build install --record /root/ap4_hlc_docker_dir/ap4hlc_ws/build/imu_pkg/install.log --single-version-externally-managed install_data
+[1.421s] Level 1:colcon.colcon_core.environment:checking '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/imu_pkg' for CMake config files
+[1.421s] Level 1:colcon.colcon_core.environment:checking '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/imu_pkg/lib'
+[1.421s] Level 1:colcon.colcon_core.environment:checking '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/imu_pkg/bin'
+[1.421s] Level 1:colcon.colcon_core.environment:checking '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/imu_pkg/lib/pkgconfig/imu_pkg.pc'
+[1.421s] Level 1:colcon.colcon_core.environment:checking '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/imu_pkg/lib/python3.10/site-packages'
+[1.421s] Level 1:colcon.colcon_core.shell:create_environment_hook('imu_pkg', 'pythonpath')
+[1.421s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/imu_pkg/share/imu_pkg/hook/pythonpath.ps1'
+[1.422s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/imu_pkg/share/imu_pkg/hook/pythonpath.dsv'
+[1.422s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/imu_pkg/share/imu_pkg/hook/pythonpath.sh'
+[1.422s] Level 1:colcon.colcon_core.environment:checking '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/imu_pkg/bin'
+[1.422s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(imu_pkg)
+[1.423s] INFO:colcon.colcon_core.shell:Creating package script '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/imu_pkg/share/imu_pkg/package.ps1'
+[1.423s] INFO:colcon.colcon_core.shell:Creating package descriptor '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/imu_pkg/share/imu_pkg/package.dsv'
+[1.423s] INFO:colcon.colcon_core.shell:Creating package script '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/imu_pkg/share/imu_pkg/package.sh'
+[1.424s] INFO:colcon.colcon_core.shell:Creating package script '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/imu_pkg/share/imu_pkg/package.bash'
+[1.424s] INFO:colcon.colcon_core.shell:Creating package script '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/imu_pkg/share/imu_pkg/package.zsh'
+[1.424s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/root/ap4_hlc_docker_dir/ap4hlc_ws/install/imu_pkg/share/colcon-core/packages/imu_pkg)
+[1.431s] Level 1:colcon.colcon_core.environment:checking '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/twist_stamper' for CMake module files
+[1.431s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/ap4_hlc_docker_dir/ap4hlc_ws/src/twist_stamper' returned '0': PYTHONPATH=/root/ap4_hlc_docker_dir/ap4hlc_ws/build/twist_stamper/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/root/ap4_hlc_docker_dir/ap4hlc_ws/install/twist_stamper/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/twist_stamper build --build-base /root/ap4_hlc_docker_dir/ap4hlc_ws/build/twist_stamper/build install --record /root/ap4_hlc_docker_dir/ap4hlc_ws/build/twist_stamper/install.log --single-version-externally-managed install_data
+[1.431s] Level 1:colcon.colcon_core.environment:checking '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/twist_stamper' for CMake config files
+[1.432s] Level 1:colcon.colcon_core.environment:checking '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/twist_stamper/lib'
+[1.432s] Level 1:colcon.colcon_core.environment:checking '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/twist_stamper/bin'
+[1.432s] Level 1:colcon.colcon_core.environment:checking '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/twist_stamper/lib/pkgconfig/twist_stamper.pc'
+[1.432s] Level 1:colcon.colcon_core.environment:checking '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/twist_stamper/lib/python3.10/site-packages'
+[1.432s] Level 1:colcon.colcon_core.shell:create_environment_hook('twist_stamper', 'pythonpath')
+[1.432s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/twist_stamper/share/twist_stamper/hook/pythonpath.ps1'
+[1.433s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/twist_stamper/share/twist_stamper/hook/pythonpath.dsv'
+[1.433s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/twist_stamper/share/twist_stamper/hook/pythonpath.sh'
+[1.433s] Level 1:colcon.colcon_core.environment:checking '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/twist_stamper/bin'
+[1.433s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(twist_stamper)
+[1.433s] INFO:colcon.colcon_core.shell:Creating package script '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/twist_stamper/share/twist_stamper/package.ps1'
+[1.434s] INFO:colcon.colcon_core.shell:Creating package descriptor '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/twist_stamper/share/twist_stamper/package.dsv'
+[1.434s] INFO:colcon.colcon_core.shell:Creating package script '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/twist_stamper/share/twist_stamper/package.sh'
+[1.434s] INFO:colcon.colcon_core.shell:Creating package script '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/twist_stamper/share/twist_stamper/package.bash'
+[1.435s] INFO:colcon.colcon_core.shell:Creating package script '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/twist_stamper/share/twist_stamper/package.zsh'
+[1.435s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/root/ap4_hlc_docker_dir/ap4hlc_ws/install/twist_stamper/share/colcon-core/packages/twist_stamper)
+[1.436s] Level 1:colcon.colcon_core.environment:checking '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/path_tracker' for CMake module files
+[1.436s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/ap4_hlc_docker_dir/ap4hlc_ws/src/path_tracker' returned '0': PYTHONPATH=/root/ap4_hlc_docker_dir/ap4hlc_ws/build/path_tracker/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/root/ap4_hlc_docker_dir/ap4hlc_ws/install/path_tracker/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/path_tracker build --build-base /root/ap4_hlc_docker_dir/ap4hlc_ws/build/path_tracker/build install --record /root/ap4_hlc_docker_dir/ap4hlc_ws/build/path_tracker/install.log --single-version-externally-managed install_data
+[1.436s] Level 1:colcon.colcon_core.environment:checking '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/path_tracker' for CMake config files
+[1.436s] Level 1:colcon.colcon_core.environment:checking '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/path_tracker/lib'
+[1.436s] Level 1:colcon.colcon_core.environment:checking '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/path_tracker/bin'
+[1.436s] Level 1:colcon.colcon_core.environment:checking '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/path_tracker/lib/pkgconfig/path_tracker.pc'
+[1.437s] Level 1:colcon.colcon_core.environment:checking '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/path_tracker/lib/python3.10/site-packages'
+[1.437s] Level 1:colcon.colcon_core.shell:create_environment_hook('path_tracker', 'pythonpath')
+[1.437s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/path_tracker/share/path_tracker/hook/pythonpath.ps1'
+[1.437s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/path_tracker/share/path_tracker/hook/pythonpath.dsv'
+[1.437s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/path_tracker/share/path_tracker/hook/pythonpath.sh'
+[1.438s] Level 1:colcon.colcon_core.environment:checking '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/path_tracker/bin'
+[1.438s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(path_tracker)
+[1.438s] INFO:colcon.colcon_core.shell:Creating package script '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/path_tracker/share/path_tracker/package.ps1'
+[1.438s] INFO:colcon.colcon_core.shell:Creating package descriptor '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/path_tracker/share/path_tracker/package.dsv'
+[1.439s] INFO:colcon.colcon_core.shell:Creating package script '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/path_tracker/share/path_tracker/package.sh'
+[1.439s] INFO:colcon.colcon_core.shell:Creating package script '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/path_tracker/share/path_tracker/package.bash'
+[1.439s] INFO:colcon.colcon_core.shell:Creating package script '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/path_tracker/share/path_tracker/package.zsh'
+[1.439s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/root/ap4_hlc_docker_dir/ap4hlc_ws/install/path_tracker/share/colcon-core/packages/path_tracker)
+[1.440s] Level 1:colcon.colcon_core.environment:checking '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/keyboard_control' for CMake module files
+[1.440s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/ap4_hlc_docker_dir/ap4hlc_ws/src/keyboard_control' returned '0': PYTHONPATH=/root/ap4_hlc_docker_dir/ap4hlc_ws/build/keyboard_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/root/ap4_hlc_docker_dir/ap4hlc_ws/install/keyboard_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/keyboard_control build --build-base /root/ap4_hlc_docker_dir/ap4hlc_ws/build/keyboard_control/build install --record /root/ap4_hlc_docker_dir/ap4hlc_ws/build/keyboard_control/install.log --single-version-externally-managed install_data
+[1.440s] Level 1:colcon.colcon_core.environment:checking '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/keyboard_control' for CMake config files
+[1.441s] Level 1:colcon.colcon_core.environment:checking '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/keyboard_control/lib'
+[1.441s] Level 1:colcon.colcon_core.environment:checking '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/keyboard_control/bin'
+[1.441s] Level 1:colcon.colcon_core.environment:checking '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/keyboard_control/lib/pkgconfig/keyboard_control.pc'
+[1.441s] Level 1:colcon.colcon_core.environment:checking '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/keyboard_control/lib/python3.10/site-packages'
+[1.441s] Level 1:colcon.colcon_core.shell:create_environment_hook('keyboard_control', 'pythonpath')
+[1.441s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/keyboard_control/share/keyboard_control/hook/pythonpath.ps1'
+[1.441s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/keyboard_control/share/keyboard_control/hook/pythonpath.dsv'
+[1.442s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/keyboard_control/share/keyboard_control/hook/pythonpath.sh'
+[1.442s] Level 1:colcon.colcon_core.environment:checking '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/keyboard_control/bin'
+[1.442s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(keyboard_control)
+[1.442s] INFO:colcon.colcon_core.shell:Creating package script '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/keyboard_control/share/keyboard_control/package.ps1'
+[1.442s] INFO:colcon.colcon_core.shell:Creating package descriptor '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/keyboard_control/share/keyboard_control/package.dsv'
+[1.443s] INFO:colcon.colcon_core.shell:Creating package script '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/keyboard_control/share/keyboard_control/package.sh'
+[1.443s] INFO:colcon.colcon_core.shell:Creating package script '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/keyboard_control/share/keyboard_control/package.bash'
+[1.443s] INFO:colcon.colcon_core.shell:Creating package script '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/keyboard_control/share/keyboard_control/package.zsh'
+[1.443s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/root/ap4_hlc_docker_dir/ap4hlc_ws/install/keyboard_control/share/colcon-core/packages/keyboard_control)
+[1.444s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[1.444s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[1.444s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[1.444s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[1.448s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[1.448s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[1.448s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[1.448s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[1.450s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.Spawn.ExecFailed: /usr/bin/dbus-launch terminated abnormally without any error message
+[1.450s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[1.450s] INFO:colcon.colcon_core.shell:Creating prefix script '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/local_setup.ps1'
+[1.451s] INFO:colcon.colcon_core.shell:Creating prefix util module '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/_local_setup_util_ps1.py'
+[1.452s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/setup.ps1'
+[1.452s] INFO:colcon.colcon_core.shell:Creating prefix script '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/local_setup.sh'
+[1.453s] INFO:colcon.colcon_core.shell:Creating prefix util module '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/_local_setup_util_sh.py'
+[1.453s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/setup.sh'
+[1.454s] INFO:colcon.colcon_core.shell:Creating prefix script '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/local_setup.bash'
+[1.454s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/setup.bash'
+[1.455s] INFO:colcon.colcon_core.shell:Creating prefix script '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/local_setup.zsh'
+[1.455s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/setup.zsh'

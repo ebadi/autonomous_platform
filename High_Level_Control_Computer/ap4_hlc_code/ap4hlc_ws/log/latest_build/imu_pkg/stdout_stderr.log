@@ -1,0 +1,19 @@
+running egg_info
+writing ../../build/imu_pkg/imu_pkg.egg-info/PKG-INFO
+writing dependency_links to ../../build/imu_pkg/imu_pkg.egg-info/dependency_links.txt
+writing entry points to ../../build/imu_pkg/imu_pkg.egg-info/entry_points.txt
+writing requirements to ../../build/imu_pkg/imu_pkg.egg-info/requires.txt
+writing top-level names to ../../build/imu_pkg/imu_pkg.egg-info/top_level.txt
+reading manifest file '../../build/imu_pkg/imu_pkg.egg-info/SOURCES.txt'
+writing manifest file '../../build/imu_pkg/imu_pkg.egg-info/SOURCES.txt'
+running build
+running build_py
+running install
+running install_lib
+running install_data
+running install_egg_info
+removing '/root/ap4_hlc_docker_dir/ap4hlc_ws/install/imu_pkg/lib/python3.10/site-packages/imu_pkg-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/imu_pkg/imu_pkg.egg-info to /root/ap4_hlc_docker_dir/ap4hlc_ws/install/imu_pkg/lib/python3.10/site-packages/imu_pkg-0.0.0-py3.10.egg-info
+running install_scripts
+Installing imu_output_node script to /root/ap4_hlc_docker_dir/ap4hlc_ws/install/imu_pkg/lib/imu_pkg
+writing list of installed files to '/root/ap4_hlc_docker_dir/ap4hlc_ws/build/imu_pkg/install.log'

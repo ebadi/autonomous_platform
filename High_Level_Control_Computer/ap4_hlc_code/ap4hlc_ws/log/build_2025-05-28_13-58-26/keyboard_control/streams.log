@@ -1,0 +1,41 @@
+[0.968s] Invoking command in '/root/ap4_hlc_docker_dir/ap4hlc_ws/src/keyboard_control': PYTHONPATH=/root/ap4_hlc_docker_dir/ap4hlc_ws/build/keyboard_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/root/ap4_hlc_docker_dir/ap4hlc_ws/install/keyboard_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/keyboard_control build --build-base /root/ap4_hlc_docker_dir/ap4hlc_ws/build/keyboard_control/build install --record /root/ap4_hlc_docker_dir/ap4hlc_ws/build/keyboard_control/install.log --single-version-externally-managed install_data
+[1.134s] running egg_info
+[1.135s] creating ../../build/keyboard_control/keyboard_control.egg-info
+[1.135s] writing ../../build/keyboard_control/keyboard_control.egg-info/PKG-INFO
+[1.135s] writing dependency_links to ../../build/keyboard_control/keyboard_control.egg-info/dependency_links.txt
+[1.135s] writing entry points to ../../build/keyboard_control/keyboard_control.egg-info/entry_points.txt
+[1.135s] writing requirements to ../../build/keyboard_control/keyboard_control.egg-info/requires.txt
+[1.135s] writing top-level names to ../../build/keyboard_control/keyboard_control.egg-info/top_level.txt
+[1.135s] writing manifest file '../../build/keyboard_control/keyboard_control.egg-info/SOURCES.txt'
+[1.136s] reading manifest file '../../build/keyboard_control/keyboard_control.egg-info/SOURCES.txt'
+[1.137s] writing manifest file '../../build/keyboard_control/keyboard_control.egg-info/SOURCES.txt'
+[1.137s] running build
+[1.137s] running build_py
+[1.137s] creating /root/ap4_hlc_docker_dir/ap4hlc_ws/build/keyboard_control/build
+[1.137s] creating /root/ap4_hlc_docker_dir/ap4hlc_ws/build/keyboard_control/build/lib
+[1.137s] creating /root/ap4_hlc_docker_dir/ap4hlc_ws/build/keyboard_control/build/lib/keyboard_control
+[1.137s] copying keyboard_control/__init__.py -> /root/ap4_hlc_docker_dir/ap4hlc_ws/build/keyboard_control/build/lib/keyboard_control
+[1.137s] copying keyboard_control/keyboard_control.py -> /root/ap4_hlc_docker_dir/ap4hlc_ws/build/keyboard_control/build/lib/keyboard_control
+[1.137s] copying keyboard_control/lidar_output.py -> /root/ap4_hlc_docker_dir/ap4hlc_ws/build/keyboard_control/build/lib/keyboard_control
+[1.137s] running install
+[1.138s] running install_lib
+[1.138s] creating /root/ap4_hlc_docker_dir/ap4hlc_ws/install/keyboard_control/lib/python3.10/site-packages/keyboard_control
+[1.138s] copying /root/ap4_hlc_docker_dir/ap4hlc_ws/build/keyboard_control/build/lib/keyboard_control/__init__.py -> /root/ap4_hlc_docker_dir/ap4hlc_ws/install/keyboard_control/lib/python3.10/site-packages/keyboard_control
+[1.138s] copying /root/ap4_hlc_docker_dir/ap4hlc_ws/build/keyboard_control/build/lib/keyboard_control/keyboard_control.py -> /root/ap4_hlc_docker_dir/ap4hlc_ws/install/keyboard_control/lib/python3.10/site-packages/keyboard_control
+[1.138s] copying /root/ap4_hlc_docker_dir/ap4hlc_ws/build/keyboard_control/build/lib/keyboard_control/lidar_output.py -> /root/ap4_hlc_docker_dir/ap4hlc_ws/install/keyboard_control/lib/python3.10/site-packages/keyboard_control
+[1.138s] byte-compiling /root/ap4_hlc_docker_dir/ap4hlc_ws/install/keyboard_control/lib/python3.10/site-packages/keyboard_control/__init__.py to __init__.cpython-310.pyc
+[1.139s] byte-compiling /root/ap4_hlc_docker_dir/ap4hlc_ws/install/keyboard_control/lib/python3.10/site-packages/keyboard_control/keyboard_control.py to keyboard_control.cpython-310.pyc
+[1.139s] byte-compiling /root/ap4_hlc_docker_dir/ap4hlc_ws/install/keyboard_control/lib/python3.10/site-packages/keyboard_control/lidar_output.py to lidar_output.cpython-310.pyc
+[1.139s] running install_data
+[1.139s] creating /root/ap4_hlc_docker_dir/ap4hlc_ws/install/keyboard_control/share/ament_index
+[1.140s] creating /root/ap4_hlc_docker_dir/ap4hlc_ws/install/keyboard_control/share/ament_index/resource_index
+[1.140s] creating /root/ap4_hlc_docker_dir/ap4hlc_ws/install/keyboard_control/share/ament_index/resource_index/packages
+[1.140s] copying resource/keyboard_control -> /root/ap4_hlc_docker_dir/ap4hlc_ws/install/keyboard_control/share/ament_index/resource_index/packages
+[1.140s] copying package.xml -> /root/ap4_hlc_docker_dir/ap4hlc_ws/install/keyboard_control/share/keyboard_control
+[1.140s] running install_egg_info
+[1.141s] Copying ../../build/keyboard_control/keyboard_control.egg-info to /root/ap4_hlc_docker_dir/ap4hlc_ws/install/keyboard_control/lib/python3.10/site-packages/keyboard_control-0.0.0-py3.10.egg-info
+[1.142s] running install_scripts
+[1.157s] Installing keyboard_control_node script to /root/ap4_hlc_docker_dir/ap4hlc_ws/install/keyboard_control/lib/keyboard_control
+[1.157s] Installing lidar_output_node script to /root/ap4_hlc_docker_dir/ap4hlc_ws/install/keyboard_control/lib/keyboard_control
+[1.157s] writing list of installed files to '/root/ap4_hlc_docker_dir/ap4hlc_ws/build/keyboard_control/install.log'
+[1.184s] Invoked command in '/root/ap4_hlc_docker_dir/ap4hlc_ws/src/keyboard_control' returned '0': PYTHONPATH=/root/ap4_hlc_docker_dir/ap4hlc_ws/build/keyboard_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/root/ap4_hlc_docker_dir/ap4hlc_ws/install/keyboard_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/keyboard_control build --build-base /root/ap4_hlc_docker_dir/ap4hlc_ws/build/keyboard_control/build install --record /root/ap4_hlc_docker_dir/ap4hlc_ws/build/keyboard_control/install.log --single-version-externally-managed install_data

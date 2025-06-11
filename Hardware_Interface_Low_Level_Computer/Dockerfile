@@ -8,6 +8,7 @@ RUN apt-get update && apt-get install --no-install-recommends -y \
     python3-colcon-mixin \
     python3-rosdep \
     python3-vcstool \
+    python3-pip \
 	iputils-ping \
     net-tools \
     wget \
@@ -18,7 +19,8 @@ RUN apt-get update && apt-get install --no-install-recommends -y \
     alsa-base \
     alsa-utils \
     can-utils \
-    && rm -rf /var/lib/apt/lists/*
+    && rm -rf /var/lib/apt/lists/* \
+    && pip install depthai
 
 
 # bootstrap rosdep
@@ -56,3 +58,8 @@ RUN mkdir -p /root/ap4_hwi_docker_dir
 RUN chmod +x /root/ap4_hwi_docker_dir
 RUN mkdir -p .local/bin .config .cache
 WORKDIR /root/ap4_hwi_docker_dir
+
+#To automatically initiallize ROS2
+RUN echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc
+RUN echo "source /root/ap4_hwi_docker_dir/ap4hwi_ws/install/setup.bash" >> ~/.bashrc
+RUN echo "export ROS_DOMAIN_ID=1" >> ~/.bashrc

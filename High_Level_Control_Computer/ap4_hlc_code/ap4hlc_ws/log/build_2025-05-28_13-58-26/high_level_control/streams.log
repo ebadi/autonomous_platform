@@ -1,0 +1,47 @@
+[0.020s] Invoking command in '/root/ap4_hlc_docker_dir/ap4hlc_ws/build/high_level_control': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /root/ap4_hlc_docker_dir/ap4hlc_ws/src/high_level_control -DCMAKE_INSTALL_PREFIX=/root/ap4_hlc_docker_dir/ap4hlc_ws/install/high_level_control
+[0.727s] -- The C compiler identification is GNU 11.4.0
+[0.727s] -- The CXX compiler identification is GNU 11.4.0
+[0.727s] -- Detecting C compiler ABI info
+[0.727s] -- Detecting C compiler ABI info - done
+[0.727s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.727s] -- Detecting C compile features
+[0.727s] -- Detecting C compile features - done
+[0.727s] -- Detecting CXX compiler ABI info
+[0.727s] -- Detecting CXX compiler ABI info - done
+[0.728s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.728s] -- Detecting CXX compile features
+[0.728s] -- Detecting CXX compile features - done
+[0.728s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.728s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.728s] -- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.728s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.728s] -- Added test 'lint_cmake' to check CMake code style
+[0.728s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.728s] -- Added test 'xmllint' to check XML markup files
+[0.728s] -- Configuring done
+[0.728s] -- Generating done
+[0.728s] -- Build files have been written to: /root/ap4_hlc_docker_dir/ap4hlc_ws/build/high_level_control
+[0.730s] Invoked command in '/root/ap4_hlc_docker_dir/ap4hlc_ws/build/high_level_control' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /root/ap4_hlc_docker_dir/ap4hlc_ws/src/high_level_control -DCMAKE_INSTALL_PREFIX=/root/ap4_hlc_docker_dir/ap4hlc_ws/install/high_level_control
+[0.730s] Invoking command in '/root/ap4_hlc_docker_dir/ap4hlc_ws/build/high_level_control': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /root/ap4_hlc_docker_dir/ap4hlc_ws/build/high_level_control -- -j20 -l20
+[0.757s] Invoked command in '/root/ap4_hlc_docker_dir/ap4hlc_ws/build/high_level_control' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /root/ap4_hlc_docker_dir/ap4hlc_ws/build/high_level_control -- -j20 -l20
+[0.757s] Invoking command in '/root/ap4_hlc_docker_dir/ap4hlc_ws/build/high_level_control': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /root/ap4_hlc_docker_dir/ap4hlc_ws/build/high_level_control
+[0.762s] -- Install configuration: ""
+[0.762s] -- Installing: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/high_level_control/lib/high_level_control/high_level_model.py
+[0.762s] -- Installing: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/high_level_control/lib/high_level_control/data_collection.py
+[0.762s] -- Installing: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/high_level_control/lib/high_level_control/utils.py
+[0.762s] -- Installing: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/high_level_control/share/ament_index/resource_index/package_run_dependencies/high_level_control
+[0.763s] -- Installing: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/high_level_control/share/ament_index/resource_index/parent_prefix_path/high_level_control
+[0.763s] -- Installing: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/high_level_control/share/high_level_control/environment/ament_prefix_path.sh
+[0.763s] -- Installing: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/high_level_control/share/high_level_control/environment/ament_prefix_path.dsv
+[0.763s] -- Installing: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/high_level_control/share/high_level_control/environment/path.sh
+[0.763s] -- Installing: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/high_level_control/share/high_level_control/environment/path.dsv
+[0.763s] -- Installing: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/high_level_control/share/high_level_control/local_setup.bash
+[0.763s] -- Installing: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/high_level_control/share/high_level_control/local_setup.sh
+[0.764s] -- Installing: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/high_level_control/share/high_level_control/local_setup.zsh
+[0.764s] -- Installing: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/high_level_control/share/high_level_control/local_setup.dsv
+[0.764s] -- Installing: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/high_level_control/share/high_level_control/package.dsv
+[0.764s] -- Installing: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/high_level_control/share/ament_index/resource_index/packages/high_level_control
+[0.764s] -- Installing: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/high_level_control/share/high_level_control/cmake/high_level_controlConfig.cmake
+[0.764s] -- Installing: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/high_level_control/share/high_level_control/cmake/high_level_controlConfig-version.cmake
+[0.764s] -- Installing: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/high_level_control/share/high_level_control/package.xml
+[0.766s] Invoked command in '/root/ap4_hlc_docker_dir/ap4hlc_ws/build/high_level_control' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /root/ap4_hlc_docker_dir/ap4hlc_ws/build/high_level_control

@@ -80,8 +80,6 @@
               <ul>
                   <li class="toctree-l1"><a class="reference internal" href="../../High_Level_Control_Computer/">High Level Control Computer</a>
                   </li>
-                  <li class="toctree-l1"><a class="" href="../../High_Level_Control_Computer/HOW_TO_EXTEND.md">How to Extend</a>
-                  </li>
                   <li class="toctree-l1"><a class="reference internal" href="../../High_Level_Control_Computer/IMITATION_LEARNING/">Imitation Learning</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../../High_Level_Control_Computer/DONKEY_CAR_SETUP/">DonkeyCar simulator</a>
@@ -198,6 +196,40 @@ In the terminal it would explicity say if something has failed and the service d
 <h3 id="ros2-node-did-not-start-when-starting-container">ROS2 Node did not start when starting container</h3>
 <p>First make sure that only a specific node does not start up, if other nodes have started up but not the one you are looking for you need to look in the launch file that starts up the hardware interface software.</p>
 <p>Make sure it is configured to automatically start by looking in the launch hwi software package <code>autonomous_platform\Hardware_Interface_Low_Level_Computer\ap4_hwi_code\ap4hwi_ws\src\launch_hwi_software_pkg\launch</code></p>
+<h2 id="odometry-testing-and-calibration">Odometry testing and calibration</h2>
+<h1 id="distance-testing">Distance testing</h1>
+<p>In order to get the AD algorithm to work properly we need to have a position system for the Gokart. The Gokarts position is updated by publishing its new positions to the /odom topic. The actual position is calculated in real time by using the Gokarts speed sensors and steering angle sensor that are mounted on the wheels and the steering motor.</p>
+<p>This guide describes how you can test and verify that the odometry calculations are correct and that the actual position of the Gokart are being correctly updated to the /odom topic. The X position for the Gokart is tested by using a attatchment on the wheel (Se video below) that counts the exact amount of turns that the wheels are turing during the test. By knowing the wheels circumference you can easy check if the odometry is being updated correctly.</p>
+<p><img alt="My Local GIF" src="Resources/Wheel_turner.gif" /></p>
+<ol>
+<li>
+<p>Mount the wheel turn counter on the backwheel</p>
+</li>
+<li>
+<p>Decide how many turns you want to measure</p>
+</li>
+<li>
+<p>Calculate the actual distance the Gokart will move by taking: number_of_turns*circumference = total_distance</p>
+</li>
+<li>
+<p>Start the Gokart and listen to the /odom topic by running:</p>
+</li>
+</ol>
+<p><code>bash
+       ros2 topic echo /odom</code></p>
+<ol>
+<li>
+<p>Move the Gokart forward exact the amount of wheel turns you want by looking at the wheel counter</p>
+</li>
+<li>
+<p>Kill the /odom listener and scroll up to the latest updated odom in the terminal</p>
+</li>
+<li>
+<p>Compare the result for the updated odom in the terminal by your calculated distance earlier. These two should more or less be the same.</p>
+</li>
+</ol>
+<h1 id="steering-angle-tesing">Steering angle tesing</h1>
+<p>To test and verify the steering angle that later updates the Gokart position we need to manually measure the angle on the steering wheels when turning with the xbox box controller. We measuered the steering angle manualy by two rulers and measure the angle with a "gradskiva". We then compared the angle with the angle showed up in the Get_SteeringAngle topic. This is not the best way to do it and there is probably a more consequent way to do this.</p>
               
             </div>
           </div><footer>

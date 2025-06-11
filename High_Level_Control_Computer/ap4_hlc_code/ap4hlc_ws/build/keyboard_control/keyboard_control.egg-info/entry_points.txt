@@ -1,0 +1,4 @@
+[console_scripts]
+keyboard_control_node = keyboard_control.keyboard_control:main
+lidar_output_node = keyboard_control.lidar_output:main
+

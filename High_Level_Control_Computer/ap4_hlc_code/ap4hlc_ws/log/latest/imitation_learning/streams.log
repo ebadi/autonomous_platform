@@ -1,0 +1,33 @@
+[0.019s] Invoking command in '/root/ap4_hlc_docker_dir/ap4hlc_ws/build/imitation_learning': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /root/ap4_hlc_docker_dir/ap4hlc_ws/build/imitation_learning -- -j20 -l20
+[0.731s] Invoked command in '/root/ap4_hlc_docker_dir/ap4hlc_ws/build/imitation_learning' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /root/ap4_hlc_docker_dir/ap4hlc_ws/build/imitation_learning -- -j20 -l20
+[0.731s] Invoking command in '/root/ap4_hlc_docker_dir/ap4hlc_ws/build/imitation_learning': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /root/ap4_hlc_docker_dir/ap4hlc_ws/build/imitation_learning
+[0.741s] -- Install configuration: ""
+[0.741s] -- Up-to-date: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/imitation_learning/share/imitation_learning/simulation_donkeycar
+[0.741s] -- Up-to-date: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/imitation_learning/share/imitation_learning/simulation_donkeycar/ppo_train.py
+[0.741s] -- Up-to-date: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/imitation_learning/share/imitation_learning/simulation_donkeycar/train.py
+[0.741s] -- Up-to-date: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/imitation_learning/share/imitation_learning/simulation_donkeycar/manage.py
+[0.741s] -- Up-to-date: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/imitation_learning/share/imitation_learning/simulation_donkeycar/calibrate.py
+[0.741s] -- Up-to-date: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/imitation_learning/share/imitation_learning/simulation_donkeycar/start_simualtion.sh
+[0.741s] -- Up-to-date: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/imitation_learning/share/imitation_learning/simulation_donkeycar/config.py
+[0.741s] -- Up-to-date: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/imitation_learning/share/imitation_learning/simulation_donkeycar/.gitignore
+[0.741s] -- Up-to-date: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/imitation_learning/share/imitation_learning/simulation_donkeycar/myconfig.py
+[0.741s] -- Up-to-date: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/imitation_learning/lib/imitation_learning/train_DAgger.py
+[0.741s] -- Up-to-date: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/imitation_learning/lib/imitation_learning/evaluate_models.py
+[0.741s] -- Up-to-date: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/imitation_learning/lib/imitation_learning/image_display.py
+[0.741s] -- Up-to-date: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/imitation_learning/lib/imitation_learning/utils.py
+[0.741s] -- Up-to-date: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/imitation_learning/share/ament_index/resource_index/package_run_dependencies/imitation_learning
+[0.741s] -- Up-to-date: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/imitation_learning/share/ament_index/resource_index/parent_prefix_path/imitation_learning
+[0.741s] -- Up-to-date: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/imitation_learning/share/imitation_learning/environment/ament_prefix_path.sh
+[0.742s] -- Up-to-date: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/imitation_learning/share/imitation_learning/environment/ament_prefix_path.dsv
+[0.742s] -- Up-to-date: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/imitation_learning/share/imitation_learning/environment/path.sh
+[0.742s] -- Up-to-date: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/imitation_learning/share/imitation_learning/environment/path.dsv
+[0.742s] -- Up-to-date: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/imitation_learning/share/imitation_learning/local_setup.bash
+[0.742s] -- Up-to-date: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/imitation_learning/share/imitation_learning/local_setup.sh
+[0.742s] -- Up-to-date: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/imitation_learning/share/imitation_learning/local_setup.zsh
+[0.742s] -- Up-to-date: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/imitation_learning/share/imitation_learning/local_setup.dsv
+[0.742s] -- Up-to-date: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/imitation_learning/share/imitation_learning/package.dsv
+[0.742s] -- Up-to-date: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/imitation_learning/share/ament_index/resource_index/packages/imitation_learning
+[0.742s] -- Up-to-date: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/imitation_learning/share/imitation_learning/cmake/imitation_learningConfig.cmake
+[0.742s] -- Up-to-date: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/imitation_learning/share/imitation_learning/cmake/imitation_learningConfig-version.cmake
+[0.742s] -- Up-to-date: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/imitation_learning/share/imitation_learning/package.xml
+[0.762s] Invoked command in '/root/ap4_hlc_docker_dir/ap4hlc_ws/build/imitation_learning' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /root/ap4_hlc_docker_dir/ap4hlc_ws/build/imitation_learning

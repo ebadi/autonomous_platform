@@ -1,0 +1,51 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+-- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /root/ap4_hlc_docker_dir/ap4hlc_ws/build/imitation_learning
+-- Install configuration: ""
+-- Installing: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/imitation_learning/share/imitation_learning/simulation_donkeycar
+-- Installing: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/imitation_learning/share/imitation_learning/simulation_donkeycar/ppo_train.py
+-- Installing: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/imitation_learning/share/imitation_learning/simulation_donkeycar/train.py
+-- Installing: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/imitation_learning/share/imitation_learning/simulation_donkeycar/manage.py
+-- Installing: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/imitation_learning/share/imitation_learning/simulation_donkeycar/calibrate.py
+-- Installing: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/imitation_learning/share/imitation_learning/simulation_donkeycar/start_simualtion.sh
+-- Installing: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/imitation_learning/share/imitation_learning/simulation_donkeycar/config.py
+-- Installing: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/imitation_learning/share/imitation_learning/simulation_donkeycar/.gitignore
+-- Installing: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/imitation_learning/share/imitation_learning/simulation_donkeycar/myconfig.py
+-- Installing: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/imitation_learning/lib/imitation_learning/train_DAgger.py
+-- Installing: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/imitation_learning/lib/imitation_learning/evaluate_models.py
+-- Installing: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/imitation_learning/lib/imitation_learning/image_display.py
+-- Installing: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/imitation_learning/lib/imitation_learning/utils.py
+-- Installing: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/imitation_learning/share/ament_index/resource_index/package_run_dependencies/imitation_learning
+-- Installing: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/imitation_learning/share/ament_index/resource_index/parent_prefix_path/imitation_learning
+-- Installing: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/imitation_learning/share/imitation_learning/environment/ament_prefix_path.sh
+-- Installing: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/imitation_learning/share/imitation_learning/environment/ament_prefix_path.dsv
+-- Installing: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/imitation_learning/share/imitation_learning/environment/path.sh
+-- Installing: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/imitation_learning/share/imitation_learning/environment/path.dsv
+-- Installing: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/imitation_learning/share/imitation_learning/local_setup.bash
+-- Installing: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/imitation_learning/share/imitation_learning/local_setup.sh
+-- Installing: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/imitation_learning/share/imitation_learning/local_setup.zsh
+-- Installing: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/imitation_learning/share/imitation_learning/local_setup.dsv
+-- Installing: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/imitation_learning/share/imitation_learning/package.dsv
+-- Installing: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/imitation_learning/share/ament_index/resource_index/packages/imitation_learning
+-- Installing: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/imitation_learning/share/imitation_learning/cmake/imitation_learningConfig.cmake
+-- Installing: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/imitation_learning/share/imitation_learning/cmake/imitation_learningConfig-version.cmake
+-- Installing: /root/ap4_hlc_docker_dir/ap4hlc_ws/install/imitation_learning/share/imitation_learning/package.xml

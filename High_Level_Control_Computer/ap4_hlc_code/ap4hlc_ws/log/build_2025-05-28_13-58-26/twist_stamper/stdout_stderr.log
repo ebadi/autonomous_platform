@@ -1,0 +1,40 @@
+running egg_info
+creating ../../build/twist_stamper/twist_stamper.egg-info
+writing ../../build/twist_stamper/twist_stamper.egg-info/PKG-INFO
+writing dependency_links to ../../build/twist_stamper/twist_stamper.egg-info/dependency_links.txt
+writing entry points to ../../build/twist_stamper/twist_stamper.egg-info/entry_points.txt
+writing requirements to ../../build/twist_stamper/twist_stamper.egg-info/requires.txt
+writing top-level names to ../../build/twist_stamper/twist_stamper.egg-info/top_level.txt
+writing manifest file '../../build/twist_stamper/twist_stamper.egg-info/SOURCES.txt'
+reading manifest file '../../build/twist_stamper/twist_stamper.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file '../../build/twist_stamper/twist_stamper.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /root/ap4_hlc_docker_dir/ap4hlc_ws/build/twist_stamper/build
+creating /root/ap4_hlc_docker_dir/ap4hlc_ws/build/twist_stamper/build/lib
+creating /root/ap4_hlc_docker_dir/ap4hlc_ws/build/twist_stamper/build/lib/twist_stamper
+copying twist_stamper/__init__.py -> /root/ap4_hlc_docker_dir/ap4hlc_ws/build/twist_stamper/build/lib/twist_stamper
+copying twist_stamper/twist_unstamper.py -> /root/ap4_hlc_docker_dir/ap4hlc_ws/build/twist_stamper/build/lib/twist_stamper
+copying twist_stamper/twist_stamper.py -> /root/ap4_hlc_docker_dir/ap4hlc_ws/build/twist_stamper/build/lib/twist_stamper
+running install
+running install_lib
+creating /root/ap4_hlc_docker_dir/ap4hlc_ws/install/twist_stamper/lib/python3.10/site-packages/twist_stamper
+copying /root/ap4_hlc_docker_dir/ap4hlc_ws/build/twist_stamper/build/lib/twist_stamper/__init__.py -> /root/ap4_hlc_docker_dir/ap4hlc_ws/install/twist_stamper/lib/python3.10/site-packages/twist_stamper
+copying /root/ap4_hlc_docker_dir/ap4hlc_ws/build/twist_stamper/build/lib/twist_stamper/twist_unstamper.py -> /root/ap4_hlc_docker_dir/ap4hlc_ws/install/twist_stamper/lib/python3.10/site-packages/twist_stamper
+copying /root/ap4_hlc_docker_dir/ap4hlc_ws/build/twist_stamper/build/lib/twist_stamper/twist_stamper.py -> /root/ap4_hlc_docker_dir/ap4hlc_ws/install/twist_stamper/lib/python3.10/site-packages/twist_stamper
+byte-compiling /root/ap4_hlc_docker_dir/ap4hlc_ws/install/twist_stamper/lib/python3.10/site-packages/twist_stamper/__init__.py to __init__.cpython-310.pyc
+byte-compiling /root/ap4_hlc_docker_dir/ap4hlc_ws/install/twist_stamper/lib/python3.10/site-packages/twist_stamper/twist_unstamper.py to twist_unstamper.cpython-310.pyc
+byte-compiling /root/ap4_hlc_docker_dir/ap4hlc_ws/install/twist_stamper/lib/python3.10/site-packages/twist_stamper/twist_stamper.py to twist_stamper.cpython-310.pyc
+running install_data
+creating /root/ap4_hlc_docker_dir/ap4hlc_ws/install/twist_stamper/share/ament_index
+creating /root/ap4_hlc_docker_dir/ap4hlc_ws/install/twist_stamper/share/ament_index/resource_index
+creating /root/ap4_hlc_docker_dir/ap4hlc_ws/install/twist_stamper/share/ament_index/resource_index/packages
+copying resource/twist_stamper -> /root/ap4_hlc_docker_dir/ap4hlc_ws/install/twist_stamper/share/ament_index/resource_index/packages
+copying package.xml -> /root/ap4_hlc_docker_dir/ap4hlc_ws/install/twist_stamper/share/twist_stamper
+running install_egg_info
+Copying ../../build/twist_stamper/twist_stamper.egg-info to /root/ap4_hlc_docker_dir/ap4hlc_ws/install/twist_stamper/lib/python3.10/site-packages/twist_stamper-0.0.3-py3.10.egg-info
+running install_scripts
+Installing twist_stamper script to /root/ap4_hlc_docker_dir/ap4hlc_ws/install/twist_stamper/lib/twist_stamper
+Installing twist_unstamper script to /root/ap4_hlc_docker_dir/ap4hlc_ws/install/twist_stamper/lib/twist_stamper
+writing list of installed files to '/root/ap4_hlc_docker_dir/ap4hlc_ws/build/twist_stamper/install.log'

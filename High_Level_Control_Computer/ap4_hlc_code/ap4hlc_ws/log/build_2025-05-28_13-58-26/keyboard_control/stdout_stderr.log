@@ -1,0 +1,39 @@
+running egg_info
+creating ../../build/keyboard_control/keyboard_control.egg-info
+writing ../../build/keyboard_control/keyboard_control.egg-info/PKG-INFO
+writing dependency_links to ../../build/keyboard_control/keyboard_control.egg-info/dependency_links.txt
+writing entry points to ../../build/keyboard_control/keyboard_control.egg-info/entry_points.txt
+writing requirements to ../../build/keyboard_control/keyboard_control.egg-info/requires.txt
+writing top-level names to ../../build/keyboard_control/keyboard_control.egg-info/top_level.txt
+writing manifest file '../../build/keyboard_control/keyboard_control.egg-info/SOURCES.txt'
+reading manifest file '../../build/keyboard_control/keyboard_control.egg-info/SOURCES.txt'
+writing manifest file '../../build/keyboard_control/keyboard_control.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /root/ap4_hlc_docker_dir/ap4hlc_ws/build/keyboard_control/build
+creating /root/ap4_hlc_docker_dir/ap4hlc_ws/build/keyboard_control/build/lib
+creating /root/ap4_hlc_docker_dir/ap4hlc_ws/build/keyboard_control/build/lib/keyboard_control
+copying keyboard_control/__init__.py -> /root/ap4_hlc_docker_dir/ap4hlc_ws/build/keyboard_control/build/lib/keyboard_control
+copying keyboard_control/keyboard_control.py -> /root/ap4_hlc_docker_dir/ap4hlc_ws/build/keyboard_control/build/lib/keyboard_control
+copying keyboard_control/lidar_output.py -> /root/ap4_hlc_docker_dir/ap4hlc_ws/build/keyboard_control/build/lib/keyboard_control
+running install
+running install_lib
+creating /root/ap4_hlc_docker_dir/ap4hlc_ws/install/keyboard_control/lib/python3.10/site-packages/keyboard_control
+copying /root/ap4_hlc_docker_dir/ap4hlc_ws/build/keyboard_control/build/lib/keyboard_control/__init__.py -> /root/ap4_hlc_docker_dir/ap4hlc_ws/install/keyboard_control/lib/python3.10/site-packages/keyboard_control
+copying /root/ap4_hlc_docker_dir/ap4hlc_ws/build/keyboard_control/build/lib/keyboard_control/keyboard_control.py -> /root/ap4_hlc_docker_dir/ap4hlc_ws/install/keyboard_control/lib/python3.10/site-packages/keyboard_control
+copying /root/ap4_hlc_docker_dir/ap4hlc_ws/build/keyboard_control/build/lib/keyboard_control/lidar_output.py -> /root/ap4_hlc_docker_dir/ap4hlc_ws/install/keyboard_control/lib/python3.10/site-packages/keyboard_control
+byte-compiling /root/ap4_hlc_docker_dir/ap4hlc_ws/install/keyboard_control/lib/python3.10/site-packages/keyboard_control/__init__.py to __init__.cpython-310.pyc
+byte-compiling /root/ap4_hlc_docker_dir/ap4hlc_ws/install/keyboard_control/lib/python3.10/site-packages/keyboard_control/keyboard_control.py to keyboard_control.cpython-310.pyc
+byte-compiling /root/ap4_hlc_docker_dir/ap4hlc_ws/install/keyboard_control/lib/python3.10/site-packages/keyboard_control/lidar_output.py to lidar_output.cpython-310.pyc
+running install_data
+creating /root/ap4_hlc_docker_dir/ap4hlc_ws/install/keyboard_control/share/ament_index
+creating /root/ap4_hlc_docker_dir/ap4hlc_ws/install/keyboard_control/share/ament_index/resource_index
+creating /root/ap4_hlc_docker_dir/ap4hlc_ws/install/keyboard_control/share/ament_index/resource_index/packages
+copying resource/keyboard_control -> /root/ap4_hlc_docker_dir/ap4hlc_ws/install/keyboard_control/share/ament_index/resource_index/packages
+copying package.xml -> /root/ap4_hlc_docker_dir/ap4hlc_ws/install/keyboard_control/share/keyboard_control
+running install_egg_info
+Copying ../../build/keyboard_control/keyboard_control.egg-info to /root/ap4_hlc_docker_dir/ap4hlc_ws/install/keyboard_control/lib/python3.10/site-packages/keyboard_control-0.0.0-py3.10.egg-info
+running install_scripts
+Installing keyboard_control_node script to /root/ap4_hlc_docker_dir/ap4hlc_ws/install/keyboard_control/lib/keyboard_control
+Installing lidar_output_node script to /root/ap4_hlc_docker_dir/ap4hlc_ws/install/keyboard_control/lib/keyboard_control
+writing list of installed files to '/root/ap4_hlc_docker_dir/ap4hlc_ws/build/keyboard_control/install.log'
