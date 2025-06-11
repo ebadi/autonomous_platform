@@ -43,3 +43,7 @@ Building a replica of the go-kart as a way to review and improve the build instr
 ### Version 4.4, Jun 2025
 
 Speed sensor functionality for the new go-kart, including enhancements to the rear wheels, the addition of a software filter for optocouplers, and configurable parameters for wheel size, sampling interval, and sensor disk size. Improved the 3D designs and refined the wiring layout to make the unit more modular and accessible. by Marten Postma. Supervisor: Hamid Ebadi
+
+### Version 4.5, Jun 2025
+
+Implementation of LiDAR and SLAM to the platform. An investigation of how LiDAR can be used to Simultaneously Localize a Vehicle and Map its Surroundings using SLAM. Done by David Espedalen and Anton Stigemyr Hill as part of a master thesis at Chalmers University of technology spring 2025. Supervisor: Hamid Ebadi

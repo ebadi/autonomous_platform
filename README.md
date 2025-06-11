@@ -263,7 +263,7 @@ Here is an example of the AP4 driving autonomously in the Gokartcentralen track.
 RVIZ view: Map creation
 
 
-![simulation](Resources/Report_sketches/digital_twin/Sim_no_imu_map.svg)
+![simulation](Resources/Report_sketches/digital_twin/Sim_no_imu_map.png)
 
 Gazebo simulation: Gokartcentralen replica
 

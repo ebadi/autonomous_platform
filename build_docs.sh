@@ -1,4 +1,5 @@
 #!/bin/bash
+sudo apt install texlive-xetex pandoc mkdocs
 echo "starting pandoc"
 pandoc --verbose --log=pandoc-log.txt -f markdown-implicit_figures\
         --resource-path=.:Power_Unit/:CAD/:CAN_Nodes_Microcontroller_Code/:Hardware_Interface_Low_Level_Computer/:High_Level_Control_Computer:CAN_Nodes_Microcontroller_Code/CAN_LIBRARY_DATABASE \
